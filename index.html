@@ -6,150 +6,112 @@
 <title>Kelly 的職缺雷達 🎯</title>
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
 :root {
-  --bg: #f0f2f5;
-  --card: #ffffff;
-  --primary: #4f46e5;
-  --primary-light: #eef2ff;
-  --text: #1e293b;
-  --text-muted: #64748b;
-  --border: #e2e8f0;
-  --radius: 16px;
-  --shadow: 0 1px 3px rgba(0,0,0,.08), 0 4px 16px rgba(0,0,0,.04);
+  --bg: #f0f2f5; --card: #fff; --primary: #4f46e5; --primary-light: #eef2ff;
+  --text: #1e293b; --muted: #64748b; --border: #e2e8f0;
+  --radius: 16px; --shadow: 0 1px 3px rgba(0,0,0,.08), 0 4px 16px rgba(0,0,0,.04);
 }
+body { font-family: -apple-system,"PingFang TC","Microsoft JhengHei","Noto Sans TC",sans-serif;
+        background: var(--bg); color: var(--text); min-height: 100vh; }
 
-body {
-  font-family: -apple-system, "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  min-height: 100vh;
-}
-
-/* ── Header ── */
-.site-header {
-  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
-  color: #fff;
-  padding: 32px 20px 28px;
-  text-align: center;
-}
-.site-header h1 { font-size: 24px; font-weight: 800; letter-spacing: -.3px; }
-.site-header .tagline { margin-top: 6px; font-size: 13px; opacity: .8; }
-.header-stats {
-  display: flex; justify-content: center; gap: 24px;
-  margin-top: 20px;
-}
-.stat {
-  background: rgba(255,255,255,.15); border-radius: 10px;
-  padding: 8px 16px; text-align: center;
-}
+/* Header */
+.site-header { background: linear-gradient(135deg,#4f46e5,#7c3aed); color:#fff;
+                padding: 32px 20px 28px; text-align: center; }
+.site-header h1 { font-size: 24px; font-weight: 800; }
+.tagline { margin-top: 6px; font-size: 13px; opacity: .8; }
+.header-stats { display: flex; justify-content: center; gap: 24px; margin-top: 20px; }
+.stat { background: rgba(255,255,255,.15); border-radius: 10px; padding: 8px 16px; text-align: center; }
 .stat-num { font-size: 20px; font-weight: 700; }
 .stat-label { font-size: 11px; opacity: .75; margin-top: 1px; }
 
-/* ── Main container ── */
+/* Layout */
 .container { max-width: 720px; margin: 0 auto; padding: 24px 16px 48px; }
-
-/* ── Day section ── */
 .day-section { margin-bottom: 40px; }
-.day-header {
-  display: flex; align-items: center; gap: 10px; margin-bottom: 14px;
-}
-.day-chip {
-  background: var(--primary); color: #fff;
-  font-size: 13px; font-weight: 700;
-  padding: 4px 12px; border-radius: 999px;
-}
-.day-sub { font-size: 12px; color: var(--text-muted); }
-
-/* ── Job list ── */
+.day-header { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+.day-chip { background: var(--primary); color: #fff; font-size: 13px; font-weight: 700;
+             padding: 4px 12px; border-radius: 999px; }
+.day-sub { font-size: 12px; color: var(--muted); }
 .job-list { display: flex; flex-direction: column; gap: 12px; }
 
-/* ── Job card ── */
-.job-card {
-  background: var(--card);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  overflow: hidden;
-  transition: transform .15s, box-shadow .15s;
-}
-.job-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 20px rgba(0,0,0,.10);
-}
-.card-top {
-  display: flex; align-items: flex-start; gap: 14px; padding: 18px 18px 12px;
-}
-.rank {
-  font-size: 11px; font-weight: 800; color: var(--primary);
-  background: var(--primary-light); border-radius: 8px;
-  padding: 3px 7px; flex-shrink: 0; margin-top: 2px;
-}
+/* Card */
+.job-card { background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; }
+.card-summary { cursor: pointer; }
+.card-summary:hover .job-name { color: var(--primary); }
+.card-top { display: flex; align-items: flex-start; gap: 14px; padding: 18px 18px 10px; }
+.rank { font-size: 11px; font-weight: 800; color: var(--primary); background: var(--primary-light);
+         border-radius: 8px; padding: 3px 7px; flex-shrink: 0; margin-top: 2px; }
 .card-main { flex: 1; min-width: 0; }
-.job-name {
-  font-size: 16px; font-weight: 700; color: var(--text);
-  line-height: 1.3; margin-bottom: 3px;
-}
-.company-name {
-  font-size: 13px; color: var(--text-muted); margin-bottom: 8px;
-}
+.job-name { font-size: 16px; font-weight: 700; line-height: 1.3; margin-bottom: 3px;
+             transition: color .15s; }
+.company-name { font-size: 13px; color: var(--muted); margin-bottom: 8px; }
 .tags { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 10px; }
-.tag {
-  background: #f1f5f9; color: #475569;
-  font-size: 11px; padding: 3px 8px; border-radius: 999px;
-}
-.ai-block {
-  display: flex; align-items: flex-start; gap: 6px;
-  background: #fafafa; border-left: 3px solid var(--primary);
-  border-radius: 0 8px 8px 0; padding: 7px 10px;
-  font-size: 12px; color: #334155; line-height: 1.5;
-}
-.ai-icon { flex-shrink: 0; }
-.score-badge {
-  flex-shrink: 0;
-  width: 52px; height: 52px; border-radius: 50%;
-  display: flex; flex-direction: column;
-  align-items: center; justify-content: center;
-  color: #fff; font-size: 20px; font-weight: 800;
-  line-height: 1;
-}
+.tag { background: #f1f5f9; color: #475569; font-size: 11px; padding: 3px 8px; border-radius: 999px; }
+.ai-block { display: flex; align-items: flex-start; gap: 6px; background: #fafafa;
+             border-left: 3px solid var(--primary); border-radius: 0 8px 8px 0;
+             padding: 7px 10px; font-size: 12px; color: #334155; line-height: 1.5; }
+.score-badge { flex-shrink: 0; width: 52px; height: 52px; border-radius: 50%;
+                display: flex; flex-direction: column; align-items: center; justify-content: center;
+                color: #fff; font-size: 20px; font-weight: 800; line-height: 1; }
 .score-label { font-size: 9px; font-weight: 400; opacity: .85; margin-top: 1px; }
-
-/* ── Card footer ── */
-.card-footer {
-  border-top: 1px solid var(--border);
-  padding: 10px 18px;
-  display: flex; gap: 10px;
-}
-.btn-apply {
-  font-size: 12px; font-weight: 600;
-  color: var(--primary); text-decoration: none;
-  padding: 5px 0;
-}
+.expand-bar { display: flex; justify-content: space-between; align-items: center;
+               padding: 8px 18px 12px; border-top: 1px dashed var(--border); }
+.expand-hint { font-size: 11px; color: var(--muted); }
+.btn-apply { font-size: 12px; font-weight: 600; color: var(--primary); text-decoration: none; }
 .btn-apply:hover { text-decoration: underline; }
 
-/* ── Report button ── */
-.btn-report {
-  display: inline-flex; align-items: center; gap: 6px;
-  margin-top: 12px;
-  background: var(--primary); color: #fff;
-  font-size: 13px; font-weight: 600;
-  padding: 10px 20px; border-radius: 10px;
-  text-decoration: none; transition: background .15s;
-}
-.btn-report:hover { background: #4338ca; }
+/* Diagnosis panel */
+.diag-panel { border-top: 2px solid var(--primary-light); padding: 20px 18px; background: #fafbff; }
+.diag-detail { font-size: 13px; line-height: 1.6; }
+.d-section { font-size: 12px; font-weight: 700; color: #555; margin: 18px 0 8px;
+              text-transform: uppercase; letter-spacing: .05em; }
+.diag-detail .d-section:first-child { margin-top: 0; }
 
-.empty { color: var(--text-muted); padding: 40px 0; text-align: center; }
+/* Dimension bars */
+.d-dim-row { display: flex; align-items: center; margin: 6px 0; font-size: 12px; }
+.d-dim-label { width: 160px; flex-shrink: 0; color: #555; padding-right: 8px; }
+.d-dim-bar-bg { flex: 1; background: #e5e7eb; border-radius: 6px; height: 8px; overflow: hidden; margin-right: 10px; }
+.d-dim-fill { height: 100%; border-radius: 6px; }
+.d-dim-pct { width: 36px; text-align: right; font-weight: 600; }
 
-/* ── Footer ── */
-.site-footer {
-  text-align: center; padding: 20px;
-  font-size: 11px; color: #94a3b8;
-}
+/* Tags */
+.d-two-col { display: flex; gap: 12px; margin: 8px 0; }
+.d-col { flex: 1; background: #fff; border-radius: 10px; padding: 10px 12px; }
+.d-col h4 { font-size: 11px; color: var(--muted); margin-bottom: 6px; }
+.d-tag { display: inline-block; font-size: 11px; padding: 3px 8px;
+          border-radius: 999px; margin: 2px 3px 2px 0; }
+.d-req { background: #eef2ff; color: #3730a3; }
+.d-covered { background: #dcfce7; color: #15803d; }
+.d-partial { background: #fef9c3; color: #854d0e; }
+.d-missing { background: #fee2e2; color: #b91c1c; }
+
+/* Bullet rewrites */
+.d-bullet-pair { margin: 10px 0; }
+.d-before { font-size: 12px; color: #b91c1c; background: #fee2e2; text-decoration: line-through;
+             padding: 7px 10px; border-radius: 8px 8px 0 0; }
+.d-after { font-size: 12px; color: #15803d; background: #dcfce7;
+            padding: 7px 10px; border-radius: 0 0 8px 8px; }
+
+/* Gaps */
+.d-gap { margin: 8px 0; font-size: 12px; line-height: 1.6; }
+.d-gap-title { font-weight: 700; color: #333; }
+
+/* Company block */
+.d-company { background: #fff; border-radius: 10px; padding: 14px; font-size: 12px; line-height: 1.8; }
+.d-company p { margin-bottom: 8px; }
+.d-company p:last-child { margin-bottom: 0; }
+.d-advice { background: #fef9c3; border-left: 3px solid #f59e0b; padding: 8px 10px;
+             border-radius: 0 8px 8px 0; color: #713f12; font-weight: 500; }
+.no-diag { color: var(--muted); font-size: 12px; padding: 8px 0; }
+
+.empty { color: var(--muted); padding: 40px 0; text-align: center; }
+.site-footer { text-align: center; padding: 20px; font-size: 11px; color: #94a3b8; }
 
 @media (max-width: 480px) {
   .site-header h1 { font-size: 20px; }
   .header-stats { gap: 14px; }
   .score-badge { width: 44px; height: 44px; font-size: 17px; }
+  .d-two-col { flex-direction: column; }
+  .d-dim-label { width: 120px; }
 }
 </style>
 </head>
@@ -159,75 +121,142 @@ body {
   <h1>Kelly 的職缺雷達 🎯</h1>
   <p class="tagline">每天自動抓取 · AI 資深HR視角篩選 · 只看最適合的</p>
   <div class="header-stats">
-    <div class="stat">
-      <div class="stat-num">1</div>
-      <div class="stat-label">追蹤天數</div>
-    </div>
-    <div class="stat">
-      <div class="stat-num">2026-06-27</div>
-      <div class="stat-label">最後更新</div>
-    </div>
+    <div class="stat"><div class="stat-num">1</div><div class="stat-label">追蹤天數</div></div>
+    <div class="stat"><div class="stat-num">2026-06-27</div><div class="stat-label">最後更新</div></div>
   </div>
 </header>
 
 <main class="container">
-
 <section class="day-section">
   <div class="day-header">
     <span class="day-chip">2026-06-27</span>
     <span class="day-sub">AI 精選 3 筆</span>
   </div>
   <div class="job-list">
-<div class="job-card">
-  <div class="card-top">
-    <div class="rank">#1</div>
-    <div class="card-main">
-      <div class="job-name">專案管理師</div>
-      <div class="company-name">昇智科技有限公司</div>
-      <div class="tags"><span class="tag">面議</span><span class="tag">台北市松山區</span><span class="tag">電腦軟體服務業</span></div>
-      <div class="ai-block"><span class="ai-icon">🧠</span><span class="ai-reason">專案管理師完美符合，跨部門協調為核心優勢</span></div>
+<div class="job-card" id="card-2026-06-27-1">
+  <div class="card-summary" onclick="toggleCard('card-2026-06-27-1')">
+    <div class="card-top">
+      <div class="rank">#1</div>
+      <div class="card-main">
+        <div class="job-name">專案管理師</div>
+        <div class="company-name">昇智科技有限公司</div>
+        <div class="tags"><span class="tag">面議</span><span class="tag">台北市松山區</span><span class="tag">電腦軟體服務業</span></div>
+        <div class="ai-block"><span class="ai-icon">🧠</span><span class="ai-reason">專案管理師完美符合，跨部門協調為核心優勢</span></div>
+      </div>
+      <div class="score-badge" style="background:#16a34a">8<span class="score-label">/ 10</span></div>
     </div>
-    <div class="score-badge" style="background:#16a34a">8<span class="score-label">/ 10</span></div>
+    <div class="expand-bar">
+      <span class="expand-hint" id="hint-card-2026-06-27-1">📋 點擊查看履歷診斷 ▾</span>
+      <a class="btn-apply" href="https://www.104.com.tw/job/8s2zp" target="_blank"
+         onclick="event.stopPropagation()">查看 104 職缺 →</a>
+    </div>
   </div>
-  <div class="card-footer">
-    <a class="btn-apply" href="https://www.104.com.tw/job/8s2zp" target="_blank">查看職缺 →</a>
+  <div class="diag-panel" id="panel-card-2026-06-27-1" style="display:none">
+    <div class="diag-detail">
+  <div class="d-section">維度評分</div><div class="d-dim-row"><div class="d-dim-label">跨部門溝通證明 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:85%;background:#1f9d55"></div></div><div class="d-dim-pct">85%</div></div><div class="d-dim-row"><div class="d-dim-label">專案全生命週期執行 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:78%;background:#1f9d55"></div></div><div class="d-dim-pct">78%</div></div><div class="d-dim-row"><div class="d-dim-label">需求分析與規格文件 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:68%;background:#e0972c"></div></div><div class="d-dim-pct">68%</div></div><div class="d-dim-row"><div class="d-dim-label">專案風險評估與問題排除 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:42%;background:#d9534f"></div></div><div class="d-dim-pct">42%</div></div><div class="d-dim-row"><div class="d-dim-label">流程優化與自動化 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:82%;background:#1f9d55"></div></div><div class="d-dim-pct">82%</div></div><div class="d-dim-row"><div class="d-dim-label">ATS關鍵字命中(軟體業PM) </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:65%;background:#e0972c"></div></div><div class="d-dim-pct">65%</div></div>
+  <div class="d-section">職缺要求 vs. 妳的履歷</div>
+  <div class="d-two-col">
+    <div class="d-col"><h4>職缺要求</h4><span class="d-tag d-req">專案規劃與進度追蹤</span><span class="d-tag d-req">跨部門溝通與資源整合</span><span class="d-tag d-req">需求分析與文件撰寫</span><span class="d-tag d-req">專案風險評估</span><span class="d-tag d-req">向主管定期回報</span><span class="d-tag d-req">協助優化流程</span></div>
+    <div class="d-col"><h4>履歷覆蓋</h4><span class="d-tag d-covered">產品交付全流程(主導10+項商品從需求到上線)</span><span class="d-tag d-covered">業務-技術橋樑(5場培訓200+人,CEO對接)</span><span class="d-tag d-partial">技術規格撰寫(有,但未提會議紀錄或PRD範本格式)</span><span class="d-tag d-missing">風險評估(未提任何風險管理機制或應對案例)</span><span class="d-tag d-covered">向高層回報(定期向品牌CEO提交策略建議)</span><span class="d-tag d-covered">流程優化(Python自動化每週省1-2小時工時)</span></div>
+  </div>
+  <div class="d-section">Bullet Points XYZ 法優化</div><div class="d-bullet-pair"><div class="d-before">主導 10+ 項金融商品從需求拆解、規格撰寫到上線驗收的完整流程</div><div class="d-after">主導 10+ 項商品端到端交付,獨立完成需求拆解、技術規格定義與上線驗收,確保每個里程碑準時完成且跨部門對齊</div></div><div class="d-bullet-pair"><div class="d-before">規劃並主持 5 場跨部門產品培訓,累計 200+ 名參與者</div><div class="d-after">規劃並主持 5 場跨部門培訓,觸及 200+ 位跨職能成員,自製教材將複雜產品邏輯轉為可複製的標準作業流程</div></div><div class="d-bullet-pair"><div class="d-before">用 Python + AI 開發跨部門資訊同步自動化排程,把 1-2 小時人工作業變成全自動零誤差,每週為團隊省下 1-2 小時工時</div><div class="d-after">識別跨部門資訊同步的重複性瓶頸,以 Python + AI 設計自動化排程,每週為全品牌團隊節省 1-2 小時工時並達成零人工誤差</div></div><div class="d-bullet-pair"><div class="d-before">主導第三方交易平台接入專案,負責需求對接、規格定義、產品上線</div><div class="d-after">擔任第三方交易平台接入專案的單一需求窗口,統籌需求對接、技術規格定義至產品上線全流程,協調業務與技術團隊達成按期交付</div></div>
+  <div class="d-section">履歷 Gap 診斷</div><div class="d-gap"><span class="d-gap-title">Gap 1｜正式 PM 文件能力</span>　履歷未提 WBS、甘特圖、風險登錄表或會議紀錄等正式 PM 交付物。建議補充「撰寫技術規格文件 N 份」或「維護跨部門專案進度看板」等具體描述,提升文件化能力的可信度。</div><div class="d-gap"><span class="d-gap-title">Gap 2｜主流 PM 工具</span>　技能欄只列 Lark,在軟體業主流的 Jira 或 Confluence 均未提及。建議自學取得基礎操作能力後補入技能欄,有助於 ATS 篩選。</div><div class="d-gap"><span class="d-gap-title">Gap 3｜風險管理</span>　職缺明確要求「風險評估與問題排除」,但履歷完全未提。建議回顧現職中曾處理的任何上線風險或突發問題,轉化為一條具體成就描述。</div><div class="d-gap"><span class="d-gap-title">Gap 4｜軟體業產品背景</span>　所有經歷均在金融產品領域,切換至軟體服務業需補充對 Agile/Scrum 等開發流程的基礎認識,建議在求職信中主動說明金融產品 PM 能力的可遷移性。</div>
+  <div class="d-section">關於這家公司</div>
+  <div class="d-company">
+    <p>昇智科技有限公司位於台北市松山區,屬電腦軟體服務業,具體成立時間與規模資訊不確定,推測應為中小型軟體服務商。從職缺描述的職責範疇偏向通才型 PM 來看,公司應處於建立或強化專案管理機制的成長階段。核心業務推測以資訊系統整合或軟體開發服務為主。</p>
+    <p><strong>跟其他職缺相比：</strong>三筆職缺中昇智科技分數最高(74),主因是產業符合求職者目標(軟體業)、職位名稱直接對應(專案管理師),且職缺需求相對基礎,候選人現有的跨部門溝通與產品交付經歷能涵蓋多數要求。相較於露天市集需要資深數據治理能力、協禾國際產業落差較大,此筆是三者中最接近的落點。</p>
+    <p class="d-advice">💡 投遞前建議在履歷補上至少一條風險排除或問題處理的具體案例,並在技能欄加入 Jira 或 Confluence,以提升對軟體業 PM 職缺的 ATS 命中率。</p>
   </div>
 </div>
-<div class="job-card">
-  <div class="card-top">
-    <div class="rank">#2</div>
-    <div class="card-main">
-      <div class="job-name">策略分析經理</div>
-      <div class="company-name">露天市集國際資訊股份有限公司</div>
-      <div class="tags"><span class="tag">面議</span><span class="tag">台北市大安區</span><span class="tag">網際網路相關業</span></div>
-      <div class="ai-block"><span class="ai-icon">🧠</span><span class="ai-reason">PM+BA混合職能，跨部門橋樑完全符合</span></div>
-    </div>
-    <div class="score-badge" style="background:#16a34a">8<span class="score-label">/ 10</span></div>
-  </div>
-  <div class="card-footer">
-    <a class="btn-apply" href="https://www.104.com.tw/job/8xcoo" target="_blank">查看職缺 →</a>
   </div>
 </div>
-<div class="job-card">
-  <div class="card-top">
-    <div class="rank">#3</div>
-    <div class="card-main">
-      <div class="job-name">經管中心_PMO</div>
-      <div class="company-name">協禾國際股份有限公司</div>
-      <div class="tags"><span class="tag">面議</span><span class="tag">台北市中山區</span><span class="tag">綜合商品批發代理業</span></div>
-      <div class="ai-block"><span class="ai-icon">🧠</span><span class="ai-reason">PMO完美符合職能與跨部門優勢，批發業非目標</span></div>
+<div class="job-card" id="card-2026-06-27-2">
+  <div class="card-summary" onclick="toggleCard('card-2026-06-27-2')">
+    <div class="card-top">
+      <div class="rank">#2</div>
+      <div class="card-main">
+        <div class="job-name">策略分析經理</div>
+        <div class="company-name">露天市集國際資訊股份有限公司</div>
+        <div class="tags"><span class="tag">面議</span><span class="tag">台北市大安區</span><span class="tag">網際網路相關業</span></div>
+        <div class="ai-block"><span class="ai-icon">🧠</span><span class="ai-reason">PM+BA混合職能，跨部門橋樑完全符合</span></div>
+      </div>
+      <div class="score-badge" style="background:#16a34a">8<span class="score-label">/ 10</span></div>
     </div>
-    <div class="score-badge" style="background:#d97706">7<span class="score-label">/ 10</span></div>
+    <div class="expand-bar">
+      <span class="expand-hint" id="hint-card-2026-06-27-2">📋 點擊查看履歷診斷 ▾</span>
+      <a class="btn-apply" href="https://www.104.com.tw/job/8xcoo" target="_blank"
+         onclick="event.stopPropagation()">查看 104 職缺 →</a>
+    </div>
   </div>
-  <div class="card-footer">
-    <a class="btn-apply" href="https://www.104.com.tw/job/92nmc" target="_blank">查看職缺 →</a>
+  <div class="diag-panel" id="panel-card-2026-06-27-2" style="display:none">
+    <div class="diag-detail">
+  <div class="d-section">維度評分</div><div class="d-dim-row"><div class="d-dim-label">數據分析工具命中率(SQL/Python/Power BI) </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:65%;background:#e0972c"></div></div><div class="d-dim-pct">65%</div></div><div class="d-dim-row"><div class="d-dim-label">數據架構與治理能力(ETL/數據字典/埋點) </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:20%;background:#d9534f"></div></div><div class="d-dim-pct">20%</div></div><div class="d-dim-row"><div class="d-dim-label">商業策略思維與指標定義 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:58%;background:#e0972c"></div></div><div class="d-dim-pct">58%</div></div><div class="d-dim-row"><div class="d-dim-label">用戶行為分析與漏斗拆解 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:22%;background:#d9534f"></div></div><div class="d-dim-pct">22%</div></div><div class="d-dim-row"><div class="d-dim-label">跨域整合溝通(PM+數據橋樑) </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:72%;background:#e0972c"></div></div><div class="d-dim-pct">72%</div></div><div class="d-dim-row"><div class="d-dim-label">電商平台領域知識 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:15%;background:#d9534f"></div></div><div class="d-dim-pct">15%</div></div>
+  <div class="d-section">職缺要求 vs. 妳的履歷</div>
+  <div class="d-two-col">
+    <div class="d-col"><h4>職缺要求</h4><span class="d-tag d-req">核心指標定義與商業策略制定</span><span class="d-tag d-req">漏斗分析與用戶行為研究</span><span class="d-tag d-req">ETL規範與數據字典建立</span><span class="d-tag d-req">用戶標籤體系設計</span><span class="d-tag d-req">廣告推薦/搜尋排序/風控場景賦能</span><span class="d-tag d-req">跨域整合(PM+數據)</span></div>
+    <div class="d-col"><h4>履歷覆蓋</h4><span class="d-tag d-partial">策略報告(4份競品分析向CEO簡報,偏市場層面)</span><span class="d-tag d-missing">漏斗分析(未提任何用戶行為或轉化漏斗分析)</span><span class="d-tag d-missing">ETL/數據字典(有SQL跨庫查詢但非架構設計層級)</span><span class="d-tag d-missing">用戶標籤體系(未提任何分眾邏輯或標籤規劃)</span><span class="d-tag d-missing">推薦/廣告/風控賦能(未提)</span><span class="d-tag d-covered">跨域溝通橋樑(業務-技術橋樑有充分佐證)</span></div>
+  </div>
+  <div class="d-section">Bullet Points XYZ 法優化</div><div class="d-bullet-pair"><div class="d-before">提供東南亞、歐美市場共 4 份競品分析報告,定期向品牌 CEO 提交策略建議</div><div class="d-after">主導東南亞與歐美市場競品分析,輸出 4 份策略報告並直接向品牌 CEO 簡報,將市場數據轉化為可執行的產品定價與運營調整建議</div></div><div class="d-bullet-pair"><div class="d-before">管理 1000+ 項金融商品的利息計算機制,平衡營運成本與市場定價</div><div class="d-after">建立 1000+ 項商品的多維度成本定價模型,透過數據分析量化營運成本與市場競爭力之間的平衡點,支撐定期定價決策</div></div><div class="d-bullet-pair"><div class="d-before">用 Python + AI 開發跨部門資訊同步自動化排程,把 1-2 小時人工作業變成全自動零誤差</div><div class="d-after">以 Python + AI 構建跨部門數據同步自動化管道,消除人工介入環節,每週為全品牌團隊節省 1-2 小時並達成零誤差,範圍逐步擴展至全體品牌</div></div><div class="d-bullet-pair"><div class="d-before">用 AI + Excel 建立產品成本自動化計算表,試算 1000+ 品牌與競品的成本</div><div class="d-after">設計覆蓋 1000+ 品牌與競品的成本自動化計算模型,將人工逐一試算流程轉為系統化數據資產,大幅縮短定價決策所需時間</div></div>
+  <div class="d-section">履歷 Gap 診斷</div><div class="d-gap"><span class="d-gap-title">Gap 1｜數據架構與 ETL 設計</span>　職缺核心要求制定 ETL 規範、數據字典與埋點標準,屬資深數據工程/分析師能力範疇。建議先從個人專案或現職嘗試設計一份數據字典或 ETL 流程文件作為作品集敲門磚。</div><div class="d-gap"><span class="d-gap-title">Gap 2｜用戶行為分析工具</span>　電商平台高度依賴 Mixpanel、Amplitude 或 GA4 等行為數據工具,履歷完全未提。建議補充相關工具的自學記錄或個人分析案例。</div><div class="d-gap"><span class="d-gap-title">Gap 3｜電商/平台領域知識</span>　C2C 電商的 GMV 優化、搜尋排序、賣家成長等業務邏輯與金融產品管理差異顯著。投遞前建議研究露天市集商業模式並在求職信中展示跨域理解。</div><div class="d-gap"><span class="d-gap-title">Gap 4｜資歷層級</span>　「經理」職位通常預期 3-5 年以上相關經驗,1-2 年資歷在薪資談判與面試說服力上都有明顯壓力,投遞前需評估是否策略性主動說明快速成長軌跡。</div><div class="d-gap"><span class="d-gap-title">Gap 5｜用戶標籤體系設計</span>　設計分眾邏輯(如高潛力賣家、價格敏感用戶)並落地至推薦系統是本職位核心交付,目前履歷完全無對應經驗,是此職缺最難補的結構性缺口。</div>
+  <div class="d-section">關於這家公司</div>
+  <div class="d-company">
+    <p>露天市集國際資訊股份有限公司(Ruten.com.tw)為台灣知名 C2C 電子商務平台,成立於 2002 年前後,屬 PChome 集團生態系,已於台灣上市。核心業務為連結買賣雙方的線上交易市集,長期深耕台灣本地電商,近年積極推動數據驅動的精準運營與平台智能化升級。</p>
+    <p><strong>跟其他職缺相比：</strong>露天市集在三筆職缺中分數最低(60),主因是職缺層級(經理)與候選人資歷(1-2年)的落差最大,加上所需的數據治理專業能力(ETL、埋點、標籤體系)在現有履歷中幾乎完全缺席。相較於昇智科技(74)需求相對基礎且產業吻合,此筆的結構性落差難以靠包裝彌補;相較於協禾國際(65),技術深度要求更高但產業知名度與發展潛力明顯更強。</p>
+    <p class="d-advice">💡 若仍要投遞,建議求職信聚焦「業務-技術橋樑」的跨域整合能力,並附上一份展示數據分析邏輯的個人作品集或 GitHub 專案,以彌補正式電商數據治理經驗的空白。</p>
+  </div>
+</div>
+  </div>
+</div>
+<div class="job-card" id="card-2026-06-27-3">
+  <div class="card-summary" onclick="toggleCard('card-2026-06-27-3')">
+    <div class="card-top">
+      <div class="rank">#3</div>
+      <div class="card-main">
+        <div class="job-name">經管中心_PMO</div>
+        <div class="company-name">協禾國際股份有限公司</div>
+        <div class="tags"><span class="tag">面議</span><span class="tag">台北市中山區</span><span class="tag">綜合商品批發代理業</span></div>
+        <div class="ai-block"><span class="ai-icon">🧠</span><span class="ai-reason">PMO完美符合職能與跨部門優勢，批發業非目標</span></div>
+      </div>
+      <div class="score-badge" style="background:#d97706">7<span class="score-label">/ 10</span></div>
+    </div>
+    <div class="expand-bar">
+      <span class="expand-hint" id="hint-card-2026-06-27-3">📋 點擊查看履歷診斷 ▾</span>
+      <a class="btn-apply" href="https://www.104.com.tw/job/92nmc" target="_blank"
+         onclick="event.stopPropagation()">查看 104 職缺 →</a>
+    </div>
+  </div>
+  <div class="diag-panel" id="panel-card-2026-06-27-3" style="display:none">
+    <div class="diag-detail">
+  <div class="d-section">維度評分</div><div class="d-dim-row"><div class="d-dim-label">高層決策對接與策略轉化 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:75%;background:#1f9d55"></div></div><div class="d-dim-pct">75%</div></div><div class="d-dim-row"><div class="d-dim-label">跨部門協調與資源整合 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:85%;background:#1f9d55"></div></div><div class="d-dim-pct">85%</div></div><div class="d-dim-row"><div class="d-dim-label">PMO方法論與工具(OKR/Portfolio) </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:38%;background:#d9534f"></div></div><div class="d-dim-pct">38%</div></div><div class="d-dim-row"><div class="d-dim-label">流程標準化與文件化 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:60%;background:#e0972c"></div></div><div class="d-dim-pct">60%</div></div><div class="d-dim-row"><div class="d-dim-label">產業匹配度(批發代理業) </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:35%;background:#d9534f"></div></div><div class="d-dim-pct">35%</div></div>
+  <div class="d-section">職缺要求 vs. 妳的履歷</div>
+  <div class="d-two-col">
+    <div class="d-col"><h4>職缺要求</h4><span class="d-tag d-req">解讀高層戰略意圖</span><span class="d-tag d-req">將策略轉化為可執行計畫</span><span class="d-tag d-req">跨部門協調推動</span><span class="d-tag d-req">確保組織目標對齊</span><span class="d-tag d-req">PMO執行與進度管控</span></div>
+    <div class="d-col"><h4>履歷覆蓋</h4><span class="d-tag d-covered">高層對接(與品牌CEO及跨地區高層直接對接)</span><span class="d-tag d-partial">策略轉化執行(商業需求轉技術規格,10+項上線)</span><span class="d-tag d-covered">跨部門協調(5場培訓200+人,業務-技術橋樑)</span><span class="d-tag d-partial">目標對齊機制(未提OKR或正式目標管理框架)</span><span class="d-tag d-partial">PMO進度管控工具(Lark看板有提但描述不夠深)</span></div>
+  </div>
+  <div class="d-section">Bullet Points XYZ 法優化</div><div class="d-bullet-pair"><div class="d-before">與品牌 CEO 及高層主管對接需求</div><div class="d-after">直接對接亞太及歐美品牌 CEO 與跨地區高層主管,精準解讀策略意圖並將其拆解為可跨部門執行的產品規格與交付計畫</div></div><div class="d-bullet-pair"><div class="d-before">扮演業務端與技術開發端的橋樑,將商業需求轉化為技術規格</div><div class="d-after">擔任業務端與技術開發端的唯一需求窗口,系統化將模糊商業需求轉化為清晰技術規格,確保雙方理解一致且交付不走樣</div></div><div class="d-bullet-pair"><div class="d-before">規劃並主持 5 場跨部門產品培訓,累計 200+ 名參與者</div><div class="d-after">規劃並主持 5 場跨部門培訓,觸及 200+ 位跨職能成員,透過自製標準化教材推動跨單位知識共享與流程對齊</div></div><div class="d-bullet-pair"><div class="d-before">用 Python + AI 開發跨部門資訊同步自動化排程,把 1-2 小時人工作業變成全自動零誤差</div><div class="d-after">主動識別跨部門協作的資訊落差,設計自動化資訊同步機制,每週為全品牌團隊節省 1-2 小時並消除人工誤差,推動流程標準化落地</div></div>
+  <div class="d-section">履歷 Gap 診斷</div><div class="d-gap"><span class="d-gap-title">Gap 1｜PMO 方法論與框架</span>　PMO 職位通常要求掌握 OKR、KPI 框架、Portfolio Management 或 PMBOK 等方法論,履歷未提任何正式 PMO 框架。建議補充「以 Lark 建立進度看板追蹤 N 個並行項目」的具體描述來強化方法論印象。</div><div class="d-gap"><span class="d-gap-title">Gap 2｜產業落差</span>　協禾國際為批發代理業,非求職者目標產業(半導體/電信/電子/軟體)。除非其他條件(薪資、發展、文化)非常吸引,建議將有限求職精力優先投入目標產業的 PMO 職位。</div><div class="d-gap"><span class="d-gap-title">Gap 3｜職缺描述不完整</span>　原始職缺描述在「2.跨團隊的」後被截斷,完整職責未知。強烈建議投遞前點開原始連結確認完整 JD,避免面試時對職責範圍產生認知落差。</div><div class="d-gap"><span class="d-gap-title">Gap 4｜策略規劃的獨立產出</span>　PMO 角色強調「將高階思維轉化為可執行計畫」,但履歷中的成就多以執行者角度呈現,缺少獨立制定跨部門計畫並推動組織採納的明確案例。</div>
+  <div class="d-section">關於這家公司</div>
+  <div class="d-company">
+    <p>協禾國際股份有限公司位於台北市中山區,所屬產業為綜合商品批發代理業,具體成立時間、核心代理品牌與營收規模目前無法確認,推測為中型規模的貿易或代理商。從職缺設立「經管中心 PMO」職位來看,公司應處於引入正式管理機制、強化策略執行能力的組織升級階段。</p>
+    <p><strong>跟其他職缺相比：</strong>協禾國際在三筆職缺中分數居中(65),PMO 職稱與求職者目標吻合,高層對接與跨部門協調的佐證也相對充分。與昇智科技(74)相比,產業落差是明顯扣分因素;與露天市集(60)相比,對技術深度要求較低,候選人的執行力與溝通能力更能直接落地,但職缺描述截斷增加了整體評估的不確定性。</p>
+    <p class="d-advice">💡 投遞前務必閱讀完整職缺描述;若確認投遞,建議在履歷加一條說明如何將 CEO 或高層指示轉化為跨部門可執行計畫的具體案例,突顯策略落地推動者而非單純執行者的定位。</p>
+  </div>
+</div>
   </div>
 </div></div>
-  <a class="btn-report" href="reports/diagnosis_2026-06-27.html" target="_blank">📊 查看詳細履歷診斷報告</a>
-</section>
-</main>
+</section></main>
 
 <footer class="site-footer">由 AI 自動產出 · 資料來源 104 人力銀行</footer>
 
+<script>
+function toggleCard(cardId) {
+  var panel = document.getElementById('panel-' + cardId);
+  var hint = document.getElementById('hint-' + cardId);
+  if (!panel) return;
+  var isOpen = panel.style.display !== 'none';
+  panel.style.display = isOpen ? 'none' : 'block';
+  hint.textContent = isOpen ? '📋 點擊查看履歷診斷 ▾' : '▴ 收起診斷';
+}
+</script>
 </body>
 </html>
