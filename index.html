@@ -84,32 +84,57 @@ body {
   position: sticky; top: calc(var(--nav-h) + 20px);
   background: var(--card); border: 1px solid var(--border);
   border-radius: var(--radius); box-shadow: var(--shadow);
-  padding: 20px 0; overflow: hidden;
+  overflow-y: auto;
+  max-height: calc(100vh - var(--nav-h) - 48px);
 }
-.sb-title {
-  font-size: 11px; font-weight: 700; color: var(--muted);
+.sb-section {
+  border-bottom: 1px solid var(--border);
+  padding: 14px 0 10px;
+}
+.sb-section-last { border-bottom: none; padding-bottom: 14px; }
+.sb-sec-hd {
+  font-size: 10px; font-weight: 700; color: var(--muted);
   text-transform: uppercase; letter-spacing: .1em;
-  padding: 0 18px 12px; border-bottom: 1px solid var(--border);
-  margin-bottom: 8px;
+  padding: 0 18px 10px;
 }
-.sb-stats {
-  display: flex; gap: 0;
-  padding: 12px 18px 16px; border-bottom: 1px solid var(--border);
-  margin-bottom: 8px;
+.sb-sec-body { padding: 0 18px; }
+
+/* ── Weekly bars ── */
+.wk-meta { font-size: 12px; color: var(--muted); margin-bottom: 10px; }
+.wk-meta strong { color: var(--text); font-weight: 700; }
+.wk-row { display: flex; align-items: center; gap: 7px; margin: 5px 0; }
+.wk-label {
+  font-size: 11px; color: #374151; flex-shrink: 0; width: 64px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
-.sb-stat { flex: 1; text-align: center; }
-.sb-stat-num { font-size: 22px; font-weight: 800; color: var(--accent); }
-.sb-stat-label { font-size: 11px; color: var(--muted); margin-top: 2px; }
+.wk-bar-bg { flex: 1; height: 6px; background: #e5e7eb; border-radius: 3px; overflow: hidden; }
+.wk-bar-fill { height: 100%; border-radius: 3px; transition: width .5s; }
+.wk-count { font-size: 11px; font-weight: 700; color: var(--muted); width: 14px; text-align: right; }
+
+/* ── Category filter buttons ── */
+.sb-cat-wrap { display: flex; flex-direction: column; gap: 2px; }
+.cat-btn {
+  display: flex; align-items: center; justify-content: space-between;
+  width: 100%; text-align: left; font-size: 12px; font-weight: 500;
+  color: #374151; background: none; border: none; cursor: pointer;
+  padding: 7px 0; border-left: 3px solid transparent;
+  padding-left: 0; border-radius: 0; transition: color .12s, padding-left .12s;
+}
+.cat-btn:hover { color: var(--cat-c, var(--accent)); }
+.cat-btn.active {
+  color: var(--cat-c, var(--accent)); font-weight: 700;
+  border-left-color: var(--cat-c, var(--accent));
+  padding-left: 8px;
+}
+
+/* ── Timeline items ── */
 .sb-item {
   display: flex; align-items: center; justify-content: space-between;
-  padding: 9px 18px; text-decoration: none; color: var(--text);
-  transition: background .12s;
-  border-left: 3px solid transparent;
+  padding: 8px 18px; text-decoration: none; color: var(--text);
+  transition: background .12s; border-left: 3px solid transparent;
 }
-.sb-item:hover {
-  background: #f0f7ff; border-left-color: var(--accent);
-}
-.sb-date { font-size: 13px; font-weight: 500; }
+.sb-item:hover { background: #f0f7ff; border-left-color: var(--accent); }
+.sb-date { font-size: 12px; font-weight: 500; }
 .sb-badge {
   font-size: 11px; font-weight: 700; color: var(--accent);
   background: #eff6ff; padding: 2px 8px; border-radius: 999px;
@@ -326,21 +351,7 @@ body {
 <!-- ── Page body ── -->
 <div class="page-wrap">
 
-  <!-- Left sidebar -->
-  <aside class="sidebar">
-    <div class="sb-title">時間軸</div>
-    <div class="sb-stats">
-      <div class="sb-stat">
-        <div class="sb-stat-num">1</div>
-        <div class="sb-stat-label">天</div>
-      </div>
-      <div class="sb-stat">
-        <div class="sb-stat-num">3</div>
-        <div class="sb-stat-label">筆職缺</div>
-      </div>
-    </div>
-    <a class="sb-item" href="#day-2026-06-27"><span class="sb-date">2026-06-27</span><span class="sb-badge">3</span></a>
-  </aside>
+  <aside class="sidebar"><div class="sb-section"><div class="sb-sec-hd">本週職缺總覽</div><div class="sb-sec-body"><div class="wk-meta">06/21 ~ 06/27 &middot; 共 <strong>3</strong> 筆</div><div class="wk-row"><span class="wk-label">PMO</span><div class="wk-bar-bg"><div class="wk-bar-fill" style="width:100%;background:#7c3aed"></div></div><span class="wk-count">1</span></div><div class="wk-row"><span class="wk-label">PM / PjM</span><div class="wk-bar-bg"><div class="wk-bar-fill" style="width:100%;background:#2563eb"></div></div><span class="wk-count">1</span></div><div class="wk-row"><span class="wk-label">策略 / 營運</span><div class="wk-bar-bg"><div class="wk-bar-fill" style="width:100%;background:#ea580c"></div></div><span class="wk-count">1</span></div></div></div><div class="sb-section"><div class="sb-sec-hd">職缺分類</div><div class="sb-sec-body sb-cat-wrap"><button class="cat-btn active" data-cat="all" onclick="filterCat(this,'all')">全部 (3)</button><button class="cat-btn" data-cat="PMO" style="--cat-c:#7c3aed" onclick="filterCat(this,'PMO')">PMO (1)</button><button class="cat-btn" data-cat="PM / PjM" style="--cat-c:#2563eb" onclick="filterCat(this,'PM / PjM')">PM / PjM (1)</button><button class="cat-btn" data-cat="策略 / 營運" style="--cat-c:#ea580c" onclick="filterCat(this,'策略 / 營運')">策略 / 營運 (1)</button></div></div><div class="sb-section sb-section-last"><div class="sb-sec-hd">時間軸</div><a class="sb-item" href="#day-2026-06-27"><span class="sb-date">2026-06-27</span><span class="sb-badge">3</span></a></div></aside>
 
   <!-- Main content -->
   <main class="main-content">
@@ -351,7 +362,7 @@ body {
     <span class="day-count">AI 精選 3 筆職缺</span>
   </div>
   <div class="job-list">
-<div class="job-card" id="card-2026-06-27-1" style="--score-color:#16a34a">
+<div class="job-card" id="card-2026-06-27-1" data-cat="PM / PjM" style="--score-color:#16a34a">
   <div class="card-body" onclick="toggleCard('card-2026-06-27-1')">
     <div class="card-top-row">
       <div class="card-tags">
@@ -365,7 +376,7 @@ body {
     </div>
     <div class="job-name">專案管理師</div>
     <div class="company-row">昇智科技有限公司</div>
-    <div class="meta-chips"><span class="info-chip">面議</span><span class="info-chip">台北市松山區</span><span class="info-chip">電腦軟體服務業</span></div>
+    <div class="meta-chips"><span class="meta-chip">面議</span><span class="meta-chip">台北市松山區</span><span class="meta-chip">電腦軟體服務業</span></div>
     <div class="ai-block"><span>🧠</span><span>專案管理師完美符合，跨部門協調為核心優勢</span></div>
   </div>
   <div class="card-actions">
@@ -392,7 +403,7 @@ body {
 </div>
   </div>
 </div>
-<div class="job-card" id="card-2026-06-27-2" style="--score-color:#16a34a">
+<div class="job-card" id="card-2026-06-27-2" data-cat="策略 / 營運" style="--score-color:#16a34a">
   <div class="card-body" onclick="toggleCard('card-2026-06-27-2')">
     <div class="card-top-row">
       <div class="card-tags">
@@ -406,7 +417,7 @@ body {
     </div>
     <div class="job-name">策略分析經理</div>
     <div class="company-row">露天市集國際資訊股份有限公司</div>
-    <div class="meta-chips"><span class="info-chip">面議</span><span class="info-chip">台北市大安區</span><span class="info-chip">網際網路相關業</span></div>
+    <div class="meta-chips"><span class="meta-chip">面議</span><span class="meta-chip">台北市大安區</span><span class="meta-chip">網際網路相關業</span></div>
     <div class="ai-block"><span>🧠</span><span>PM+BA混合職能，跨部門橋樑完全符合</span></div>
   </div>
   <div class="card-actions">
@@ -433,7 +444,7 @@ body {
 </div>
   </div>
 </div>
-<div class="job-card" id="card-2026-06-27-3" style="--score-color:#d97706">
+<div class="job-card" id="card-2026-06-27-3" data-cat="PMO" style="--score-color:#d97706">
   <div class="card-body" onclick="toggleCard('card-2026-06-27-3')">
     <div class="card-top-row">
       <div class="card-tags">
@@ -447,7 +458,7 @@ body {
     </div>
     <div class="job-name">經管中心_PMO</div>
     <div class="company-row">協禾國際股份有限公司</div>
-    <div class="meta-chips"><span class="info-chip">面議</span><span class="info-chip">台北市中山區</span><span class="info-chip">綜合商品批發代理業</span></div>
+    <div class="meta-chips"><span class="meta-chip">面議</span><span class="meta-chip">台北市中山區</span><span class="meta-chip">綜合商品批發代理業</span></div>
     <div class="ai-block"><span>🧠</span><span>PMO完美符合職能與跨部門優勢，批發業非目標</span></div>
   </div>
   <div class="card-actions">
@@ -491,7 +502,20 @@ function toggleCard(cardId) {
   if (btn) btn.textContent = open ? '📋 查看履歷診斷 ▾' : '▴ 收起診斷';
 }
 
-// 側欄高亮目前在視窗內的日期
+function filterCat(btn, cat) {
+  document.querySelectorAll('.cat-btn').forEach(function(b) {
+    b.classList.toggle('active', b === btn);
+  });
+  document.querySelectorAll('.job-card').forEach(function(card) {
+    card.style.display = (cat === 'all' || card.dataset.cat === cat) ? '' : 'none';
+  });
+  document.querySelectorAll('.day-section').forEach(function(sec) {
+    var hasVisible = Array.from(sec.querySelectorAll('.job-card'))
+      .some(function(c) { return c.style.display !== 'none'; });
+    sec.style.display = hasVisible ? '' : 'none';
+  });
+}
+
 (function() {
   var items = document.querySelectorAll('.sb-item');
   if (!items.length || !window.IntersectionObserver) return;
@@ -500,12 +524,13 @@ function toggleCard(cardId) {
       if (e.isIntersecting) {
         var id = e.target.id;
         items.forEach(function(a) {
-          a.style.background = a.getAttribute('href') === '#' + id ? '#f0f7ff' : '';
-          a.style.borderLeftColor = a.getAttribute('href') === '#' + id ? 'var(--accent)' : 'transparent';
+          var active = a.getAttribute('href') === '#' + id;
+          a.style.background = active ? '#f0f7ff' : '';
+          a.style.borderLeftColor = active ? 'var(--accent)' : 'transparent';
         });
       }
     });
-  }, { threshold: 0.3 });
+  }, { threshold: 0.25 });
   document.querySelectorAll('.day-section').forEach(function(s) { obs.observe(s); });
 })();
 </script>
