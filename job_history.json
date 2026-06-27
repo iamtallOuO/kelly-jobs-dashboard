@@ -1,0 +1,39 @@
+[
+  {
+    "date": "2026-06-27",
+    "ai_matched": true,
+    "report_url": "reports/diagnosis_2026-06-27.html",
+    "jobs": [
+      {
+        "jobName": "專案管理師",
+        "custName": "昇智科技有限公司",
+        "salary": "面議",
+        "location": "台北市松山區",
+        "industry": "電腦軟體服務業",
+        "url": "https://www.104.com.tw/job/8s2zp",
+        "ai_score": 8,
+        "ai_reason": "專案管理師完美符合，跨部門協調為核心優勢"
+      },
+      {
+        "jobName": "策略分析經理",
+        "custName": "露天市集國際資訊股份有限公司",
+        "salary": "面議",
+        "location": "台北市大安區",
+        "industry": "網際網路相關業",
+        "url": "https://www.104.com.tw/job/8xcoo",
+        "ai_score": 8,
+        "ai_reason": "PM+BA混合職能，跨部門橋樑完全符合"
+      },
+      {
+        "jobName": "經管中心_PMO",
+        "custName": "協禾國際股份有限公司",
+        "salary": "面議",
+        "location": "台北市中山區",
+        "industry": "綜合商品批發代理業",
+        "url": "https://www.104.com.tw/job/92nmc",
+        "ai_score": 7,
+        "ai_reason": "PMO完美符合職能與跨部門優勢，批發業非目標"
+      }
+    ]
+  }
+]
