@@ -195,6 +195,20 @@ body {
   font-size: 11px; font-weight: 600; color: #64748b;
   background: #f1f5f9; padding: 3px 8px; border-radius: 999px;
 }
+.ref-tag {
+  font-size: 11px; font-weight: 600; color: #92400e;
+  background: #fef3c7; padding: 3px 8px; border-radius: 999px;
+}
+.ref-card {
+  opacity: 0.88;
+}
+.ref-divider {
+  display: flex; align-items: center; gap: 10px;
+  margin: 20px 0 10px; color: var(--muted); font-size: 12px; font-weight: 600;
+}
+.ref-divider::before, .ref-divider::after {
+  content: ""; flex: 1; height: 1px; background: var(--border);
+}
 .score-display {
   display: flex; align-items: baseline; gap: 1px; flex-shrink: 0;
 }
@@ -359,7 +373,7 @@ body {
 <section class="day-section" id="day-2026-06-27">
   <div class="day-heading">
     <span class="day-date">2026-06-27</span>
-    <span class="day-count">AI 精選 3 筆職缺</span>
+    <span class="day-count">精選 3 筆</span>
   </div>
   <div class="job-list">
 <div class="job-card" id="card-2026-06-27-1" data-cat="PM / PjM" style="--score-color:#16a34a">
