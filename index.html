@@ -3,27 +3,231 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kelly 的每日職缺 Dashboard</title>
+<title>Kelly 的職缺雷達 🎯</title>
 <style>
-  body{font-family:-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif;background:#f5f5f0;color:#222;margin:0;padding:20px}
-  h1{font-size:22px;margin-bottom:4px}
-  .subtitle{color:#888;font-size:13px;margin-bottom:28px}
-  .day-section{margin-bottom:40px}
-  .day-title{font-size:16px;color:#555;border-bottom:2px solid #e0e0d8;padding-bottom:8px;margin-bottom:14px}
-  .job-grid{display:flex;flex-direction:column;gap:12px;max-width:720px}
-  .job-card{background:#fff;border-radius:14px;padding:16px 18px;box-shadow:0 1px 4px rgba(0,0,0,.07)}
-  .job-name{font-size:15px;font-weight:700;margin-bottom:5px}
-  .job-meta{font-size:12px;color:#666;margin-bottom:3px}
-  .job-industry{font-size:11px;color:#aaa;margin-bottom:6px}
-  .job-ai{font-size:12px;color:#444;margin-bottom:8px}
-  .ai-score{font-weight:700;color:#2563eb}
-  .job-link{font-size:12px;color:#2563eb;text-decoration:none}
-  .report-btn{display:inline-block;margin-top:10px;padding:8px 16px;background:#2563eb;color:#fff;border-radius:8px;text-decoration:none;font-size:13px}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #f0f2f5;
+  --card: #ffffff;
+  --primary: #4f46e5;
+  --primary-light: #eef2ff;
+  --text: #1e293b;
+  --text-muted: #64748b;
+  --border: #e2e8f0;
+  --radius: 16px;
+  --shadow: 0 1px 3px rgba(0,0,0,.08), 0 4px 16px rgba(0,0,0,.04);
+}
+
+body {
+  font-family: -apple-system, "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+/* ── Header ── */
+.site-header {
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  color: #fff;
+  padding: 32px 20px 28px;
+  text-align: center;
+}
+.site-header h1 { font-size: 24px; font-weight: 800; letter-spacing: -.3px; }
+.site-header .tagline { margin-top: 6px; font-size: 13px; opacity: .8; }
+.header-stats {
+  display: flex; justify-content: center; gap: 24px;
+  margin-top: 20px;
+}
+.stat {
+  background: rgba(255,255,255,.15); border-radius: 10px;
+  padding: 8px 16px; text-align: center;
+}
+.stat-num { font-size: 20px; font-weight: 700; }
+.stat-label { font-size: 11px; opacity: .75; margin-top: 1px; }
+
+/* ── Main container ── */
+.container { max-width: 720px; margin: 0 auto; padding: 24px 16px 48px; }
+
+/* ── Day section ── */
+.day-section { margin-bottom: 40px; }
+.day-header {
+  display: flex; align-items: center; gap: 10px; margin-bottom: 14px;
+}
+.day-chip {
+  background: var(--primary); color: #fff;
+  font-size: 13px; font-weight: 700;
+  padding: 4px 12px; border-radius: 999px;
+}
+.day-sub { font-size: 12px; color: var(--text-muted); }
+
+/* ── Job list ── */
+.job-list { display: flex; flex-direction: column; gap: 12px; }
+
+/* ── Job card ── */
+.job-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: transform .15s, box-shadow .15s;
+}
+.job-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0,0,0,.10);
+}
+.card-top {
+  display: flex; align-items: flex-start; gap: 14px; padding: 18px 18px 12px;
+}
+.rank {
+  font-size: 11px; font-weight: 800; color: var(--primary);
+  background: var(--primary-light); border-radius: 8px;
+  padding: 3px 7px; flex-shrink: 0; margin-top: 2px;
+}
+.card-main { flex: 1; min-width: 0; }
+.job-name {
+  font-size: 16px; font-weight: 700; color: var(--text);
+  line-height: 1.3; margin-bottom: 3px;
+}
+.company-name {
+  font-size: 13px; color: var(--text-muted); margin-bottom: 8px;
+}
+.tags { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 10px; }
+.tag {
+  background: #f1f5f9; color: #475569;
+  font-size: 11px; padding: 3px 8px; border-radius: 999px;
+}
+.ai-block {
+  display: flex; align-items: flex-start; gap: 6px;
+  background: #fafafa; border-left: 3px solid var(--primary);
+  border-radius: 0 8px 8px 0; padding: 7px 10px;
+  font-size: 12px; color: #334155; line-height: 1.5;
+}
+.ai-icon { flex-shrink: 0; }
+.score-badge {
+  flex-shrink: 0;
+  width: 52px; height: 52px; border-radius: 50%;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  color: #fff; font-size: 20px; font-weight: 800;
+  line-height: 1;
+}
+.score-label { font-size: 9px; font-weight: 400; opacity: .85; margin-top: 1px; }
+
+/* ── Card footer ── */
+.card-footer {
+  border-top: 1px solid var(--border);
+  padding: 10px 18px;
+  display: flex; gap: 10px;
+}
+.btn-apply {
+  font-size: 12px; font-weight: 600;
+  color: var(--primary); text-decoration: none;
+  padding: 5px 0;
+}
+.btn-apply:hover { text-decoration: underline; }
+
+/* ── Report button ── */
+.btn-report {
+  display: inline-flex; align-items: center; gap: 6px;
+  margin-top: 12px;
+  background: var(--primary); color: #fff;
+  font-size: 13px; font-weight: 600;
+  padding: 10px 20px; border-radius: 10px;
+  text-decoration: none; transition: background .15s;
+}
+.btn-report:hover { background: #4338ca; }
+
+.empty { color: var(--text-muted); padding: 40px 0; text-align: center; }
+
+/* ── Footer ── */
+.site-footer {
+  text-align: center; padding: 20px;
+  font-size: 11px; color: #94a3b8;
+}
+
+@media (max-width: 480px) {
+  .site-header h1 { font-size: 20px; }
+  .header-stats { gap: 14px; }
+  .score-badge { width: 44px; height: 44px; font-size: 17px; }
+}
 </style>
 </head>
 <body>
-<h1>Kelly 的每日職缺 Dashboard</h1>
-<p class="subtitle">每天自動更新 · AI 媒合篩選 · 只看最值得投遞的</p>
-<div class="day-section"><h2 class="day-title">2026-06-27</h2><div class="job-grid"><div class="job-card"><div class="job-name">專案管理師</div><div class="job-meta">🏢 昇智科技有限公司 · 面議 · 台北市松山區</div><div class="job-industry">電腦軟體服務業</div><div class="job-ai">🧠 <span class="ai-score">8/10</span> 專案管理師完美符合，跨部門協調為核心優勢</div><a class="job-link" href="https://www.104.com.tw/job/8s2zp" target="_blank">查看職缺 →</a></div><div class="job-card"><div class="job-name">策略分析經理</div><div class="job-meta">🏢 露天市集國際資訊股份有限公司 · 面議 · 台北市大安區</div><div class="job-industry">網際網路相關業</div><div class="job-ai">🧠 <span class="ai-score">8/10</span> PM+BA混合職能，跨部門橋樑完全符合</div><a class="job-link" href="https://www.104.com.tw/job/8xcoo" target="_blank">查看職缺 →</a></div><div class="job-card"><div class="job-name">經管中心_PMO</div><div class="job-meta">🏢 協禾國際股份有限公司 · 面議 · 台北市中山區</div><div class="job-industry">綜合商品批發代理業</div><div class="job-ai">🧠 <span class="ai-score">7/10</span> PMO完美符合職能與跨部門優勢，批發業非目標</div><a class="job-link" href="https://www.104.com.tw/job/92nmc" target="_blank">查看職缺 →</a></div></div><a class="report-btn" href="reports/diagnosis_2026-06-27.html" target="_blank">📊 查看詳細診斷報告</a></div>
+
+<header class="site-header">
+  <h1>Kelly 的職缺雷達 🎯</h1>
+  <p class="tagline">每天自動抓取 · AI 資深HR視角篩選 · 只看最適合的</p>
+  <div class="header-stats">
+    <div class="stat">
+      <div class="stat-num">1</div>
+      <div class="stat-label">追蹤天數</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">2026-06-27</div>
+      <div class="stat-label">最後更新</div>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+
+<section class="day-section">
+  <div class="day-header">
+    <span class="day-chip">2026-06-27</span>
+    <span class="day-sub">AI 精選 3 筆</span>
+  </div>
+  <div class="job-list">
+<div class="job-card">
+  <div class="card-top">
+    <div class="rank">#1</div>
+    <div class="card-main">
+      <div class="job-name">專案管理師</div>
+      <div class="company-name">昇智科技有限公司</div>
+      <div class="tags"><span class="tag">面議</span><span class="tag">台北市松山區</span><span class="tag">電腦軟體服務業</span></div>
+      <div class="ai-block"><span class="ai-icon">🧠</span><span class="ai-reason">專案管理師完美符合，跨部門協調為核心優勢</span></div>
+    </div>
+    <div class="score-badge" style="background:#16a34a">8<span class="score-label">/ 10</span></div>
+  </div>
+  <div class="card-footer">
+    <a class="btn-apply" href="https://www.104.com.tw/job/8s2zp" target="_blank">查看職缺 →</a>
+  </div>
+</div>
+<div class="job-card">
+  <div class="card-top">
+    <div class="rank">#2</div>
+    <div class="card-main">
+      <div class="job-name">策略分析經理</div>
+      <div class="company-name">露天市集國際資訊股份有限公司</div>
+      <div class="tags"><span class="tag">面議</span><span class="tag">台北市大安區</span><span class="tag">網際網路相關業</span></div>
+      <div class="ai-block"><span class="ai-icon">🧠</span><span class="ai-reason">PM+BA混合職能，跨部門橋樑完全符合</span></div>
+    </div>
+    <div class="score-badge" style="background:#16a34a">8<span class="score-label">/ 10</span></div>
+  </div>
+  <div class="card-footer">
+    <a class="btn-apply" href="https://www.104.com.tw/job/8xcoo" target="_blank">查看職缺 →</a>
+  </div>
+</div>
+<div class="job-card">
+  <div class="card-top">
+    <div class="rank">#3</div>
+    <div class="card-main">
+      <div class="job-name">經管中心_PMO</div>
+      <div class="company-name">協禾國際股份有限公司</div>
+      <div class="tags"><span class="tag">面議</span><span class="tag">台北市中山區</span><span class="tag">綜合商品批發代理業</span></div>
+      <div class="ai-block"><span class="ai-icon">🧠</span><span class="ai-reason">PMO完美符合職能與跨部門優勢，批發業非目標</span></div>
+    </div>
+    <div class="score-badge" style="background:#d97706">7<span class="score-label">/ 10</span></div>
+  </div>
+  <div class="card-footer">
+    <a class="btn-apply" href="https://www.104.com.tw/job/92nmc" target="_blank">查看職缺 →</a>
+  </div>
+</div></div>
+  <a class="btn-report" href="reports/diagnosis_2026-06-27.html" target="_blank">📊 查看詳細履歷診斷報告</a>
+</section>
+</main>
+
+<footer class="site-footer">由 AI 自動產出 · 資料來源 104 人力銀行</footer>
+
 </body>
 </html>
