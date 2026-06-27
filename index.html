@@ -447,6 +447,18 @@ body {
   display: flex; align-items: center; justify-content: center; flex-shrink: 0;
 }
 .step-text { font-size: 13px; color: #374151; line-height: 1.6; padding-top: 3px; }
+.manual-status-box {
+  display: flex; align-items: flex-start; gap: 14px;
+  border-radius: 12px; padding: 18px 20px; margin: 4px 0 20px;
+}
+.loading-box { background: #eff6ff; border: 1.5px solid #bfdbfe; }
+.error-box { background: #fef2f2; border: 1.5px solid #fecaca; }
+.loading-spinner {
+  width: 22px; height: 22px; border-radius: 50%; flex-shrink: 0;
+  border: 3px solid #bfdbfe; border-top-color: var(--accent);
+  animation: spin .8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
 
 /* ════════════════════════════════
    RESPONSIVE
@@ -649,40 +661,69 @@ body {
 <div id="view-manual" style="display:none">
   <div class="manual-wrap">
     <h2>手動分析職缺適配度</h2>
-    <p class="manual-desc">
-      貼上 104 職缺網址，產生終端機指令。<br>
-      執行完畢後瀏覽器會<strong>自動開啟</strong>該職缺的診斷報告，不需要手動找。
-    </p>
+    <p class="manual-desc" id="manual-desc-text">貼上 104 職缺網址，點「開始分析」，結果會直接顯示在這裡。</p>
+
     <div class="manual-input-row">
       <input class="manual-url-input" id="manual-url-input" type="url"
              placeholder="https://www.104.com.tw/job/..." />
-      <button class="manual-btn" onclick="generateCmd()">產生指令</button>
+      <button class="manual-btn" id="manual-action-btn" onclick="handleManualAction()">開始分析</button>
     </div>
+
+    <!-- 狀態：分析中 -->
+    <div id="manual-loading" style="display:none">
+      <div class="manual-status-box loading-box">
+        <div class="loading-spinner"></div>
+        <div>
+          <div style="font-weight:700;margin-bottom:4px">AI 分析中，請稍候...</div>
+          <div style="font-size:12px;color:var(--muted)">通常需要 2～7 分鐘，請不要關閉此視窗</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 狀態：錯誤 -->
+    <div id="manual-error" style="display:none">
+      <div class="manual-status-box error-box">
+        <span style="font-size:18px">⚠️</span>
+        <div>
+          <div style="font-weight:700;margin-bottom:4px">分析失敗</div>
+          <div id="manual-error-msg" style="font-size:13px;color:#b91c1c"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 指令模式（非 localhost 時顯示） -->
     <div class="manual-cmd-box" id="manual-cmd-box">
       <div class="manual-cmd-label">在終端機執行以下指令</div>
       <code class="manual-cmd-text" id="manual-cmd-text"></code>
       <button class="manual-copy-btn" id="manual-copy-btn" onclick="copyCmd()">複製指令</button>
     </div>
-    <div class="manual-steps">
-      <h4>使用步驟</h4>
+
+    <!-- 使用步驟（非 localhost 時顯示） -->
+    <div class="manual-steps" id="manual-steps-fallback" style="display:none">
+      <h4>使用步驟（未啟動本地伺服器時）</h4>
       <div class="manual-step">
         <div class="step-num">1</div>
-        <div class="step-text">在 104 找到感興趣的職缺，複製網址貼到上方輸入框</div>
+        <div class="step-text">開啟 PowerShell，執行 <code style="background:#f1f5f9;padding:2px 6px;border-radius:4px">py server.py</code> 啟動本地伺服器</div>
       </div>
       <div class="manual-step">
         <div class="step-num">2</div>
-        <div class="step-text">點「產生指令」，複製產生的終端機指令</div>
+        <div class="step-text">在瀏覽器開啟 <strong>http://localhost:8765</strong>，就可以直接在網頁分析</div>
       </div>
       <div class="manual-step">
         <div class="step-num">3</div>
-        <div class="step-text">開啟終端機（PowerShell / 命令提示字元），貼上指令執行</div>
-      </div>
-      <div class="manual-step">
-        <div class="step-num">4</div>
-        <div class="step-text">執行完畢後，瀏覽器會自動開啟該職缺的詳細診斷報告</div>
+        <div class="step-text">或複製上方指令到終端機執行，完成後瀏覽器會自動開啟診斷報告</div>
       </div>
     </div>
   </div>
+</div>
+
+<!-- ── 診斷結果全頁覆蓋 ── -->
+<div id="result-overlay" style="display:none;position:fixed;inset:0;z-index:9000;flex-direction:column;background:#f4f4f0">
+  <div style="display:flex;align-items:center;gap:14px;padding:12px 24px;background:#fff;border-bottom:1px solid #e8e8e2;flex-shrink:0">
+    <button class="btn-back" onclick="closeResult()">← 返回</button>
+    <span style="font-size:14px;font-weight:700;color:var(--text)">職缺診斷報告</span>
+  </div>
+  <iframe id="result-iframe" style="flex:1;border:none;width:100%"></iframe>
 </div>
 
 <script>
@@ -786,8 +827,99 @@ function filterCat(btn, cat) {
 })();
 
 /* ── 手動分析 ── */
-function generateCmd() {
+var _pollTimer = null;
+var _currentJobId = null;
+var _isLocalhost = (window.location.hostname === 'localhost');
+
+(function initManualTab() {
+  if (!_isLocalhost) {
+    var btn = document.getElementById('manual-action-btn');
+    if (btn) btn.textContent = '產生指令';
+    var desc = document.getElementById('manual-desc-text');
+    if (desc) desc.innerHTML = '貼上 104 職缺網址，產生終端機指令。<br>或先啟動 <code style="background:#f1f5f9;padding:2px 6px;border-radius:4px">py server.py</code>，再開啟 <strong>http://localhost:8765</strong> 即可直接在網頁分析。';
+    var steps = document.getElementById('manual-steps-fallback');
+    if (steps) steps.style.display = 'block';
+  }
+})();
+
+function handleManualAction() {
   var url = document.getElementById('manual-url-input').value.trim();
+  if (!url) { alert('請先貼上 104 職缺網址'); return; }
+  if (_isLocalhost) {
+    startAnalysis(url);
+  } else {
+    generateCmd(url);
+  }
+}
+
+function startAnalysis(url) {
+  document.getElementById('manual-loading').style.display = 'block';
+  document.getElementById('manual-error').style.display   = 'none';
+  document.getElementById('manual-cmd-box').style.display = 'none';
+  document.getElementById('manual-action-btn').disabled   = true;
+
+  fetch('http://localhost:8765/analyze', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({url: url})
+  })
+  .then(function(r) { return r.json(); })
+  .then(function(data) {
+    if (data.job_id) {
+      _currentJobId = data.job_id;
+      _pollTimer = setInterval(pollAnalysis, 4000);
+    } else {
+      showManualError(data.error || '分析請求失敗');
+    }
+  })
+  .catch(function() {
+    showManualError('無法連線到本地伺服器，請確認 py server.py 正在執行中');
+  });
+}
+
+function pollAnalysis() {
+  if (!_currentJobId) return;
+  fetch('http://localhost:8765/poll/' + _currentJobId)
+  .then(function(r) { return r.json(); })
+  .then(function(data) {
+    if (data.status === 'done') {
+      clearInterval(_pollTimer);
+      showResult(_currentJobId);
+    } else if (data.status === 'error') {
+      clearInterval(_pollTimer);
+      showManualError(data.error || '分析失敗');
+    }
+    // status === 'running': keep polling
+  })
+  .catch(function() {
+    clearInterval(_pollTimer);
+    showManualError('輪詢時發生錯誤，請重試');
+  });
+}
+
+function showResult(jobId) {
+  document.getElementById('manual-loading').style.display = 'none';
+  document.getElementById('manual-action-btn').disabled   = false;
+  var overlay = document.getElementById('result-overlay');
+  var iframe  = document.getElementById('result-iframe');
+  iframe.src  = 'http://localhost:8765/result/' + jobId;
+  overlay.style.display = 'flex';
+}
+
+function closeResult() {
+  document.getElementById('result-overlay').style.display = 'none';
+  document.getElementById('result-iframe').src = '';
+}
+
+function showManualError(msg) {
+  document.getElementById('manual-loading').style.display    = 'none';
+  document.getElementById('manual-error').style.display      = 'block';
+  document.getElementById('manual-error-msg').textContent    = msg;
+  document.getElementById('manual-action-btn').disabled      = false;
+}
+
+function generateCmd(url) {
+  if (!url) url = document.getElementById('manual-url-input').value.trim();
   if (!url) { alert('請先貼上 104 職缺網址'); return; }
   var cmd = 'py "C:\\Users\\c5101\\Documents\\kelly-agent\\job_search.py" --url "' + url + '"';
   document.getElementById('manual-cmd-text').textContent = cmd;
