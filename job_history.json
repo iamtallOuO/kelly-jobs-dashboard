@@ -344,13 +344,13 @@
       {
         "jobNo": "14747173",
         "jobName": "專案管理師",
-        "custName": "",
+        "custName": "昇智科技有限公司",
         "salary": "面議",
-        "location": "",
-        "industry": "",
+        "location": "台北市松山區",
+        "industry": "電腦軟體服務業",
         "url": "https://www.104.com.tw/job/8s2zp",
-        "ai_score": 5,
-        "ai_reason": "職稱相符,缺產業地點職責內容,難評實際職能匹配",
+        "ai_score": 7,
+        "ai_reason": "職稱與目標職能完全匹配,地點符合偏好,項目管理經驗可轉移。但軟體業為產業優先序最末,缺職缺描述無法確認工作內容",
         "is_reference": false,
         "diagnosis": {
           "jobNo": "14747173",
