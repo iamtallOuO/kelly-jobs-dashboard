@@ -324,6 +324,131 @@ body {
 }
 
 /* ════════════════════════════════
+   NAV TABS
+════════════════════════════════ */
+.nav-tabs {
+  display: flex; align-items: center; gap: 2px;
+  margin: 0 20px;
+}
+.nav-tab {
+  font-size: 13px; font-weight: 600;
+  padding: 6px 16px; border-radius: 8px;
+  border: none; background: none; cursor: pointer;
+  color: var(--muted); transition: background .15s, color .15s;
+}
+.nav-tab:hover { background: #f1f5f9; color: var(--text); }
+.nav-tab.active { background: #eff6ff; color: var(--accent); }
+
+/* ════════════════════════════════
+   DETAIL VIEW
+════════════════════════════════ */
+.detail-topbar {
+  position: sticky; top: var(--nav-h); z-index: 100;
+  background: #fff; border-bottom: 1px solid var(--border);
+  display: flex; align-items: center; gap: 14px;
+  padding: 12px 28px;
+}
+.btn-back {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 13px; font-weight: 600; color: var(--muted);
+  background: #f1f5f9; border: none; cursor: pointer;
+  padding: 7px 14px; border-radius: 8px;
+  transition: background .15s, color .15s; white-space: nowrap;
+}
+.btn-back:hover { background: #e2e8f0; color: var(--text); }
+.detail-topbar-title {
+  flex: 1; min-width: 0;
+}
+.detail-topbar-jobname {
+  font-size: 16px; font-weight: 800; color: var(--text);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.detail-topbar-company {
+  font-size: 13px; color: var(--muted); margin-top: 1px;
+}
+.detail-body {
+  max-width: 820px; margin: 0 auto; padding: 32px 28px 72px;
+}
+.detail-score-row {
+  display: flex; align-items: center; gap: 18px;
+  background: #f7f7f5; border-radius: 14px; padding: 20px 24px;
+  margin-bottom: 28px;
+}
+.detail-score-num {
+  font-size: 52px; font-weight: 900; line-height: 1; min-width: 72px;
+}
+.detail-score-denom { font-size: 18px; color: var(--muted); font-weight: 500; margin-top: 12px; }
+.detail-ai-block {
+  flex: 1; display: flex; align-items: flex-start; gap: 8px;
+  background: #f0f9ff; border-left: 3px solid #7dd3fc;
+  border-radius: 0 10px 10px 0;
+  padding: 10px 14px; font-size: 13px; color: #0c4a6e; line-height: 1.6;
+}
+
+/* ════════════════════════════════
+   MANUAL ANALYSIS VIEW
+════════════════════════════════ */
+.manual-wrap {
+  max-width: 680px; margin: 0 auto; padding: 52px 28px 80px;
+}
+.manual-wrap h2 {
+  font-size: 22px; font-weight: 800; margin-bottom: 8px;
+}
+.manual-wrap .manual-desc {
+  font-size: 14px; color: var(--muted); line-height: 1.7; margin-bottom: 32px;
+}
+.manual-input-row {
+  display: flex; gap: 10px; margin-bottom: 20px;
+}
+.manual-url-input {
+  flex: 1; font-size: 14px; padding: 10px 14px;
+  border: 1.5px solid var(--border); border-radius: 10px;
+  outline: none; transition: border .15s;
+}
+.manual-url-input:focus { border-color: var(--accent); }
+.manual-btn {
+  font-size: 13px; font-weight: 700; color: #fff;
+  background: var(--accent); border: none; cursor: pointer;
+  padding: 10px 22px; border-radius: 10px;
+  transition: background .15s; white-space: nowrap;
+}
+.manual-btn:hover { background: #1d4ed8; }
+.manual-cmd-box {
+  display: none; background: #f8fafc; border: 1.5px solid var(--border);
+  border-radius: 12px; padding: 18px 20px; margin-top: 4px;
+}
+.manual-cmd-label {
+  font-size: 12px; font-weight: 600; color: var(--muted);
+  text-transform: uppercase; letter-spacing: .08em; margin-bottom: 10px;
+}
+.manual-cmd-text {
+  display: block; font-family: "Cascadia Code", "Fira Code", monospace;
+  font-size: 12px; color: #1e293b; word-break: break-all;
+  background: #fff; border: 1px solid var(--border);
+  padding: 10px 14px; border-radius: 8px; margin-bottom: 12px;
+}
+.manual-copy-btn {
+  font-size: 12px; font-weight: 600; color: var(--accent);
+  background: #eff6ff; border: 1px solid #bfdbfe; cursor: pointer;
+  padding: 6px 16px; border-radius: 8px; transition: background .15s;
+}
+.manual-copy-btn:hover { background: #dbeafe; }
+.manual-copy-btn.copied { background: #f0fdf4; color: #15803d; border-color: #bbf7d0; }
+.manual-steps {
+  margin-top: 32px; padding-top: 28px; border-top: 1px solid var(--border);
+}
+.manual-steps h4 { font-size: 13px; font-weight: 700; margin-bottom: 14px; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; }
+.manual-step {
+  display: flex; gap: 14px; margin-bottom: 18px; align-items: flex-start;
+}
+.step-num {
+  width: 26px; height: 26px; border-radius: 50%; background: var(--accent);
+  color: #fff; font-size: 12px; font-weight: 700;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.step-text { font-size: 13px; color: #374151; line-height: 1.6; padding-top: 3px; }
+
+/* ════════════════════════════════
    RESPONSIVE
 ════════════════════════════════ */
 @media (max-width: 768px) {
@@ -350,10 +475,14 @@ body {
 <!-- ── Top Navigation ── -->
 <nav class="top-nav">
   <div class="nav-inner">
-    <a class="nav-brand" href="#">
+    <a class="nav-brand" href="#" onclick="switchTab('list');return false;">
       <div class="nav-icon">🎯</div>
       Kelly <b>職缺雷達</b>
     </a>
+    <div class="nav-tabs">
+      <button class="nav-tab active" id="tab-list" onclick="switchTab('list')">職缺列表</button>
+      <button class="nav-tab" id="tab-manual" onclick="switchTab('manual')">手動分析</button>
+    </div>
     <div class="nav-pills">
       <span class="nav-pill">追蹤 <strong>1</strong> 天</span>
       <span class="nav-pill">共 <strong>3</strong> 筆職缺</span>
@@ -362,22 +491,21 @@ body {
   </div>
 </nav>
 
-<!-- ── Page body ── -->
-<div class="page-wrap">
-
-  <aside class="sidebar"><div class="sb-section"><div class="sb-sec-hd">本週職缺總覽</div><div class="sb-sec-body"><div class="wk-meta">06/21 ~ 06/27 &middot; 共 <strong>3</strong> 筆</div><div class="wk-row"><span class="wk-label">PMO</span><div class="wk-bar-bg"><div class="wk-bar-fill" style="width:100%;background:#7c3aed"></div></div><span class="wk-count">1</span></div><div class="wk-row"><span class="wk-label">PM / PjM</span><div class="wk-bar-bg"><div class="wk-bar-fill" style="width:100%;background:#2563eb"></div></div><span class="wk-count">1</span></div><div class="wk-row"><span class="wk-label">策略 / 營運</span><div class="wk-bar-bg"><div class="wk-bar-fill" style="width:100%;background:#ea580c"></div></div><span class="wk-count">1</span></div></div></div><div class="sb-section"><div class="sb-sec-hd">職缺分類</div><div class="sb-sec-body sb-cat-wrap"><button class="cat-btn active" data-cat="all" onclick="filterCat(this,'all')">全部 (3)</button><button class="cat-btn" data-cat="PMO" style="--cat-c:#7c3aed" onclick="filterCat(this,'PMO')">PMO (1)</button><button class="cat-btn" data-cat="PM / PjM" style="--cat-c:#2563eb" onclick="filterCat(this,'PM / PjM')">PM / PjM (1)</button><button class="cat-btn" data-cat="策略 / 營運" style="--cat-c:#ea580c" onclick="filterCat(this,'策略 / 營運')">策略 / 營運 (1)</button></div></div><div class="sb-section sb-section-last"><div class="sb-sec-hd">時間軸</div><a class="sb-item" href="#day-2026-06-27"><span class="sb-date">2026-06-27</span><span class="sb-badge">3</span></a></div></aside>
-
-  <!-- Main content -->
-  <main class="main-content">
-    
+<!-- ── View: 職缺列表 ── -->
+<div id="view-list">
+  <div class="page-wrap">
+    <aside class="sidebar"><div class="sb-section"><div class="sb-sec-hd">本週職缺總覽</div><div class="sb-sec-body"><div class="wk-meta">06/21 ~ 06/27 &middot; 共 <strong>3</strong> 筆</div><div class="wk-row"><span class="wk-label">PMO</span><div class="wk-bar-bg"><div class="wk-bar-fill" style="width:100%;background:#7c3aed"></div></div><span class="wk-count">1</span></div><div class="wk-row"><span class="wk-label">PM / PjM</span><div class="wk-bar-bg"><div class="wk-bar-fill" style="width:100%;background:#2563eb"></div></div><span class="wk-count">1</span></div><div class="wk-row"><span class="wk-label">策略 / 營運</span><div class="wk-bar-bg"><div class="wk-bar-fill" style="width:100%;background:#ea580c"></div></div><span class="wk-count">1</span></div></div></div><div class="sb-section"><div class="sb-sec-hd">職缺分類</div><div class="sb-sec-body sb-cat-wrap"><button class="cat-btn active" data-cat="all" onclick="filterCat(this,'all')">全部 (3)</button><button class="cat-btn" data-cat="PMO" style="--cat-c:#7c3aed" onclick="filterCat(this,'PMO')">PMO (1)</button><button class="cat-btn" data-cat="PM / PjM" style="--cat-c:#2563eb" onclick="filterCat(this,'PM / PjM')">PM / PjM (1)</button><button class="cat-btn" data-cat="策略 / 營運" style="--cat-c:#ea580c" onclick="filterCat(this,'策略 / 營運')">策略 / 營運 (1)</button></div></div><div class="sb-section sb-section-last"><div class="sb-sec-hd">時間軸</div><a class="sb-item" href="#day-2026-06-27"><span class="sb-date">2026-06-27</span><span class="sb-badge">3</span></a></div></aside>
+    <main class="main-content">
+      
 <section class="day-section" id="day-2026-06-27">
   <div class="day-heading">
     <span class="day-date">2026-06-27</span>
     <span class="day-count">精選 3 筆</span>
   </div>
   <div class="job-list">
-<div class="job-card" id="card-2026-06-27-1" data-cat="PM / PjM" style="--score-color:#16a34a">
-  <div class="card-body" onclick="toggleCard('card-2026-06-27-1')">
+<div class="job-card" id="card-2026-06-27-1" data-cat="PM / PjM" style="--score-color:#16a34a;cursor:pointer"
+     onclick="showDetail('card-2026-06-27-1','專案管理師','昇智科技有限公司','https://www.104.com.tw/job/8s2zp','#16a34a','8')">
+  <div class="card-body">
     <div class="card-top-row">
       <div class="card-tags">
         <span class="cat-tag" style="background:#e0f2fe;color:#0369a1">PM / PjM</span>
@@ -394,12 +522,11 @@ body {
     <div class="ai-block"><span>🧠</span><span>專案管理師完美符合，跨部門協調為核心優勢</span></div>
   </div>
   <div class="card-actions">
-    <button class="btn-expand" id="btn-card-2026-06-27-1" onclick="toggleCard('card-2026-06-27-1');event.stopPropagation()">📋 查看履歷診斷 ▾</button>
+    <span class="btn-expand">📋 查看詳細分析 →</span>
     <a class="btn-104" href="https://www.104.com.tw/job/8s2zp" target="_blank"
        onclick="event.stopPropagation()">查看 104 職缺 →</a>
   </div>
-  <div class="diag-panel" id="panel-card-2026-06-27-1" style="display:none">
-    <div class="diag-detail">
+  <div id="panel-card-2026-06-27-1" style="display:none"><div class="diag-detail">
   <div class="d-section">維度評分</div><div class="d-dim-row"><div class="d-dim-label">跨部門溝通證明 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:85%;background:#1f9d55"></div></div><div class="d-dim-pct">85%</div></div><div class="d-dim-row"><div class="d-dim-label">專案全生命週期執行 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:78%;background:#1f9d55"></div></div><div class="d-dim-pct">78%</div></div><div class="d-dim-row"><div class="d-dim-label">需求分析與規格文件 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:68%;background:#e0972c"></div></div><div class="d-dim-pct">68%</div></div><div class="d-dim-row"><div class="d-dim-label">專案風險評估與問題排除 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:42%;background:#d9534f"></div></div><div class="d-dim-pct">42%</div></div><div class="d-dim-row"><div class="d-dim-label">流程優化與自動化 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:82%;background:#1f9d55"></div></div><div class="d-dim-pct">82%</div></div><div class="d-dim-row"><div class="d-dim-label">ATS關鍵字命中(軟體業PM) </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:65%;background:#e0972c"></div></div><div class="d-dim-pct">65%</div></div>
   <div class="d-section">職缺要求 vs. 妳的履歷</div>
   <div class="d-two-col">
@@ -414,11 +541,11 @@ body {
     <p><strong>跟其他職缺相比：</strong>三筆職缺中昇智科技分數最高(74),主因是產業符合求職者目標(軟體業)、職位名稱直接對應(專案管理師),且職缺需求相對基礎,候選人現有的跨部門溝通與產品交付經歷能涵蓋多數要求。相較於露天市集需要資深數據治理能力、協禾國際產業落差較大,此筆是三者中最接近的落點。</p>
     <p class="d-advice">💡 投遞前建議在履歷補上至少一條風險排除或問題處理的具體案例,並在技能欄加入 Jira 或 Confluence,以提升對軟體業 PM 職缺的 ATS 命中率。</p>
   </div>
+</div></div>
 </div>
-  </div>
-</div>
-<div class="job-card" id="card-2026-06-27-2" data-cat="策略 / 營運" style="--score-color:#16a34a">
-  <div class="card-body" onclick="toggleCard('card-2026-06-27-2')">
+<div class="job-card" id="card-2026-06-27-2" data-cat="策略 / 營運" style="--score-color:#16a34a;cursor:pointer"
+     onclick="showDetail('card-2026-06-27-2','策略分析經理','露天市集國際資訊股份有限公司','https://www.104.com.tw/job/8xcoo','#16a34a','8')">
+  <div class="card-body">
     <div class="card-top-row">
       <div class="card-tags">
         <span class="cat-tag" style="background:#fff7ed;color:#c2410c">策略 / 營運</span>
@@ -435,12 +562,11 @@ body {
     <div class="ai-block"><span>🧠</span><span>PM+BA混合職能，跨部門橋樑完全符合</span></div>
   </div>
   <div class="card-actions">
-    <button class="btn-expand" id="btn-card-2026-06-27-2" onclick="toggleCard('card-2026-06-27-2');event.stopPropagation()">📋 查看履歷診斷 ▾</button>
+    <span class="btn-expand">📋 查看詳細分析 →</span>
     <a class="btn-104" href="https://www.104.com.tw/job/8xcoo" target="_blank"
        onclick="event.stopPropagation()">查看 104 職缺 →</a>
   </div>
-  <div class="diag-panel" id="panel-card-2026-06-27-2" style="display:none">
-    <div class="diag-detail">
+  <div id="panel-card-2026-06-27-2" style="display:none"><div class="diag-detail">
   <div class="d-section">維度評分</div><div class="d-dim-row"><div class="d-dim-label">數據分析工具命中率(SQL/Python/Power BI) </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:65%;background:#e0972c"></div></div><div class="d-dim-pct">65%</div></div><div class="d-dim-row"><div class="d-dim-label">數據架構與治理能力(ETL/數據字典/埋點) </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:20%;background:#d9534f"></div></div><div class="d-dim-pct">20%</div></div><div class="d-dim-row"><div class="d-dim-label">商業策略思維與指標定義 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:58%;background:#e0972c"></div></div><div class="d-dim-pct">58%</div></div><div class="d-dim-row"><div class="d-dim-label">用戶行為分析與漏斗拆解 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:22%;background:#d9534f"></div></div><div class="d-dim-pct">22%</div></div><div class="d-dim-row"><div class="d-dim-label">跨域整合溝通(PM+數據橋樑) </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:72%;background:#e0972c"></div></div><div class="d-dim-pct">72%</div></div><div class="d-dim-row"><div class="d-dim-label">電商平台領域知識 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:15%;background:#d9534f"></div></div><div class="d-dim-pct">15%</div></div>
   <div class="d-section">職缺要求 vs. 妳的履歷</div>
   <div class="d-two-col">
@@ -455,11 +581,11 @@ body {
     <p><strong>跟其他職缺相比：</strong>露天市集在三筆職缺中分數最低(60),主因是職缺層級(經理)與候選人資歷(1-2年)的落差最大,加上所需的數據治理專業能力(ETL、埋點、標籤體系)在現有履歷中幾乎完全缺席。相較於昇智科技(74)需求相對基礎且產業吻合,此筆的結構性落差難以靠包裝彌補;相較於協禾國際(65),技術深度要求更高但產業知名度與發展潛力明顯更強。</p>
     <p class="d-advice">💡 若仍要投遞,建議求職信聚焦「業務-技術橋樑」的跨域整合能力,並附上一份展示數據分析邏輯的個人作品集或 GitHub 專案,以彌補正式電商數據治理經驗的空白。</p>
   </div>
+</div></div>
 </div>
-  </div>
-</div>
-<div class="job-card" id="card-2026-06-27-3" data-cat="PMO" style="--score-color:#d97706">
-  <div class="card-body" onclick="toggleCard('card-2026-06-27-3')">
+<div class="job-card" id="card-2026-06-27-3" data-cat="PMO" style="--score-color:#d97706;cursor:pointer"
+     onclick="showDetail('card-2026-06-27-3','經管中心_PMO','協禾國際股份有限公司','https://www.104.com.tw/job/92nmc','#d97706','7')">
+  <div class="card-body">
     <div class="card-top-row">
       <div class="card-tags">
         <span class="cat-tag" style="background:#f3e8ff;color:#7c3aed">PMO</span>
@@ -476,12 +602,11 @@ body {
     <div class="ai-block"><span>🧠</span><span>PMO完美符合職能與跨部門優勢，批發業非目標</span></div>
   </div>
   <div class="card-actions">
-    <button class="btn-expand" id="btn-card-2026-06-27-3" onclick="toggleCard('card-2026-06-27-3');event.stopPropagation()">📋 查看履歷診斷 ▾</button>
+    <span class="btn-expand">📋 查看詳細分析 →</span>
     <a class="btn-104" href="https://www.104.com.tw/job/92nmc" target="_blank"
        onclick="event.stopPropagation()">查看 104 職缺 →</a>
   </div>
-  <div class="diag-panel" id="panel-card-2026-06-27-3" style="display:none">
-    <div class="diag-detail">
+  <div id="panel-card-2026-06-27-3" style="display:none"><div class="diag-detail">
   <div class="d-section">維度評分</div><div class="d-dim-row"><div class="d-dim-label">高層決策對接與策略轉化 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:75%;background:#1f9d55"></div></div><div class="d-dim-pct">75%</div></div><div class="d-dim-row"><div class="d-dim-label">跨部門協調與資源整合 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:85%;background:#1f9d55"></div></div><div class="d-dim-pct">85%</div></div><div class="d-dim-row"><div class="d-dim-label">PMO方法論與工具(OKR/Portfolio) </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:38%;background:#d9534f"></div></div><div class="d-dim-pct">38%</div></div><div class="d-dim-row"><div class="d-dim-label">流程標準化與文件化 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:60%;background:#e0972c"></div></div><div class="d-dim-pct">60%</div></div><div class="d-dim-row"><div class="d-dim-label">產業匹配度(批發代理業) </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:35%;background:#d9534f"></div></div><div class="d-dim-pct">35%</div></div>
   <div class="d-section">職缺要求 vs. 妳的履歷</div>
   <div class="d-two-col">
@@ -496,26 +621,137 @@ body {
     <p><strong>跟其他職缺相比：</strong>協禾國際在三筆職缺中分數居中(65),PMO 職稱與求職者目標吻合,高層對接與跨部門協調的佐證也相對充分。與昇智科技(74)相比,產業落差是明顯扣分因素;與露天市集(60)相比,對技術深度要求較低,候選人的執行力與溝通能力更能直接落地,但職缺描述截斷增加了整體評估的不確定性。</p>
     <p class="d-advice">💡 投遞前務必閱讀完整職缺描述;若確認投遞,建議在履歷加一條說明如何將 CEO 或高層指示轉化為跨部門可執行計畫的具體案例,突顯策略落地推動者而非單純執行者的定位。</p>
   </div>
-</div>
-  </div>
+</div></div>
 </div></div>
 </section>
-  </main>
-
+    </main>
+  </div>
+  <footer class="site-footer">由 AI 自動產出 · 資料來源 104 人力銀行</footer>
 </div>
 
-<footer class="site-footer">由 AI 自動產出 · 資料來源 104 人力銀行</footer>
+<!-- ── View: 詳細分析 ── -->
+<div id="view-detail" style="display:none">
+  <div class="detail-topbar">
+    <button class="btn-back" onclick="goBack()">← 返回列表</button>
+    <div class="detail-topbar-title">
+      <div class="detail-topbar-jobname" id="detail-jobname"></div>
+      <div class="detail-topbar-company" id="detail-company"></div>
+    </div>
+    <a class="btn-104" id="detail-104-link" href="#" target="_blank" onclick="event.stopPropagation()">查看 104 職缺 →</a>
+  </div>
+  <div class="detail-body">
+    <div id="detail-score-area"></div>
+    <div id="detail-content"></div>
+  </div>
+</div>
+
+<!-- ── View: 手動分析 ── -->
+<div id="view-manual" style="display:none">
+  <div class="manual-wrap">
+    <h2>手動分析職缺適配度</h2>
+    <p class="manual-desc">
+      貼上 104 職缺網址，產生終端機指令。<br>
+      執行完畢後重新整理頁面，分析結果就會出現在「職缺列表」。
+    </p>
+    <div class="manual-input-row">
+      <input class="manual-url-input" id="manual-url-input" type="url"
+             placeholder="https://www.104.com.tw/job/..." />
+      <button class="manual-btn" onclick="generateCmd()">產生指令</button>
+    </div>
+    <div class="manual-cmd-box" id="manual-cmd-box">
+      <div class="manual-cmd-label">在終端機執行以下指令</div>
+      <code class="manual-cmd-text" id="manual-cmd-text"></code>
+      <button class="manual-copy-btn" id="manual-copy-btn" onclick="copyCmd()">複製指令</button>
+    </div>
+    <div class="manual-steps">
+      <h4>使用步驟</h4>
+      <div class="manual-step">
+        <div class="step-num">1</div>
+        <div class="step-text">在 104 找到感興趣的職缺，複製網址貼到上方輸入框</div>
+      </div>
+      <div class="manual-step">
+        <div class="step-num">2</div>
+        <div class="step-text">點「產生指令」，複製產生的終端機指令</div>
+      </div>
+      <div class="manual-step">
+        <div class="step-num">3</div>
+        <div class="step-text">開啟終端機（PowerShell / 命令提示字元），貼上指令執行</div>
+      </div>
+      <div class="manual-step">
+        <div class="step-num">4</div>
+        <div class="step-text">執行完畢後，重新整理此頁面，結果就會出現在「職缺列表」的最新日期下</div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script>
-function toggleCard(cardId) {
-  var panel = document.getElementById('panel-' + cardId);
-  var btn   = document.getElementById('btn-'   + cardId);
-  if (!panel) return;
-  var open = panel.style.display !== 'none';
-  panel.style.display = open ? 'none' : 'block';
-  if (btn) btn.textContent = open ? '📋 查看履歷診斷 ▾' : '▴ 收起診斷';
+/* ── 分頁路由 ── */
+var _activeCard = null;
+var _activeTab  = 'list';
+var _scrollPos  = 0;
+
+function switchTab(tab) {
+  _activeTab = tab;
+  document.getElementById('view-list').style.display   = tab === 'list'   ? '' : 'none';
+  document.getElementById('view-detail').style.display = tab === 'detail' ? '' : 'none';
+  document.getElementById('view-manual').style.display = tab === 'manual' ? '' : 'none';
+  document.querySelectorAll('.nav-tab').forEach(function(b) {
+    b.classList.toggle('active', b.id === 'tab-' + (tab === 'detail' ? 'list' : tab));
+  });
+  if (tab !== 'detail') window.location.hash = tab === 'manual' ? 'manual' : '';
 }
 
+function showDetail(cardId, jobName, custName, url104, scoreColor, score) {
+  _scrollPos  = window.scrollY;
+  _activeCard = cardId;
+
+  document.getElementById('detail-jobname').textContent  = jobName;
+  document.getElementById('detail-company').textContent  = custName;
+  var link = document.getElementById('detail-104-link');
+  link.href = url104; link.style.display = url104 ? '' : 'none';
+
+  var scoreLabel = score !== null ? score : '?';
+  var aiSrc = document.querySelector('#' + cardId + ' .ai-block');
+  var aiHtml = aiSrc
+    ? '<div class="detail-ai-block">' + aiSrc.innerHTML + '</div>'
+    : '';
+  document.getElementById('detail-score-area').innerHTML =
+    '<div class="detail-score-row">' +
+    '<span class="detail-score-num" style="color:' + scoreColor + '">' + scoreLabel + '</span>' +
+    '<span class="detail-score-denom">/ 10</span>' +
+    aiHtml +
+    '</div>';
+
+  var panel = document.getElementById('panel-' + cardId);
+  document.getElementById('detail-content').innerHTML =
+    panel ? panel.innerHTML : '<p style="color:var(--muted);padding:20px 0">尚無詳細診斷資料</p>';
+
+  switchTab('detail');
+  window.scrollTo(0, 0);
+  window.location.hash = 'job-' + cardId;
+}
+
+function goBack() {
+  switchTab('list');
+  window.location.hash = '';
+  setTimeout(function() {
+    if (_activeCard) {
+      var el = document.getElementById(_activeCard);
+      if (el) el.scrollIntoView({ block: 'center' });
+    } else {
+      window.scrollTo(0, _scrollPos);
+    }
+  }, 50);
+}
+
+/* ── Hash routing on load ── */
+(function() {
+  var h = window.location.hash.replace('#', '');
+  if (h === 'manual') { switchTab('manual'); }
+})();
+
+/* ── 職缺分類篩選 ── */
 function filterCat(btn, cat) {
   document.querySelectorAll('.cat-btn').forEach(function(b) {
     b.classList.toggle('active', b === btn);
@@ -530,6 +766,7 @@ function filterCat(btn, cat) {
   });
 }
 
+/* ── Sidebar IntersectionObserver ── */
 (function() {
   var items = document.querySelectorAll('.sb-item');
   if (!items.length || !window.IntersectionObserver) return;
@@ -539,14 +776,39 @@ function filterCat(btn, cat) {
         var id = e.target.id;
         items.forEach(function(a) {
           var active = a.getAttribute('href') === '#' + id;
-          a.style.background = active ? '#f0f7ff' : '';
-          a.style.borderLeftColor = active ? 'var(--accent)' : 'transparent';
+          a.style.background        = active ? '#f0f7ff' : '';
+          a.style.borderLeftColor   = active ? 'var(--accent)' : 'transparent';
         });
       }
     });
   }, { threshold: 0.25 });
   document.querySelectorAll('.day-section').forEach(function(s) { obs.observe(s); });
 })();
+
+/* ── 手動分析 ── */
+function generateCmd() {
+  var url = document.getElementById('manual-url-input').value.trim();
+  if (!url) { alert('請先貼上 104 職缺網址'); return; }
+  var cmd = 'py "C:\\Users\\c5101\\Documents\\kelly-agent\\job_search.py" --url "' + url + '"';
+  document.getElementById('manual-cmd-text').textContent = cmd;
+  document.getElementById('manual-cmd-box').style.display = 'block';
+  var copyBtn = document.getElementById('manual-copy-btn');
+  copyBtn.textContent = '複製指令';
+  copyBtn.className = 'manual-copy-btn';
+}
+
+function copyCmd() {
+  var text = document.getElementById('manual-cmd-text').textContent;
+  navigator.clipboard.writeText(text).then(function() {
+    var btn = document.getElementById('manual-copy-btn');
+    btn.textContent = '已複製！';
+    btn.className = 'manual-copy-btn copied';
+    setTimeout(function() {
+      btn.textContent = '複製指令';
+      btn.className = 'manual-copy-btn';
+    }, 2000);
+  });
+}
 </script>
 </body>
 </html>
