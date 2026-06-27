@@ -3,160 +3,373 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kelly 的職缺雷達</title>
+<title>Kelly 職缺雷達</title>
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
 :root {
-  --bg: #f7f7f5; --card: #fff; --border: #e5e5e0;
-  --text: #1a1a1a; --muted: #6b7280; --link: #2563eb;
-  --radius: 12px; --shadow: 0 1px 2px rgba(0,0,0,.05), 0 2px 10px rgba(0,0,0,.06);
+  --nav-h: 60px;
+  --sidebar-w: 220px;
+  --bg: #f4f4f0;
+  --card: #ffffff;
+  --border: #e8e8e2;
+  --text: #111827;
+  --muted: #6b7280;
+  --accent: #2563eb;
+  --radius: 14px;
+  --shadow: 0 1px 3px rgba(0,0,0,.06), 0 4px 16px rgba(0,0,0,.06);
 }
-body { font-family: -apple-system,"PingFang TC","Microsoft JhengHei","Noto Sans TC",sans-serif;
-        background: var(--bg); color: var(--text); line-height: 1.6; }
 
-/* ── Nav ── */
-.site-nav { background:#fff; border-bottom:1px solid var(--border); position:sticky; top:0; z-index:100; }
-.nav-inner { max-width:900px; margin:0 auto; padding:0 24px; height:56px;
-              display:flex; align-items:center; justify-content:space-between; }
-.nav-logo { font-size:16px; font-weight:800; color:var(--text); text-decoration:none; letter-spacing:-.3px; }
-.nav-logo em { color:var(--link); font-style:normal; }
-.nav-meta { font-size:12px; color:var(--muted); }
+body {
+  font-family: -apple-system, "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
 
-/* ── Filter bar ── */
-.filter-bar { background:#fff; border-bottom:1px solid var(--border); overflow-x:auto; -webkit-overflow-scrolling:touch; }
-.filter-inner { max-width:900px; margin:0 auto; padding:10px 24px; display:flex; gap:8px; white-space:nowrap; }
-.filter-chip { display:inline-block; font-size:12px; font-weight:500; padding:5px 14px;
-                border-radius:999px; background:#f1f5f9; color:#475569;
-                text-decoration:none; transition:background .15s,color .15s; }
-.filter-chip:hover { background:var(--link); color:#fff; }
+/* ════════════════════════════════
+   TOP NAV
+════════════════════════════════ */
+.top-nav {
+  position: sticky; top: 0; z-index: 200;
+  height: var(--nav-h);
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+  display: flex; align-items: center;
+}
+.nav-inner {
+  width: 100%; max-width: 1200px;
+  margin: 0 auto; padding: 0 28px;
+  display: flex; align-items: center; gap: 0;
+}
+.nav-brand {
+  display: flex; align-items: center; gap: 10px;
+  text-decoration: none; color: var(--text);
+  font-size: 17px; font-weight: 800; letter-spacing: -.4px;
+  margin-right: auto;
+}
+.nav-icon {
+  width: 32px; height: 32px; border-radius: 8px;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px; flex-shrink: 0;
+}
+.nav-brand b { color: var(--accent); font-weight: 900; }
+.nav-pills {
+  display: flex; align-items: center; gap: 6px;
+}
+.nav-pill {
+  font-size: 12px; font-weight: 500; padding: 5px 14px;
+  border-radius: 999px; background: #f1f5f9; color: var(--muted);
+  white-space: nowrap;
+}
+.nav-pill strong { color: var(--text); font-weight: 700; }
 
-/* ── Layout ── */
-.main-wrap { max-width:900px; margin:0 auto; padding:36px 24px 72px; }
-.day-section { margin-bottom:52px; }
-.day-heading { display:flex; align-items:baseline; gap:12px; margin-bottom:18px;
-                padding-bottom:12px; border-bottom:2px solid var(--border); }
-.day-date { font-size:20px; font-weight:800; color:var(--text); }
-.day-count { font-size:12px; color:var(--muted); }
-.job-list { display:flex; flex-direction:column; gap:16px; }
+/* ════════════════════════════════
+   PAGE LAYOUT
+════════════════════════════════ */
+.page-wrap {
+  max-width: 1200px; margin: 0 auto; padding: 0 28px;
+  display: grid;
+  grid-template-columns: var(--sidebar-w) 1fr;
+  gap: 32px;
+  align-items: start;
+  padding-top: 32px; padding-bottom: 72px;
+}
 
-/* ── Card ── */
-.job-card { background:var(--card); border-radius:var(--radius); border:1px solid var(--border);
-             box-shadow:var(--shadow); overflow:hidden; transition:box-shadow .2s,transform .2s; }
-.job-card:hover { box-shadow:0 4px 24px rgba(0,0,0,.10); transform:translateY(-2px); }
-.card-summary { cursor:pointer; padding:20px 22px 16px; }
-.card-header { display:flex; align-items:center; justify-content:space-between;
-                gap:12px; margin-bottom:12px; }
-.card-badges { display:flex; align-items:center; gap:6px; flex-wrap:wrap; }
-.cat-badge { font-size:11px; font-weight:700; padding:3px 10px; border-radius:999px; letter-spacing:.02em; }
-.rank-badge { font-size:11px; font-weight:600; color:#64748b; background:#f1f5f9;
-               padding:3px 8px; border-radius:999px; }
-.score-pill { font-size:12px; font-weight:700; padding:4px 12px; border-radius:999px;
-               color:#fff; white-space:nowrap; }
-.job-title { font-size:19px; font-weight:800; line-height:1.3; color:var(--text);
-              margin-bottom:4px; transition:color .15s; letter-spacing:-.2px; }
-.card-summary:hover .job-title { color:var(--link); }
-.company { font-size:14px; color:var(--muted); margin-bottom:12px; }
-.info-row { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:14px; }
-.info-chip { font-size:12px; color:#475569; background:#f8fafc; border:1px solid #e2e8f0;
-              padding:3px 10px; border-radius:6px; }
-.ai-quote { font-size:13px; color:#374151; background:#f0f9ff; border-left:3px solid #38bdf8;
-             padding:9px 14px; border-radius:0 8px 8px 0; line-height:1.6; }
+/* ════════════════════════════════
+   SIDEBAR
+════════════════════════════════ */
+.sidebar {
+  position: sticky; top: calc(var(--nav-h) + 20px);
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: var(--radius); box-shadow: var(--shadow);
+  padding: 20px 0; overflow: hidden;
+}
+.sb-title {
+  font-size: 11px; font-weight: 700; color: var(--muted);
+  text-transform: uppercase; letter-spacing: .1em;
+  padding: 0 18px 12px; border-bottom: 1px solid var(--border);
+  margin-bottom: 8px;
+}
+.sb-stats {
+  display: flex; gap: 0;
+  padding: 12px 18px 16px; border-bottom: 1px solid var(--border);
+  margin-bottom: 8px;
+}
+.sb-stat { flex: 1; text-align: center; }
+.sb-stat-num { font-size: 22px; font-weight: 800; color: var(--accent); }
+.sb-stat-label { font-size: 11px; color: var(--muted); margin-top: 2px; }
+.sb-item {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 9px 18px; text-decoration: none; color: var(--text);
+  transition: background .12s;
+  border-left: 3px solid transparent;
+}
+.sb-item:hover {
+  background: #f0f7ff; border-left-color: var(--accent);
+}
+.sb-date { font-size: 13px; font-weight: 500; }
+.sb-badge {
+  font-size: 11px; font-weight: 700; color: var(--accent);
+  background: #eff6ff; padding: 2px 8px; border-radius: 999px;
+}
 
-/* ── Card footer ── */
-.card-footer { display:flex; align-items:center; justify-content:space-between;
-                padding:11px 22px 13px; border-top:1px solid #f1f5f9; background:#fafafa; }
-.expand-hint { font-size:12px; color:var(--muted); }
-.btn-104 { font-size:12px; font-weight:600; color:var(--link); text-decoration:none;
-            padding:5px 14px; border:1px solid #bfdbfe; border-radius:6px;
-            background:#eff6ff; transition:background .15s; }
-.btn-104:hover { background:#dbeafe; }
+/* ════════════════════════════════
+   MAIN CONTENT
+════════════════════════════════ */
+.main-content { min-width: 0; }
+.day-section { margin-bottom: 48px; }
+.day-heading {
+  display: flex; align-items: center; gap: 12px;
+  margin-bottom: 20px;
+}
+.day-date-label {
+  font-size: 22px; font-weight: 800; color: var(--text); letter-spacing: -.4px;
+}
+.day-divider {
+  flex: 1; height: 1px; background: var(--border);
+}
+.day-count-label { font-size: 12px; color: var(--muted); white-space: nowrap; }
+.job-list { display: flex; flex-direction: column; gap: 14px; }
 
-/* ── Diagnosis panel ── */
-.diag-panel { border-top:2px solid #e0f2fe; background:#fafcff; padding:26px 22px; }
-.diag-detail { font-size:13px; line-height:1.7; }
-.d-section { font-size:11px; font-weight:700; color:#94a3b8; text-transform:uppercase;
-              letter-spacing:.08em; margin:22px 0 10px; }
-.diag-detail .d-section:first-child { margin-top:0; }
-.d-dim-row { display:flex; align-items:center; margin:7px 0; font-size:12px; }
-.d-dim-label { width:150px; flex-shrink:0; color:#555; }
-.d-dim-bar-bg { flex:1; background:#e5e7eb; border-radius:4px; height:7px; overflow:hidden; margin:0 12px; }
-.d-dim-fill { height:100%; border-radius:4px; }
-.d-dim-pct { width:36px; text-align:right; font-weight:700; color:#374151; }
-.d-two-col { display:flex; gap:12px; margin:10px 0; }
-.d-col { flex:1; background:#fff; border:1px solid var(--border); border-radius:8px; padding:12px 14px; }
-.d-col h4 { font-size:11px; color:var(--muted); font-weight:600; margin-bottom:8px; }
-.d-tag { display:inline-block; font-size:11px; padding:3px 9px; border-radius:6px;
-          margin:2px 3px 2px 0; font-weight:500; }
-.d-req { background:#eff6ff; color:#1d4ed8; }
-.d-covered { background:#f0fdf4; color:#15803d; }
-.d-partial { background:#fffbeb; color:#92400e; }
-.d-missing { background:#fef2f2; color:#b91c1c; }
-.d-bullet-pair { margin:10px 0; border-radius:8px; overflow:hidden; border:1px solid var(--border); }
-.d-before { font-size:12px; color:#b91c1c; background:#fef2f2; text-decoration:line-through;
-             padding:9px 12px; line-height:1.5; }
-.d-after { font-size:12px; color:#15803d; background:#f0fdf4; padding:9px 12px; line-height:1.5; }
-.d-gap { display:flex; gap:8px; margin:7px 0; font-size:12px; line-height:1.6; }
-.d-gap-title { font-weight:700; color:#374151; white-space:nowrap; }
-.d-company { background:#fff; border:1px solid var(--border); border-radius:8px;
-              padding:14px 16px; font-size:13px; line-height:1.8; }
-.d-company p { margin-bottom:10px; }
-.d-company p:last-child { margin-bottom:0; }
-.d-advice { background:#fffbeb; border-left:3px solid #f59e0b; padding:10px 14px;
-             border-radius:0 8px 8px 0; color:#78350f; line-height:1.6; margin-top:10px; }
-.no-diag { color:var(--muted); font-size:13px; padding:8px 0; }
+/* ════════════════════════════════
+   JOB CARD
+════════════════════════════════ */
+.job-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--score-color, #e2e8f0);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: box-shadow .2s, transform .2s;
+}
+.job-card:hover {
+  box-shadow: 0 6px 28px rgba(0,0,0,.10);
+  transform: translateY(-2px);
+}
 
-.empty { text-align:center; color:var(--muted); padding:80px 0; font-size:15px; }
-.site-footer { text-align:center; padding:24px; font-size:12px; color:#94a3b8;
-                border-top:1px solid var(--border); background:#fff; margin-top:24px; }
+.card-body {
+  padding: 20px 22px 16px;
+  cursor: pointer;
+}
+.card-body:hover .job-name { color: var(--accent); }
 
-@media (max-width:600px) {
-  .nav-meta { display:none; }
-  .d-two-col { flex-direction:column; }
-  .d-dim-label { width:110px; }
-  .job-title { font-size:16px; }
-  .main-wrap { padding:20px 14px 48px; }
-  .card-summary { padding:16px 16px 12px; }
-  .card-footer { padding:10px 16px 12px; }
-  .diag-panel { padding:20px 14px; }
+.card-top-row {
+  display: flex; align-items: center;
+  justify-content: space-between; gap: 12px;
+  margin-bottom: 12px;
+}
+.card-tags { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.cat-tag {
+  font-size: 11px; font-weight: 700;
+  padding: 3px 10px; border-radius: 999px;
+}
+.rank-tag {
+  font-size: 11px; font-weight: 600; color: #64748b;
+  background: #f1f5f9; padding: 3px 8px; border-radius: 999px;
+}
+.score-display {
+  display: flex; align-items: baseline; gap: 1px; flex-shrink: 0;
+}
+.score-num {
+  font-size: 28px; font-weight: 900; line-height: 1;
+}
+.score-denom { font-size: 13px; color: var(--muted); font-weight: 500; }
+
+.job-name {
+  font-size: 18px; font-weight: 800; line-height: 1.3;
+  margin-bottom: 4px; letter-spacing: -.3px;
+  transition: color .15s;
+}
+.company-row {
+  font-size: 14px; color: var(--muted); margin-bottom: 14px;
+}
+
+.meta-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+.meta-chip {
+  font-size: 12px; color: #475569;
+  background: #f8fafc; border: 1px solid #e2e8f0;
+  padding: 3px 10px; border-radius: 6px;
+}
+
+.ai-block {
+  display: flex; align-items: flex-start; gap: 8px;
+  background: #f0f9ff; border-left: 3px solid #7dd3fc;
+  border-radius: 0 10px 10px 0;
+  padding: 10px 14px; font-size: 13px; color: #0c4a6e; line-height: 1.6;
+}
+
+/* Card actions bar */
+.card-actions {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 10px 22px 12px;
+  border-top: 1px solid var(--border);
+  background: #fafafa;
+}
+.btn-expand {
+  font-size: 12px; color: var(--muted);
+  background: none; border: none; cursor: pointer; padding: 0;
+  display: flex; align-items: center; gap: 4px;
+}
+.btn-expand:hover { color: var(--accent); }
+.btn-104 {
+  font-size: 12px; font-weight: 600;
+  color: var(--accent); text-decoration: none;
+  background: #eff6ff; border: 1px solid #bfdbfe;
+  padding: 5px 14px; border-radius: 8px;
+  transition: background .15s;
+}
+.btn-104:hover { background: #dbeafe; }
+
+/* ════════════════════════════════
+   DIAGNOSIS PANEL
+════════════════════════════════ */
+.diag-panel {
+  border-top: 2px solid #e0f2fe;
+  padding: 24px 22px;
+  background: #fafcff;
+}
+.diag-detail { font-size: 13px; line-height: 1.7; }
+.d-section {
+  font-size: 11px; font-weight: 700; color: #94a3b8;
+  text-transform: uppercase; letter-spacing: .1em;
+  margin: 22px 0 10px;
+}
+.diag-detail .d-section:first-child { margin-top: 0; }
+
+.d-dim-row { display: flex; align-items: center; margin: 7px 0; font-size: 12px; }
+.d-dim-label { width: 150px; flex-shrink: 0; color: #555; }
+.d-dim-bar-bg { flex: 1; background: #e5e7eb; border-radius: 4px; height: 8px;
+                 overflow: hidden; margin: 0 12px; }
+.d-dim-fill { height: 100%; border-radius: 4px; }
+.d-dim-pct { width: 36px; text-align: right; font-weight: 700; color: #374151; }
+
+.d-two-col { display: flex; gap: 12px; margin: 10px 0; }
+.d-col { flex: 1; background: #fff; border: 1px solid var(--border);
+          border-radius: 8px; padding: 12px 14px; }
+.d-col h4 { font-size: 11px; color: var(--muted); font-weight: 600; margin-bottom: 8px; }
+.d-tag { display: inline-block; font-size: 11px; padding: 3px 9px; border-radius: 6px;
+          margin: 2px 3px 2px 0; font-weight: 500; }
+.d-req { background: #eff6ff; color: #1d4ed8; }
+.d-covered { background: #f0fdf4; color: #15803d; }
+.d-partial { background: #fffbeb; color: #92400e; }
+.d-missing { background: #fef2f2; color: #b91c1c; }
+
+.d-bullet-pair { margin: 10px 0; border-radius: 8px; overflow: hidden;
+                  border: 1px solid var(--border); }
+.d-before { font-size: 12px; color: #b91c1c; background: #fef2f2;
+             text-decoration: line-through; padding: 9px 14px; line-height: 1.5; }
+.d-after { font-size: 12px; color: #15803d; background: #f0fdf4;
+            padding: 9px 14px; line-height: 1.5; }
+
+.d-gap { display: flex; gap: 8px; margin: 7px 0; font-size: 12px; line-height: 1.6; }
+.d-gap-title { font-weight: 700; color: #374151; white-space: nowrap; }
+
+.d-company { background: #fff; border: 1px solid var(--border); border-radius: 8px;
+              padding: 14px 16px; font-size: 13px; line-height: 1.8; }
+.d-company p { margin-bottom: 10px; }
+.d-company p:last-child { margin-bottom: 0; }
+.d-advice { background: #fffbeb; border-left: 3px solid #f59e0b; padding: 10px 14px;
+             border-radius: 0 8px 8px 0; color: #78350f; margin-top: 10px; }
+.no-diag { color: var(--muted); font-size: 13px; padding: 8px 0; }
+
+/* ════════════════════════════════
+   MISC
+════════════════════════════════ */
+.empty { text-align: center; color: var(--muted); padding: 80px 0; font-size: 15px; }
+.site-footer {
+  text-align: center; padding: 28px; font-size: 12px; color: #9ca3af;
+  border-top: 1px solid var(--border); background: #fff; margin-top: 8px;
+}
+
+/* ════════════════════════════════
+   RESPONSIVE
+════════════════════════════════ */
+@media (max-width: 768px) {
+  .page-wrap {
+    grid-template-columns: 1fr;
+    padding: 16px 14px 48px;
+    gap: 0;
+  }
+  .sidebar { display: none; }
+  .nav-pills { gap: 4px; }
+  .nav-pill { font-size: 11px; padding: 4px 10px; }
+  .score-num { font-size: 22px; }
+  .job-name { font-size: 16px; }
+  .d-two-col { flex-direction: column; }
+  .d-dim-label { width: 110px; }
+  .card-body { padding: 16px 16px 12px; }
+  .card-actions { padding: 10px 16px; }
+  .diag-panel { padding: 18px 14px; }
 }
 </style>
 </head>
 <body>
 
-<nav class="site-nav">
+<!-- ── Top Navigation ── -->
+<nav class="top-nav">
   <div class="nav-inner">
-    <a class="nav-logo" href="#">Kelly <em>職缺雷達</em></a>
-    <span class="nav-meta">追蹤 1 天 · 最後更新 2026-06-27</span>
+    <a class="nav-brand" href="#">
+      <div class="nav-icon">🎯</div>
+      Kelly <b>職缺雷達</b>
+    </a>
+    <div class="nav-pills">
+      <span class="nav-pill">追蹤 <strong>1</strong> 天</span>
+      <span class="nav-pill">共 <strong>3</strong> 筆職缺</span>
+      <span class="nav-pill">更新 <strong>2026-06-27</strong></span>
+    </div>
   </div>
 </nav>
 
-<div class="filter-bar">
-  <div class="filter-inner"><a class="filter-chip" href="#day-2026-06-27">2026-06-27</a></div>
-</div>
+<!-- ── Page body ── -->
+<div class="page-wrap">
 
-<main class="main-wrap">
+  <!-- Left sidebar -->
+  <aside class="sidebar">
+    <div class="sb-title">時間軸</div>
+    <div class="sb-stats">
+      <div class="sb-stat">
+        <div class="sb-stat-num">1</div>
+        <div class="sb-stat-label">天</div>
+      </div>
+      <div class="sb-stat">
+        <div class="sb-stat-num">3</div>
+        <div class="sb-stat-label">筆職缺</div>
+      </div>
+    </div>
+    <a class="sb-item" href="#day-2026-06-27"><span class="sb-date">2026-06-27</span><span class="sb-badge">3</span></a>
+  </aside>
+
+  <!-- Main content -->
+  <main class="main-content">
+    
 <section class="day-section" id="day-2026-06-27">
   <div class="day-heading">
     <span class="day-date">2026-06-27</span>
     <span class="day-count">AI 精選 3 筆職缺</span>
   </div>
   <div class="job-list">
-<div class="job-card" id="card-2026-06-27-1">
-  <div class="card-summary" onclick="toggleCard('card-2026-06-27-1')">
-    <div class="card-header">
-      <div class="card-badges">
-        <span class="cat-badge" style="background:#e0f2fe;color:#0369a1">PM / PjM</span>
-        <span class="rank-badge">第 1 名</span>
+<div class="job-card" id="card-2026-06-27-1" style="--score-color:#16a34a">
+  <div class="card-body" onclick="toggleCard('card-2026-06-27-1')">
+    <div class="card-top-row">
+      <div class="card-tags">
+        <span class="cat-tag" style="background:#e0f2fe;color:#0369a1">PM / PjM</span>
+        <span class="rank-tag">第 1 名</span>
       </div>
-      <span class="score-pill" style="background:#16a34a">適合度 8/10</span>
+      <div class="score-display">
+        <span class="score-num" style="color:#16a34a">8</span>
+        <span class="score-denom">&thinsp;/ 10</span>
+      </div>
     </div>
-    <div class="job-title">專案管理師</div>
-    <div class="company">昇智科技有限公司</div>
-    <div class="info-row"><span class="info-chip">面議</span><span class="info-chip">台北市松山區</span><span class="info-chip">電腦軟體服務業</span></div>
-    <div class="ai-quote">🧠 專案管理師完美符合，跨部門協調為核心優勢</div>
+    <div class="job-name">專案管理師</div>
+    <div class="company-row">昇智科技有限公司</div>
+    <div class="meta-chips"><span class="info-chip">面議</span><span class="info-chip">台北市松山區</span><span class="info-chip">電腦軟體服務業</span></div>
+    <div class="ai-block"><span>🧠</span><span>專案管理師完美符合，跨部門協調為核心優勢</span></div>
   </div>
-  <div class="card-footer">
-    <span class="expand-hint" id="hint-card-2026-06-27-1">📋 點擊卡片查看履歷診斷 ▾</span>
+  <div class="card-actions">
+    <button class="btn-expand" id="btn-card-2026-06-27-1" onclick="toggleCard('card-2026-06-27-1');event.stopPropagation()">📋 查看履歷診斷 ▾</button>
     <a class="btn-104" href="https://www.104.com.tw/job/8s2zp" target="_blank"
        onclick="event.stopPropagation()">查看 104 職缺 →</a>
   </div>
@@ -179,22 +392,25 @@ body { font-family: -apple-system,"PingFang TC","Microsoft JhengHei","Noto Sans 
 </div>
   </div>
 </div>
-<div class="job-card" id="card-2026-06-27-2">
-  <div class="card-summary" onclick="toggleCard('card-2026-06-27-2')">
-    <div class="card-header">
-      <div class="card-badges">
-        <span class="cat-badge" style="background:#fff7ed;color:#c2410c">策略 / 營運</span>
-        <span class="rank-badge">第 2 名</span>
+<div class="job-card" id="card-2026-06-27-2" style="--score-color:#16a34a">
+  <div class="card-body" onclick="toggleCard('card-2026-06-27-2')">
+    <div class="card-top-row">
+      <div class="card-tags">
+        <span class="cat-tag" style="background:#fff7ed;color:#c2410c">策略 / 營運</span>
+        <span class="rank-tag">第 2 名</span>
       </div>
-      <span class="score-pill" style="background:#16a34a">適合度 8/10</span>
+      <div class="score-display">
+        <span class="score-num" style="color:#16a34a">8</span>
+        <span class="score-denom">&thinsp;/ 10</span>
+      </div>
     </div>
-    <div class="job-title">策略分析經理</div>
-    <div class="company">露天市集國際資訊股份有限公司</div>
-    <div class="info-row"><span class="info-chip">面議</span><span class="info-chip">台北市大安區</span><span class="info-chip">網際網路相關業</span></div>
-    <div class="ai-quote">🧠 PM+BA混合職能，跨部門橋樑完全符合</div>
+    <div class="job-name">策略分析經理</div>
+    <div class="company-row">露天市集國際資訊股份有限公司</div>
+    <div class="meta-chips"><span class="info-chip">面議</span><span class="info-chip">台北市大安區</span><span class="info-chip">網際網路相關業</span></div>
+    <div class="ai-block"><span>🧠</span><span>PM+BA混合職能，跨部門橋樑完全符合</span></div>
   </div>
-  <div class="card-footer">
-    <span class="expand-hint" id="hint-card-2026-06-27-2">📋 點擊卡片查看履歷診斷 ▾</span>
+  <div class="card-actions">
+    <button class="btn-expand" id="btn-card-2026-06-27-2" onclick="toggleCard('card-2026-06-27-2');event.stopPropagation()">📋 查看履歷診斷 ▾</button>
     <a class="btn-104" href="https://www.104.com.tw/job/8xcoo" target="_blank"
        onclick="event.stopPropagation()">查看 104 職缺 →</a>
   </div>
@@ -217,22 +433,25 @@ body { font-family: -apple-system,"PingFang TC","Microsoft JhengHei","Noto Sans 
 </div>
   </div>
 </div>
-<div class="job-card" id="card-2026-06-27-3">
-  <div class="card-summary" onclick="toggleCard('card-2026-06-27-3')">
-    <div class="card-header">
-      <div class="card-badges">
-        <span class="cat-badge" style="background:#f3e8ff;color:#7c3aed">PMO</span>
-        <span class="rank-badge">第 3 名</span>
+<div class="job-card" id="card-2026-06-27-3" style="--score-color:#d97706">
+  <div class="card-body" onclick="toggleCard('card-2026-06-27-3')">
+    <div class="card-top-row">
+      <div class="card-tags">
+        <span class="cat-tag" style="background:#f3e8ff;color:#7c3aed">PMO</span>
+        <span class="rank-tag">第 3 名</span>
       </div>
-      <span class="score-pill" style="background:#d97706">適合度 7/10</span>
+      <div class="score-display">
+        <span class="score-num" style="color:#d97706">7</span>
+        <span class="score-denom">&thinsp;/ 10</span>
+      </div>
     </div>
-    <div class="job-title">經管中心_PMO</div>
-    <div class="company">協禾國際股份有限公司</div>
-    <div class="info-row"><span class="info-chip">面議</span><span class="info-chip">台北市中山區</span><span class="info-chip">綜合商品批發代理業</span></div>
-    <div class="ai-quote">🧠 PMO完美符合職能與跨部門優勢，批發業非目標</div>
+    <div class="job-name">經管中心_PMO</div>
+    <div class="company-row">協禾國際股份有限公司</div>
+    <div class="meta-chips"><span class="info-chip">面議</span><span class="info-chip">台北市中山區</span><span class="info-chip">綜合商品批發代理業</span></div>
+    <div class="ai-block"><span>🧠</span><span>PMO完美符合職能與跨部門優勢，批發業非目標</span></div>
   </div>
-  <div class="card-footer">
-    <span class="expand-hint" id="hint-card-2026-06-27-3">📋 點擊卡片查看履歷診斷 ▾</span>
+  <div class="card-actions">
+    <button class="btn-expand" id="btn-card-2026-06-27-3" onclick="toggleCard('card-2026-06-27-3');event.stopPropagation()">📋 查看履歷診斷 ▾</button>
     <a class="btn-104" href="https://www.104.com.tw/job/92nmc" target="_blank"
        onclick="event.stopPropagation()">查看 104 職缺 →</a>
   </div>
@@ -255,19 +474,40 @@ body { font-family: -apple-system,"PingFang TC","Microsoft JhengHei","Noto Sans 
 </div>
   </div>
 </div></div>
-</section></main>
+</section>
+  </main>
+
+</div>
 
 <footer class="site-footer">由 AI 自動產出 · 資料來源 104 人力銀行</footer>
 
 <script>
 function toggleCard(cardId) {
   var panel = document.getElementById('panel-' + cardId);
-  var hint = document.getElementById('hint-' + cardId);
+  var btn   = document.getElementById('btn-'   + cardId);
   if (!panel) return;
   var open = panel.style.display !== 'none';
   panel.style.display = open ? 'none' : 'block';
-  hint.textContent = open ? '📋 點擊卡片查看履歷診斷 ▾' : '▴ 收起診斷';
+  if (btn) btn.textContent = open ? '📋 查看履歷診斷 ▾' : '▴ 收起診斷';
 }
+
+// 側欄高亮目前在視窗內的日期
+(function() {
+  var items = document.querySelectorAll('.sb-item');
+  if (!items.length || !window.IntersectionObserver) return;
+  var obs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) {
+        var id = e.target.id;
+        items.forEach(function(a) {
+          a.style.background = a.getAttribute('href') === '#' + id ? '#f0f7ff' : '';
+          a.style.borderLeftColor = a.getAttribute('href') === '#' + id ? 'var(--accent)' : 'transparent';
+        });
+      }
+    });
+  }, { threshold: 0.3 });
+  document.querySelectorAll('.day-section').forEach(function(s) { obs.observe(s); });
+})();
 </script>
 </body>
 </html>
