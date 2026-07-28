@@ -461,9 +461,73 @@ body {
 @keyframes spin { to { transform: rotate(360deg); } }
 
 /* ════════════════════════════════
+   投遞紀錄
+════════════════════════════════ */
+.applied-tag {
+  font-size: 11px; font-weight: 700; padding: 3px 9px; border-radius: 999px;
+  background: #fff; border: 1.5px solid var(--app-c); color: var(--app-c);
+  white-space: nowrap;
+}
+.btn-mark-applied {
+  display: none; border: 1px solid #d1d5db; background: #fff; color: #374151;
+  font-size: 12px; font-weight: 700; padding: 6px 12px; border-radius: 8px;
+  cursor: pointer; font-family: inherit;
+}
+.btn-mark-applied:hover { border-color: var(--accent); color: var(--accent); }
+.btn-mark-applied:disabled { opacity: .6; cursor: default; }
+body.is-local .btn-mark-applied { display: inline-block; }
+
+.apps-wrap { max-width: 860px; margin: 0 auto; padding: 28px 20px 60px; }
+.apps-wrap h2 { font-size: 20px; font-weight: 800; margin-bottom: 16px; }
+.apps-hint {
+  background: #fffbeb; border: 1px solid #fde68a; color: #92400e;
+  font-size: 13px; line-height: 1.6; padding: 10px 14px; border-radius: 10px;
+  margin-bottom: 16px;
+}
+.apps-stats {
+  display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px;
+  margin-bottom: 20px;
+}
+.app-stat {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 14px 10px; text-align: center;
+  box-shadow: var(--shadow);
+}
+.app-stat-num { font-size: 24px; font-weight: 800; }
+.app-stat-label { font-size: 12px; color: var(--muted); margin-top: 2px; }
+.app-row {
+  display: flex; justify-content: space-between; gap: 14px;
+  background: var(--card); border: 1px solid var(--border);
+  border-left: 4px solid var(--app-c); border-radius: var(--radius);
+  padding: 14px 16px; margin-bottom: 10px; box-shadow: var(--shadow);
+}
+.app-main { min-width: 0; }
+.app-title { font-weight: 800; font-size: 15px; }
+.app-company { font-size: 13px; color: var(--muted); margin-top: 2px; }
+.app-meta { font-size: 12px; color: var(--muted); margin-top: 6px; }
+.app-side {
+  display: flex; flex-direction: column; align-items: flex-end; gap: 8px;
+  flex-shrink: 0;
+}
+.app-status-sel {
+  font-size: 12px; font-weight: 700; color: var(--app-c);
+  border: 1px solid var(--border); border-radius: 8px; padding: 5px 8px;
+  background: #fff; font-family: inherit;
+}
+.app-status-sel:disabled { opacity: 1; }
+.app-links { display: flex; gap: 10px; }
+.app-link {
+  font-size: 12px; color: var(--accent); text-decoration: none; font-weight: 700;
+}
+.app-link:hover { text-decoration: underline; }
+
+/* ════════════════════════════════
    RESPONSIVE
 ════════════════════════════════ */
 @media (max-width: 768px) {
+  .apps-stats { grid-template-columns: repeat(2, 1fr); }
+  .app-row { flex-direction: column; }
+  .app-side { flex-direction: row; align-items: center; justify-content: space-between; width: 100%; }
   .page-wrap {
     grid-template-columns: 1fr;
     padding: 16px 14px 48px;
@@ -493,6 +557,7 @@ body {
     </a>
     <div class="nav-tabs">
       <button class="nav-tab active" id="tab-list" onclick="switchTab('list')">職缺列表</button>
+      <button class="nav-tab" id="tab-apps" onclick="switchTab('apps')">投遞紀錄</button>
       <button class="nav-tab" id="tab-manual" onclick="switchTab('manual')">手動分析</button>
     </div>
     <div class="nav-pills">
@@ -522,6 +587,7 @@ body {
       <div class="card-tags">
         <span class="cat-tag" style="background:#e0f2fe;color:#0369a1">PM / PjM</span>
         <span class="rank-tag">第 1 名</span>
+        
       </div>
       <div class="score-display">
         <span class="score-num" style="color:#d97706">6</span>
@@ -535,6 +601,7 @@ body {
   </div>
   <div class="card-actions">
     <span class="btn-expand">📋 查看詳細分析 →</span>
+    <button class="btn-mark-applied" id="mark-8zklv" onclick="markApplied(event,'8zklv','數位發展人員(行銷相關系統專案管理PM/商業分析BA)','玉山綜合證券股份有限公司','https://www.104.com.tw/job/8zklv','面議')">✔ 標記已投遞</button>
     <a class="btn-104" href="https://www.104.com.tw/job/8zklv" target="_blank"
        onclick="event.stopPropagation()">查看 104 職缺 →</a>
   </div>
@@ -562,6 +629,7 @@ body {
       <div class="card-tags">
         <span class="cat-tag" style="background:#e0f2fe;color:#0369a1">PM / PjM</span>
         <span class="rank-tag">第 2 名</span>
+        
       </div>
       <div class="score-display">
         <span class="score-num" style="color:#dc2626">5</span>
@@ -575,6 +643,7 @@ body {
   </div>
   <div class="card-actions">
     <span class="btn-expand">📋 查看詳細分析 →</span>
+    <button class="btn-mark-applied" id="mark-83rag" onclick="markApplied(event,'83rag','專案經理｜科技藝術','黑川互動媒體藝術有限公司','https://www.104.com.tw/job/83rag','45,000 ~ 55,000')">✔ 標記已投遞</button>
     <a class="btn-104" href="https://www.104.com.tw/job/83rag" target="_blank"
        onclick="event.stopPropagation()">查看 104 職缺 →</a>
   </div>
@@ -602,6 +671,7 @@ body {
       <div class="card-tags">
         <span class="cat-tag" style="background:#f3e8ff;color:#7c3aed">PMO</span>
         <span class="rank-tag">第 3 名</span>
+        
       </div>
       <div class="score-display">
         <span class="score-num" style="color:#dc2626">4</span>
@@ -615,6 +685,7 @@ body {
   </div>
   <div class="card-actions">
     <span class="btn-expand">📋 查看詳細分析 →</span>
+    <button class="btn-mark-applied" id="mark-7ypp2" onclick="markApplied(event,'7ypp2','科技金融_PMO專案管理人員','O-Bank_王道商業銀行股份有限公司','https://www.104.com.tw/job/7ypp2','面議')">✔ 標記已投遞</button>
     <a class="btn-104" href="https://www.104.com.tw/job/7ypp2" target="_blank"
        onclick="event.stopPropagation()">查看 104 職缺 →</a>
   </div>
@@ -642,6 +713,7 @@ body {
       <div class="card-tags">
         <span class="cat-tag" style="background:#e0f2fe;color:#0369a1">PM / PjM</span>
         <span class="ref-tag">值得參考</span>
+        
       </div>
       <div class="score-display">
         <span class="score-num" style="color:#d97706">6</span>
@@ -655,6 +727,7 @@ body {
   </div>
   <div class="card-actions">
     <span class="btn-expand">📋 查看詳細分析 →</span>
+    <button class="btn-mark-applied" id="mark-7ptge" onclick="markApplied(event,'7ptge','系統維運專案PM(22080201)','叡揚資訊股份有限公司','https://www.104.com.tw/job/7ptge?jobsource=pda_b','面議')">✔ 標記已投遞</button>
     <a class="btn-104" href="https://www.104.com.tw/job/7ptge?jobsource=pda_b" target="_blank"
        onclick="event.stopPropagation()">查看 104 職缺 →</a>
   </div>
@@ -682,6 +755,7 @@ body {
       <div class="card-tags">
         <span class="cat-tag" style="background:#f1f5f9;color:#475569">其他</span>
         <span class="ref-tag">值得參考</span>
+        
       </div>
       <div class="score-display">
         <span class="score-num" style="color:#dc2626">3</span>
@@ -695,6 +769,7 @@ body {
   </div>
   <div class="card-actions">
     <span class="btn-expand">📋 查看詳細分析 →</span>
+    <button class="btn-mark-applied" id="mark-92811" onclick="markApplied(event,'92811','M【南港區】知名外商:Key Account Manager/Facility Manager','ABV 物業管理_安橋公寓大廈管理維護股份有限公司','https://www.104.com.tw/job/92811','面議')">✔ 標記已投遞</button>
     <a class="btn-104" href="https://www.104.com.tw/job/92811" target="_blank"
        onclick="event.stopPropagation()">查看 104 職缺 →</a>
   </div>
@@ -722,6 +797,7 @@ body {
       <div class="card-tags">
         <span class="cat-tag" style="background:#e0f2fe;color:#0369a1">PM / PjM</span>
         <span class="ref-tag">值得參考</span>
+        
       </div>
       <div class="score-display">
         <span class="score-num" style="color:#dc2626">3</span>
@@ -735,6 +811,7 @@ body {
   </div>
   <div class="card-actions">
     <span class="btn-expand">📋 查看詳細分析 →</span>
+    <button class="btn-mark-applied" id="mark-90qvw" onclick="markApplied(event,'90qvw','【凱基銀行/金融科技處】數位/科技專案規劃資深經理','凱基金融控股股份有限公司|凱基證券|凱基銀行|中華開發資本|凱基投信','https://www.104.com.tw/job/90qvw','面議')">✔ 標記已投遞</button>
     <a class="btn-104" href="https://www.104.com.tw/job/90qvw" target="_blank"
        onclick="event.stopPropagation()">查看 104 職缺 →</a>
   </div>
@@ -762,6 +839,7 @@ body {
       <div class="card-tags">
         <span class="cat-tag" style="background:#dcfce7;color:#15803d">BA / 數據</span>
         <span class="ref-tag">值得參考</span>
+        
       </div>
       <div class="score-display">
         <span class="score-num" style="color:#d97706">7</span>
@@ -775,6 +853,7 @@ body {
   </div>
   <div class="card-actions">
     <span class="btn-expand">📋 查看詳細分析 →</span>
+    <button class="btn-mark-applied" id="mark-8wnde" onclick="markApplied(event,'8wnde','【第二顧問群】數據分析師、數據應用顧問','石橋有約顧問股份有限公司','https://www.104.com.tw/job/8wnde','面議')">✔ 標記已投遞</button>
     <a class="btn-104" href="https://www.104.com.tw/job/8wnde" target="_blank"
        onclick="event.stopPropagation()">查看 104 職缺 →</a>
   </div>
@@ -809,6 +888,7 @@ body {
       <div class="card-tags">
         <span class="cat-tag" style="background:#e0f2fe;color:#0369a1">PM / PjM</span>
         <span class="rank-tag">第 1 名</span>
+        
       </div>
       <div class="score-display">
         <span class="score-num" style="color:#16a34a">8</span>
@@ -822,6 +902,7 @@ body {
   </div>
   <div class="card-actions">
     <span class="btn-expand">📋 查看詳細分析 →</span>
+    <button class="btn-mark-applied" id="mark-8s2zp" onclick="markApplied(event,'8s2zp','專案管理師','昇智科技有限公司','https://www.104.com.tw/job/8s2zp','面議')">✔ 標記已投遞</button>
     <a class="btn-104" href="https://www.104.com.tw/job/8s2zp" target="_blank"
        onclick="event.stopPropagation()">查看 104 職缺 →</a>
   </div>
@@ -849,6 +930,7 @@ body {
       <div class="card-tags">
         <span class="cat-tag" style="background:#fff7ed;color:#c2410c">策略 / 營運</span>
         <span class="rank-tag">第 2 名</span>
+        
       </div>
       <div class="score-display">
         <span class="score-num" style="color:#16a34a">8</span>
@@ -862,6 +944,7 @@ body {
   </div>
   <div class="card-actions">
     <span class="btn-expand">📋 查看詳細分析 →</span>
+    <button class="btn-mark-applied" id="mark-8xcoo" onclick="markApplied(event,'8xcoo','策略分析經理','露天市集國際資訊股份有限公司','https://www.104.com.tw/job/8xcoo','面議')">✔ 標記已投遞</button>
     <a class="btn-104" href="https://www.104.com.tw/job/8xcoo" target="_blank"
        onclick="event.stopPropagation()">查看 104 職缺 →</a>
   </div>
@@ -889,6 +972,7 @@ body {
       <div class="card-tags">
         <span class="cat-tag" style="background:#f3e8ff;color:#7c3aed">PMO</span>
         <span class="rank-tag">第 3 名</span>
+        
       </div>
       <div class="score-display">
         <span class="score-num" style="color:#d97706">7</span>
@@ -902,6 +986,7 @@ body {
   </div>
   <div class="card-actions">
     <span class="btn-expand">📋 查看詳細分析 →</span>
+    <button class="btn-mark-applied" id="mark-92nmc" onclick="markApplied(event,'92nmc','經管中心_PMO','協禾國際股份有限公司','https://www.104.com.tw/job/92nmc','面議')">✔ 標記已投遞</button>
     <a class="btn-104" href="https://www.104.com.tw/job/92nmc" target="_blank"
        onclick="event.stopPropagation()">查看 104 職缺 →</a>
   </div>
@@ -941,6 +1026,277 @@ body {
   <div class="detail-body">
     <div id="detail-score-area"></div>
     <div id="detail-content"></div>
+  </div>
+</div>
+
+<!-- ── View: 投遞紀錄 ── -->
+<div id="view-apps" style="display:none">
+  <div class="apps-wrap">
+    <h2>📮 投遞紀錄</h2>
+    <div class="apps-hint" id="apps-local-hint">
+      💡 想直接在網頁上改狀態或標記已投遞，請在電腦啟動 <code>py server.py</code> 後開
+      <strong>http://localhost:8765</strong>；或跟 Claude 說「我投了 XXX」由它幫你記錄。
+    </div>
+    <div class="apps-stats">
+      <div class="app-stat"><div class="app-stat-num">21</div><div class="app-stat-label">總投遞</div></div>
+      <div class="app-stat"><div class="app-stat-num" style="color:#d97706">7</div><div class="app-stat-label">等待回音</div></div>
+      <div class="app-stat"><div class="app-stat-num" style="color:#2563eb">1</div><div class="app-stat-label">面試/邀約</div></div>
+      <div class="app-stat"><div class="app-stat-num" style="color:#16a34a">1</div><div class="app-stat-label">錄取</div></div>
+      <div class="app-stat"><div class="app-stat-num" style="color:#94a3b8">12</div><div class="app-stat-label">無聲卡</div></div>
+    </div>
+    
+<div class="app-row" style="--app-c:#d97706">
+  <div class="app-main">
+    <div class="app-title">（職缺名稱未填）</div>
+    <div class="app-company">敦新科技股份有限公司</div>
+    <div class="app-meta">投遞 2026-07-28 &middot; 面議（經常性薪資達 4 萬以上）</div>
+  </div>
+  <div class="app-side">
+    <select class="app-status-sel" style="--app-c:#d97706" disabled
+            onchange="updateAppStatus(this,'7xlg2')"><option value="📤 已投遞" selected>📤 已投遞</option><option value="💬 面試中">💬 面試中</option><option value="企業自動發邀約">企業自動發邀約</option><option value="✨ 錄取 (Offer Get)">✨ 錄取 (Offer Get)</option><option value="❌ 無聲卡/感謝信">❌ 無聲卡/感謝信</option></select>
+    <div class="app-links"><a class="app-link" href="https://www.104.com.tw/job/7xlg2" target="_blank">104 →</a><a class="app-link" href="https://app.notion.com/3abf85b8a057813a920ed96b76c6ccf4" target="_blank">Notion →</a></div>
+  </div>
+</div>
+<div class="app-row" style="--app-c:#d97706">
+  <div class="app-main">
+    <div class="app-title">（職缺名稱未填）</div>
+    <div class="app-company">PressPlay（瑞奧股份有限公司）</div>
+    <div class="app-meta">投遞 2026-07-28 &middot; 月薪 40,000~60,000</div>
+  </div>
+  <div class="app-side">
+    <select class="app-status-sel" style="--app-c:#d97706" disabled
+            onchange="updateAppStatus(this,'92yei')"><option value="📤 已投遞" selected>📤 已投遞</option><option value="💬 面試中">💬 面試中</option><option value="企業自動發邀約">企業自動發邀約</option><option value="✨ 錄取 (Offer Get)">✨ 錄取 (Offer Get)</option><option value="❌ 無聲卡/感謝信">❌ 無聲卡/感謝信</option></select>
+    <div class="app-links"><a class="app-link" href="https://www.104.com.tw/job/92yei" target="_blank">104 →</a><a class="app-link" href="https://app.notion.com/3abf85b8a057814685dee98c74b44b1a" target="_blank">Notion →</a></div>
+  </div>
+</div>
+<div class="app-row" style="--app-c:#d97706">
+  <div class="app-main">
+    <div class="app-title">（職缺名稱未填）</div>
+    <div class="app-company">新逸資訊科技有限公司</div>
+    <div class="app-meta">投遞 2026-07-28 &middot; 月薪 38,000~46,000（保障年薪 13 個月）</div>
+  </div>
+  <div class="app-side">
+    <select class="app-status-sel" style="--app-c:#d97706" disabled
+            onchange="updateAppStatus(this,'6pvgl')"><option value="📤 已投遞" selected>📤 已投遞</option><option value="💬 面試中">💬 面試中</option><option value="企業自動發邀約">企業自動發邀約</option><option value="✨ 錄取 (Offer Get)">✨ 錄取 (Offer Get)</option><option value="❌ 無聲卡/感謝信">❌ 無聲卡/感謝信</option></select>
+    <div class="app-links"><a class="app-link" href="https://www.104.com.tw/job/6pvgl" target="_blank">104 →</a><a class="app-link" href="https://app.notion.com/3abf85b8a05781f583effd9e14c85a08" target="_blank">Notion →</a></div>
+  </div>
+</div>
+<div class="app-row" style="--app-c:#d97706">
+  <div class="app-main">
+    <div class="app-title">專案管理師(PM)</div>
+    <div class="app-company">松凌科技股份有限公司</div>
+    <div class="app-meta">投遞 2026-07-22 &middot; 月薪 40,000~70,000</div>
+  </div>
+  <div class="app-side">
+    <select class="app-status-sel" style="--app-c:#d97706" disabled
+            onchange="updateAppStatus(this,'6nd28')"><option value="📤 已投遞" selected>📤 已投遞</option><option value="💬 面試中">💬 面試中</option><option value="企業自動發邀約">企業自動發邀約</option><option value="✨ 錄取 (Offer Get)">✨ 錄取 (Offer Get)</option><option value="❌ 無聲卡/感謝信">❌ 無聲卡/感謝信</option></select>
+    <div class="app-links"><a class="app-link" href="https://www.104.com.tw/job/6nd28" target="_blank">104 →</a><a class="app-link" href="https://app.notion.com/3a4f85b8a057813fbabee7953fc37f9a" target="_blank">Notion →</a></div>
+  </div>
+</div>
+<div class="app-row" style="--app-c:#d97706">
+  <div class="app-main">
+    <div class="app-title">專案經理 (PJM) -台北</div>
+    <div class="app-company">文偉股份有限公司</div>
+    <div class="app-meta">投遞 2026-07-22 &middot; 面議（經常性薪資達 4 萬以上）</div>
+  </div>
+  <div class="app-side">
+    <select class="app-status-sel" style="--app-c:#d97706" disabled
+            onchange="updateAppStatus(this,'8me7b')"><option value="📤 已投遞" selected>📤 已投遞</option><option value="💬 面試中">💬 面試中</option><option value="企業自動發邀約">企業自動發邀約</option><option value="✨ 錄取 (Offer Get)">✨ 錄取 (Offer Get)</option><option value="❌ 無聲卡/感謝信">❌ 無聲卡/感謝信</option></select>
+    <div class="app-links"><a class="app-link" href="https://www.104.com.tw/job/8me7b" target="_blank">104 →</a><a class="app-link" href="https://app.notion.com/3a4f85b8a05781c0ae29e9b6d17df953" target="_blank">Notion →</a></div>
+  </div>
+</div>
+<div class="app-row" style="--app-c:#d97706">
+  <div class="app-main">
+    <div class="app-title">（職缺名稱未填）</div>
+    <div class="app-company">上尚科技股份有限公司</div>
+    <div class="app-meta">投遞 2026-07-22 &middot; 月薪 38,000~50,000</div>
+  </div>
+  <div class="app-side">
+    <select class="app-status-sel" style="--app-c:#d97706" disabled
+            onchange="updateAppStatus(this,'7osim')"><option value="📤 已投遞" selected>📤 已投遞</option><option value="💬 面試中">💬 面試中</option><option value="企業自動發邀約">企業自動發邀約</option><option value="✨ 錄取 (Offer Get)">✨ 錄取 (Offer Get)</option><option value="❌ 無聲卡/感謝信">❌ 無聲卡/感謝信</option></select>
+    <div class="app-links"><a class="app-link" href="https://www.104.com.tw/job/7osim" target="_blank">104 →</a><a class="app-link" href="https://app.notion.com/3abf85b8a05781eb8bd0c9e4a1c3702f" target="_blank">Notion →</a></div>
+  </div>
+</div>
+<div class="app-row" style="--app-c:#94a3b8">
+  <div class="app-main">
+    <div class="app-title">主機板/系統產品 PM</div>
+    <div class="app-company">精英電腦股份有限公司</div>
+    <div class="app-meta">投遞 2026-07-03 &middot; 面議</div>
+  </div>
+  <div class="app-side">
+    <select class="app-status-sel" style="--app-c:#94a3b8" disabled
+            onchange="updateAppStatus(this,'8ogk7')"><option value="📤 已投遞">📤 已投遞</option><option value="💬 面試中">💬 面試中</option><option value="企業自動發邀約">企業自動發邀約</option><option value="✨ 錄取 (Offer Get)">✨ 錄取 (Offer Get)</option><option value="❌ 無聲卡/感謝信" selected>❌ 無聲卡/感謝信</option></select>
+    <div class="app-links"><a class="app-link" href="https://www.104.com.tw/job/8ogk7" target="_blank">104 →</a><a class="app-link" href="https://app.notion.com/391f85b8a057816e9f5ec5106fae59d7" target="_blank">Notion →</a></div>
+  </div>
+</div>
+<div class="app-row" style="--app-c:#94a3b8">
+  <div class="app-main">
+    <div class="app-title">專案經理／專案管理師（台北）</div>
+    <div class="app-company">昕傳科技股份有限公司</div>
+    <div class="app-meta">投遞 2026-07-02 &middot; 待遇面議</div>
+  </div>
+  <div class="app-side">
+    <select class="app-status-sel" style="--app-c:#94a3b8" disabled
+            onchange="updateAppStatus(this,'5qf3w')"><option value="📤 已投遞">📤 已投遞</option><option value="💬 面試中">💬 面試中</option><option value="企業自動發邀約">企業自動發邀約</option><option value="✨ 錄取 (Offer Get)">✨ 錄取 (Offer Get)</option><option value="❌ 無聲卡/感謝信" selected>❌ 無聲卡/感謝信</option></select>
+    <div class="app-links"><a class="app-link" href="https://www.104.com.tw/job/5qf3w" target="_blank">104 →</a><a class="app-link" href="https://app.notion.com/390f85b8a05781d299f7c177fc4efede" target="_blank">Notion →</a></div>
+  </div>
+</div>
+<div class="app-row" style="--app-c:#94a3b8">
+  <div class="app-main">
+    <div class="app-title">PM 軟體專案經理</div>
+    <div class="app-company">哲煜科技股份有限公司</div>
+    <div class="app-meta">投遞 2026-07-02 &middot; 月薪 40,000 元以上</div>
+  </div>
+  <div class="app-side">
+    <select class="app-status-sel" style="--app-c:#94a3b8" disabled
+            onchange="updateAppStatus(this,'7kjzc')"><option value="📤 已投遞">📤 已投遞</option><option value="💬 面試中">💬 面試中</option><option value="企業自動發邀約">企業自動發邀約</option><option value="✨ 錄取 (Offer Get)">✨ 錄取 (Offer Get)</option><option value="❌ 無聲卡/感謝信" selected>❌ 無聲卡/感謝信</option></select>
+    <div class="app-links"><a class="app-link" href="https://www.104.com.tw/job/7kjzc" target="_blank">104 →</a><a class="app-link" href="https://app.notion.com/391f85b8a0578157a8ced29e2be94fc8" target="_blank">Notion →</a></div>
+  </div>
+</div>
+<div class="app-row" style="--app-c:#94a3b8">
+  <div class="app-main">
+    <div class="app-title">專案專員(全職)</div>
+    <div class="app-company">炫明科技有限公司</div>
+    <div class="app-meta">投遞 2026-07-01 &middot; 面試 2026-07-07 &middot; 待遇面議</div>
+  </div>
+  <div class="app-side">
+    <select class="app-status-sel" style="--app-c:#94a3b8" disabled
+            onchange="updateAppStatus(this,'92qrk')"><option value="📤 已投遞">📤 已投遞</option><option value="💬 面試中">💬 面試中</option><option value="企業自動發邀約">企業自動發邀約</option><option value="✨ 錄取 (Offer Get)">✨ 錄取 (Offer Get)</option><option value="❌ 無聲卡/感謝信" selected>❌ 無聲卡/感謝信</option></select>
+    <div class="app-links"><a class="app-link" href="https://www.104.com.tw/job/92qrk" target="_blank">104 →</a><a class="app-link" href="https://app.notion.com/38ff85b8a057818b9ce6df3ddf141bd9" target="_blank">Notion →</a></div>
+  </div>
+</div>
+<div class="app-row" style="--app-c:#94a3b8">
+  <div class="app-main">
+    <div class="app-title">數位轉型/身分識別/電子簽章 服務 產品經理/產品管理師</div>
+    <div class="app-company">臺灣網路認證股份有限公司</div>
+    <div class="app-meta">投遞 2026-06-30 &middot; 待遇面議</div>
+  </div>
+  <div class="app-side">
+    <select class="app-status-sel" style="--app-c:#94a3b8" disabled
+            onchange="updateAppStatus(this,'7db3q')"><option value="📤 已投遞">📤 已投遞</option><option value="💬 面試中">💬 面試中</option><option value="企業自動發邀約">企業自動發邀約</option><option value="✨ 錄取 (Offer Get)">✨ 錄取 (Offer Get)</option><option value="❌ 無聲卡/感謝信" selected>❌ 無聲卡/感謝信</option></select>
+    <div class="app-links"><a class="app-link" href="https://www.104.com.tw/job/7db3q" target="_blank">104 →</a><a class="app-link" href="https://app.notion.com/38ff85b8a057819a8dc2e481dcf0d591" target="_blank">Notion →</a></div>
+  </div>
+</div>
+<div class="app-row" style="--app-c:#16a34a">
+  <div class="app-main">
+    <div class="app-title">資訊系統專案管理PM</div>
+    <div class="app-company">植根國際資訊股份有限公司</div>
+    <div class="app-meta">投遞 2026-06-29 &middot; 面試 2026-07-07 &middot; 面議</div>
+  </div>
+  <div class="app-side">
+    <select class="app-status-sel" style="--app-c:#16a34a" disabled
+            onchange="updateAppStatus(this,'6xhax')"><option value="📤 已投遞">📤 已投遞</option><option value="💬 面試中">💬 面試中</option><option value="企業自動發邀約">企業自動發邀約</option><option value="✨ 錄取 (Offer Get)" selected>✨ 錄取 (Offer Get)</option><option value="❌ 無聲卡/感謝信">❌ 無聲卡/感謝信</option></select>
+    <div class="app-links"><a class="app-link" href="https://www.104.com.tw/job/6xhax" target="_blank">104 →</a><a class="app-link" href="https://app.notion.com/394f85b8a05781848576d758bcad53f9" target="_blank">Notion →</a></div>
+  </div>
+</div>
+<div class="app-row" style="--app-c:#94a3b8">
+  <div class="app-main">
+    <div class="app-title">營運管理專員（營運 / 採購 / 專案協作）</div>
+    <div class="app-company">成鼎電工實業有限公司</div>
+    <div class="app-meta">投遞 2026-06-28 &middot; 待遇面議</div>
+  </div>
+  <div class="app-side">
+    <select class="app-status-sel" style="--app-c:#94a3b8" disabled
+            onchange="updateAppStatus(this,'8vi17')"><option value="📤 已投遞">📤 已投遞</option><option value="💬 面試中">💬 面試中</option><option value="企業自動發邀約">企業自動發邀約</option><option value="✨ 錄取 (Offer Get)">✨ 錄取 (Offer Get)</option><option value="❌ 無聲卡/感謝信" selected>❌ 無聲卡/感謝信</option></select>
+    <div class="app-links"><a class="app-link" href="https://www.104.com.tw/job/8vi17" target="_blank">104 →</a><a class="app-link" href="https://app.notion.com/38ff85b8a0578126a476fa8c8bbd58bc" target="_blank">Notion →</a></div>
+  </div>
+</div>
+<div class="app-row" style="--app-c:#d97706">
+  <div class="app-main">
+    <div class="app-title">專案助理</div>
+    <div class="app-company">—</div>
+    <div class="app-meta">投遞 2026-06-03 &middot; 月薪40,000元以上</div>
+  </div>
+  <div class="app-side">
+    <select class="app-status-sel" style="--app-c:#d97706" disabled
+            onchange="updateAppStatus(this,'8l65r')"><option value="📤 已投遞" selected>📤 已投遞</option><option value="💬 面試中">💬 面試中</option><option value="企業自動發邀約">企業自動發邀約</option><option value="✨ 錄取 (Offer Get)">✨ 錄取 (Offer Get)</option><option value="❌ 無聲卡/感謝信">❌ 無聲卡/感謝信</option></select>
+    <div class="app-links"><a class="app-link" href="https://www.104.com.tw/job/8l65r" target="_blank">104 →</a><a class="app-link" href="https://app.notion.com/373f85b8a057809c99afd7577f48d3b4" target="_blank">Notion →</a></div>
+  </div>
+</div>
+<div class="app-row" style="--app-c:#94a3b8">
+  <div class="app-main">
+    <div class="app-title">專案專員</div>
+    <div class="app-company">訊達電腦</div>
+    <div class="app-meta">投遞 2026-06-03 &middot; 40000以上</div>
+  </div>
+  <div class="app-side">
+    <select class="app-status-sel" style="--app-c:#94a3b8" disabled
+            onchange="updateAppStatus(this,'6wnns')"><option value="📤 已投遞">📤 已投遞</option><option value="💬 面試中">💬 面試中</option><option value="企業自動發邀約">企業自動發邀約</option><option value="✨ 錄取 (Offer Get)">✨ 錄取 (Offer Get)</option><option value="❌ 無聲卡/感謝信" selected>❌ 無聲卡/感謝信</option></select>
+    <div class="app-links"><a class="app-link" href="https://www.104.com.tw/job/6wnns" target="_blank">104 →</a><a class="app-link" href="https://app.notion.com/373f85b8a05780ceaf5aebc70a507c77" target="_blank">Notion →</a></div>
+  </div>
+</div>
+<div class="app-row" style="--app-c:#0d9488">
+  <div class="app-main">
+    <div class="app-title">數據服務與金流PM</div>
+    <div class="app-company">台灣大哥大股份有限公司</div>
+    <div class="app-meta">投遞 2026-06-03 &middot; 待遇面議</div>
+  </div>
+  <div class="app-side">
+    <select class="app-status-sel" style="--app-c:#0d9488" disabled
+            onchange="updateAppStatus(this,'91ddn')"><option value="📤 已投遞">📤 已投遞</option><option value="💬 面試中">💬 面試中</option><option value="企業自動發邀約" selected>企業自動發邀約</option><option value="✨ 錄取 (Offer Get)">✨ 錄取 (Offer Get)</option><option value="❌ 無聲卡/感謝信">❌ 無聲卡/感謝信</option></select>
+    <div class="app-links"><a class="app-link" href="https://www.104.com.tw/job/91ddn" target="_blank">104 →</a><a class="app-link" href="https://app.notion.com/374f85b8a05780148e59d85a997b2619" target="_blank">Notion →</a></div>
+  </div>
+</div>
+<div class="app-row" style="--app-c:#94a3b8">
+  <div class="app-main">
+    <div class="app-title">技術專案助理</div>
+    <div class="app-company">唯雲科技有限公司</div>
+    <div class="app-meta">投遞 2026-06-03 &middot; 月薪40,000~45,000元</div>
+  </div>
+  <div class="app-side">
+    <select class="app-status-sel" style="--app-c:#94a3b8" disabled
+            onchange="updateAppStatus(this,'907r2')"><option value="📤 已投遞">📤 已投遞</option><option value="💬 面試中">💬 面試中</option><option value="企業自動發邀約">企業自動發邀約</option><option value="✨ 錄取 (Offer Get)">✨ 錄取 (Offer Get)</option><option value="❌ 無聲卡/感謝信" selected>❌ 無聲卡/感謝信</option></select>
+    <div class="app-links"><a class="app-link" href="https://www.104.com.tw/job/907r2" target="_blank">104 →</a><a class="app-link" href="https://app.notion.com/374f85b8a057807abe15f58bdaa03c07" target="_blank">Notion →</a></div>
+  </div>
+</div>
+<div class="app-row" style="--app-c:#94a3b8">
+  <div class="app-main">
+    <div class="app-title">產品營運專員</div>
+    <div class="app-company">宏碁資訊服務股份有限公司</div>
+    <div class="app-meta">投遞 2026-06-03 &middot; 待遇面議</div>
+  </div>
+  <div class="app-side">
+    <select class="app-status-sel" style="--app-c:#94a3b8" disabled
+            onchange="updateAppStatus(this,'8yym5')"><option value="📤 已投遞">📤 已投遞</option><option value="💬 面試中">💬 面試中</option><option value="企業自動發邀約">企業自動發邀約</option><option value="✨ 錄取 (Offer Get)">✨ 錄取 (Offer Get)</option><option value="❌ 無聲卡/感謝信" selected>❌ 無聲卡/感謝信</option></select>
+    <div class="app-links"><a class="app-link" href="https://www.104.com.tw/job/8yym5" target="_blank">104 →</a><a class="app-link" href="https://app.notion.com/374f85b8a05780dca3e6d4680735c0eb" target="_blank">Notion →</a></div>
+  </div>
+</div>
+<div class="app-row" style="--app-c:#94a3b8">
+  <div class="app-main">
+    <div class="app-title">專案管理師</div>
+    <div class="app-company">鑫創電子</div>
+    <div class="app-meta">投遞 2026-04-23 &middot; 40000</div>
+  </div>
+  <div class="app-side">
+    <select class="app-status-sel" style="--app-c:#94a3b8" disabled
+            onchange="updateAppStatus(this,'7vg3i')"><option value="📤 已投遞">📤 已投遞</option><option value="💬 面試中">💬 面試中</option><option value="企業自動發邀約">企業自動發邀約</option><option value="✨ 錄取 (Offer Get)">✨ 錄取 (Offer Get)</option><option value="❌ 無聲卡/感謝信" selected>❌ 無聲卡/感謝信</option></select>
+    <div class="app-links"><a class="app-link" href="https://www.104.com.tw/job/7vg3i" target="_blank">104 →</a><a class="app-link" href="https://app.notion.com/34bf85b8a05780a399eaea6d9c150857" target="_blank">Notion →</a></div>
+  </div>
+</div>
+<div class="app-row" style="--app-c:#94a3b8">
+  <div class="app-main">
+    <div class="app-title">專案管理PM</div>
+    <div class="app-company">冠德科技</div>
+    <div class="app-meta">投遞 2026-04-13 &middot; 面試 2026-04-23 &middot; 尚未談</div>
+  </div>
+  <div class="app-side">
+    <select class="app-status-sel" style="--app-c:#94a3b8" disabled
+            onchange="updateAppStatus(this,'8evsz')"><option value="📤 已投遞">📤 已投遞</option><option value="💬 面試中">💬 面試中</option><option value="企業自動發邀約">企業自動發邀約</option><option value="✨ 錄取 (Offer Get)">✨ 錄取 (Offer Get)</option><option value="❌ 無聲卡/感謝信" selected>❌ 無聲卡/感謝信</option></select>
+    <div class="app-links"><a class="app-link" href="https://www.104.com.tw/job/8evsz" target="_blank">104 →</a><a class="app-link" href="https://app.notion.com/34bf85b8a05780528654e586604c3fc0" target="_blank">Notion →</a></div>
+  </div>
+</div>
+<div class="app-row" style="--app-c:#94a3b8">
+  <div class="app-main">
+    <div class="app-title">PM產品管理師</div>
+    <div class="app-company">高創科技</div>
+    <div class="app-meta">投遞 2026-04-13 &middot; 履歷沒過</div>
+  </div>
+  <div class="app-side">
+    <select class="app-status-sel" style="--app-c:#94a3b8" disabled
+            onchange="updateAppStatus(this,'34bf85b8a057807187d6ff78ba57294f')"><option value="📤 已投遞">📤 已投遞</option><option value="💬 面試中">💬 面試中</option><option value="企業自動發邀約">企業自動發邀約</option><option value="✨ 錄取 (Offer Get)">✨ 錄取 (Offer Get)</option><option value="❌ 無聲卡/感謝信" selected>❌ 無聲卡/感謝信</option></select>
+    <div class="app-links"><a class="app-link" href="https://app.notion.com/34bf85b8a057807187d6ff78ba57294f" target="_blank">Notion →</a></div>
+  </div>
+</div>
   </div>
 </div>
 
@@ -1024,10 +1380,13 @@ function switchTab(tab) {
   document.getElementById('view-list').style.display   = tab === 'list'   ? '' : 'none';
   document.getElementById('view-detail').style.display = tab === 'detail' ? '' : 'none';
   document.getElementById('view-manual').style.display = tab === 'manual' ? '' : 'none';
+  document.getElementById('view-apps').style.display   = tab === 'apps'   ? '' : 'none';
   document.querySelectorAll('.nav-tab').forEach(function(b) {
     b.classList.toggle('active', b.id === 'tab-' + (tab === 'detail' ? 'list' : tab));
   });
-  if (tab !== 'detail') window.location.hash = tab === 'manual' ? 'manual' : '';
+  if (tab !== 'detail') {
+    window.location.hash = (tab === 'manual') ? 'manual' : (tab === 'apps' ? 'apps' : '');
+  }
 }
 
 function showDetail(cardId, jobName, custName, url104, scoreColor, score) {
@@ -1077,6 +1436,7 @@ function goBack() {
 (function() {
   var h = window.location.hash.replace('#', '');
   if (h === 'manual') { switchTab('manual'); }
+  else if (h === 'apps') { switchTab('apps'); }
 })();
 
 /* ── 職缺分類篩選 ── */
@@ -1226,6 +1586,61 @@ function copyCmd() {
       btn.textContent = '複製指令';
       btn.className = 'manual-copy-btn';
     }, 2000);
+  });
+}
+
+/* ── 投遞紀錄 ── */
+(function initAppsView() {
+  if (_isLocalhost) {
+    document.body.classList.add('is-local');
+    document.querySelectorAll('.app-status-sel').forEach(function(s) { s.disabled = false; });
+    var hint = document.getElementById('apps-local-hint');
+    if (hint) hint.style.display = 'none';
+  }
+})();
+
+function markApplied(ev, slug, jobName, custName, url, salary) {
+  ev.stopPropagation();
+  if (!_isLocalhost) return;
+  var btn = document.getElementById('mark-' + slug);
+  btn.disabled = true; btn.textContent = '記錄中...';
+  fetch('http://localhost:8765/mark_applied', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({slug: slug, jobName: jobName, custName: custName, url: url, salary: salary})
+  })
+  .then(function(r) { return r.json(); })
+  .then(function(d) {
+    if (d.ok) {
+      btn.textContent = '✅ 已投遞';
+      btn.style.borderColor = '#16a34a'; btn.style.color = '#16a34a';
+    } else {
+      btn.disabled = false; btn.textContent = '✔ 標記已投遞';
+      alert(d.error || '記錄失敗，請重試');
+    }
+  })
+  .catch(function() {
+    btn.disabled = false; btn.textContent = '✔ 標記已投遞';
+    alert('無法連線到本地伺服器，請確認 py server.py 正在執行中');
+  });
+}
+
+function updateAppStatus(sel, key) {
+  if (!_isLocalhost) return;
+  sel.disabled = true;
+  fetch('http://localhost:8765/update_application', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({key: key, status: sel.value})
+  })
+  .then(function(r) { return r.json(); })
+  .then(function(d) {
+    sel.disabled = false;
+    if (!d.ok) alert(d.error || '狀態更新失敗，請重試');
+  })
+  .catch(function() {
+    sel.disabled = false;
+    alert('無法連線到本地伺服器，請確認 py server.py 正在執行中');
   });
 }
 </script>
