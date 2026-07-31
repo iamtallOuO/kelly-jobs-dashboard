@@ -5,6 +5,593 @@
     "report_url": "reports/diagnosis_2026-07-31.html",
     "jobs": [
       {
+        "jobNo": "yt_27437",
+        "jobName": "Product Manager",
+        "custName": "TOUCHWOW",
+        "salary": "面議",
+        "location": "臺北市",
+        "industry": "新創(Yourator)",
+        "url": "https://www.yourator.co/companies/TOUCHWOW/jobs/27437",
+        "ai_score": 8,
+        "ai_reason": "PM職能完全匹配、新創適0到1開發，但產業非目標",
+        "is_reference": false,
+        "diagnosis": {
+          "jobNo": "yt_27437",
+          "overall_score": 48,
+          "overall_summary": "PM頭銜貼近但實際工作聚焦商品企劃、供應商生產與品管,孫慈的PRD撰寫與跨部門協調能力可部分遷移,惟完全缺乏實體商品開發與供應鏈實務,且非目標優先產業。",
+          "dimensions": [
+            {
+              "label": "跨部門/客戶協調能力",
+              "percent": 55
+            },
+            {
+              "label": "開發時程與看板管理遷移度",
+              "percent": 65
+            },
+            {
+              "label": "市場/競品分析能力",
+              "percent": 60
+            },
+            {
+              "label": "實體商品/供應鏈實務經驗",
+              "percent": 15
+            },
+            {
+              "label": "商品企劃與美感提案能力",
+              "percent": 25
+            }
+          ],
+          "requirements": [
+            "KA客戶經營管理",
+            "品牌市場趨勢研究",
+            "商品企劃提案發想",
+            "供應商與生產資源整合",
+            "開發生產時程控管",
+            "商品品質與出貨管理",
+            "上市後銷售分析優化"
+          ],
+          "resume_coverage": [
+            {
+              "text": "客戶經營(對象為海外品牌非傳統KA)",
+              "status": "partial"
+            },
+            {
+              "text": "市場趨勢研究(有競品分析經驗,非消費品設計趨勢)",
+              "status": "partial"
+            },
+            {
+              "text": "商品企劃提案(未提及)",
+              "status": "missing"
+            },
+            {
+              "text": "供應商/生產資源整合(無實體供應鏈經驗)",
+              "status": "missing"
+            },
+            {
+              "text": "時程控管(看板法/關鍵路徑追蹤可遷移)",
+              "status": "partial"
+            },
+            {
+              "text": "品質與出貨管理(未提及)",
+              "status": "missing"
+            },
+            {
+              "text": "銷售分析優化(有Power BI競品分析經驗)",
+              "status": "partial"
+            }
+          ],
+          "bullet_rewrites": [
+            {
+              "before": "主導 5+ 項規格產品從需求訪談、規格定義到上線驗收之 0 到 1 完整流程;撰寫 PRD 明確定義功能說明,作為跨部門溝通與開發執行依據",
+              "after": "主導5項以上產品從需求訪談、規格定義到上線驗收的完整開發流程,產出規格文件做為跨部門溝通與執行依據,確保產品如期上市"
+            },
+            {
+              "before": "以看板方法追蹤並行專案的關鍵路徑與風險,搭配部門 OKR 對齊優先級,提前調整排程確保如期交付",
+              "after": "以看板方法同步管理多項產品開發時程,即時掌握關鍵路徑與風險並調整排程,確保開發進度如期交付"
+            },
+            {
+              "before": "擔任海外客戶決策層、各部門利害關係人與技術團隊的單一需求窗口,將模糊需求轉化為可執行規格",
+              "after": "擔任海外品牌客戶與內部團隊的單一需求窗口,將模糊需求轉化為明確可執行規格,支援跨國品牌合作專案推進"
+            },
+            {
+              "before": "以 SQL(MS SQL/PostgreSQL)跨資料庫檢索底層數據,搭配 Power BI 製作視覺化報表,產出競品分析(東南亞/歐美共 4 份)",
+              "after": "運用SQL跨資料庫查詢與Power BI視覺化,產出東南亞、歐美市場競品分析報告共4份,做為市場策略決策參考"
+            }
+          ],
+          "gaps": [
+            {
+              "title": "Gap1: 實體商品開發/供應鏈經驗缺口",
+              "detail": "未有生產排程、供應商議價、品管出貨經驗,建議面談時強調PM底層能力(時程管控、風險應變、跨部門溝通)可遷移,並主動了解該職缺是否提供上手訓練。"
+            },
+            {
+              "title": "Gap2: 商品企劃/美感提案能力未被驗證",
+              "detail": "履歷未展現商品設計品味或企劃發想實績,若投遞建議補充個人對品牌聯名企劃的觀察與興趣做為加分。"
+            },
+            {
+              "title": "Gap3: 產業與核心職能雙重不符",
+              "detail": "此職缺屬消費品牌新創,非半導體/電信/電子/軟體優先產業,工作內容也偏商品/供應鏈而非典型PRD型PM,建議評估是否僅作為短期過渡選項。"
+            }
+          ],
+          "company_intro": "TOUCHWOW應是一家規模較小的新創公司,主要業務推測為與知名品牌合作開發聯名商品,從企劃發想到量產上市提供一站式服務;因公開資訊有限,對其確切規模與營運模式僅能保守推測。",
+          "relative_comparison": "這筆分數在5筆中屬中段,主要因為PM頭銜吸睛但實際工作內容(商品企劃、供應鏈、生產品管)與孫慈的PRD/跨國品牌需求協調經驗性質差異大,產業也非半導體/電信優先序;相較Celestica的BA職缺,技能重疊度明顯較低。",
+          "key_advice": "若投遞,建議面談時務必釐清實際職責偏重商品企劃/供應鏈還是專案管理,並誠實評估自己對消費品設計、生產端缺乏經驗的風險。"
+        }
+      },
+      {
+        "jobNo": "li_4446981463",
+        "jobName": "Product Manager",
+        "custName": "Acer Fashion Inc.",
+        "salary": "面議",
+        "location": "Taipei, Taipei City, Taiwan",
+        "industry": "LinkedIn",
+        "url": "https://tw.linkedin.com/jobs/view/product-manager-at-acer-fashion-inc-4446981463",
+        "ai_score": 7,
+        "ai_reason": "PM職能匹配、電子產業目標，但無詳細工作描述",
+        "is_reference": false,
+        "diagnosis": {
+          "jobNo": "li_4446981463",
+          "overall_score": 58,
+          "overall_summary": "PRD撰寫與跨國跨部門協調經驗與此職缺高度吻合,但年資(要求3-5年)與消費電子NPI(EVT/DVT/PVT/量產)硬體開發流程經驗是明顯落差。",
+          "dimensions": [
+            {
+              "label": "PRD/規格文件撰寫",
+              "percent": 85
+            },
+            {
+              "label": "跨部門/跨國利害關係人協調",
+              "percent": 85
+            },
+            {
+              "label": "硬體/NPI實務經驗",
+              "percent": 10
+            },
+            {
+              "label": "年資/資歷符合度",
+              "percent": 40
+            },
+            {
+              "label": "市場研究與競品分析",
+              "percent": 70
+            },
+            {
+              "label": "英文溝通能力",
+              "percent": 65
+            }
+          ],
+          "requirements": [
+            "3-5年PM/PgM/PjM經驗",
+            "消費電子/硬體產品管理經驗",
+            "NPI流程(EVT/DVT/PVT/MP)熟悉",
+            "ODM/OEM合作經驗",
+            "PRD/產品規格撰寫",
+            "跨部門/利害關係人管理",
+            "英文溝通能力",
+            "市場研究/競品分析/上市後追蹤"
+          ],
+          "resume_coverage": [
+            {
+              "text": "年資僅1-2年(未達3-5年門檻)",
+              "status": "missing"
+            },
+            {
+              "text": "硬體產品管理經驗(現職為金融科技軟體/服務產品)",
+              "status": "missing"
+            },
+            {
+              "text": "NPI流程(未提及)",
+              "status": "missing"
+            },
+            {
+              "text": "ODM/OEM合作(未提及)",
+              "status": "missing"
+            },
+            {
+              "text": "PRD撰寫(5+項產品0到1完整經驗)",
+              "status": "covered"
+            },
+            {
+              "text": "跨部門/跨國利害關係人管理(強項)",
+              "status": "covered"
+            },
+            {
+              "text": "英文溝通(書面強,口說較少主動發言)",
+              "status": "partial"
+            },
+            {
+              "text": "市場研究/競品分析(東南亞/歐美4份報告)",
+              "status": "covered"
+            }
+          ],
+          "bullet_rewrites": [
+            {
+              "before": "主導 5+ 項規格產品從需求訪談、規格定義到上線驗收之 0 到 1 完整流程;撰寫 PRD 明確定義功能說明",
+              "after": "主導5項以上產品從需求訪談、規格定義、PRD撰寫到上線驗收之完整0到1流程,做為跨部門與技術團隊開發執行的依據"
+            },
+            {
+              "before": "擔任海外客戶決策層、各部門利害關係人與技術團隊的單一需求窗口,將模糊需求轉化為可執行規格",
+              "after": "擔任APAC與歐美品牌客戶決策層、內部各部門與技術團隊的單一需求窗口,每日以英文書面溝通,將模糊需求轉化為可執行規格"
+            },
+            {
+              "before": "接手單一最大品牌產品線(橫跨 APAC 與 EU/UK 兩市場),在前任離職、無品牌或產業文件情況下 3 個月建立完整知識庫",
+              "after": "在無前手交接文件情況下,3個月內接手橫跨APAC與歐美市場之最大品牌產品線,獨立建立完整產業與產品知識庫"
+            },
+            {
+              "before": "以 SQL 跨資料庫檢索底層數據,搭配 Power BI 製作視覺化報表,產出競品分析(東南亞/歐美共 4 份)",
+              "after": "跨資料庫以SQL查詢底層數據並以Power BI視覺化,完成東南亞、歐美共4份市場競品分析報告"
+            }
+          ],
+          "gaps": [
+            {
+              "title": "Gap1: 硬體/NPI流程經驗缺口",
+              "detail": "完全無EVT/DVT/PVT/量產階段經驗,建議面談前自學消費電子開發流程基本知識,並將自己定位為軟性PM技能可遷移、硬體流程需從頭學習。"
+            },
+            {
+              "title": "Gap2: 年資落差(3-5年 vs 1-2年)",
+              "detail": "職缺明列3-5年要求,建議投遞時在求職信中強調0到1完整案例的複雜度與獨立作業能力,弭補年資不足的觀感。"
+            },
+            {
+              "title": "Gap3: 英文口說能力待加強",
+              "detail": "目前以書面往來為主,口說會議不主動發言,若進面試建議加強英文口語表達,因跨國硬體PM常需視訊即時溝通。"
+            },
+            {
+              "title": "Gap4: ODM/OEM供應鏈實務未提及",
+              "detail": "履歷未展現與代工廠/供應商協作經驗,若有任何間接經驗建議補充說明。"
+            }
+          ],
+          "company_intro": "Acer Fashion Inc.名稱推測與宏碁集團有關,可能是集團轉投資、聚焦時尚科技或穿戴裝置相關的公司,但實際股權關係與業務細節無法確定,應保守看待,不宜視為與宏碁本業完全相同。",
+          "relative_comparison": "這是5筆中與PM/PRD職能定義最貼近的職缺之一,PRD撰寫與跨國利害關係人協調高度吻合,分數略低於Celestica主要因為年資與硬體NPI門檻是明顯硬傷而非技能不合;相較TOUCHWOW,此職缺的PM工作定義與孫慈實際經歷更接近。",
+          "key_advice": "投遞時建議明確說明PRD/跨部門協調經驗可遷移,但同時準備好回應缺乏硬體NPI經驗的提問,展現快速學習意願。"
+        }
+      },
+      {
+        "jobNo": "li_4424025109",
+        "jobName": "Product Manager, Sr. Analyst",
+        "custName": "Whirlpool Corporation",
+        "salary": "面議",
+        "location": "New Taipei City, New Taipei City, Taiwan",
+        "industry": "LinkedIn",
+        "url": "https://tw.linkedin.com/jobs/view/product-manager-sr-analyst-at-whirlpool-corporation-4424025109",
+        "ai_score": 5,
+        "ai_reason": "PM職能可能匹配，但家電產業非目標且無具體描述",
+        "is_reference": false,
+        "diagnosis": {
+          "jobNo": "li_4424025109",
+          "overall_score": 40,
+          "overall_summary": "跨部門協作與競品分析能力可對應部分需求,但家電品類策略、GTM執行與定價議價等產業實務經驗幾乎空白,產業別也非其優先序。",
+          "dimensions": [
+            {
+              "label": "成本/定價分析能力",
+              "percent": 65
+            },
+            {
+              "label": "市場競品分析",
+              "percent": 65
+            },
+            {
+              "label": "跨部門協作與培訓",
+              "percent": 75
+            },
+            {
+              "label": "家電/零售產業知識",
+              "percent": 10
+            },
+            {
+              "label": "GTM/品類策略規劃經驗",
+              "percent": 20
+            }
+          ],
+          "requirements": [
+            "產品品類策略規劃",
+            "市場研究/競品分析",
+            "定價與利潤試算(SKU利潤計畫)",
+            "GTM市場進入計畫執行",
+            "供應商/OEM溝通協調",
+            "跨部門協作",
+            "產品培訓(內外部利害關係人)",
+            "家電/消費品產業知識"
+          ],
+          "resume_coverage": [
+            {
+              "text": "品類策略規劃(無家電/品類管理經驗)",
+              "status": "missing"
+            },
+            {
+              "text": "市場研究/競品分析(有東南亞/歐美報告經驗)",
+              "status": "covered"
+            },
+            {
+              "text": "定價/利潤試算(有成本分析模型,非SKU利潤計畫層級)",
+              "status": "partial"
+            },
+            {
+              "text": "GTM執行(未提及)",
+              "status": "missing"
+            },
+            {
+              "text": "供應商/OEM溝通(未提及)",
+              "status": "missing"
+            },
+            {
+              "text": "跨部門協作(強項)",
+              "status": "covered"
+            },
+            {
+              "text": "產品培訓(5場培訓,200+人次)",
+              "status": "covered"
+            },
+            {
+              "text": "家電產業知識(無)",
+              "status": "missing"
+            }
+          ],
+          "bullet_rewrites": [
+            {
+              "before": "以 SQL(MS SQL/PostgreSQL)跨資料庫檢索底層數據,搭配 Power BI 製作視覺化報表,產出競品分析(東南亞/歐美共 4 份)與商業模式轉型評估供 CEO 決策",
+              "after": "運用SQL跨資料庫查詢與Power BI視覺化報表,完成東南亞、歐美市場競品分析共4份及商業模式轉型評估,提供高層策略決策參考"
+            },
+            {
+              "before": "建立多維度成本分析模型,管理千項以上產品之成本試算與損益彙總報表,支援定價決策",
+              "after": "建立多維度成本分析模型,彙整千項以上產品之成本試算與損益數據,支援產品定價策略決策"
+            },
+            {
+              "before": "規劃並主持 5 場跨部門新產品培訓(累計 200+ 名參與者),自製教材協助客戶與合作夥伴快速上手",
+              "after": "規劃並主持5場跨部門新產品教育訓練,自製教材使200名以上內部與合作夥伴參與者快速上手新產品操作"
+            }
+          ],
+          "gaps": [
+            {
+              "title": "Gap1: 家電/零售品類管理知識空白",
+              "detail": "完全無大型家電產業或零售通路品類管理經驗,建議先了解該公司產品線與台灣家電通路生態,再評估是否投遞。"
+            },
+            {
+              "title": "Gap2: GTM與定價策略實務落差",
+              "detail": "有成本分析基礎但未做過完整GTM上市計畫或SKU利潤規劃,建議面談中誠實定位為具備分析工具與跨部門協調基礎、GTM實務待累積。"
+            },
+            {
+              "title": "Gap3: 產業轉換風險偏高",
+              "detail": "此職缺屬家電消費品,不在孫慈半導體/電信/電子/軟體優先序內,若無特殊考量,建議降低投遞優先度。"
+            }
+          ],
+          "company_intro": "Whirlpool(惠而浦)是美國知名老牌家電製造商,以冰箱、洗衣機、廚房家電等大型家電產品聞名全球,在多國設有生產與行銷據點,產品線與品牌經營以家電消費市場為主。",
+          "relative_comparison": "這是5筆中分數最低之一,因為職缺核心(家電品類策略、GTM、定價議價)與孫慈金融科技產品PM經驗的產業/職能疊合度都偏低,雖然競品分析與跨部門協作可部分對應,但遠不如Celestica或Acer Fashion貼近其PRD/跨國協調專長。",
+          "key_advice": "除非對此公司品牌或薪資福利有特別偏好,建議將投遞優先序排在後面,把心力集中在與PM/BA職能更貼近的機會。"
+        }
+      },
+      {
+        "jobNo": "li_4437004081",
+        "jobName": "Advisor, Product Data",
+        "custName": "Celestica",
+        "salary": "面議",
+        "location": "Taipei, Taipei City, Taiwan",
+        "industry": "LinkedIn",
+        "url": "https://tw.linkedin.com/jobs/view/advisor-product-data-at-celestica-4437004081",
+        "ai_score": 5,
+        "ai_reason": "數據分析技能匹配BA職能，但無詳細描述",
+        "is_reference": true,
+        "diagnosis": {
+          "jobNo": "li_4437004081",
+          "overall_score": 72,
+          "overall_summary": "SQL、Power BI、成本/損益分析與跨部門商業報表產出經驗與此BA職缺需求逐項吻合,是5筆中契合度最高的職缺,主要缺口在於ERP/CRM系統經驗與正式財務職稱背景。",
+          "dimensions": [
+            {
+              "label": "SQL/數據查詢能力",
+              "percent": 85
+            },
+            {
+              "label": "Excel/Power BI報表建模",
+              "percent": 85
+            },
+            {
+              "label": "財務指標與商業分析理解",
+              "percent": 60
+            },
+            {
+              "label": "跨部門協作經驗",
+              "percent": 80
+            },
+            {
+              "label": "流程自動化/AI應用",
+              "percent": 85
+            },
+            {
+              "label": "ERP/CRM系統經驗",
+              "percent": 15
+            }
+          ],
+          "requirements": [
+            "SQL資料查詢與分析",
+            "Excel/Google Sheets樞紐分析與財務建模",
+            "Power BI視覺化(加分)",
+            "財務/營收/獲利指標理解",
+            "跨部門協作(業務/財務/營運/行銷)",
+            "商業分析報表撰寫支援決策",
+            "ERP/CRM系統經驗(加分)",
+            "流程優化與AI/新系統導入"
+          ],
+          "resume_coverage": [
+            {
+              "text": "SQL跨資料庫查詢(MS SQL/PostgreSQL)",
+              "status": "covered"
+            },
+            {
+              "text": "Excel樞紐/多維度成本模型建置",
+              "status": "covered"
+            },
+            {
+              "text": "Power BI視覺化報表",
+              "status": "covered"
+            },
+            {
+              "text": "財務指標理解(有成本/損益彙整,無正式財務職稱)",
+              "status": "partial"
+            },
+            {
+              "text": "跨部門協作(強項,含跨國)",
+              "status": "covered"
+            },
+            {
+              "text": "商業分析報表支援決策(競品分析、CEO決策報告)",
+              "status": "covered"
+            },
+            {
+              "text": "ERP/CRM經驗(未提及SAP/Salesforce等)",
+              "status": "missing"
+            },
+            {
+              "text": "流程優化/AI導入(Python+生成式AI自動化)",
+              "status": "covered"
+            }
+          ],
+          "bullet_rewrites": [
+            {
+              "before": "以 SQL(MS SQL/PostgreSQL)跨資料庫檢索底層數據,搭配 Power BI 製作視覺化報表,產出競品分析(東南亞/歐美共 4 份)與商業模式轉型評估供 CEO 決策",
+              "after": "運用SQL跨資料庫查詢底層數據,結合Power BI建立視覺化報表,產出東南亞、歐美市場競品分析(4份)及商業模式轉型評估,做為CEO決策依據"
+            },
+            {
+              "before": "建立多維度成本分析模型,管理千項以上產品之成本試算與損益彙總報表,支援定價決策",
+              "after": "建立多維度成本分析模型,彙整千項以上產品成本試算與損益數據,產出報表支援定價與獲利決策"
+            },
+            {
+              "before": "以 Python 結合生成式 AI 開發資訊同步自動化排程(含信件自動擷取與轉換計算),將原需每週 1-2 小時的跨部門作業轉為自動執行,推廣至全品牌線後每年累計節省近 100 小時",
+              "after": "以Python結合生成式AI開發自動化排程,將每週1-2小時的跨部門手動作業轉為自動執行,並推廣至全品牌線,每年累計節省近100小時人力工時"
+            },
+            {
+              "before": "產出專案績效報告與簡報(進度追蹤、成本檢討、策略建議),直接供高層決策依據",
+              "after": "定期產出專案績效報告與簡報,涵蓋進度追蹤、成本檢討與策略建議,做為高層決策依據"
+            }
+          ],
+          "gaps": [
+            {
+              "title": "Gap1: 缺乏正式財務分析職稱/訓練背景",
+              "detail": "該職缺隸屬Finance部門下的BA角色,雖有成本分析與損益彙整經驗,但無正式財務職稱,建議履歷更明確使用revenue/profitability等對應詞彙包裝經驗。"
+            },
+            {
+              "title": "Gap2: ERP/CRM系統經驗空白",
+              "detail": "未提及SAP/Salesforce/Dynamics 365等系統經驗,建議若有任何間接接觸經驗一併補充,若無則強調SQL/Python自學能力可快速上手新系統。"
+            },
+            {
+              "title": "Gap3: 可能需要與海外總部/據點頻繁英文協作",
+              "detail": "需確認是否需更頻繁的視訊會議英文口說,建議提前準備。"
+            },
+            {
+              "title": "Gap4: 資淺(1-2年)可能低於Advisor職級預期",
+              "detail": "JD未明列年資但職級標示為Advisor/Band 09,可能傾向有一定資歷,建議求職信強調獨立完成CEO決策報告的深度以弭補年資疑慮。"
+            }
+          ],
+          "company_intro": "Celestica是加拿大商的國際知名電子製造服務(EMS)廠商,提供電子產品設計、製造與供應鏈服務,客戶涵蓋通訊、雲端運算、航太國防、醫療等領域,在全球多地設有據點。",
+          "relative_comparison": "這是5筆中分數最高的一筆,因為職缺核心技能(SQL、Power BI、Excel樞紐/建模、跨部門商業分析)幾乎與孫慈現職的數據分析工作逐項對應,且Celestica屬電子代工產業,符合其電子優先序;相較之下,Acer Fashion雖PM職能貼近但硬體年資門檻卡關,TOUCHWOW/Whirlpool則產業與職能疊合度都較低。",
+          "key_advice": "建議優先投遞此職缺,並在履歷/求職信中把成本分析模型、競品分析、自動化流程等經驗全部改用財務/商業分析語彙包裝,弱化產品經理頭銜、強化數據驅動決策支援定位。"
+        }
+      },
+      {
+        "jobNo": "15320371",
+        "jobName": "獨家【荷蘭商半導體 】供應鏈專員(正職)｜保14個月額外Target Bonus｜周休六日｜603H",
+        "custName": "萬寶華企業管理顧問股份有限公司",
+        "salary": "55,000 起",
+        "location": "新北市新莊區",
+        "industry": "人力仲介代徵",
+        "url": "https://www.104.com.tw/job/94d9v",
+        "ai_score": 4,
+        "ai_reason": "半導體產業第一優先，但職能偏供應鏈非PM/PjM/BA",
+        "is_reference": true,
+        "diagnosis": {
+          "jobNo": "15320371",
+          "overall_score": 32,
+          "overall_summary": "產業別(半導體)符合其優先序,但職缺核心的進出口物流、倉儲與採購職能與孫慈的產品/專案管理背景幾乎無重疊,職能落差是最大風險。",
+          "dimensions": [
+            {
+              "label": "物流/報關實務經驗",
+              "percent": 5
+            },
+            {
+              "label": "倉儲/ERP-WMS系統經驗",
+              "percent": 5
+            },
+            {
+              "label": "採購與供應商議價經驗",
+              "percent": 15
+            },
+            {
+              "label": "跨部門專案協調能力",
+              "percent": 75
+            },
+            {
+              "label": "數據分析與績效報告能力",
+              "percent": 70
+            }
+          ],
+          "requirements": [
+            "進出口物流管理(報關/HS Code/貿易法規)",
+            "國內配送與交付管理",
+            "倉儲與庫存管理(ERP/WMS)",
+            "採購與供應商管理(議價/合約)",
+            "跨部門協調與專案管理",
+            "數據分析與績效報告"
+          ],
+          "resume_coverage": [
+            {
+              "text": "進出口物流/報關(未提及)",
+              "status": "missing"
+            },
+            {
+              "text": "國內配送管理(未提及)",
+              "status": "missing"
+            },
+            {
+              "text": "倉儲/ERP/WMS(未提及)",
+              "status": "missing"
+            },
+            {
+              "text": "採購/供應商議價(未提及)",
+              "status": "missing"
+            },
+            {
+              "text": "跨部門協調與專案管理(強項,非物流領域)",
+              "status": "partial"
+            },
+            {
+              "text": "數據分析與績效報告(SQL/Power BI/專案報告)",
+              "status": "covered"
+            }
+          ],
+          "bullet_rewrites": [
+            {
+              "before": "主導為期 5 個月的系統架構改造專案,協調系統部門分批部署與逐批驗收,最後如期上線且至今零客訴、零配置錯誤",
+              "after": "主導為期5個月的系統改造專案,協調跨部門分批驗收與上線排程,確保專案如期完成且維持零客訴紀錄"
+            },
+            {
+              "before": "以看板方法追蹤並行專案的關鍵路徑與風險,搭配部門 OKR 對齊優先級,提前調整排程確保如期交付",
+              "after": "以看板方法同步追蹤多項並行專案的關鍵路徑與風險,對齊部門優先序並提前調整排程,確保跨部門交付進度如期達成"
+            },
+            {
+              "before": "以 SQL 跨資料庫檢索底層數據,搭配 Power BI 製作視覺化報表,產出競品分析(東南亞/歐美共 4 份)與商業模式轉型評估供 CEO 決策",
+              "after": "運用SQL跨資料庫查詢與Power BI建立視覺化績效報表,產出市場分析與決策建議供高層參考"
+            }
+          ],
+          "gaps": [
+            {
+              "title": "Gap1: 完全無物流/報關/貿易法規實務經驗",
+              "detail": "該職缺核心是進出口物流、HS Code、關務合規,孫慈履歷無對應經歷,若投遞需誠實面對此為轉職到全新職能,而非技能延伸。"
+            },
+            {
+              "title": "Gap2: 無倉儲/ERP-WMS系統操作經驗",
+              "detail": "未使用過倉儲管理系統,若堅持投遞,建議先自學基礎WMS/ERP概念。"
+            },
+            {
+              "title": "Gap3: 職能與求職目標(PM/PjM/BA/PMO)不符",
+              "detail": "此職缺屬供應鏈/物流專員,非產品或專案管理職能,即使產業(半導體)符合優先序,職能落差過大可能使長期發展偏離目標。"
+            },
+            {
+              "title": "Gap4: 無採購議價/供應商合約談判經驗",
+              "detail": "履歷未展現任何採購或合約談判實績,而此為該職缺的重要職責之一。"
+            }
+          ],
+          "company_intro": "萬寶華(ManpowerGroup)是國際知名人力資源顧問公司,此職缺由其代徵、實際雇主為JD中提及的荷蘭商半導體相關企業;由於JD未明確揭露公司名稱,對其具體業務範疇(可能是半導體設備、材料或自動化相關外商)只能保守推測,無法確認確切身分。",
+          "relative_comparison": "這是5筆中分數最低的一筆,雖然產業別(半導體)符合孫慈的第一優先序,但職能(進出口物流、倉儲、採購)與她過去的產品/專案管理經驗幾乎沒有重疊,唯一可遷移的是跨部門協調與數據報表能力;相較之下,Celestica雖同屬電子系統相關產業,但職能(BA/數據分析)與其技能高度吻合,是更務實的選擇。",
+          "key_advice": "除非非常看重半導體產業與薪資福利(月薪55K起、14個月保障、額外Target Bonus),否則此職缺的職能落差過大,建議降低投遞優先度,除非有意願徹底轉職到供應鏈/物流領域。"
+        }
+      },
+      {
         "jobNo": "li_4437385084",
         "jobName": "智慧型裝置事業群 - PM Lead 資深經理(內湖) - TWPR12401",
         "custName": "Compal",
