@@ -1,5 +1,532 @@
 [
   {
+    "date": "2026-08-03",
+    "ai_matched": true,
+    "report_url": "reports/diagnosis_2026-08-03.html",
+    "jobs": [
+      {
+        "jobNo": "15311757",
+        "jobName": "產品經理Hardware Product Manager (Smart Devices)",
+        "custName": "CuboAi 智慧寶寶攝影機_雲基智慧股份有限公司",
+        "salary": "面議",
+        "location": "台北市內湖區",
+        "industry": "其它軟體及網路相關業",
+        "url": "https://www.104.com.tw/job/946ml",
+        "ai_score": 9,
+        "ai_reason": "硬體PM職能完符,複雜跨部門協調與0到1開發正是核心,軟體業目標內",
+        "is_reference": false,
+        "diagnosis": {
+          "jobNo": "15311757",
+          "overall_score": 20,
+          "overall_summary": "履歷在跨部門溝通與PRD撰寫方法論上有一定基礎,但完全缺乏EVT/DVT/PVT/MP等硬體NPI實戰經驗與Smart Device產業知識,是這次精選職缺中落差最大的之一。",
+          "dimensions": [
+            {
+              "label": "硬體NPI實戰經驗(EVT/DVT/PVT/MP)",
+              "percent": 5
+            },
+            {
+              "label": "跨部門工程協調(EE/ME/FW/供應鏈)",
+              "percent": 20
+            },
+            {
+              "label": "PRD/規格撰寫可遷移性",
+              "percent": 45
+            },
+            {
+              "label": "智慧裝置/消費性電子產業知識",
+              "percent": 10
+            },
+            {
+              "label": "產品上市與生命週期管理",
+              "percent": 20
+            }
+          ],
+          "requirements": [
+            "硬體產品開發經驗(EVT/DVT/PVT/MP)",
+            "NPI流程與ODM/JDM專案管理",
+            "Smart Device/IoT/消費性電子產品經驗",
+            "跨部門工程協調(EE/ME/FW/SW/AI/供應鏈)",
+            "Hardware PRD與BOM Cost管理",
+            "產品上市與生命週期管理(安規/EOL)"
+          ],
+          "resume_coverage": [
+            {
+              "text": "硬體開發經驗(履歷未提及)",
+              "status": "missing"
+            },
+            {
+              "text": "NPI/ODM/JDM專案管理(履歷未提及)",
+              "status": "missing"
+            },
+            {
+              "text": "智慧裝置產業經驗(現為金融科技背景)",
+              "status": "missing"
+            },
+            {
+              "text": "跨部門協調(對象為業務/技術非硬體工程)",
+              "status": "partial"
+            },
+            {
+              "text": "PRD撰寫(有軟體規格PRD,無BOM/硬體規格)",
+              "status": "partial"
+            },
+            {
+              "text": "產品生命週期管理(有0到1上線,無安規/EOL經驗)",
+              "status": "partial"
+            }
+          ],
+          "bullet_rewrites": [
+            {
+              "before": "主導第三方系統介接專案,負責需求對接、規格定義及產品上線",
+              "after": "主導第三方系統介接專案,獨立完成外部供應商需求盤點、規格定義與上線驗收,建立可複製的供應商協作流程"
+            },
+            {
+              "before": "建立多維度成本分析模型,管理千項以上產品之成本試算與損益彙總報表,支援定價決策",
+              "after": "建立涵蓋千項以上品項的多維度成本分析模型,產出成本試算與損益彙總報表作為定價與資源分配決策依據"
+            },
+            {
+              "before": "主導 5+ 項規格產品從需求訪談、規格定義到上線驗收之 0 到 1 完整流程；撰寫 PRD",
+              "after": "主導5項以上產品從需求訪談、規格定義到上線驗收之0到1完整流程,撰寫PRD做為跨部門溝通與開發執行依據,確保產品如期上線"
+            }
+          ],
+          "gaps": [
+            {
+              "title": "Gap 1:硬體開發全流程經驗缺口",
+              "detail": "完全沒有EVT/DVT/PVT/MP相關經驗,建議若真心想轉硬體PM,可先從軟硬整合類職缺切入,或考慮相關課程補強基礎知識。"
+            },
+            {
+              "title": "Gap 2:供應鏈與製造夥伴管理",
+              "detail": "缺少ODM/JDM或工廠端管理經驗,可強調過去與外部系統供應商協作的專案作為間接佐證,但不宜誇大為對等經驗。"
+            },
+            {
+              "title": "Gap 3:消費性電子/智慧裝置產業知識",
+              "detail": "目前產業背景為金融科技,與Smart Camera/IoT市場落差大,若投遞建議在求職信中強調快速建立產業知識的實績以降低疑慮。"
+            }
+          ],
+          "company_intro": "CuboAi(雲基智慧)是台灣新創公司,主打AI寶寶攝影機(Baby Monitor),結合電腦視覺與物聯網技術,產品外銷海外市場,推測是台灣少數在消費性智慧硬體領域有國際能見度的新創之一,團隊規模應偏中小型、精簡。",
+          "relative_comparison": "在這次5筆職缺中分數偏低,因為此職位是純硬體NPI導向,履歷完全沒有EVT/DVT/PVT/量產經驗,與Supermicro同樣卡在硬體背景缺口,但CuboAi更聚焦單一硬體產品的完整開發週期,比Supermicro的組合型portfolio管理門檻更具體、更難靠軟實力彌補。",
+          "key_advice": "除非能額外補強硬體/供應鏈相關經驗或修課證明,否則建議先跳過此職缺,把心力放在軟體/系統類PM職缺上。"
+        }
+      },
+      {
+        "jobNo": "li_4371843083",
+        "jobName": "Staff Product Manager",
+        "custName": "Supermicro",
+        "salary": "面議",
+        "location": "New Taipei City, New Taipei City, Taiwan",
+        "industry": "LinkedIn",
+        "url": "https://tw.linkedin.com/jobs/view/staff-product-manager-at-supermicro-4371843083",
+        "ai_score": 7,
+        "ai_reason": "PM職能符合,伺服器製造業接近目標電子產業",
+        "is_reference": false,
+        "diagnosis": {
+          "jobNo": "li_4371843083",
+          "overall_score": 28,
+          "overall_summary": "跨國跨部門單一需求窗口與競品分析經驗與JD高度呼應,但Staff Product Manager屬資深職級,候選人1-2年經驗與非硬體/工程背景在年資和產業知識上落差明顯。",
+          "dimensions": [
+            {
+              "label": "跨國跨部門利害關係人協調",
+              "percent": 70
+            },
+            {
+              "label": "市場洞察與競品分析轉譯",
+              "percent": 55
+            },
+            {
+              "label": "硬體產品組合生命週期管理",
+              "percent": 15
+            },
+            {
+              "label": "Product Marketing/GTM執行",
+              "percent": 30
+            },
+            {
+              "label": "資深年資與職級匹配(Staff Level)",
+              "percent": 10
+            }
+          ],
+          "requirements": [
+            "硬體產品組合生命週期管理(launch/refresh/EOL)",
+            "市場趨勢轉譯產品定位與競品分析",
+            "跨國跨部門團隊協調領導(US/Taiwan/EMEA)",
+            "Product Marketing/GTM執行",
+            "高階利害關係人溝通與影響力",
+            "資深年資(Staff Level通常8年+)/技術學歷"
+          ],
+          "resume_coverage": [
+            {
+              "text": "硬體產品組合管理(僅有軟體/系統產品0到1經驗)",
+              "status": "missing"
+            },
+            {
+              "text": "競品分析與市場洞察(4份東南亞/歐美競品分析)",
+              "status": "covered"
+            },
+            {
+              "text": "跨國跨部門協調(APAC/EU/UK單一需求窗口)",
+              "status": "covered"
+            },
+            {
+              "text": "Product Marketing/GTM物料(僅有內部培訓教材)",
+              "status": "partial"
+            },
+            {
+              "text": "高層溝通影響力(有簡報供高層決策,層級待驗證)",
+              "status": "partial"
+            },
+            {
+              "text": "資深年資/EE或CE學歷(僅1-2年經驗,非理工背景)",
+              "status": "missing"
+            }
+          ],
+          "bullet_rewrites": [
+            {
+              "before": "以 SQL...搭配 Power BI 製作視覺化報表,產出競品分析(東南亞/歐美共 4 份)與商業模式轉型評估供 CEO 決策",
+              "after": "運用SQL跨資料庫檢索與Power BI視覺化,完成東南亞、歐美市場共4份競品分析報告及商業模式轉型評估,做為CEO層級決策依據"
+            },
+            {
+              "before": "擔任海外客戶決策層、各部門利害關係人與技術團隊的單一需求窗口,將模糊需求轉化為可執行規格",
+              "after": "擔任APAC與歐美海外客戶決策層、跨部門與技術團隊的單一需求窗口,將跨國模糊需求轉化為可執行規格,支援全球團隊決策一致性"
+            },
+            {
+              "before": "接手單一最大品牌產品線(橫跨 APAC 與 EU/UK 兩市場),在前任離職、無品牌或產業文件情況下 3 個月建立完整知識庫",
+              "after": "獨立接手橫跨APAC與EU/UK兩大市場之最大品牌產品線,在無交接文件情況下3個月內建立完整產業與產品知識庫,確保業務不中斷"
+            }
+          ],
+          "gaps": [
+            {
+              "title": "Gap 1:資深職級年資落差",
+              "detail": "Staff PM通常要求8年以上經驗,候選人僅1-2年,建議尋找Associate/Junior層級的同類職缺,或透過客製求職信降低篩選門檻疑慮。"
+            },
+            {
+              "title": "Gap 2:硬體/半導體產業知識",
+              "detail": "缺乏伺服器/AI PC/硬體規格相關知識,建議投遞前補強產業基本概念(如BOM、晶片相關術語)。"
+            },
+            {
+              "title": "Gap 3:Product Marketing/GTM專業經驗",
+              "detail": "目前簡報/培訓經驗偏內部教育訓練,非對外GTM物料(positioning deck),建議說明可遷移之簡報與教材製作能力。"
+            }
+          ],
+          "company_intro": "Supermicro是美商伺服器、儲存與網路解決方案供應商,在資料中心、雲端運算、AI伺服器領域具全球市占,近年受惠AI伺服器需求成長快速,在新北設有重要據點,推測為大型跨國上市公司,對PM的技術背景要求應偏高。",
+          "relative_comparison": "分數略高於CuboAi和Turner & Townsend,因為履歷中「跨國跨部門單一需求窗口」「競品分析」「高層決策簡報」等軟實力與JD高度呼應,但Staff職級通常要求對應年資與硬體/半導體產業背景,候選人1-2年經驗與純軟體背景在職級落差上是硬傷,比Coupang的年資落差更懸殊。",
+          "key_advice": "若投遞,建議在履歷中放大「跨國跨部門單一需求窗口」與「競品分析供CEO決策」等最貼近的經歷,並在求職信誠實說明年資落差,爭取以Junior/Associate PM職缺切入而非直接投Staff職缺。"
+        }
+      },
+      {
+        "jobNo": "li_4447635683",
+        "jobName": "Group Product Manager, Returns & Post-Purchase Experience",
+        "custName": "Coupang",
+        "salary": "面議",
+        "location": "Taipei, Taipei City, Taiwan",
+        "industry": "LinkedIn",
+        "url": "https://tw.linkedin.com/jobs/view/group-product-manager-returns-post-purchase-experience-at-coupang-4447635683",
+        "ai_score": 6,
+        "ai_reason": "高階PM職能符合,但電商零售產業不在目標序列",
+        "is_reference": false,
+        "diagnosis": {
+          "jobNo": "li_4447635683",
+          "overall_score": 24,
+          "overall_summary": "跨國協作與高層報告產出能力是最大優勢,但職缺明確要求6-8年經驗且聚焦電商消費者產品,與候選人現有年資和產業背景落差過大。",
+          "dimensions": [
+            {
+              "label": "PM年資與職級匹配(Group PM)",
+              "percent": 10
+            },
+            {
+              "label": "電商/消費者產品領域經驗",
+              "percent": 15
+            },
+            {
+              "label": "數據驅動決策與A/B Testing方法論",
+              "percent": 40
+            },
+            {
+              "label": "跨國跨部門分散團隊協作",
+              "percent": 65
+            },
+            {
+              "label": "AI/LLM產品化應用",
+              "percent": 35
+            }
+          ],
+          "requirements": [
+            "6-8年PM經驗且具Group PM領導定位",
+            "電商/消費者導向產品全流程開發",
+            "數據驅動決策與A/B Testing實驗方法",
+            "跨部門與全球分散團隊協作",
+            "AI/LLM產品化應用定義",
+            "商業敏銳度與利害關係人溝通"
+          ],
+          "resume_coverage": [
+            {
+              "text": "年資與Group PM職級(僅1-2年個人貢獻者經驗)",
+              "status": "missing"
+            },
+            {
+              "text": "電商產品經驗(現為金融科技,非B2C電商)",
+              "status": "missing"
+            },
+            {
+              "text": "A/B Testing實驗方法論(有數據分析,無明確實驗設計)",
+              "status": "partial"
+            },
+            {
+              "text": "跨國跨部門協作(APAC/歐美單一需求窗口)",
+              "status": "covered"
+            },
+            {
+              "text": "AI/LLM產品化應用(生成式AI用於流程自動化,非產品功能)",
+              "status": "partial"
+            },
+            {
+              "text": "商業敏銳度與利害關係人溝通(報告供CEO決策)",
+              "status": "covered"
+            }
+          ],
+          "bullet_rewrites": [
+            {
+              "before": "以 Python 結合生成式 AI 開發資訊同步自動化排程...每年累計節省近 100 小時",
+              "after": "以Python結合生成式AI開發資訊同步自動化排程,取代原本每週1-2小時人工作業,推廣至全品牌線後每年累計節省近100小時,展現數據驅動流程優化能力"
+            },
+            {
+              "before": "以看板方法追蹤並行專案的關鍵路徑與風險,搭配部門 OKR 對齊優先級,提前調整排程確保如期交付",
+              "after": "以看板方法同步追蹤多項並行專案之關鍵路徑與風險,對齊部門OKR排定優先序,提前預判風險並調整排程,確保所有專案如期交付"
+            },
+            {
+              "before": "產出專案績效報告與簡報(進度追蹤、成本檢討、策略建議),直接供高層決策依據",
+              "after": "產出專案績效報告與簡報,涵蓋進度追蹤、成本檢討與策略建議,做為高層決策依據,建立數據驅動的專案溝通機制"
+            }
+          ],
+          "gaps": [
+            {
+              "title": "Gap 1:PM年資與職級落差",
+              "detail": "職缺明確要求6-8年經驗且職稱為Group PM(通常帶領其他PM),候選人僅1-2年個人貢獻者經驗,建議鎖定Junior/Associate PM層級電商職缺。"
+            },
+            {
+              "title": "Gap 2:電商/消費者產品領域知識",
+              "detail": "缺乏B2C電商、退換貨流程、消費者體驗設計經驗,若之後考慮電商方向可從side project或線上課程補強。"
+            },
+            {
+              "title": "Gap 3:A/B Testing與實驗方法論",
+              "detail": "履歷未提及正式的A/B testing或假設驗證流程,若有類似經驗(如透過數據比較優化流程)建議具體補寫。"
+            }
+          ],
+          "company_intro": "Coupang是韓國最大電商平台之一,近年積極拓展台灣市場,主打「火箭配送」快速到貨與海外直送服務,推測在台灣為快速擴張的外商電商公司,產品團隊風格應偏向美式科技公司高強度、數據驅動文化。",
+          "relative_comparison": "分數與Supermicro相近,關鍵落差是「Group Product Manager」明確要求6-8年經驗與電商領域背景,這是JD裡寫死的硬指標,比Supermicro的隱性年資要求更明確、更難用軟實力彌補;跨國跨部門協作經驗雖是亮點,但職級落差過大,更適合作為未來3-5年後的目標公司。",
+          "key_advice": "建議暫緩投遞此職缺,改為關注Coupang是否有Associate/Product Manager(非Group)層級的職缺,現階段直接投Group PM很可能在第一關被年資篩掉。"
+        }
+      },
+      {
+        "jobNo": "li_4401852670",
+        "jobName": "Project Manager – Project Management",
+        "custName": "Turner & Townsend",
+        "salary": "面議",
+        "location": "Taipei–Keelung Metropolitan area",
+        "industry": "LinkedIn",
+        "url": "https://tw.linkedin.com/jobs/view/project-manager-%E2%80%93-project-management-at-turner-townsend-4401852670",
+        "ai_score": 6,
+        "ai_reason": "專案經理職能完全符合,但工程顧問產業不符",
+        "is_reference": true,
+        "diagnosis": {
+          "jobNo": "li_4401852670",
+          "overall_score": 15,
+          "overall_summary": "跨部門溝通與正式專案治理報告經驗可部分遷移,但職缺核心是建築工程專案執行,候選人完全沒有營建/工程背景與財務監控(QS)實務,是這次領域落差最大的職缺。",
+          "dimensions": [
+            {
+              "label": "營建/工程專案領域知識",
+              "percent": 5
+            },
+            {
+              "label": "財務/預算監控能力(QS協作)",
+              "percent": 15
+            },
+            {
+              "label": "專案時程與品質管理方法論可遷移性",
+              "percent": 40
+            },
+            {
+              "label": "跨部門與客戶溝通",
+              "percent": 60
+            },
+            {
+              "label": "正式專案治理與報告產出",
+              "percent": 50
+            }
+          ],
+          "requirements": [
+            "建築/工程專案執行經驗",
+            "時間/成本/品質/績效目標管理",
+            "專案財務監控(與QS團隊協作)",
+            "變更管理與文件流程",
+            "跨部門團隊領導與客戶窗口",
+            "正式專案治理與進度報告"
+          ],
+          "resume_coverage": [
+            {
+              "text": "營建工程專案經驗(履歷未提及)",
+              "status": "missing"
+            },
+            {
+              "text": "時程/成本/品質管理方法論(方法論可遷移,非營建領域)",
+              "status": "partial"
+            },
+            {
+              "text": "財務監控/QS協作(履歷未提及)",
+              "status": "missing"
+            },
+            {
+              "text": "變更管理文件流程(系統架構改造分批部署驗收概念類似)",
+              "status": "partial"
+            },
+            {
+              "text": "跨部門與客戶窗口(單一需求窗口經驗)",
+              "status": "covered"
+            },
+            {
+              "text": "正式治理報告產出(專案績效報告與簡報)",
+              "status": "covered"
+            }
+          ],
+          "bullet_rewrites": [
+            {
+              "before": "主導為期 5 個月的系統架構改造專案,協調系統部門分批部署與逐批驗收,最後如期上線",
+              "after": "主導為期5個月的系統架構改造專案,規劃分批部署與逐批驗收流程,妥善進行跨部門變更管理與風險控管,確保專案如期完成"
+            },
+            {
+              "before": "以看板方法追蹤並行專案的關鍵路徑與風險,搭配部門 OKR 對齊優先級,提前調整排程確保如期交付",
+              "after": "以看板方法建立並行專案的時程與風險追蹤機制,對齊優先序並提前調整排程,確保專案在時間與品質目標內交付"
+            },
+            {
+              "before": "產出專案績效報告與簡報(進度追蹤、成本檢討、策略建議),直接供高層決策依據",
+              "after": "定期產出正式專案進度報告,涵蓋時程追蹤、成本檢討與策略建議,建立透明的專案治理與溝通機制供高層決策"
+            }
+          ],
+          "gaps": [
+            {
+              "title": "Gap 1:營建/工程產業知識",
+              "detail": "完全無建築/工程背景,是這次所有職缺中落差最大者,若真心考慮建議先了解基本工程專案流程與術語。"
+            },
+            {
+              "title": "Gap 2:財務與成本監控實務(QS協作)",
+              "detail": "雖有成本分析模型經驗,但非工程造價/預算監控,建議說明現有成本分析經驗的可遷移邏輯,但不誇大為同等經驗。"
+            },
+            {
+              "title": "Gap 3:相關證照",
+              "detail": "營建/工程顧問業普遍重視PMP或當地工程顧問相關證照,目前履歷未提及,建議評估是否值得投入考取。"
+            }
+          ],
+          "company_intro": "Turner & Townsend是英國起家的全球性專案與成本管理顧問公司,深耕地產、基礎建設與能源領域,推測近年由CBRE集團持股,在全球有廣泛據點,台灣分部應以商用地產/辦公室工程專案管理為主要業務。",
+          "relative_comparison": "這是這次分數最低的職缺,主因是產業完全跳脫「軟體/金融科技」,轉為實體營建工程管理,履歷中的PRD、SQL、生成式AI等核心優勢完全用不上,唯一能遷移的是專案治理與跨部門溝通能力,但這在營建業通常需搭配工程/建築背景或證照才具說服力。",
+          "key_advice": "除非對轉戰營建/工程顧問業有強烈意願並願意從頭建立產業知識,否則建議此職缺優先序放最低;若真的考慮,面試前務必研究營建專案管理基本術語以免顯得準備不足。"
+        }
+      },
+      {
+        "jobNo": "4989903",
+        "jobName": "專案經理儲備幹部",
+        "custName": "二一零零科技股份有限公司",
+        "salary": "35,000 ~ 45,000",
+        "location": "新北市永和區",
+        "industry": "多媒體傳播相關業",
+        "url": "https://www.104.com.tw/job/2yy8f",
+        "ai_score": 5,
+        "ai_reason": "職能符合但產業不符;儲備幹部培訓級別低於求職者現有經驗",
+        "is_reference": true,
+        "diagnosis": {
+          "jobNo": "4989903",
+          "overall_score": 58,
+          "overall_summary": "培訓教材製作、需求文件與AI工具應用等項目命中率是這次5筆職缺中最高的,但候選人已具備主導0到1產品與跨國品牌線的資深實戰經驗,明顯超出「儲備幹部」培訓起點與35-45K的待遇區間。",
+          "dimensions": [
+            {
+              "label": "軟體專案協作與QA基礎",
+              "percent": 50
+            },
+            {
+              "label": "上線輔導與教材培訓能力",
+              "percent": 85
+            },
+            {
+              "label": "需求文件與進度管理能力",
+              "percent": 80
+            },
+            {
+              "label": "AI工具應用熟悉度",
+              "percent": 80
+            },
+            {
+              "label": "職級/待遇匹配度",
+              "percent": 30
+            }
+          ],
+          "requirements": [
+            "系統建置協助與基本QA測試",
+            "上線輔導與教育訓練教材製作",
+            "需求文件撰寫/會議紀錄/進度跟催",
+            "AI工具與系統整合功能測試參與",
+            "Ownership/Proactive特質",
+            "職涯發展路徑起點為基層儲備幹部(隱含待遇/職級預期)"
+          ],
+          "resume_coverage": [
+            {
+              "text": "QA測試經驗(有系統驗收經驗,非正式測試腳本撰寫)",
+              "status": "partial"
+            },
+            {
+              "text": "教材/培訓能力(5場培訓累計200+人次)",
+              "status": "covered"
+            },
+            {
+              "text": "需求文件/進度管理(PRD撰寫、看板追蹤、OKR對齊)",
+              "status": "covered"
+            },
+            {
+              "text": "AI工具應用(生成式AI結合Python自動化)",
+              "status": "covered"
+            },
+            {
+              "text": "Ownership特質(獨立接手品牌線、主導5+項目0到1)",
+              "status": "covered"
+            },
+            {
+              "text": "職級/待遇匹配(現有經歷遠超儲備幹部起點)",
+              "status": "missing"
+            }
+          ],
+          "bullet_rewrites": [
+            {
+              "before": "規劃並主持 5 場跨部門新產品培訓(累計 200+ 名參與者),自製教材協助客戶與合作夥伴快速上手",
+              "after": "規劃並主持5場新產品教育訓練,累計服務200多名參與者,自製教材協助客戶與合作夥伴快速上手系統操作"
+            },
+            {
+              "before": "主導 5+ 項規格產品從需求訪談、規格定義到上線驗收之 0 到 1 完整流程；撰寫 PRD 明確定義功能說明,作為跨部門溝通與開發執行依據",
+              "after": "獨立完成5項以上系統從需求訪談、規格定義到上線驗收之完整流程,撰寫需求文件明確定義功能規格,作為跨部門溝通與開發執行的共同依據"
+            },
+            {
+              "before": "以 Python 結合生成式 AI 開發資訊同步自動化排程...將原需每週 1-2 小時的跨部門作業轉為自動執行",
+              "after": "以Python結合生成式AI開發自動化排程,取代原本每週1-2小時的人工資料整理作業,協助優化系統整合流程效率"
+            }
+          ],
+          "gaps": [
+            {
+              "title": "Gap 1:資歷與職級落差(overqualified)",
+              "detail": "候選人已具備主導0到1產品、跨國品牌線經驗,遠超「儲備幹部」培訓定位,建議面談時主動溝通期望職級與待遇,避免被視為降階應徵。"
+            },
+            {
+              "title": "Gap 2:待遇區間偏低",
+              "detail": "35-45K起薪與候選人現有市場行情有落差,建議先確認是否有快速晉升機制或待遇議價空間。"
+            },
+            {
+              "title": "Gap 3:測試腳本撰寫等具體QA技能",
+              "detail": "履歷未明確提及測試腳本撰寫經驗,建議可補充系統架構改造專案中驗收測試相關的具體作法。"
+            }
+          ],
+          "company_intro": "二一零零科技推測是台灣中小型軟體/系統整合公司,業務涵蓋套裝軟體與系統升級,提供實務歷練型的儲備幹部培訓職缺,較適合社會新鮮人或轉職者從基層做起,規模應為中小企業。",
+          "relative_comparison": "在這次5筆職缺中,這是唯一一筆在「軟體/系統PM」領域與履歷高度重疊的職缺,培訓/教材製作、需求文件、AI工具應用等項目命中率遠高於其他4筆硬體或跨領域職缺,但問題在於候選人已有主導5+產品0到1、跨國品牌線的實戰經驗,對應到「儲備幹部」培訓起點及35-45K的起薪區間明顯偏低,屬於大材小用型落差而非能力不足。",
+          "key_advice": "若投遞,建議在面談中主動說明期望以資深一點的角色或待遇加入,或將此職缺定位為短期銜接國營考試前的過渡工作,避免被質疑為何資深背景要應徵儲備幹部。"
+        }
+      }
+    ]
+  },
+  {
     "date": "2026-08-02",
     "ai_matched": true,
     "report_url": "reports/diagnosis_2026-08-02.html",
