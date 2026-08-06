@@ -561,9 +561,9 @@ body.is-local .btn-mark-applied { display: inline-block; }
       <button class="nav-tab" id="tab-manual" onclick="switchTab('manual')">手動分析</button>
     </div>
     <div class="nav-pills">
-      <span class="nav-pill">追蹤 <strong>10</strong> 天</span>
-      <span class="nav-pill">共 <strong>133</strong> 筆職缺</span>
-      <span class="nav-pill">更新 <strong>2026-08-05</strong></span>
+      <span class="nav-pill">追蹤 <strong>11</strong> 天</span>
+      <span class="nav-pill">共 <strong>138</strong> 筆職缺</span>
+      <span class="nav-pill">更新 <strong>2026-08-06</strong></span>
     </div>
   </div>
 </nav>
@@ -571,9 +571,226 @@ body.is-local .btn-mark-applied { display: inline-block; }
 <!-- ── View: 職缺列表 ── -->
 <div id="view-list">
   <div class="page-wrap">
-    <aside class="sidebar"><div class="sb-section"><div class="sb-sec-hd">本週職缺總覽</div><div class="sb-sec-body"><div class="wk-meta">07/30 ~ 08/05 &middot; 共 <strong>97</strong> 筆</div><div class="wk-row"><span class="wk-label">PM / PjM</span><div class="wk-bar-bg"><div class="wk-bar-fill" style="width:100%;background:#2563eb"></div></div><span class="wk-count">70</span></div><div class="wk-row"><span class="wk-label">BA / 數據</span><div class="wk-bar-bg"><div class="wk-bar-fill" style="width:4%;background:#16a34a"></div></div><span class="wk-count">3</span></div><div class="wk-row"><span class="wk-label">策略 / 營運</span><div class="wk-bar-bg"><div class="wk-bar-fill" style="width:3%;background:#ea580c"></div></div><span class="wk-count">2</span></div><div class="wk-row"><span class="wk-label">其他</span><div class="wk-bar-bg"><div class="wk-bar-fill" style="width:26%;background:#94a3b8"></div></div><span class="wk-count">18</span></div></div></div><div class="sb-section"><div class="sb-sec-hd">職缺分類</div><div class="sb-sec-body sb-cat-wrap"><button class="cat-btn active" data-cat="all" onclick="filterCat(this,'all')">全部 (133)</button><button class="cat-btn" data-cat="PMO" style="--cat-c:#7c3aed" onclick="filterCat(this,'PMO')">PMO (2)</button><button class="cat-btn" data-cat="PM / PjM" style="--cat-c:#2563eb" onclick="filterCat(this,'PM / PjM')">PM / PjM (91)</button><button class="cat-btn" data-cat="BA / 數據" style="--cat-c:#16a34a" onclick="filterCat(this,'BA / 數據')">BA / 數據 (4)</button><button class="cat-btn" data-cat="策略 / 營運" style="--cat-c:#ea580c" onclick="filterCat(this,'策略 / 營運')">策略 / 營運 (3)</button><button class="cat-btn" data-cat="其他" style="--cat-c:#94a3b8" onclick="filterCat(this,'其他')">其他 (27)</button></div></div><div class="sb-section sb-section-last"><div class="sb-sec-hd">時間軸</div><a class="sb-item" href="#day-2026-08-05"><span class="sb-date">2026-08-05</span><span class="sb-badge">20</span></a><a class="sb-item" href="#day-2026-08-04"><span class="sb-date">2026-08-04</span><span class="sb-badge">18</span></a><a class="sb-item" href="#day-2026-08-03"><span class="sb-date">2026-08-03</span><span class="sb-badge">19</span></a><a class="sb-item" href="#day-2026-08-02"><span class="sb-date">2026-08-02</span><span class="sb-badge">3</span></a><a class="sb-item" href="#day-2026-07-31"><span class="sb-date">2026-07-31</span><span class="sb-badge">20</span></a><a class="sb-item" href="#day-2026-07-30"><span class="sb-date">2026-07-30</span><span class="sb-badge">17</span></a><a class="sb-item" href="#day-2026-07-29"><span class="sb-date">2026-07-29</span><span class="sb-badge">11</span></a><a class="sb-item" href="#day-2026-07-28"><span class="sb-date">2026-07-28</span><span class="sb-badge">15</span></a><a class="sb-item" href="#day-2026-06-28"><span class="sb-date">2026-06-28</span><span class="sb-badge">7</span></a><a class="sb-item" href="#day-2026-06-27"><span class="sb-date">2026-06-27</span><span class="sb-badge">3</span></a></div></aside>
+    <aside class="sidebar"><div class="sb-section"><div class="sb-sec-hd">本週職缺總覽</div><div class="sb-sec-body"><div class="wk-meta">07/31 ~ 08/06 &middot; 共 <strong>85</strong> 筆</div><div class="wk-row"><span class="wk-label">PM / PjM</span><div class="wk-bar-bg"><div class="wk-bar-fill" style="width:100%;background:#2563eb"></div></div><span class="wk-count">58</span></div><div class="wk-row"><span class="wk-label">BA / 數據</span><div class="wk-bar-bg"><div class="wk-bar-fill" style="width:3%;background:#16a34a"></div></div><span class="wk-count">2</span></div><div class="wk-row"><span class="wk-label">策略 / 營運</span><div class="wk-bar-bg"><div class="wk-bar-fill" style="width:3%;background:#ea580c"></div></div><span class="wk-count">2</span></div><div class="wk-row"><span class="wk-label">其他</span><div class="wk-bar-bg"><div class="wk-bar-fill" style="width:33%;background:#94a3b8"></div></div><span class="wk-count">19</span></div></div></div><div class="sb-section"><div class="sb-sec-hd">職缺分類</div><div class="sb-sec-body sb-cat-wrap"><button class="cat-btn active" data-cat="all" onclick="filterCat(this,'all')">全部 (138)</button><button class="cat-btn" data-cat="PMO" style="--cat-c:#7c3aed" onclick="filterCat(this,'PMO')">PMO (2)</button><button class="cat-btn" data-cat="PM / PjM" style="--cat-c:#2563eb" onclick="filterCat(this,'PM / PjM')">PM / PjM (95)</button><button class="cat-btn" data-cat="BA / 數據" style="--cat-c:#16a34a" onclick="filterCat(this,'BA / 數據')">BA / 數據 (4)</button><button class="cat-btn" data-cat="策略 / 營運" style="--cat-c:#ea580c" onclick="filterCat(this,'策略 / 營運')">策略 / 營運 (3)</button><button class="cat-btn" data-cat="其他" style="--cat-c:#94a3b8" onclick="filterCat(this,'其他')">其他 (28)</button></div></div><div class="sb-section sb-section-last"><div class="sb-sec-hd">時間軸</div><a class="sb-item" href="#day-2026-08-06"><span class="sb-date">2026-08-06</span><span class="sb-badge">5</span></a><a class="sb-item" href="#day-2026-08-05"><span class="sb-date">2026-08-05</span><span class="sb-badge">20</span></a><a class="sb-item" href="#day-2026-08-04"><span class="sb-date">2026-08-04</span><span class="sb-badge">18</span></a><a class="sb-item" href="#day-2026-08-03"><span class="sb-date">2026-08-03</span><span class="sb-badge">19</span></a><a class="sb-item" href="#day-2026-08-02"><span class="sb-date">2026-08-02</span><span class="sb-badge">3</span></a><a class="sb-item" href="#day-2026-07-31"><span class="sb-date">2026-07-31</span><span class="sb-badge">20</span></a><a class="sb-item" href="#day-2026-07-30"><span class="sb-date">2026-07-30</span><span class="sb-badge">17</span></a><a class="sb-item" href="#day-2026-07-29"><span class="sb-date">2026-07-29</span><span class="sb-badge">11</span></a><a class="sb-item" href="#day-2026-07-28"><span class="sb-date">2026-07-28</span><span class="sb-badge">15</span></a><a class="sb-item" href="#day-2026-06-28"><span class="sb-date">2026-06-28</span><span class="sb-badge">7</span></a><a class="sb-item" href="#day-2026-06-27"><span class="sb-date">2026-06-27</span><span class="sb-badge">3</span></a></div></aside>
     <main class="main-content">
       
+<section class="day-section" id="day-2026-08-06">
+  <div class="day-heading">
+    <span class="day-date">2026-08-06</span>
+    <span class="day-count">精選 3 筆 + 參考 2 筆</span>
+  </div>
+  <div class="job-list">
+<div class="job-card" id="card-2026-08-06-h-1" data-cat="PM / PjM" style="--score-color:#16a34a;cursor:pointer"
+     onclick="showDetail('card-2026-08-06-h-1','資訊服務-專案管理師','NEC_台灣恩益禧股份有限公司','https://www.104.com.tw/job/7brxm','#16a34a','8')">
+  <div class="card-body">
+    <div class="card-top-row">
+      <div class="card-tags">
+        <span class="cat-tag" style="background:#e0f2fe;color:#0369a1">PM / PjM</span>
+        <span class="rank-tag">第 1 名</span>
+        
+      </div>
+      <div class="score-display">
+        <span class="score-num" style="color:#16a34a">8</span>
+        <span class="score-denom">&thinsp;/ 10</span>
+      </div>
+    </div>
+    <div class="job-name">資訊服務-專案管理師</div>
+    <div class="company-row">NEC_台灣恩益禧股份有限公司</div>
+    <div class="meta-chips"><span class="meta-chip">面議</span><span class="meta-chip">台北市南港區</span><span class="meta-chip">電腦系統整合服務業</span></div>
+    <div class="ai-block"><span>🧠</span><span>專案管理核心職能完全符</span></div>
+  </div>
+  <div class="card-actions">
+    <span class="btn-expand">📋 查看詳細分析 →</span>
+    <button class="btn-mark-applied" id="mark-7brxm" onclick="markApplied(event,'7brxm','資訊服務-專案管理師','NEC_台灣恩益禧股份有限公司','https://www.104.com.tw/job/7brxm','面議')">✔ 標記已投遞</button>
+    <a class="btn-104" href="https://www.104.com.tw/job/7brxm" target="_blank"
+       onclick="event.stopPropagation()">查看 104 職缺 →</a>
+  </div>
+  <div id="panel-card-2026-08-06-h-1" style="display:none"><div class="diag-detail">
+  <div class="d-section">維度評分</div><div class="d-dim-row"><div class="d-dim-label">跨部門溝通證明 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:85%;background:#1f9d55"></div></div><div class="d-dim-pct">85%</div></div><div class="d-dim-row"><div class="d-dim-label">專案文件撰寫廣度 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:60%;background:#e0972c"></div></div><div class="d-dim-pct">60%</div></div><div class="d-dim-row"><div class="d-dim-label">時程與風險管控 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:80%;background:#1f9d55"></div></div><div class="d-dim-pct">80%</div></div><div class="d-dim-row"><div class="d-dim-label">客戶溝通(海外/多據點) </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:75%;background:#1f9d55"></div></div><div class="d-dim-pct">75%</div></div><div class="d-dim-row"><div class="d-dim-label">報價與成本控管 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:45%;background:#d9534f"></div></div><div class="d-dim-pct">45%</div></div>
+  <div class="d-section">職缺要求 vs. 妳的履歷</div>
+  <div class="d-two-col">
+    <div class="d-col"><h4>職缺要求</h4><span class="d-tag d-req">專案規劃/執行/監控/驗收</span><span class="d-tag d-req">客戶與內部跨部門溝通橋梁</span><span class="d-tag d-req">專案文件撰寫(建議書/驗收報告)</span><span class="d-tag d-req">時程進度控管</span><span class="d-tag d-req">工時預估與報價</span><span class="d-tag d-req">成本控制與結案</span></div>
+    <div class="d-col"><h4>履歷覆蓋</h4><span class="d-tag d-covered">5+項產品0到1、5個月架構改造專案如期上線</span><span class="d-tag d-covered">單一需求窗口,跨國品牌客戶對接</span><span class="d-tag d-partial">PRD撰寫熟練,但未提建議書/驗收報告等制式文件</span><span class="d-tag d-covered">看板方法追蹤關鍵路徑與風險</span><span class="d-tag d-missing">未提工時預估或報價經驗</span><span class="d-tag d-partial">有成本分析模型與損益彙總經驗,但非專案結案報價脈絡</span></div>
+  </div>
+  <div class="d-section">Bullet Points XYZ 法優化</div><div class="d-bullet-pair"><div class="d-before">主導 5+ 項規格產品從需求訪談、規格定義到上線驗收之 0 到 1 完整流程；撰寫 PRD 明確定義功能說明，作為跨部門溝通與開發執行依據</div><div class="d-after">獨立主導5項以上產品專案,從需求訪談到規格定義、開發追蹤至上線驗收,撰寫PRD做為跨部門與技術團隊溝通依據,確保專案如期交付</div></div><div class="d-bullet-pair"><div class="d-before">主導為期 5 個月的系統架構改造專案，協調系統部門分批部署與逐批驗收，最後如期上線且至今零客訴、零配置錯誤</div><div class="d-after">主導為期5個月跨部門系統改造專案,協調系統部門分批部署與逐批驗收,控管時程與風險,如期上線並達成零客訴、零配置錯誤紀錄</div></div><div class="d-bullet-pair"><div class="d-before">以看板方法追蹤並行專案的關鍵路徑與風險，搭配部門 OKR 對齊優先級，提前調整排程確保如期交付</div><div class="d-after">以看板方法同時追蹤多項並行專案關鍵路徑與風險,主動識別瓶頸並提前調整排程,確保所有專案如期交付</div></div><div class="d-bullet-pair"><div class="d-before">建立多維度成本分析模型,管理千項以上產品之成本試算與損益彙總報表,支援定價決策</div><div class="d-after">建立多維度成本分析模型,管理逾千項產品成本試算與損益彙總報表,支援定價決策,可延伸應用於專案預算抓估與成本控管</div></div>
+  <div class="d-section">履歷 Gap 診斷</div><div class="d-gap"><span class="d-gap-title">Gap1 缺乏正式報價/投標經驗</span>　履歷未提及專案報價、工時估算或投標書撰寫經驗,建議面談前準備如何以現有成本分析能力類比報價邏輯。</div><div class="d-gap"><span class="d-gap-title">Gap2 缺乏建議書/驗收報告等制式文件範例</span>　PRD經驗強,但NEC需要建議書、啟動簡報等正式文件,建議整理PRD/報告作品集展示可遷移的文件撰寫能力。</div><div class="d-gap"><span class="d-gap-title">Gap3 產業別非目標產業</span>　電腦系統整合非半導體/電信,建議面試時強調跨部門溝通與0到1能力為核心可遷移能力,而非產業knowhow。</div><div class="d-gap"><span class="d-gap-title">Gap4 多據點/大型企業內部協調規模未知</span>　NEC規模大且跨多據點,候選人過去多為單一產品線對接,建議面談時主動詢問實際窗口對象數量與規模。</div>
+  <div class="d-section">關於這家公司</div>
+  <div class="d-company">
+    <p>NEC台灣恩益禧為日商NEC集團在台子公司,主要從事系統整合、資訊服務與政府/企業IT專案,在台灣IT服務業具一定歷史與知名度,客戶多為大型企業與公部門(推測),制度應較成熟、工時相對規律。</p>
+    <p><strong>跟其他職缺相比：</strong>在這批職缺中,NEC對背景科系與年資限制最寬鬆,且與候選人「跨部門溝通+0到1到100」核心能力高度重疊,因此分數是這批中數一數二高;主要落差在報價/建議書等制式文件經驗,比雲騰的3-5年硬性年資門檻或AMD的半導體資深背景門檻更容易透過故事包裝補足。</p>
+    <p class="d-advice">💡 面談時建議準備1-2個具體案例,說明如何把PRD撰寫與成本分析能力類比到建議書與工時報價邏輯,弭平文件經驗落差。</p>
+  </div>
+</div></div>
+</div>
+<div class="job-card" id="card-2026-08-06-h-2" data-cat="PM / PjM" style="--score-color:#16a34a;cursor:pointer"
+     onclick="showDetail('card-2026-08-06-h-2','PM','雲騰網絡科技股份有限公司','https://www.104.com.tw/job/8z3jj','#16a34a','8')">
+  <div class="card-body">
+    <div class="card-top-row">
+      <div class="card-tags">
+        <span class="cat-tag" style="background:#e0f2fe;color:#0369a1">PM / PjM</span>
+        <span class="rank-tag">第 2 名</span>
+        
+      </div>
+      <div class="score-display">
+        <span class="score-num" style="color:#16a34a">8</span>
+        <span class="score-denom">&thinsp;/ 10</span>
+      </div>
+    </div>
+    <div class="job-name">PM</div>
+    <div class="company-row">雲騰網絡科技股份有限公司</div>
+    <div class="meta-chips"><span class="meta-chip">面議</span><span class="meta-chip">台北市中山區</span><span class="meta-chip">電腦系統整合服務業</span></div>
+    <div class="ai-block"><span>🧠</span><span>PM核心職能完全符合需求</span></div>
+  </div>
+  <div class="card-actions">
+    <span class="btn-expand">📋 查看詳細分析 →</span>
+    <button class="btn-mark-applied" id="mark-8z3jj" onclick="markApplied(event,'8z3jj','PM','雲騰網絡科技股份有限公司','https://www.104.com.tw/job/8z3jj','面議')">✔ 標記已投遞</button>
+    <a class="btn-104" href="https://www.104.com.tw/job/8z3jj" target="_blank"
+       onclick="event.stopPropagation()">查看 104 職缺 →</a>
+  </div>
+  <div id="panel-card-2026-08-06-h-2" style="display:none"><div class="diag-detail">
+  <div class="d-section">維度評分</div><div class="d-dim-row"><div class="d-dim-label">年資門檻符合度 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:30%;background:#d9534f"></div></div><div class="d-dim-pct">30%</div></div><div class="d-dim-row"><div class="d-dim-label">理工背景符合度 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:20%;background:#d9534f"></div></div><div class="d-dim-pct">20%</div></div><div class="d-dim-row"><div class="d-dim-label">需求轉化與規格撰寫 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:85%;background:#1f9d55"></div></div><div class="d-dim-pct">85%</div></div><div class="d-dim-row"><div class="d-dim-label">跨部門溝通實績 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:80%;background:#1f9d55"></div></div><div class="d-dim-pct">80%</div></div><div class="d-dim-row"><div class="d-dim-label">英文口語溝通 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:55%;background:#e0972c"></div></div><div class="d-dim-pct">55%</div></div>
+  <div class="d-section">職缺要求 vs. 妳的履歷</div>
+  <div class="d-two-col">
+    <div class="d-col"><h4>職缺要求</h4><span class="d-tag d-req">3-5年PM實戰經驗</span><span class="d-tag d-req">電子/資訊相關系所背景</span><span class="d-tag d-req">跨部門溝通橋樑(研發/測試/業務/客戶)</span><span class="d-tag d-req">需求分析轉化開發規格</span><span class="d-tag d-req">品質把關與專案驗收</span><span class="d-tag d-req">基礎英文溝通能力</span></div>
+    <div class="d-col"><h4>履歷覆蓋</h4><span class="d-tag d-missing">僅1-2年經驗,未達3-5年門檻</span><span class="d-tag d-missing">經濟系畢業,非電子/資訊相關系所</span><span class="d-tag d-covered">擔任跨國品牌客戶、部門與技術團隊單一需求窗口</span><span class="d-tag d-covered">將模糊需求轉化為PRD規格,主導5+項產品0到1</span><span class="d-tag d-partial">有專案驗收與上線經驗,但非軟體測試/版本放行脈絡</span><span class="d-tag d-partial">每日英文書面溝通,但口說會議不主動發言</span></div>
+  </div>
+  <div class="d-section">Bullet Points XYZ 法優化</div><div class="d-bullet-pair"><div class="d-before">擔任海外客戶決策層、各部門利害關係人與技術團隊的單一需求窗口，將模糊需求轉化為可執行規格</div><div class="d-after">擔任研發、業務與海外客戶間的單一需求窗口,將模糊需求釐清並轉化為可執行的PRD規格,做為開發執行依據</div></div><div class="d-bullet-pair"><div class="d-before">主導 5+ 項規格產品從需求訪談、規格定義到上線驗收之 0 到 1 完整流程</div><div class="d-after">獨立執行5項以上產品專案,涵蓋需求訪談、規格定義、開發追蹤到上線驗收全流程,確保交付品質與時程</div></div><div class="d-bullet-pair"><div class="d-before">主導為期 5 個月的系統架構改造專案，協調系統部門分批部署與逐批驗收，最後如期上線且至今零客訴、零配置錯誤</div><div class="d-after">主導系統改造專案,負責分階段部署規劃與逐批驗收品質把關,如期上線並維持零客訴紀錄,展現版本上線前的品質確認能力</div></div><div class="d-bullet-pair"><div class="d-before">每日以英文書面對接跨部門或海外人員需求</div><div class="d-after">每日以英文書面與海外客戶及跨部門團隊溝通需求,具備基礎跨國書面溝通能力</div></div>
+  <div class="d-section">履歷 Gap 診斷</div><div class="d-gap"><span class="d-gap-title">Gap1 年資落差(3-5年 vs 1-2年)</span>　建議投遞前先確認公司是否有彈性,或準備說明如何以複雜度(0到1主導5+項目)彌補年資差距。</div><div class="d-gap"><span class="d-gap-title">Gap2 系所背景非電子/資訊相關</span>　經濟系背景與職缺偏好理工科系不符,建議強調SQL/Python/資料分析等技術底子作為補強論述。</div><div class="d-gap"><span class="d-gap-title">Gap3 缺乏軟硬體測試經驗</span>　履歷未提測試計畫撰寫或版本放行經驗,建議面試前先了解該公司產品型態並準備類比案例。</div><div class="d-gap"><span class="d-gap-title">Gap4 英文口說主動性待加強</span>　職缺要求聽說讀寫基礎溝通,而候選人口說會議不主動發言,建議加強商務英文口說練習。</div>
+  <div class="d-section">關於這家公司</div>
+  <div class="d-company">
+    <p>雲騰網絡科技為電腦系統整合服務業者,推測規模較NEC小,屬中小型系統整合/軟體服務公司,實際產品線與客戶類型履歷資訊有限,需保守判斷。</p>
+    <p><strong>跟其他職缺相比：</strong>這是這批職缺中年資與背景門檻最明確、最不利候選人的一筆——3-5年經驗與理工科系兩項硬性條件都未達標,因此分數低於NEC與台灣智慧雲端,但仍高於AMD,因為所需的溝通與需求轉化能力候選人證據充分,是資格門檻而非能力落差造成分數受限。</p>
+    <p class="d-advice">💡 若仍想投遞,建議在求職信中直接正面說明年資與背景差距,並用複雜度(主導5+項0到1專案、跨國協調)取代年資作為說服重點,否則容易在履歷篩選階段就被年資條件過濾。</p>
+  </div>
+</div></div>
+</div>
+<div class="job-card" id="card-2026-08-06-h-3" data-cat="其他" style="--score-color:#d97706;cursor:pointer"
+     onclick="showDetail('card-2026-08-06-h-3','Customer Program Manager','AMD','https://tw.linkedin.com/jobs/view/customer-program-manager-at-amd-4448017848','#d97706','7')">
+  <div class="card-body">
+    <div class="card-top-row">
+      <div class="card-tags">
+        <span class="cat-tag" style="background:#f1f5f9;color:#475569">其他</span>
+        <span class="rank-tag">第 3 名</span>
+        
+      </div>
+      <div class="score-display">
+        <span class="score-num" style="color:#d97706">7</span>
+        <span class="score-denom">&thinsp;/ 10</span>
+      </div>
+    </div>
+    <div class="job-name">Customer Program Manager</div>
+    <div class="company-row">AMD</div>
+    <div class="meta-chips"><span class="meta-chip">面議</span><span class="meta-chip">Taipei, Taipei City, Taiwan</span><span class="meta-chip">LinkedIn</span></div>
+    <div class="ai-block"><span>🧠</span><span>半導體首選,客戶PM配強</span></div>
+  </div>
+  <div class="card-actions">
+    <span class="btn-expand">📋 查看詳細分析 →</span>
+    <button class="btn-mark-applied" id="mark-customer-program-manager-at-amd-4448017848" onclick="markApplied(event,'customer-program-manager-at-amd-4448017848','Customer Program Manager','AMD','https://tw.linkedin.com/jobs/view/customer-program-manager-at-amd-4448017848','面議')">✔ 標記已投遞</button>
+    <a class="btn-104" href="https://tw.linkedin.com/jobs/view/customer-program-manager-at-amd-4448017848" target="_blank"
+       onclick="event.stopPropagation()">查看 104 職缺 →</a>
+  </div>
+  <div id="panel-card-2026-08-06-h-3" style="display:none"><div class="diag-detail">
+  <div class="d-section">維度評分</div><div class="d-dim-row"><div class="d-dim-label">半導體/硬體產業經驗 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:10%;background:#d9534f"></div></div><div class="d-dim-pct">10%</div></div><div class="d-dim-row"><div class="d-dim-label">ODM/OEM量產專案經驗 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:10%;background:#d9534f"></div></div><div class="d-dim-pct">10%</div></div><div class="d-dim-row"><div class="d-dim-label">資深度(年資與決策層級) </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:25%;background:#d9534f"></div></div><div class="d-dim-pct">25%</div></div><div class="d-dim-row"><div class="d-dim-label">高層匯報與簡報能力 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:70%;background:#e0972c"></div></div><div class="d-dim-pct">70%</div></div><div class="d-dim-row"><div class="d-dim-label">英文口語溝通(對外決策層) </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:40%;background:#d9534f"></div></div><div class="d-dim-pct">40%</div></div>
+  <div class="d-section">職缺要求 vs. 妳的履歷</div>
+  <div class="d-two-col">
+    <div class="d-col"><h4>職缺要求</h4><span class="d-tag d-req">資深Program Manager經驗</span><span class="d-tag d-req">ODM/OEM/客戶專案管理(概念到量產)</span><span class="d-tag d-req">跨部門團隊領導(業務/產品/應用工程)</span><span class="d-tag d-req">客戶需求文件(CRD)分析轉化</span><span class="d-tag d-req">向高層定期匯報專案狀態</span><span class="d-tag d-req">風險管理與問題解決</span><span class="d-tag d-req">流利英文溝通(含口說)</span></div>
+    <div class="d-col"><h4>履歷覆蓋</h4><span class="d-tag d-missing">無半導體/硬體產業與資深Program Manager經歷</span><span class="d-tag d-missing">無ODM/OEM或硬體量產專案管理經驗</span><span class="d-tag d-partial">有跨部門(業務/技術/主管)協調經驗,但非半導體研發/應用工程團隊</span><span class="d-tag d-partial">有將模糊需求轉化為PRD規格經驗,但非CRD硬體規格文件</span><span class="d-tag d-covered">產出專案績效報告與簡報供高層決策</span><span class="d-tag d-covered">風險應變:及時拆解問題、評估影響範圍、提出多個解法</span><span class="d-tag d-partial">每日英文書面溝通佳,但口說會議不主動發言</span></div>
+  </div>
+  <div class="d-section">Bullet Points XYZ 法優化</div><div class="d-bullet-pair"><div class="d-before">產出專案績效報告與簡報（進度追蹤、成本檢討、策略建議），直接供高層決策依據</div><div class="d-after">定期產出專案績效報告與簡報,涵蓋進度追蹤、成本檢討與策略建議,做為高層決策依據,具備向管理層溝通複雜專案狀態的實績</div></div><div class="d-bullet-pair"><div class="d-before">接手單一最大品牌產品線（橫跨 APAC 與 EU/UK 兩市場），在前任離職、無品牌或產業文件情況下 3 個月建立完整知識庫</div><div class="d-after">接手橫跨APAC與歐美市場之最大客戶產品線,在無交接文件情況下3個月內建立完整知識庫並持續營運,展現快速掌握跨國客戶需求的能力</div></div><div class="d-bullet-pair"><div class="d-before">專案突發狀況能及時拆解問題、評估影響範圍，提出多個可行解法供決策</div><div class="d-after">面對專案突發狀況,主動拆解問題、評估影響範圍,提出多個可行解法供主管決策,降低專案延誤風險</div></div><div class="d-bullet-pair"><div class="d-before">每日以英文書面對接跨部門或海外人員需求</div><div class="d-after">每日以英文書面與APAC及歐美客戶決策層溝通需求與專案狀態,具備跨國客戶溝通實務經驗</div></div>
+  <div class="d-section">履歷 Gap 診斷</div><div class="d-gap"><span class="d-gap-title">Gap1 缺乏半導體/硬體產業背景</span>　AMD此職缺明確需要ODM/OEM硬體量產流程知識,候選人完全無此經驗,是最大落差,若投遞需誠實說明並強調可遷移能力,不宜期待第一輪就有回應。</div><div class="d-gap"><span class="d-gap-title">Gap2 年資與資深度落差</span>　職缺用字experienced通常暗示多年經驗,候選人僅1-2年,建議先累積2-3年目標產業相關PM經驗再嘗試,或尋找該公司junior等級職缺。</div><div class="d-gap"><span class="d-gap-title">Gap3 英文口說能力待加強</span>　職缺需頻繁與客戶高層口頭溝通,候選人口說會議不主動發言為明顯弱項,建議先加強商務英文口說。</div><div class="d-gap"><span class="d-gap-title">Gap4 無CRD/硬體規格文件撰寫經驗</span>　履歷PRD經驗偏軟體/流程面,與硬體CRD規格文件性質不同,建議如有機會了解職缺實際文件形式再準備對應說法。</div>
+  <div class="d-section">關於這家公司</div>
+  <div class="d-company">
+    <p>AMD為全球主要半導體公司之一,產品線涵蓋CPU、GPU與資料中心運算平台,近年在AI與高效能運算市場成長快速(推測),在台灣多與代工/ODM廠商及供應鏈夥伴密切合作,徵才門檻與國際化程度普遍偏高。</p>
+    <p><strong>跟其他職缺相比：</strong>這是這批職缺中產業吸引力最高(候選人目標產業第一名:半導體)但實際落差也最大的一筆——缺乏半導體/硬體/ODM經驗、資深度與英文口說都不足,因此分數是這批最低;相較之下NEC或台灣智慧雲端雖然產業吸引力較低,但候選人的PM能力與職缺需求重疊度高出許多。</p>
+    <p class="d-advice">💡 建議把AMD此職缺定位為長期目標而非現階段主力投遞對象,現階段更務實的路徑是先透過NEC、台灣智慧雲端等職缺累積2-3年PM年資與相關供應鏈專案經驗,再回頭挑戰AMD這類國際半導體大廠的Program Manager職位。</p>
+  </div>
+</div></div>
+</div><div class="ref-divider"><span>📋 值得參考</span></div>
+<div class="job-card ref-card" id="card-2026-08-06-r-1" data-cat="PM / PjM" style="--score-color:#d97706;cursor:pointer"
+     onclick="showDetail('card-2026-08-06-r-1','專案管理師(約聘制)','台灣智慧雲端服務股份有限公司','https://www.104.com.tw/job/8y7p2','#d97706','6')">
+  <div class="card-body">
+    <div class="card-top-row">
+      <div class="card-tags">
+        <span class="cat-tag" style="background:#e0f2fe;color:#0369a1">PM / PjM</span>
+        <span class="ref-tag">值得參考</span>
+        
+      </div>
+      <div class="score-display">
+        <span class="score-num" style="color:#d97706">6</span>
+        <span class="score-denom">&thinsp;/ 10</span>
+      </div>
+    </div>
+    <div class="job-name">專案管理師(約聘制)</div>
+    <div class="company-row">台灣智慧雲端服務股份有限公司</div>
+    <div class="meta-chips"><span class="meta-chip">40,000 ~ 45,000</span><span class="meta-chip">新北市淡水區</span><span class="meta-chip">其他專業／科學及技術業</span></div>
+    <div class="ai-block"><span>🧠</span><span>PM職能符合,惟短期契約</span></div>
+  </div>
+  <div class="card-actions">
+    <span class="btn-expand">📋 查看詳細分析 →</span>
+    <button class="btn-mark-applied" id="mark-8y7p2" onclick="markApplied(event,'8y7p2','專案管理師(約聘制)','台灣智慧雲端服務股份有限公司','https://www.104.com.tw/job/8y7p2','40,000 ~ 45,000')">✔ 標記已投遞</button>
+    <a class="btn-104" href="https://www.104.com.tw/job/8y7p2" target="_blank"
+       onclick="event.stopPropagation()">查看 104 職缺 →</a>
+  </div>
+  <div id="panel-card-2026-08-06-r-1" style="display:none"><div class="diag-detail">
+  <div class="d-section">維度評分</div><div class="d-dim-row"><div class="d-dim-label">專案執行與驗收能力 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:85%;background:#1f9d55"></div></div><div class="d-dim-pct">85%</div></div><div class="d-dim-row"><div class="d-dim-label">文件品質把關 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:65%;background:#e0972c"></div></div><div class="d-dim-pct">65%</div></div><div class="d-dim-row"><div class="d-dim-label">跨部門/外包協調 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:70%;background:#e0972c"></div></div><div class="d-dim-pct">70%</div></div><div class="d-dim-row"><div class="d-dim-label">教育訓練與活動支援 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:90%;background:#1f9d55"></div></div><div class="d-dim-pct">90%</div></div><div class="d-dim-row"><div class="d-dim-label">薪資與合約條件匹配度 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:40%;background:#d9534f"></div></div><div class="d-dim-pct">40%</div></div>
+  <div class="d-section">職缺要求 vs. 妳的履歷</div>
+  <div class="d-two-col">
+    <div class="d-col"><h4>職缺要求</h4><span class="d-tag d-req">獨立執行小型軟體開發/整合專案</span><span class="d-tag d-req">專案時程/風險/品質控管</span><span class="d-tag d-req">專案交付文件撰寫與品質把關</span><span class="d-tag d-req">支援大型專案分項工項執行</span><span class="d-tag d-req">與外包廠商/跨部門溝通</span><span class="d-tag d-req">支援教育訓練/會議記錄等活動</span></div>
+    <div class="d-col"><h4>履歷覆蓋</h4><span class="d-tag d-covered">主導5+項產品0到1完整流程,含規格定義與上線驗收</span><span class="d-tag d-covered">看板方法追蹤關鍵路徑與風險,OKR對齊優先級</span><span class="d-tag d-partial">PRD撰寫能力強,但未提工作說明書/測試報告等制式驗收文件經驗</span><span class="d-tag d-partial">有跨部門/第三方系統介接協調經驗,但非外包廠商管理脈絡</span><span class="d-tag d-covered">跨部門與海外/技術團隊溝通協調,單一需求窗口</span><span class="d-tag d-covered">規劃並主持5場跨部門新產品培訓,累計200+參與者,自製教材</span></div>
+  </div>
+  <div class="d-section">Bullet Points XYZ 法優化</div><div class="d-bullet-pair"><div class="d-before">規劃並主持 5 場跨部門新產品培訓（累計 200+ 名參與者），自製教材協助客戶與合作夥伴快速上手</div><div class="d-after">規劃並主持5場跨部門教育訓練,自製教材,累計服務200名以上參與者,協助客戶與合作夥伴快速上手新系統/流程</div></div><div class="d-bullet-pair"><div class="d-before">主導第三方系統介接專案，負責需求對接、規格定義及產品上線</div><div class="d-after">主導第三方系統介接專案,負責與外部廠商需求對接、規格定義到上線驗收,確保交付品質與時程</div></div><div class="d-bullet-pair"><div class="d-before">撰寫 PRD 明確定義功能說明，作為跨部門溝通與開發執行依據</div><div class="d-after">撰寫PRD等專案交付文件,明確定義功能說明與驗收標準,作為跨部門溝通與品質把關依據</div></div><div class="d-bullet-pair"><div class="d-before">以看板方法追蹤並行專案的關鍵路徑與風險，搭配部門 OKR 對齊優先級，提前調整排程確保如期交付</div><div class="d-after">以看板方法同步追蹤多項專案關鍵路徑與風險,主動識別瓶頸並調整排程,確保各專案如期交付且品質達標</div></div>
+  <div class="d-section">履歷 Gap 診斷</div><div class="d-gap"><span class="d-gap-title">Gap1 缺乏測試報告/工作說明書等制式履約文件經驗</span>　職缺明確要求撰寫測試報告、驗收報告等履約文件,建議面談前準備PRD/驗收文件範例類比說明。</div><div class="d-gap"><span class="d-gap-title">Gap2 薪資與現職落差</span>　待遇40,000-45,000可能低於候選人現職等級(已有主導0到1實績),建議評估是否符合待業期間的期待或作為過渡職缺。</div><div class="d-gap"><span class="d-gap-title">Gap3 短期約聘性質(至2027年1月)</span>　需留意合約長度與2026/10/18國營聯招筆試/面試排程是否衝突,並評估是否符合作息規律的次要偏好。</div><div class="d-gap"><span class="d-gap-title">Gap4 外包廠商管理經驗未明確</span>　履歷跨部門協調對象多為內部/技術團隊與海外客戶,較少提及外包廠商管理,建議面談時說明可遷移之協調方法論。</div>
+  <div class="d-section">關於這家公司</div>
+  <div class="d-company">
+    <p>台灣智慧雲端服務股份有限公司從名稱與所屬其他專業／科學及技術業推測為提供雲端或系統整合相關專業服務之公司,規模與確切業務範疇不明朗,建議求職者自行進一步查證公司背景與此約聘職缺的轉正機會。</p>
+    <p><strong>跟其他職缺相比：</strong>此職缺在專案管理與教育訓練能力面向與候選人重疊度很高,分數僅次於NEC;主要拉低分數的不是能力落差,而是條件面——薪資明顯低於候選人現職水準,且為半年左右的短期約聘,建議把它當作備案而非首選。</p>
+    <p class="d-advice">💡 若考慮投遞,建議面談時主動確認合約結束後是否有轉正或延續機會,並確認薪資是否有調整空間,避免單純因待業空窗而屈就短期低薪合約。</p>
+  </div>
+</div></div>
+</div>
+<div class="job-card ref-card" id="card-2026-08-06-r-2" data-cat="PM / PjM" style="--score-color:#d97706;cursor:pointer"
+     onclick="showDetail('card-2026-08-06-r-2','專案經理 / Junior Project Manager','智影顧問股份有限公司','https://www.104.com.tw/job/8d51b','#d97706','6')">
+  <div class="card-body">
+    <div class="card-top-row">
+      <div class="card-tags">
+        <span class="cat-tag" style="background:#e0f2fe;color:#0369a1">PM / PjM</span>
+        <span class="ref-tag">值得參考</span>
+        
+      </div>
+      <div class="score-display">
+        <span class="score-num" style="color:#d97706">6</span>
+        <span class="score-denom">&thinsp;/ 10</span>
+      </div>
+    </div>
+    <div class="job-name">專案經理 / Junior Project Manager</div>
+    <div class="company-row">智影顧問股份有限公司</div>
+    <div class="meta-chips"><span class="meta-chip">37,000 ~ 45,000</span><span class="meta-chip">台北市大安區</span><span class="meta-chip">電腦軟體服務業</span></div>
+    <div class="ai-block"><span>🧠</span><span>PM職能符合,Junior職位</span></div>
+  </div>
+  <div class="card-actions">
+    <span class="btn-expand">📋 查看詳細分析 →</span>
+    <button class="btn-mark-applied" id="mark-8d51b" onclick="markApplied(event,'8d51b','專案經理 / Junior Project Manager','智影顧問股份有限公司','https://www.104.com.tw/job/8d51b','37,000 ~ 45,000')">✔ 標記已投遞</button>
+    <a class="btn-104" href="https://www.104.com.tw/job/8d51b" target="_blank"
+       onclick="event.stopPropagation()">查看 104 職缺 →</a>
+  </div>
+  <div id="panel-card-2026-08-06-r-2" style="display:none"><div class="diag-detail">
+  <div class="d-section">維度評分</div><div class="d-dim-row"><div class="d-dim-label">需求蒐集與規劃能力 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:90%;background:#1f9d55"></div></div><div class="d-dim-pct">90%</div></div><div class="d-dim-row"><div class="d-dim-label">客戶溝通與對口經驗 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:90%;background:#1f9d55"></div></div><div class="d-dim-pct">90%</div></div><div class="d-dim-row"><div class="d-dim-label">文件與教材撰寫 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:75%;background:#1f9d55"></div></div><div class="d-dim-pct">75%</div></div><div class="d-dim-row"><div class="d-dim-label">教育訓練籌備能力 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:90%;background:#1f9d55"></div></div><div class="d-dim-pct">90%</div></div><div class="d-dim-row"><div class="d-dim-label">職級/資歷對位 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:45%;background:#d9534f"></div></div><div class="d-dim-pct">45%</div></div>
+  <div class="d-section">職缺要求 vs. 妳的履歷</div>
+  <div class="d-two-col">
+    <div class="d-col"><h4>職缺要求</h4><span class="d-tag d-req">專案進度追蹤與會議記錄</span><span class="d-tag d-req">客戶端日常溝通窗口與資料收集</span><span class="d-tag d-req">協助需求蒐集並轉交規劃</span><span class="d-tag d-req">文件編撰(操作手冊/FAQ)</span><span class="d-tag d-req">協助教育訓練/線上說明會籌備</span><span class="d-tag d-req">半年以上PM或產品開發相關經驗</span></div>
+    <div class="d-col"><h4>履歷覆蓋</h4><span class="d-tag d-covered">以看板方法追蹤並行專案關鍵路徑,產出專案績效報告,層級高於職缺要求的會議記錄</span><span class="d-tag d-covered">擔任海外客戶決策層與部門利害關係人的單一需求窗口</span><span class="d-tag d-covered">將模糊需求轉化為可執行規格,撰寫PRD</span><span class="d-tag d-partial">有自製教材經驗,但未明確提及操作手冊/FAQ文件形式</span><span class="d-tag d-covered">規劃並主持5場跨部門新產品培訓,累計200+參與者</span><span class="d-tag d-covered">1年+PM/產品管理實戰經驗,遠超半年門檻要求</span></div>
+  </div>
+  <div class="d-section">Bullet Points XYZ 法優化</div><div class="d-bullet-pair"><div class="d-before">擔任海外客戶決策層、各部門利害關係人與技術團隊的單一需求窗口，將模糊需求轉化為可執行規格</div><div class="d-after">擔任客戶與內部團隊間的單一需求窗口,協助釐清並蒐集客戶需求,將模糊需求整理轉化為可執行規格供團隊規劃</div></div><div class="d-bullet-pair"><div class="d-before">規劃並主持 5 場跨部門新產品培訓（累計 200+ 名參與者），自製教材協助客戶與合作夥伴快速上手</div><div class="d-after">自製教材並籌備主持5場產品教育訓練,累計服務200名以上客戶與合作夥伴,協助其快速上手新系統操作</div></div><div class="d-bullet-pair"><div class="d-before">產出專案績效報告與簡報（進度追蹤、成本檢討、策略建議），直接供高層決策依據</div><div class="d-after">定期產出專案進度追蹤報告與會議紀錄,整理待辦事項並持續追蹤落實進度,確保專案資訊透明同步</div></div><div class="d-bullet-pair"><div class="d-before">以看板方法追蹤並行專案的關鍵路徑與風險，搭配部門 OKR 對齊優先級，提前調整排程確保如期交付</div><div class="d-after">以看板方法追蹤專案進度與待辦事項,協助專案負責人掌握任務達成狀況並確保如期交付</div></div>
+  <div class="d-section">履歷 Gap 診斷</div><div class="d-gap"><span class="d-gap-title">Gap1 資歷可能高於此Junior PM職缺預期</span>　候選人已有主導0到1、跨國品牌線、多項複雜專案的實績,遠超半年以上經驗歡迎的門檻,面談時需準備回答為何應徵Junior職缺、留任意願等問題。</div><div class="d-gap"><span class="d-gap-title">Gap2 薪資可能低於候選人期待</span>　37,000-45,000低於候選人現職等級,建議先釐清是否有明確晉升路徑再決定是否投遞。</div><div class="d-gap"><span class="d-gap-title">Gap3 缺乏操作手冊/FAQ等制式使用者文件撰寫實績</span>　履歷未直接提及操作手冊/FAQ撰寫,建議用自製教材經驗類比說明可遷移。</div><div class="d-gap"><span class="d-gap-title">Gap4 製造業/B2B SaaS產業knowhow待建立</span>　PIMQ服務對象為製造業客戶,與候選人金融科技背景不同,建議面談前簡單了解智慧製造/物聯網基本概念。</div>
+  <div class="d-section">關於這家公司</div>
+  <div class="d-company">
+    <p>PIMQ拼起科技(智影顧問股份有限公司)為台灣本土工業SaaS服務商,主打協助製造業智慧轉型,提供從顧問、物聯網硬體到軟體導入的一條龍服務,屬於新創/中小型規模的B2B軟體服務公司(推測)。</p>
+    <p><strong>跟其他職缺相比：</strong>此職缺在需求蒐集、客戶對口、教育訓練等面向與候選人現職內容高度重疊,能力面分數其實不輸NEC,但因為職稱是Junior PM、待遇偏入門級,與候選人現有的0到1主導、跨國協調資歷不完全對等,存在資歷超標的錯位風險,因此整體分數居中。</p>
+    <p class="d-advice">💡 若投遞此職缺,建議在求職信中主動說明看重的是B2B/製造業SaaS產業轉換與軟體業標籤,而非降階,並詢問是否有對應資深度調整職稱與待遇的空間。</p>
+  </div>
+</div></div>
+</div></div>
+</section>
 <section class="day-section" id="day-2026-08-05">
   <div class="day-heading">
     <span class="day-date">2026-08-05</span>
