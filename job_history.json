@@ -5,6 +5,128 @@
     "report_url": "reports/diagnosis_2026-08-11.html",
     "jobs": [
       {
+        "jobNo": "15257726",
+        "jobName": "(Taipei)SAP SD/MM Developer",
+        "custName": "國巨股份有限公司",
+        "salary": "面議",
+        "location": "新北市新店區",
+        "industry": "半導體製造業",
+        "url": "https://www.104.com.tw/job/930xq",
+        "ai_score": 2,
+        "ai_reason": "半導體產業優先度高，但職缺為 SAP ABAP 開發職，求職者目標職能為 PM/BA；無相關技能，資歷遠不足要求的 5 年",
+        "is_reference": false,
+        "diagnosis": {
+          "jobNo": "15257726",
+          "overall_score": 16,
+          "overall_summary": "履歷在跨部門溝通、需求轉規格、文件撰寫上與此職缺有語言層面的相似性,但職缺核心是5年以上SAP SD/MM ABAP開發實戰經驗,求職者完全沒有ABAP程式語言與SAP模組背景,這是無法用措辭改寫彌補的硬缺口。",
+          "dimensions": [
+            {
+              "label": "ABAP/SAP開發實戰經驗",
+              "percent": 0
+            },
+            {
+              "label": "半導體產業匹配度",
+              "percent": 55
+            },
+            {
+              "label": "需求轉技術方案能力",
+              "percent": 40
+            },
+            {
+              "label": "英語溝通能力(技術情境)",
+              "percent": 35
+            },
+            {
+              "label": "文件撰寫能力",
+              "percent": 45
+            },
+            {
+              "label": "ATS關鍵字命中率",
+              "percent": 5
+            }
+          ],
+          "requirements": [
+            "5年以上SAP SD/MM實戰經驗",
+            "ABAP程式撰寫與測試",
+            "SAP S4 ABAP操作與問題排解",
+            "程式除錯與優化",
+            "與功能顧問合作轉譯業務需求為技術方案",
+            "撰寫變更文件",
+            "英語溝通能力(佳)",
+            "中文溝通能力"
+          ],
+          "resume_coverage": [
+            {
+              "text": "無ABAP或SAP SD/MM相關工作經驗",
+              "status": "missing"
+            },
+            {
+              "text": "有Python/SQL但無ABAP程式語言經驗",
+              "status": "missing"
+            },
+            {
+              "text": "無SAP S4系統操作經驗",
+              "status": "missing"
+            },
+            {
+              "text": "無程式除錯經驗(僅有自動化腳本開發)",
+              "status": "missing"
+            },
+            {
+              "text": "PRD撰寫、需求對接經驗可部分對應「業務需求轉方案」但對象是產品規格非程式技術",
+              "status": "partial"
+            },
+            {
+              "text": "PRD撰寫習慣可部分對應「文件撰寫」但非技術變更文件",
+              "status": "partial"
+            },
+            {
+              "text": "每日英文書面往來,但職缺要求「excellent」等級,且技術英語情境不同",
+              "status": "partial"
+            },
+            {
+              "text": "中文溝通(精通)符合",
+              "status": "covered"
+            }
+          ],
+          "bullet_rewrites": [
+            {
+              "before": "主導 5+ 項規格產品從需求訪談、規格定義到上線驗收之 0 到 1 完整流程;撰寫 PRD 明確定義功能說明,作為跨部門溝通與開發執行依據",
+              "after": "獨立完成需求訪談與規格定義,撰寫結構化功能文件(PRD)供技術團隊執行開發,具備將業務需求轉譯為可執行技術文件之經驗(注:此為產品規格文件,非ABAP程式碼層級之技術文件,與職缺要求仍有落差)"
+            },
+            {
+              "before": "每日以英文書面對接跨部門或海外人員需求",
+              "after": "每日以英文進行跨國書面溝通,處理海外利害關係人之需求釐清與規格確認"
+            },
+            {
+              "before": "以 Python 結合生成式 AI 開發資訊同步自動化排程",
+              "after": "具備Python程式開發與自動化流程設計經驗,對邏輯拆解與程式除錯有基礎實作經驗,惟程式語言為Python而非ABAP"
+            }
+          ],
+          "gaps": [
+            {
+              "title": "Gap 1:ABAP程式語言完全空白",
+              "detail": "職缺硬性要求5年以上SAP SD/MM ABAP撰寫與除錯經驗,求職者僅有Python/SQL背景,ABAP是企業級專用語言與獨立生態系,無法在短期內以自學彌補到「hands-on 5年」等級,不建議投遞此職缺,應另尋公司內PM/BA/PjM類職缺"
+            },
+            {
+              "title": "Gap 2:SAP模組知識為零",
+              "detail": "SD(銷售流通)、MM(採購管理)是SAP核心業務模組,求職者無ERP系統操作或建置經驗,若真有興趣走技術路線需先從SAP流程認證或基礎課程補起,非短期可達成"
+            },
+            {
+              "title": "Gap 3:英語口語與技術情境溝通深度不足",
+              "detail": "履歷自述英文為「中等」、口說不主動發言,但此職缺為國際化ABAP開發團隊,需與海外功能顧問進行技術討論,若要投遞其他職缺仍建議加強英語口說與技術詞彙"
+            },
+            {
+              "title": "Gap 4:履歷定位與職缺性質錯位",
+              "detail": "履歷開頭定位為「產品與專案管理」人才,而此職缺是純技術開發職,ATS若以關鍵字比對(ABAP/SAP SD/MM/S4)幾乎不會命中,建議求職者鎖定該公司或集團內PM、PMO、BA類職缺,而非此開發職位"
+            }
+          ],
+          "company_intro": "國巨股份有限公司(YAGEO Group)是台灣被動元件產業的重要廠商,以電阻、電容等被動元件起家,近年透過多次併購擴張版圖,推測目前已發展為橫跨多品牌、多地區生產據點的電子零組件集團。此職缺標示新北市新店區,應與集團內部IT/系統部門相關,負責SAP系統的維運與客製化開發。",
+          "relative_comparison": "本次精選清單僅此一筆職缺,無法進行橫向比較。但就職缺本質而言,這是一個純技術開發職位(ABAP/SAP),與求職者的PM/專案管理背景屬於完全不同職能軸線,即使產業別(半導體/電子)符合求職者的目標優先序,職能不匹配的落差遠大於產業加分,因此整體分數偏低。",
+          "key_advice": "不建議直接投遞此職缺,職能落差過大(需5年ABAP實戰經驗);若對國巨/YAGEO有興趣,建議改為主動搜尋或詢問該集團是否有PM、PMO、BA或系統導入專案類職缺,那類職位才能真正發揮履歷中的PRD撰寫與跨部門協調經驗。"
+        }
+      },
+      {
         "jobNo": "14511411",
         "jobName": "Project Manager 專案經理/專案管理師",
         "custName": "塔台智能網絡股份有限公司",
