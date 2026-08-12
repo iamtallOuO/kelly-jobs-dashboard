@@ -5,6 +5,538 @@
     "report_url": "reports/diagnosis_2026-08-12.html",
     "jobs": [
       {
+        "jobNo": "15154871",
+        "jobName": "【總公司-品牌部】產品經理 / 商品行銷PM（影像與3C代理）",
+        "custName": "東城國際股份有限公司",
+        "salary": "面議",
+        "location": "新北市土城區",
+        "industry": "電子通訊／電腦週邊零售業",
+        "url": "https://www.104.com.tw/job/90tkn",
+        "ai_score": 8,
+        "ai_reason": "PM職能完美，3C電子符合，成本定價經驗適配",
+        "is_reference": false,
+        "diagnosis": {
+          "jobNo": "15154871",
+          "overall_score": 52,
+          "overall_summary": "跨部門溝通與數據分析能力可部分遷移,但這筆職缺核心是通路╱定價╱原廠溝通的零售型商品行銷PM,履歷完全沒有3C影像產業或通路操作經驗,是最大落差。",
+          "dimensions": [
+            {
+              "label": "產品0到1與規格定義能力",
+              "percent": 50
+            },
+            {
+              "label": "通路/定價/商業策略經驗",
+              "percent": 35
+            },
+            {
+              "label": "跨部門與原廠溝通證明",
+              "percent": 70
+            },
+            {
+              "label": "3C/影像產業知識與興趣",
+              "percent": 40
+            },
+            {
+              "label": "數據分析支援決策",
+              "percent": 65
+            }
+          ],
+          "requirements": [
+            "3C/影像產品市場興趣",
+            "定價與毛利策略規劃",
+            "上市通路策略(電商/百貨/門市/經銷)",
+            "原廠溝通協調",
+            "跨部門溝通整合",
+            "銷售數據分析優化"
+          ],
+          "resume_coverage": [
+            {
+              "text": "3C/影像產業興趣(履歷未提及)",
+              "status": "missing"
+            },
+            {
+              "text": "成本分析模型支援定價決策(非零售通路定價毛利)",
+              "status": "partial"
+            },
+            {
+              "text": "電商/百貨/門市/經銷通路操作經驗",
+              "status": "missing"
+            },
+            {
+              "text": "跨國品牌客戶溝通(非原廠角色)",
+              "status": "partial"
+            },
+            {
+              "text": "單一需求窗口跨部門溝通",
+              "status": "covered"
+            },
+            {
+              "text": "SQL+Power BI競品分析可遷移至市場分析",
+              "status": "covered"
+            }
+          ],
+          "bullet_rewrites": [
+            {
+              "before": "以 SQL(MS SQL/PostgreSQL)跨資料庫檢索底層數據,搭配 Power BI 製作視覺化報表,產出競品分析(東南亞/歐美共 4 份)與商業模式轉型評估供 CEO 決策",
+              "after": "運用SQL跨資料庫檢索與Power BI視覺化,產出4份跨區域(東南亞/歐美)競品分析報告與商業模式轉型評估,直接作為CEO決策依據,具備快速掌握新市場動態的分析實績"
+            },
+            {
+              "before": "建立多維度成本分析模型,管理千項以上產品之成本試算與損益彙總報表,支援定價決策",
+              "after": "建立涵蓋千項以上產品之多維度成本分析模型,產出成本試算與損益彙總報表,作為定價與毛利策略之量化決策依據"
+            },
+            {
+              "before": "擔任海外客戶決策層、各部門利害關係人與技術團隊的單一需求窗口,將模糊需求轉化為可執行規格",
+              "after": "擔任海外品牌決策層與跨部門(業務/技術)團隊的單一溝通窗口,將模糊商業需求轉化為可執行的產品規劃與執行方案"
+            }
+          ],
+          "gaps": [
+            {
+              "title": "Gap1:缺乏3C/影像產業或零售通路實務經驗",
+              "detail": "履歷完全未提及3C、影像器材或實體通路(電商/百貨/門市)相關經歷,建議投遞前先做產業與品牌功課,面試時具體說明對此產業的興趣來源"
+            },
+            {
+              "title": "Gap2:定價經驗缺乏零售脈絡",
+              "detail": "現有成本分析經驗偏內部B2B產品線,建議在面談中補充如何把成本分析邏輯應用到零售定價與毛利規劃的具體想法"
+            },
+            {
+              "title": "Gap3:缺乏原廠對接或供應商/採購管理經驗",
+              "detail": "需另外準備如何用現有的跨國品牌溝通經驗類比「與原廠溝通產品資訊與資源」的情境"
+            }
+          ],
+          "company_intro": "東城國際推測為台灣代理多個國際3C/影像相關品牌之經銷通路商,主要營運電商、百貨、門市與經銷等多元通路,產業屬性偏零售/通路操作,而非技術研發型產品管理,細節仍需自行查證。",
+          "relative_comparison": "分數落在五筆職缺中段,低於Agoda與Morrison Express,因為核心工作是通路/定價/原廠溝通的零售行銷PM,與候選人熟悉的技術規格型PM經驗方向不同;但因新北市地點符合、產業屬電子相關且無HP或ICON那種結構性落差(年資門檻/完全不同產業),分數高於這兩筆。",
+          "key_advice": "投遞前先具體研究東城代理的品牌與市場定位,面談時把可遷移的跨部門溝通與數據分析包裝為「快速上手新產業」的證明,而非強調PRD/系統開發經驗。"
+        }
+      },
+      {
+        "jobNo": "li_4452332690",
+        "jobName": "Software Engineering Program Manager, Consumer Notebooks, Consumer PCs",
+        "custName": "HP",
+        "salary": "面議",
+        "location": "Taipei, Taipei City, Taiwan",
+        "industry": "LinkedIn",
+        "url": "https://tw.linkedin.com/jobs/view/software-engineering-program-manager-consumer-notebooks-consumer-pcs-at-hp-4452332690",
+        "ai_score": 7,
+        "ai_reason": "PM職能符合，電子產業目標，缺詳細描述",
+        "is_reference": false,
+        "diagnosis": {
+          "jobNo": "li_4452332690",
+          "overall_score": 22,
+          "overall_summary": "職能方向(跨部門專案協調)有部分對應,但JD要求12年以上經驗與消費性硬體開發全流程,與候選人1-2年、金融科技軟體背景的落差過於懸殊,實務上很可能在履歷篩選階段就被排除。",
+          "dimensions": [
+            {
+              "label": "年資門檻符合度",
+              "percent": 10
+            },
+            {
+              "label": "硬體/消費性產品開發流程經驗",
+              "percent": 20
+            },
+            {
+              "label": "跨部門/供應鏈協調證明",
+              "percent": 55
+            },
+            {
+              "label": "Agile/Scrum與專案工具",
+              "percent": 40
+            },
+            {
+              "label": "中英雙語溝通能力",
+              "percent": 60
+            }
+          ],
+          "requirements": [
+            "12年以上軟體工程專案管理經驗",
+            "消費性電腦/筆電產品開發全流程",
+            "跨部門協調(工程/製造/品保/供應鏈)",
+            "Agile/Scrum方法與JIRA等工具",
+            "中英流利口說與書寫",
+            "帶領/指導資淺團隊成員"
+          ],
+          "resume_coverage": [
+            {
+              "text": "12年以上經驗(僅1-2年,差距懸殊)",
+              "status": "missing"
+            },
+            {
+              "text": "消費性電腦/筆電開發流程(無硬體/NPI經驗)",
+              "status": "missing"
+            },
+            {
+              "text": "跨部門/跨國協調實績(非製造/供應鏈場域)",
+              "status": "partial"
+            },
+            {
+              "text": "看板方法熟悉,但未提Scrum儀式或JIRA",
+              "status": "partial"
+            },
+            {
+              "text": "書面英文佳,口說會議不主動發言",
+              "status": "partial"
+            },
+            {
+              "text": "培訓200+人次與教材開發(非直屬團隊管理)",
+              "status": "partial"
+            }
+          ],
+          "bullet_rewrites": [
+            {
+              "before": "主導為期 5 個月的系統架構改造專案,協調系統部門分批部署與逐批驗收,最後如期上線且至今零客訴",
+              "after": "主導為期5個月的系統架構改造專案,規劃分階段部署與驗收機制,協調系統部門如期完成上線,上線後維持零客訴紀錄,展現大型技術專案的排程與風險管控能力"
+            },
+            {
+              "before": "以看板方法追蹤並行專案的關鍵路徑與風險,搭配部門 OKR 對齊優先級,提前調整排程確保如期交付",
+              "after": "以看板方法追蹤多項並行專案之關鍵路徑與風險,對齊部門OKR排定優先順序,提前預判排程風險並調整計畫,確保所有專案如期交付"
+            },
+            {
+              "before": "規劃並主持 5 場跨部門新產品培訓(累計 200+ 名參與者),自製教材協助客戶與合作夥伴快速上手",
+              "after": "規劃並主持5場跨部門新產品教育訓練,自製教材服務逾200名參與者,協助團隊成員與外部夥伴快速掌握新產品運作邏輯,展現知識轉移與團隊賦能能力"
+            }
+          ],
+          "gaps": [
+            {
+              "title": "Gap1:年資落差過大",
+              "detail": "JD明確要求12年以上經驗,候選人僅1-2年,即使技能對應,在履歷篩選階段極可能被系統或HR直接刷掉,建議評估是否值得投遞,或改留意HP的junior/associate PM職缺"
+            },
+            {
+              "title": "Gap2:無消費性硬體/製造領域經驗",
+              "detail": "履歷全為金融科技軟體產品,無新產品導入(NPI)、製造良率、供應鏈物流相關實績,不建議在此職缺強行包裝"
+            },
+            {
+              "title": "Gap3:未提及正式Agile/Scrum框架或JIRA工具",
+              "detail": "若仍決定投遞HP其他初階職缺,建議補充是否用過JIRA或類似工具,並用Scrum術語重新描述看板實務經驗"
+            }
+          ],
+          "company_intro": "HP為全球消費性電腦與列印設備大廠,台灣多為研發與供應鏈相關職能;此職缺屬資深技術專案管理職位,對應美系外商高年資、跨國供應鏈協作的工作型態。",
+          "relative_comparison": "五筆職缺中年資落差最大、職能領域(硬體製造/供應鏈)落差也最大,分數為最低,明顯低於Agoda、Morrison與東城,僅略低於ICON,主因是ICON至少地點/職能還有討論空間,而HP的12年門檻幾乎是硬性排除條件。",
+          "key_advice": "這筆職缺年資門檻(12年+)與候選人現況落差過大,建議直接放棄投遞,改為留意HP是否有Associate/Junior層級的專案管理職缺。"
+        }
+      },
+      {
+        "jobNo": "li_4451350488",
+        "jobName": "Project Management Specialist, Languages Team",
+        "custName": "Agoda",
+        "salary": "面議",
+        "location": "Taipei, Taipei City, Taiwan",
+        "industry": "LinkedIn",
+        "url": "https://tw.linkedin.com/jobs/view/project-management-specialist-languages-team-at-agoda-4451350488",
+        "ai_score": 6,
+        "ai_reason": "PM職能符合，軟體優先序低，缺詳細描述",
+        "is_reference": false,
+        "diagnosis": {
+          "jobNo": "li_4451350488",
+          "overall_score": 78,
+          "overall_summary": "跨國跨部門溝通、需求轉譯與AI自動化流程三項核心實績都直接對應這個角色需求,是本次五筆職缺中職能契合度最高的一筆;主要落差在在地化(localization)產業知識與外部供應商管理經驗,但這兩者屬於可透過學習補足的軟性缺口。",
+          "dimensions": [
+            {
+              "label": "跨部門/跨語言利害關係人協調",
+              "percent": 80
+            },
+            {
+              "label": "流程自動化與AI工具應用",
+              "percent": 75
+            },
+            {
+              "label": "專案排程/風險/交付管理",
+              "percent": 75
+            },
+            {
+              "label": "英文書面/口語溝通",
+              "percent": 60
+            },
+            {
+              "label": "外部供應商/廠商管理經驗",
+              "percent": 30
+            },
+            {
+              "label": "在地化/多語言產業知識",
+              "percent": 20
+            }
+          ],
+          "requirements": [
+            "管理40+語言在地化專案全流程",
+            "跨職能利害關係人協調(產品/工程/行銷/法務)",
+            "外部語言供應商管理",
+            "運用AI翻譯與專案管理工具提升效率",
+            "風險預判與應變計畫",
+            "專案文件與報告維護"
+          ],
+          "resume_coverage": [
+            {
+              "text": "40+語言在地化專案經驗(履歷無此經驗)",
+              "status": "missing"
+            },
+            {
+              "text": "跨國品牌/技術團隊單一需求窗口",
+              "status": "covered"
+            },
+            {
+              "text": "外部廠商/供應商管理(履歷未提及)",
+              "status": "missing"
+            },
+            {
+              "text": "Python+生成式AI自動化流程,年省近100小時",
+              "status": "covered"
+            },
+            {
+              "text": "看板追蹤關鍵路徑與風險提前調整排程",
+              "status": "covered"
+            },
+            {
+              "text": "PRD、專案績效報告與簡報產出供高層決策",
+              "status": "covered"
+            }
+          ],
+          "bullet_rewrites": [
+            {
+              "before": "以 Python 結合生成式 AI 開發資訊同步自動化排程(含信件自動擷取與轉換計算),將原需每週 1-2 小時的跨部門作業轉為自動執行,推廣至全品牌線後每年累計節省近 100 小時",
+              "after": "運用Python結合生成式AI開發跨部門資訊同步自動化流程,取代原本每週1-2小時的人工作業,推廣至全品牌線後每年累計節省近100小時,展現以AI工具規模化提升營運效率的實績"
+            },
+            {
+              "before": "擔任海外客戶決策層、各部門利害關係人與技術團隊的單一需求窗口,將模糊需求轉化為可執行規格",
+              "after": "擔任橫跨APAC與歐美市場之品牌決策層、跨部門利害關係人與技術團隊的單一需求窗口,持續將跨文化、模糊的商業需求轉譯為可執行的專案規格與交付計畫"
+            },
+            {
+              "before": "以看板方法追蹤並行專案的關鍵路徑與風險,搭配部門 OKR 對齊優先級,提前調整排程確保如期交付",
+              "after": "以看板方法同時追蹤多項跨國並行專案之關鍵路徑與風險,對齊團隊優先序後提前調整排程,確保所有專案如期交付、零延遲"
+            },
+            {
+              "before": "每日以英文書面對接跨部門或海外人員需求",
+              "after": "每日以英文書面與海外(APAC/歐美)團隊及客戶溝通協調,長期累積跨時區、跨文化的專案溝通實務經驗"
+            }
+          ],
+          "gaps": [
+            {
+              "title": "Gap1:缺乏在地化(localization)專業知識",
+              "detail": "履歷未提及多語言在地化流程或工具(如CAT tools、TMS),建議面談前研究基本在地化流程術語,並說明PRD撰寫與需求轉譯能力可如何遷移到多語言協調情境"
+            },
+            {
+              "title": "Gap2:缺乏外部供應商/廠商管理經驗",
+              "detail": "現有經驗偏內部跨部門協調,建議補充是否曾協調過外部廠商或合作夥伴(如系統介接專案中的第三方廠商),並在履歷中強化這段敘述"
+            },
+            {
+              "title": "Gap3:口說英文非強項",
+              "detail": "JD雖未強制要求極高口語能力,但國際化協作角色仍可能需要視訊會議主動發言,建議提前準備英文口說練習與模擬面試"
+            }
+          ],
+          "company_intro": "Agoda為Booking Holdings旗下全球線上旅遊訂房平台,總部位於曼谷,亞太地區為主要營運重心,以數據與技術驅動文化著稱,員工國際化程度高,台北為其亞太據點之一(推測)。",
+          "relative_comparison": "五筆職缺中職能契合度最高,是本次唯一分數落在70分以上的職缺;候選人的跨國跨部門溝通、需求轉譯與AI自動化實績都能直接對應核心要求,主要缺口(在地化知識、外部供應商管理)屬於可透過在職學習補足的軟性落差,不像HP的年資門檻或ICON的產業/地點落差那樣是結構性障礙。",
+          "key_advice": "履歷中請把「需求轉譯」「跨國跨部門單一窗口」「AI自動化流程」三項實績前置,並用在地化情境重新包裝,這是這筆職缺最值得主打的核心賣點。"
+        }
+      },
+      {
+        "jobNo": "li_4451107781",
+        "jobName": "Regional Project Manager",
+        "custName": "ICON plc",
+        "salary": "面議",
+        "location": "Taipei, Taipei City, Taiwan",
+        "industry": "LinkedIn",
+        "url": "https://tw.linkedin.com/jobs/view/regional-project-manager-at-icon-plc-4451107781",
+        "ai_score": 4,
+        "ai_reason": "PM職能符合，醫療產業不符目標",
+        "is_reference": true,
+        "diagnosis": {
+          "jobNo": "li_4451107781",
+          "overall_score": 30,
+          "overall_summary": "客戶關係維護與跨部門溝通的軟實力可部分對應,但候選人完全沒有臨床試驗/CRO產業背景,加上JD內文提及可能需駐點印度,與候選人希望留在台北/新北的條件明顯衝突。",
+          "dimensions": [
+            {
+              "label": "產業對應度(臨床試驗/CRO)",
+              "percent": 10
+            },
+            {
+              "label": "跨部門專案管理方法",
+              "percent": 55
+            },
+            {
+              "label": "客戶關係與利害關係人管理",
+              "percent": 55
+            },
+            {
+              "label": "工作地點/型態符合度",
+              "percent": 25
+            },
+            {
+              "label": "風險管理與預算控管",
+              "percent": 45
+            }
+          ],
+          "requirements": [
+            "臨床試驗(Phase II/III)專案管理經驗",
+            "跨功能團隊領導",
+            "客戶關係維護與單一窗口",
+            "專案範疇/預算/風險管理",
+            "品管(QC)活動執行",
+            "駐點印度或彈性遠端"
+          ],
+          "resume_coverage": [
+            {
+              "text": "臨床試驗/醫藥產業經驗(履歷完全無此背景)",
+              "status": "missing"
+            },
+            {
+              "text": "跨部門協調實績(非正式團隊管理職權)",
+              "status": "partial"
+            },
+            {
+              "text": "海外客戶決策層單一需求窗口",
+              "status": "covered"
+            },
+            {
+              "text": "專案績效報告含成本檢討(無正式預算P&L管理)",
+              "status": "partial"
+            },
+            {
+              "text": "正式QC流程經驗(履歷未提及)",
+              "status": "missing"
+            },
+            {
+              "text": "駐點台北/新北偏好與JD可能要求駐印度衝突",
+              "status": "missing"
+            }
+          ],
+          "bullet_rewrites": [
+            {
+              "before": "產出專案績效報告與簡報(進度追蹤、成本檢討、策略建議),直接供高層決策依據",
+              "after": "定期產出專案績效報告(含進度追蹤、成本檢討與策略建議),作為高層決策參考依據,具備專案財務與進度雙軌管控實務"
+            },
+            {
+              "before": "以看板方法追蹤並行專案的關鍵路徑與風險,搭配部門 OKR 對齊優先級,提前調整排程確保如期交付",
+              "after": "以結構化方法追蹤多項並行專案之關鍵路徑與風險,提前識別潛在延誤並調整排程,確保專案如期交付"
+            },
+            {
+              "before": "擔任海外客戶決策層、各部門利害關係人與技術團隊的單一需求窗口",
+              "after": "擔任海外客戶決策層與跨部門團隊間的單一溝通窗口,建立並維繫穩定的客戶合作關係"
+            }
+          ],
+          "gaps": [
+            {
+              "title": "Gap1:完全無臨床試驗/藥廠CRO產業經驗",
+              "detail": "這是產業知識門檻最高的職缺之一,履歷中無醫藥法規、GCP或臨床試驗流程相關背景,若無強烈興趣轉職醫藥產業,建議優先度降低"
+            },
+            {
+              "title": "Gap2:工作地點描述模糊且可能需駐印度",
+              "detail": "JD內文提及Regional Project Manager需based in India,與候選人希望留在台北/新北的條件衝突,投遞前應先向HR或獵頭確認實際駐點與是否可完全遠端"
+            },
+            {
+              "title": "Gap3:缺乏正式預算/P&L管理經驗",
+              "detail": "履歷偏成本分析與報告產出,未見完整專案預算編列與變更管理實績,建議面談時誠實說明並強調可遷移的成本檢討經驗"
+            }
+          ],
+          "company_intro": "ICON plc為全球性臨床試驗委外研究機構(CRO),協助藥廠執行新藥臨床試驗之專案管理與法規流程,產業屬性與候選人目前累積的金融科技/一般商業背景差異較大。",
+          "relative_comparison": "產業契合度是五筆職缺中最低之一,加上駐點地點與候選人偏好(台北/新北)可能衝突,分數僅略高於HP;主要靠跨部門溝通與客戶關係管理的可遷移技能撐住基本分,但結構性障礙(產業+地點)使其明顯低於Agoda、Morrison與東城。",
+          "key_advice": "投遞前務必先確認實際工作地點是否真的可以留在台灣或遠端,若確定需長駐印度,則不建議投遞,以免與求職地點條件衝突。"
+        }
+      },
+      {
+        "jobNo": "li_4428026646",
+        "jobName": "(HQ) Business Analyst – Forwarding Operations",
+        "custName": "Morrison Express",
+        "salary": "面議",
+        "location": "Taipei, Taipei City, Taiwan",
+        "industry": "LinkedIn",
+        "url": "https://tw.linkedin.com/jobs/view/hq-business-analyst-%E2%80%93-forwarding-operations-at-morrison-express-4428026646",
+        "ai_score": 3,
+        "ai_reason": "BA職能優先序低，物流產業完全不符",
+        "is_reference": true,
+        "diagnosis": {
+          "jobNo": "li_4428026646",
+          "overall_score": 68,
+          "overall_summary": "需求訪談、文件化、跨國跨部門溝通與AI自動化四項核心實績高度對應這個角色,僅次於Agoda;但JD明確要求2年以上貨運/物流產業經驗與CargoWise One系統操作,這是候選人完全空白的硬性條件。",
+          "dimensions": [
+            {
+              "label": "需求訪談與流程文件撰寫",
+              "percent": 80
+            },
+            {
+              "label": "跨國跨部門協調(APAC/歐美)",
+              "percent": 75
+            },
+            {
+              "label": "AI/自動化導入經驗",
+              "percent": 75
+            },
+            {
+              "label": "貨運/物流產業知識(CargoWise One)",
+              "percent": 10
+            },
+            {
+              "label": "流程設計與試行驗證能力",
+              "percent": 55
+            }
+          ],
+          "requirements": [
+            "需求蒐集與文件化(業務/系統需求)",
+            "流程設計與標準化",
+            "試行測試與驗證",
+            "跨國跨部門溝通協調",
+            "CargoWise One系統與物流產業經驗(2年以上)",
+            "AI/數位工具導入流程優化"
+          ],
+          "resume_coverage": [
+            {
+              "text": "PRD撰寫、需求訪談與規格定義",
+              "status": "covered"
+            },
+            {
+              "text": "系統架構改造分階段部署(非正式流程標準化職稱)",
+              "status": "partial"
+            },
+            {
+              "text": "里程碑與驗收管理(未明確用pilot testing用語)",
+              "status": "partial"
+            },
+            {
+              "text": "APAC/歐美品牌線單一需求窗口,每日英文書面溝通",
+              "status": "covered"
+            },
+            {
+              "text": "貨運/物流產業與CargoWise One經驗(履歷完全無)",
+              "status": "missing"
+            },
+            {
+              "text": "Python+生成式AI自動化,年省近100小時",
+              "status": "covered"
+            }
+          ],
+          "bullet_rewrites": [
+            {
+              "before": "主導 5+ 項規格產品從需求訪談、規格定義到上線驗收之 0 到 1 完整流程;撰寫 PRD 明確定義功能說明,作為跨部門溝通與開發執行依據",
+              "after": "主導5項以上產品從需求訪談、規格定義到上線驗收的完整流程,撰寫規格文件明確定義功能邏輯,作為跨部門溝通與執行依據,具備將業務需求轉譯為可執行流程規格的實務能力"
+            },
+            {
+              "before": "以 Python 結合生成式 AI 開發資訊同步自動化排程(含信件自動擷取與轉換計算),將原需每週 1-2 小時的跨部門作業轉為自動執行,推廣至全品牌線後每年累計節省近 100 小時",
+              "after": "以Python結合生成式AI開發跨部門資訊同步自動化排程,取代原本每週1-2小時的人工作業,推廣至全產品線後每年累計節省近100小時,具備導入數位工具優化營運流程的實績"
+            },
+            {
+              "before": "主導為期 5 個月的系統架構改造專案,協調系統部門分批部署與逐批驗收,最後如期上線且至今零客訴",
+              "after": "主導為期5個月的系統流程改造專案,規劃分階段部署與逐批驗收機制,協調系統部門如期完成上線並維持零客訴紀錄,展現流程標準化與品質控管能力"
+            },
+            {
+              "before": "每日以英文書面對接跨部門或海外人員需求",
+              "after": "每日以英文書面對接亞太、美洲與歐洲跨國團隊需求,具備支援跨區域(APAC/Americas/Europe)協作的英文書面溝通實務"
+            }
+          ],
+          "gaps": [
+            {
+              "title": "Gap1:無空運/海運/物流貨代產業經驗",
+              "detail": "JD明確要求物流/貨代產業熟悉度為必要條件,履歷完全無此經驗,是最大硬傷,建議面談時強調流程分析方法論可遷移,並主動說明願意快速學習產業知識(如過去3個月建立品牌知識庫的實績)"
+            },
+            {
+              "title": "Gap2:未使用過CargoWise One系統",
+              "detail": "建議投遞前簡單了解CargoWise One是物流業常用的貨運管理系統,面談時展現學習意願而非假裝熟悉"
+            },
+            {
+              "title": "Gap3:缺乏正式流程標準化/pilot testing用語包裝",
+              "detail": "履歷內容其實已有相關實績(系統架構改造分階段部署),建議改寫時多用JD慣用詞彙如流程設計、標準化、試行驗證,提高ATS關鍵字命中率"
+            }
+          ],
+          "company_intro": "Morrison Express為國際貨運承攬與物流服務公司(推測隸屬嘉里大榮集團體系),總部設於台北,服務範圍涵蓋空運、海運與跨境物流,此職缺屬總部流程優化職能,非第一線貨代操作。",
+          "relative_comparison": "在需求訪談、文件化、跨國溝通與AI自動化等核心職能上與候選人現有實績高度重疊,僅次於Agoda;但物流產業知識與CargoWise One系統經驗是JD明確要求的must have,屬於候選人完全空白的硬性條件,因此分數略低於Agoda,但明顯高於東城國際、ICON與HP。",
+          "key_advice": "投遞前先花時間了解貨運報關與CargoWise One的基本概念,面談時把重點放在流程設計與AI自動化的可遷移實績,並主動說明過去3個月從零建立品牌知識庫的學習能力,以彌補產業知識的空白。"
+        }
+      },
+      {
         "jobNo": "li_4451175423",
         "jobName": "Advisory RD PM",
         "custName": "Lenovo",
