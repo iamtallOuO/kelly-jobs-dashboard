@@ -5,6 +5,593 @@
     "report_url": "reports/diagnosis_2026-08-12.html",
     "jobs": [
       {
+        "jobNo": "li_4450708095",
+        "jobName": "南港知名外商品牌廠: Display PMO Data Analyst",
+        "custName": "Adecco",
+        "salary": "面議",
+        "location": "Taipei, Taipei City, Taiwan",
+        "industry": "LinkedIn",
+        "url": "https://tw.linkedin.com/jobs/view/%E5%8D%97%E6%B8%AF%E7%9F%A5%E5%90%8D%E5%A4%96%E5%95%86%E5%93%81%E7%89%8C%E5%BB%A0-display-pmo-data-analyst-at-adecco-4450708095",
+        "ai_score": 9,
+        "ai_reason": "PMO職能直接符合；半導體首選；雙能力完備",
+        "is_reference": false,
+        "diagnosis": {
+          "jobNo": "li_4450708095",
+          "overall_score": 80,
+          "overall_summary": "財務背景、Power BI視覺化與跨部門/跨國溝通三大核心能力與JD高度重疊,是這批職缺中契合度最高的一筆;最大落差在於data modeling/data mapping方法論與英文口語簡報經驗未在履歷中明確呈現。",
+          "dimensions": [
+            {
+              "label": "Power BI/Excel視覺化能力",
+              "percent": 90
+            },
+            {
+              "label": "財務/成本背景契合度",
+              "percent": 85
+            },
+            {
+              "label": "跨部門利害關係人溝通",
+              "percent": 88
+            },
+            {
+              "label": "英文簡報與敘事能力",
+              "percent": 60
+            },
+            {
+              "label": "PMO/數據治理經驗",
+              "percent": 65
+            },
+            {
+              "label": "產業(Display/電子)契合度",
+              "percent": 70
+            }
+          ],
+          "requirements": [
+            "Power BI/Excel視覺化",
+            "財務背景",
+            "跨部門協調數據建置",
+            "Executive簡報撰寫與呈現",
+            "英文溝通",
+            "Data storytelling",
+            "資料建模/data mapping",
+            "正向積極態度"
+          ],
+          "resume_coverage": [
+            {
+              "text": "Power BI/Excel視覺化(已具備報表建置經驗)",
+              "status": "covered"
+            },
+            {
+              "text": "財務背景(經濟系+PwC查核+成本分析)",
+              "status": "covered"
+            },
+            {
+              "text": "跨部門協調(單一需求窗口角色)",
+              "status": "covered"
+            },
+            {
+              "text": "Executive簡報(專案績效報告供高層決策)",
+              "status": "covered"
+            },
+            {
+              "text": "英文溝通(書面精熟,口說中等)",
+              "status": "partial"
+            },
+            {
+              "text": "Data storytelling(有分析成果但未包裝成敘事框架)",
+              "status": "partial"
+            },
+            {
+              "text": "資料建模/data mapping(僅SQL跨庫查詢,無建模方法論描述)",
+              "status": "partial"
+            },
+            {
+              "text": "正向積極態度(軟實力未具體量化陳述)",
+              "status": "missing"
+            }
+          ],
+          "bullet_rewrites": [
+            {
+              "before": "以 SQL(MS SQL/PostgreSQL)跨資料庫檢索底層數據,搭配 Power BI 製作視覺化報表,產出競品分析(東南亞/歐美共 4 份)與商業模式轉型評估供 CEO 決策",
+              "after": "運用SQL跨資料庫檢索底層數據並以Power BI建置視覺化儀表板,完成東南亞、歐美市場共4份競品分析與商業模式轉型評估,作為CEO層級決策的第一手依據"
+            },
+            {
+              "before": "產出專案績效報告與簡報(進度追蹤、成本檢討、策略建議),直接供高層決策依據",
+              "after": "定期產出專案績效簡報,整合進度追蹤、成本檢討與策略建議三大構面,轉化為高層可直接採用的決策資料"
+            },
+            {
+              "before": "主導 5+ 項規格產品從需求訪談、規格定義到上線驗收之 0 到 1 完整流程;撰寫 PRD 明確定義功能說明,作為跨部門溝通與開發執行依據",
+              "after": "主導5+項產品自需求訪談到上線驗收全流程,撰寫PRD統整跨部門對數據與功能定義的共識,降低溝通落差並確保執行一致性"
+            },
+            {
+              "before": "建立多維度成本分析模型,管理千項以上產品之成本試算與損益彙總報表,支援定價決策",
+              "after": "建立涵蓋千項以上產品之多維度成本分析模型,產出損益彙總報表支援定價決策,強化財務數據對商業策略的實質影響力"
+            }
+          ],
+          "gaps": [
+            {
+              "title": "Gap 1:Data modeling/data mapping方法論未具體展現",
+              "detail": "履歷未描述資料建模流程(如資料表關聯設計),建議面試補充SQL專案中schema設計或資料串接邏輯的細節。"
+            },
+            {
+              "title": "Gap 2:產業從金融科技跨足Display/電子",
+              "detail": "非同產業背景,建議強調過去3個月快速建立品牌線知識庫的實績,作為可遷移學習能力的證明。"
+            },
+            {
+              "title": "Gap 3:英文口說待加強",
+              "detail": "JD要求executive presentation,若進入面試需英文簡報,建議提前準備並模擬練習口說表達。"
+            },
+            {
+              "title": "Gap 4:Data storytelling包裝待強化",
+              "detail": "現有分析多為財務/成本導向陳述,建議重新包裝成insight-to-action的敘事結構,凸顯數據轉化為決策的過程。"
+            }
+          ],
+          "company_intro": "Adecco是全球知名的人力資源與獵才顧問公司,此職缺代表南港地區一家外商品牌大廠進行招募,推測與Display(顯示器)產業供應鏈相關的國際品牌客戶合作,實際雇主身分與聘僱型態(派遣/約聘/直聘)需在面談時進一步確認。",
+          "relative_comparison": "這是5筆職缺中最貼近孫慈技能組合的一筆——財務背景、Power BI與跨部門溝通完全對應JD要求,且不需要她欠缺的5年以上資深年資或特定產業證照(如NXP、HSBC所需),因此分數最高。",
+          "key_advice": "面談前務必透過Adecco確認實際代表的品牌廠身分與聘僱型態(派遣/約聘或轉正),並準備一份簡短英文data storytelling案例以應對executive presentation的考核重點。"
+        }
+      },
+      {
+        "jobNo": "li_4432603656",
+        "jobName": "Senior Business Analyst",
+        "custName": "NXP Semiconductors",
+        "salary": "面議",
+        "location": "Taipei, Taipei City, Taiwan",
+        "industry": "LinkedIn",
+        "url": "https://tw.linkedin.com/jobs/view/senior-business-analyst-at-nxp-semiconductors-4432603656",
+        "ai_score": 7,
+        "ai_reason": "半導體產業首選符合；數據分析能力強；職級略高",
+        "is_reference": false,
+        "diagnosis": {
+          "jobNo": "li_4432603656",
+          "overall_score": 42,
+          "overall_summary": "半導體產業本身是孫慈的首選,但此職缺實為高度專業化的資深財務控管職(5-8年rebate/accrual經驗),與孫慈現有1-2年PM/專案背景落差過大。",
+          "dimensions": [
+            {
+              "label": "半導體產業契合度",
+              "percent": 80
+            },
+            {
+              "label": "財務/會計專業深度(rebate/accrual)",
+              "percent": 25
+            },
+            {
+              "label": "年資與職級匹配",
+              "percent": 20
+            },
+            {
+              "label": "跨國利害關係人協作",
+              "percent": 75
+            },
+            {
+              "label": "SQL/Excel/Power BI工具能力",
+              "percent": 80
+            },
+            {
+              "label": "財務證照(CPA/CA/ACCA/MBA)",
+              "percent": 10
+            }
+          ],
+          "requirements": [
+            "5-8+年財務控管/通路財務經驗",
+            "Sales accrual/rebate program管理",
+            "CPA/CA/ACCA/MBA學歷偏好",
+            "跨部門/跨區域財務協作",
+            "SAP/ERP系統經驗",
+            "Excel/SQL/Power BI",
+            "稽核經驗加分",
+            "半導體/通路財務知識"
+          ],
+          "resume_coverage": [
+            {
+              "text": "財務控管經驗(僅1-2年,非財務控管職稱)",
+              "status": "missing"
+            },
+            {
+              "text": "Sales accrual/rebate管理(履歷無此類經驗)",
+              "status": "missing"
+            },
+            {
+              "text": "財務證照(經濟系畢業,無CPA/ACCA等證照)",
+              "status": "missing"
+            },
+            {
+              "text": "跨部門/跨區域協作(有跨國APAC/歐美溝通經驗,但非財務職能)",
+              "status": "partial"
+            },
+            {
+              "text": "SAP/ERP系統(僅提及MS SQL/PostgreSQL)",
+              "status": "missing"
+            },
+            {
+              "text": "Excel/SQL/Power BI(已具備)",
+              "status": "covered"
+            },
+            {
+              "text": "稽核經驗(PwC稅務查核,但非財務稽核全職)",
+              "status": "partial"
+            },
+            {
+              "text": "半導體/通路財務知識(履歷無對應經驗)",
+              "status": "missing"
+            }
+          ],
+          "bullet_rewrites": [
+            {
+              "before": "建立多維度成本分析模型,管理千項以上產品之成本試算與損益彙總報表,支援定價決策",
+              "after": "建置多維度成本分析模型,彙整超過千項產品之成本試算與損益數據,產出報表支援定價與商業決策,具備財務數據治理實務經驗"
+            },
+            {
+              "before": "協助執行稅務簽證與查核作業:配合會計師團隊執行客戶年度營所稅結算申報書之查核,核對憑證與帳務資料是否符合稅法規定",
+              "after": "參與會計師團隊執行客戶年度營所稅結算申報查核,逐筆核對憑證與帳務資料合規性,建立財務稽核基礎實務經驗"
+            },
+            {
+              "before": "以 SQL(MS SQL/PostgreSQL)跨資料庫檢索底層數據,搭配 Power BI 製作視覺化報表,產出競品分析(東南亞/歐美共 4 份)與商業模式轉型評估供 CEO 決策",
+              "after": "運用SQL跨資料庫查詢與Power BI視覺化,完成跨市場競品分析與商業模式評估,支援高階財務決策"
+            }
+          ],
+          "gaps": [
+            {
+              "title": "Gap 1:年資落差",
+              "detail": "JD要求5-8年以上財務控管經驗,孫慈僅1-2年,建議評估是否改投junior/associate等級職缺。"
+            },
+            {
+              "title": "Gap 2:缺乏會計專業證照",
+              "detail": "經濟系背景無CPA/ACCA等證照,若堅持投遞需在履歷凸顯PwC查帳實務加以彌補。"
+            },
+            {
+              "title": "Gap 3:未接觸rebate/accrual/通路財務",
+              "detail": "這是高度專業化的財務子領域,履歷完全無對應經驗,建議誠實評估現階段是否可勝任。"
+            },
+            {
+              "title": "Gap 4:無SAP/ERP系統經驗",
+              "detail": "履歷僅提及MS SQL/PostgreSQL,未提及SAP,若無相關系統經驗不建議勉強投遞。"
+            }
+          ],
+          "company_intro": "NXP Semiconductors是荷蘭恩智浦半導體,全球前段半導體大廠,產品線涵蓋車用、工業、物聯網及行動運算晶片,在台灣有業務與研發據點,屬於孫慈求職方向中優先序最高的半導體產業代表企業之一。",
+          "relative_comparison": "雖然NXP是半導體產業(孫慈的第一志願),但此職缺實質是資深財務控管職而非PM/BA,要求5-8年通路財務與rebate/accrual專業,和孫慈的1-2年PM/專案背景落差極大,因此即使產業對,分數仍低於Adecco那筆PM/數據導向職缺。",
+          "key_advice": "除非孫慈有意轉往財務控管路線,否則此職缺年資與專業落差過大,建議優先關注NXP其他PM/PMO/BA(非財務通路)類型職缺,而非勉強投遞這個資深財務職位。"
+        }
+      },
+      {
+        "jobNo": "li_4452442135",
+        "jobName": "Senior Analyst, FMCG",
+        "custName": "NielsenIQ",
+        "salary": "面議",
+        "location": "New Taipei City, New Taipei City, Taiwan",
+        "industry": "LinkedIn",
+        "url": "https://tw.linkedin.com/jobs/view/senior-analyst-fmcg-at-nielseniq-4452442135",
+        "ai_score": 5,
+        "ai_reason": "數據分析技能符合，但行業不在目標清單",
+        "is_reference": false,
+        "diagnosis": {
+          "jobNo": "li_4452442135",
+          "overall_score": 44,
+          "overall_summary": "顧問式簡報與insight輸出能力與孫慈的分析背景有一定重疊,但FMCG產業知識、正式團隊管理經驗與fluent英文口語三項硬要求均有落差,且產業不在其優先序內。",
+          "dimensions": [
+            {
+              "label": "市場研究/FMCG產業知識",
+              "percent": 15
+            },
+            {
+              "label": "團隊管理/人才培育經驗",
+              "percent": 55
+            },
+            {
+              "label": "分析與顧問簡報能力",
+              "percent": 70
+            },
+            {
+              "label": "英文口語溝通",
+              "percent": 45
+            },
+            {
+              "label": "產業目標契合度",
+              "percent": 20
+            }
+          ],
+          "requirements": [
+            "FMCG/CPG產業知識",
+            "3年以上市場研究/分析經驗",
+            "團隊管理與人才培育(coach & manage)",
+            "顧問式簡報與insight輸出",
+            "Retail Measurement/Consumer Panel經驗加分",
+            "流利英文口語與書寫",
+            "獨立作業與團隊合作"
+          ],
+          "resume_coverage": [
+            {
+              "text": "FMCG/CPG產業知識(金融科技背景,無消費品經驗)",
+              "status": "missing"
+            },
+            {
+              "text": "3年以上市場研究經驗(1-2年PM經驗,非市場研究職能)",
+              "status": "missing"
+            },
+            {
+              "text": "團隊管理/人才培育(主持培訓200+人次,非直屬管理)",
+              "status": "partial"
+            },
+            {
+              "text": "顧問式簡報/insight輸出(有競品分析簡報經驗可類比)",
+              "status": "partial"
+            },
+            {
+              "text": "Retail Measurement/Consumer Panel經驗(履歷無)",
+              "status": "missing"
+            },
+            {
+              "text": "流利英文口語(書面精熟,口說中等,非fluent)",
+              "status": "partial"
+            },
+            {
+              "text": "獨立作業與團隊合作(跨部門/跨國協作經驗)",
+              "status": "covered"
+            }
+          ],
+          "bullet_rewrites": [
+            {
+              "before": "規劃並主持 5 場跨部門新產品培訓(累計 200+ 名參與者),自製教材協助客戶與合作夥伴快速上手",
+              "after": "規劃並主持5場跨部門新產品培訓課程,自製教材完成200+人次教學,展現培育他人與知識轉譯的能力"
+            },
+            {
+              "before": "以 SQL(MS SQL/PostgreSQL)跨資料庫檢索底層數據,搭配 Power BI 製作視覺化報表,產出競品分析(東南亞/歐美共 4 份)與商業模式轉型評估供 CEO 決策",
+              "after": "完成東南亞、歐美市場共4份競品分析報告,結合Power BI視覺化與商業模式評估,提供高層策略決策依據,具備跨市場分析與insight輸出實務"
+            },
+            {
+              "before": "擔任海外客戶決策層、各部門利害關係人與技術團隊的單一需求窗口,將模糊需求轉化為可執行規格",
+              "after": "擔任海外客戶決策層與內部利害關係人之單一溝通窗口,將模糊需求轉譯為可執行規格,培養顧問式跨文化溝通能力"
+            }
+          ],
+          "gaps": [
+            {
+              "title": "Gap 1:無FMCG/CPG產業背景",
+              "detail": "履歷完全無消費品產業經驗,建議面試中強調3個月快速建立品牌知識庫的產業轉換能力作為彌補。"
+            },
+            {
+              "title": "Gap 2:未有正式團隊管理經驗",
+              "detail": "JD要求coach and manage insights associates,履歷僅有培訓主持經驗,建議誠實說明並強調知識轉移的軟實力對應。"
+            },
+            {
+              "title": "Gap 3:英文口語未達fluent標準",
+              "detail": "履歷自陳英文口說不主動發言,與JD要求fluent spoken English有落差,建議加強口說練習或謹慎處理此描述。"
+            },
+            {
+              "title": "Gap 4:非目標產業",
+              "detail": "FMCG/市場研究不在孫慈優先產業清單(半導體>電信>電子>軟體)中,建議評估是否仍列為投遞優先選項。"
+            }
+          ],
+          "company_intro": "NielsenIQ是全球領先的市場研究與零售測量數據公司(源自原AC Nielsen消費者研究部門),主要服務快消品(FMCG)品牌客戶,提供零售銷售數據分析與市場洞察服務。",
+          "relative_comparison": "此職缺的分析/簡報能力要求與孫慈技能有部分重疊,但Senior職級隱含的團隊管理經驗與FMCG產業知識是硬缺口,且產業不在孫慈的目標清單內,故整體分數低於Adecco與NXP,僅略高於HSBC與Reckitt。",
+          "key_advice": "若考慮投遞,建議履歷中誠實呈現培訓主持與知識轉移經驗以對應coach and manage要求,但需有心理準備此職缺在產業知識與英文口語上仍有明顯落差。"
+        }
+      },
+      {
+        "jobNo": "li_4435104438",
+        "jobName": "Analyst - Business Management Support",
+        "custName": "HSBC",
+        "salary": "面議",
+        "location": "Taipei, Taipei City, Taiwan",
+        "industry": "LinkedIn",
+        "url": "https://tw.linkedin.com/jobs/view/analyst-business-management-support-at-hsbc-4435104438",
+        "ai_score": 3,
+        "ai_reason": "雖具BA能力，但金融業明確為轉出產業",
+        "is_reference": true,
+        "diagnosis": {
+          "jobNo": "li_4435104438",
+          "overall_score": 33,
+          "overall_summary": "跨部門協調與管理報告製作是孫慈的強項,但複委託證券知識、合規背景與必要證照均是履歷空白的硬缺口,加上職缺仍屬孫慈想脫離的金融服務業。",
+          "dimensions": [
+            {
+              "label": "證券複委託業務知識",
+              "percent": 5
+            },
+            {
+              "label": "合規/風控/公司治理經驗",
+              "percent": 15
+            },
+            {
+              "label": "證照要求(高級業務員)",
+              "percent": 0
+            },
+            {
+              "label": "跨部門利害關係人協調",
+              "percent": 85
+            },
+            {
+              "label": "產業契合度(金融vs目標產業)",
+              "percent": 20
+            }
+          ],
+          "requirements": [
+            "複委託(sub-brokerage)業務理解",
+            "合規/風控/公司治理經驗",
+            "證券商高級業務員證照",
+            "跨部門(前台/營運/風控/法遵)協調",
+            "稽核應對與文件管理",
+            "中英文流利",
+            "管理報告/MI製作"
+          ],
+          "resume_coverage": [
+            {
+              "text": "複委託業務理解(履歷無證券業務經驗)",
+              "status": "missing"
+            },
+            {
+              "text": "合規/風控/公司治理(履歷無相關經驗)",
+              "status": "missing"
+            },
+            {
+              "text": "證券商高級業務員證照(履歷未提及)",
+              "status": "missing"
+            },
+            {
+              "text": "跨部門協調(單一需求窗口,核心強項)",
+              "status": "covered"
+            },
+            {
+              "text": "稽核應對與文件管理(PwC查核經驗可類比,但為稅務非證券)",
+              "status": "partial"
+            },
+            {
+              "text": "中英文流利(中文精通,英文書面強、口說中等)",
+              "status": "partial"
+            },
+            {
+              "text": "管理報告/MI製作(專案績效報告、簡報供高層決策)",
+              "status": "covered"
+            }
+          ],
+          "bullet_rewrites": [
+            {
+              "before": "擔任海外客戶決策層、各部門利害關係人與技術團隊的單一需求窗口,將模糊需求轉化為可執行規格",
+              "after": "擔任跨部門與海外利害關係人的單一溝通窗口,協調各方需求並轉化為可執行方案,具備多方協調與治理框架下的溝通實務"
+            },
+            {
+              "before": "稅法法規遵循檢查:依據所得稅法、營業稅法等規定,協助檢核客戶申報數字正確性,並標註異常或待釐清事項",
+              "after": "依據稅法規定檢核客戶申報數字正確性,標註異常事項並提出釐清建議,建立法規遵循檢核的實務基礎"
+            },
+            {
+              "before": "產出專案績效報告與簡報(進度追蹤、成本檢討、策略建議),直接供高層決策依據",
+              "after": "定期產出管理報告與簡報,涵蓋進度追蹤、成本檢討與策略建議,支援高層治理決策"
+            }
+          ],
+          "gaps": [
+            {
+              "title": "Gap 1:無證券複委託專業知識",
+              "detail": "這是高度專業且需證照的業務領域,履歷完全無對應背景,屬硬性缺口難以透過包裝彌補。"
+            },
+            {
+              "title": "Gap 2:缺乏證券商高級業務員證照",
+              "detail": "JD明確列為License requirement,若無此證照恐不符合最低門檻,建議確認是否為必要條件。"
+            },
+            {
+              "title": "Gap 3:無合規/風控/公司治理經驗",
+              "detail": "履歷偏產品/專案管理,非合規稽核職能,建議評估轉職方向是否真的往此領域發展。"
+            },
+            {
+              "title": "Gap 4:產業仍在金融服務業",
+              "detail": "孫慈明確希望脫離金融服務業轉往半導體/電信/電子/軟體,此職缺與求職方向背道而馳。"
+            }
+          ],
+          "company_intro": "匯豐銀行(HSBC)是總部位於英國倫敦的跨國銀行與金融服務集團,業務涵蓋零售銀行、財富管理與私人銀行,在台灣深耕多年,此職缺隸屬國際財富管理暨卓越理財旗下,聚焦複委託證券業務的中後台管理支援。",
+          "relative_comparison": "此職缺雖然跨部門協調與管理報告能力與孫慈強項相符,但複委託業務知識、合規背景與必要證照三項都是履歷完全空白的硬缺口,且產業仍屬孫慈想脫離的金融服務業,綜合來看是本次清單中較弱的選項之一。",
+          "key_advice": "除非孫慈有考取證券相關證照的計畫且對合規/中後台管理路線有興趣,否則此職缺與其脫離金融業的求職目標方向相反,建議謹慎考慮是否值得投入時間準備。"
+        }
+      },
+      {
+        "jobNo": "li_4433390950",
+        "jobName": "Assistant EC Manager",
+        "custName": "Reckitt",
+        "salary": "面議",
+        "location": "Taipei, Taipei City, Taiwan",
+        "industry": "LinkedIn",
+        "url": "https://tw.linkedin.com/jobs/view/assistant-ec-manager-at-reckitt-4433390950",
+        "ai_score": 3,
+        "ai_reason": "電商職能不符；消費品業不在目標範圍",
+        "is_reference": true,
+        "diagnosis": {
+          "jobNo": "li_4433390950",
+          "overall_score": 30,
+          "overall_summary": "商業分析與競品監測能力有所重疊,但職缺核心的電商/業務銷售與大客戶管理經驗完全空白,且FMCG產業與業務職能都不在孫慈的優先求職方向內,是本次清單中契合度最低的一筆。",
+          "dimensions": [
+            {
+              "label": "電商/通路銷售分析經驗",
+              "percent": 10
+            },
+            {
+              "label": "商業與財務分析能力",
+              "percent": 75
+            },
+            {
+              "label": "客戶/大客戶管理經驗",
+              "percent": 10
+            },
+            {
+              "label": "跨部門報表協作",
+              "percent": 80
+            },
+            {
+              "label": "產業契合度(FMCG vs目標產業)",
+              "percent": 15
+            }
+          ],
+          "requirements": [
+            "電商(ecommerce)與field sales經驗",
+            "客戶/大客戶管理(Key Account Management)",
+            "商業與財務分析能力",
+            "市場與競品動態監測",
+            "策略性帳戶規劃執行",
+            "跨部門報表維運與溝通",
+            "快節奏環境適應力"
+          ],
+          "resume_coverage": [
+            {
+              "text": "電商/field sales經驗(履歷無電商或業務銷售經驗)",
+              "status": "missing"
+            },
+            {
+              "text": "客戶/大客戶管理(履歷無account management經驗)",
+              "status": "missing"
+            },
+            {
+              "text": "商業與財務分析能力(成本分析、競品分析、商業模式評估)",
+              "status": "covered"
+            },
+            {
+              "text": "市場與競品動態監測(東南亞/歐美競品分析4份)",
+              "status": "covered"
+            },
+            {
+              "text": "策略性帳戶規劃執行(履歷無此類經驗)",
+              "status": "missing"
+            },
+            {
+              "text": "跨部門報表維運(Power BI視覺化報表、專案績效報告)",
+              "status": "covered"
+            },
+            {
+              "text": "快節奏環境適應力(3個月建立品牌線知識庫可佐證,但非業務性質)",
+              "status": "partial"
+            }
+          ],
+          "bullet_rewrites": [
+            {
+              "before": "以 SQL(MS SQL/PostgreSQL)跨資料庫檢索底層數據,搭配 Power BI 製作視覺化報表,產出競品分析(東南亞/歐美共 4 份)與商業模式轉型評估供 CEO 決策",
+              "after": "運用SQL與Power BI完成東南亞、歐美市場共4份競品分析與商業模式轉型評估,轉化數據洞察為高層決策依據"
+            },
+            {
+              "before": "建立多維度成本分析模型,管理千項以上產品之成本試算與損益彙總報表,支援定價決策",
+              "after": "建置多維度成本分析模型,彙整千項以上產品成本試算與損益報表,直接支援商業定價策略"
+            },
+            {
+              "before": "接手單一最大品牌產品線(橫跨 APAC 與 EU/UK 兩市場),在前任離職、無品牌或產業文件情況下 3 個月建立完整知識庫",
+              "after": "接手橫跨APAC與歐美市場的最大品牌產品線,於無交接文件狀況下3個月內建立完整市場知識庫,展現快速掌握跨市場商業脈絡的能力"
+            }
+          ],
+          "gaps": [
+            {
+              "title": "Gap 1:無電商/業務銷售實務經驗",
+              "detail": "JD核心是ecommerce與field sales,履歷完全無此類經驗,屬硬缺口。"
+            },
+            {
+              "title": "Gap 2:無Key Account Management經驗",
+              "detail": "履歷偏內部需求對接與規格定義,非對外客戶銷售與帳戶管理,建議評估轉職路徑是否真要往業務分析發展。"
+            },
+            {
+              "title": "Gap 3:非目標產業與職能",
+              "detail": "FMCG不在孫慈優先產業清單內,且此職缺屬業務職能而非PM/PjM/BA/PMO核心目標。"
+            },
+            {
+              "title": "Gap 4:職稱與實際內容不一致",
+              "detail": "職缺名稱Assistant EC Manager但JD內容描述為Sales Analyst,建議投遞前向HR確認實際職責範圍以免認知落差。"
+            }
+          ],
+          "company_intro": "Reckitt(利潔時)是總部位於英國的跨國消費品集團,旗下擁有Durex杜蕾斯、Dettol滴露、Enfamil美強生、Nurofen諾福等知名衛生保健與消費品牌,在台灣市場經營多年,此職缺隸屬業務部門,聚焦電商與通路銷售分析。",
+          "relative_comparison": "此職缺雖然商業分析與競品監測能力與孫慈重疊,但核心的電商/業務銷售與大客戶管理經驗完全空白,且產業(FMCG)與職能(Sales)都不在孫慈的優先方向內,是這次清單中契合度最低的一筆。",
+          "key_advice": "建議先確認此職缺實際職責(EC Manager vs Sales Analyst敘述不一致),若核心仍是業務銷售導向,與孫慈的PM/BA/PMO職涯方向落差較大,投遞前應審慎評估。"
+        }
+      },
+      {
         "jobNo": "14073453",
         "jobName": "產品管理師",
         "custName": "百盛能源科技股份有限公司",
