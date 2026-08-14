@@ -1392,7 +1392,7 @@ body.is-local .btn-mark-applied { display: inline-block; }
       <div class="card-tags">
         <span class="cat-tag" style="background:#e0f2fe;color:#0369a1">PM / PjM</span>
         <span class="rank-tag">第 13 名</span>
-        
+        <span class="applied-tag" style="--app-c:#d97706">📤 已投遞</span>
       </div>
       <div class="score-display">
         <span class="score-num" style="color:#16a34a">8</span>
@@ -1406,7 +1406,7 @@ body.is-local .btn-mark-applied { display: inline-block; }
   </div>
   <div class="card-actions">
     <span class="btn-expand">📋 查看詳細分析 →</span>
-    <button class="btn-mark-applied" id="mark-8rb6l" onclick="markApplied(event,'8rb6l','專案管理師(PJM)','博辰科技股份有限公司','https://www.104.com.tw/job/8rb6l','面議')">✔ 標記已投遞</button>
+    
     <a class="btn-104" href="https://www.104.com.tw/job/8rb6l" target="_blank"
        onclick="event.stopPropagation()">查看 104 職缺 →</a>
   </div>
@@ -11205,13 +11205,25 @@ body.is-local .btn-mark-applied { display: inline-block; }
       <strong>http://localhost:8765</strong>；或跟 Claude 說「我投了 XXX」由它幫你記錄。
     </div>
     <div class="apps-stats">
-      <div class="app-stat"><div class="app-stat-num">24</div><div class="app-stat-label">總投遞</div></div>
-      <div class="app-stat"><div class="app-stat-num" style="color:#d97706">10</div><div class="app-stat-label">等待回音</div></div>
+      <div class="app-stat"><div class="app-stat-num">25</div><div class="app-stat-label">總投遞</div></div>
+      <div class="app-stat"><div class="app-stat-num" style="color:#d97706">11</div><div class="app-stat-label">等待回音</div></div>
       <div class="app-stat"><div class="app-stat-num" style="color:#2563eb">1</div><div class="app-stat-label">面試/邀約</div></div>
       <div class="app-stat"><div class="app-stat-num" style="color:#16a34a">1</div><div class="app-stat-label">錄取</div></div>
       <div class="app-stat"><div class="app-stat-num" style="color:#94a3b8">12</div><div class="app-stat-label">無聲卡</div></div>
     </div>
     
+<div class="app-row" style="--app-c:#d97706">
+  <div class="app-main">
+    <div class="app-title">專案管理師(PJM)</div>
+    <div class="app-company">博辰科技股份有限公司</div>
+    <div class="app-meta">投遞 2026-08-13 &middot; 面議 &middot; AI 8/10、契合 64/100。中和區、電腦軟體服務業。跨部門溝通90%、風險管理80%為最強項;團隊領導與資源調度35%是最大缺口,JD要求「領導和管理專案團隊」但履歷無正式帶人經驗。履歷缺WBS/甘特圖語彙(寫的是PRD/看板/關鍵路徑),屬翻譯問題非能力問題。</div>
+  </div>
+  <div class="app-side">
+    <select class="app-status-sel" style="--app-c:#d97706" disabled
+            onchange="updateAppStatus(this,'8rb6l')"><option value="📤 已投遞" selected>📤 已投遞</option><option value="💬 面試中">💬 面試中</option><option value="企業自動發邀約">企業自動發邀約</option><option value="✨ 錄取 (Offer Get)">✨ 錄取 (Offer Get)</option><option value="❌ 無聲卡/感謝信">❌ 無聲卡/感謝信</option></select>
+    <div class="app-links"><a class="app-link" href="https://www.104.com.tw/job/8rb6l" target="_blank">104 →</a><a class="app-link" href="https://app.notion.com/3bcf85b8a0578159be64f91df26e7a45" target="_blank">Notion →</a></div>
+  </div>
+</div>
 <div class="app-row" style="--app-c:#d97706">
   <div class="app-main">
     <div class="app-title">助理專案產品經理（硬體相關）</div>
