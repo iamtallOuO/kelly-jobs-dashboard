@@ -562,7 +562,7 @@ body.is-local .btn-mark-applied { display: inline-block; }
     </div>
     <div class="nav-pills">
       <span class="nav-pill">追蹤 <strong>17</strong> 天</span>
-      <span class="nav-pill">共 <strong>252</strong> 筆職缺</span>
+      <span class="nav-pill">共 <strong>257</strong> 筆職缺</span>
       <span class="nav-pill">更新 <strong>2026-08-14</strong></span>
     </div>
   </div>
@@ -571,22 +571,148 @@ body.is-local .btn-mark-applied { display: inline-block; }
 <!-- ── View: 職缺列表 ── -->
 <div id="view-list">
   <div class="page-wrap">
-    <aside class="sidebar"><div class="sb-section"><div class="sb-sec-hd">本週職缺總覽</div><div class="sb-sec-body"><div class="wk-meta">08/08 ~ 08/14 &middot; 共 <strong>79</strong> 筆</div><div class="wk-row"><span class="wk-label">PMO</span><div class="wk-bar-bg"><div class="wk-bar-fill" style="width:2%;background:#7c3aed"></div></div><span class="wk-count">1</span></div><div class="wk-row"><span class="wk-label">PM / PjM</span><div class="wk-bar-bg"><div class="wk-bar-fill" style="width:100%;background:#2563eb"></div></div><span class="wk-count">50</span></div><div class="wk-row"><span class="wk-label">BA / 數據</span><div class="wk-bar-bg"><div class="wk-bar-fill" style="width:4%;background:#16a34a"></div></div><span class="wk-count">2</span></div><div class="wk-row"><span class="wk-label">其他</span><div class="wk-bar-bg"><div class="wk-bar-fill" style="width:42%;background:#94a3b8"></div></div><span class="wk-count">21</span></div></div></div><div class="sb-section"><div class="sb-sec-hd">職缺分類</div><div class="sb-sec-body sb-cat-wrap"><button class="cat-btn active" data-cat="all" onclick="filterCat(this,'all')">全部 (252)</button><button class="cat-btn" data-cat="PMO" style="--cat-c:#7c3aed" onclick="filterCat(this,'PMO')">PMO (3)</button><button class="cat-btn" data-cat="PM / PjM" style="--cat-c:#2563eb" onclick="filterCat(this,'PM / PjM')">PM / PjM (163)</button><button class="cat-btn" data-cat="BA / 數據" style="--cat-c:#16a34a" onclick="filterCat(this,'BA / 數據')">BA / 數據 (7)</button><button class="cat-btn" data-cat="策略 / 營運" style="--cat-c:#ea580c" onclick="filterCat(this,'策略 / 營運')">策略 / 營運 (4)</button><button class="cat-btn" data-cat="其他" style="--cat-c:#94a3b8" onclick="filterCat(this,'其他')">其他 (64)</button></div></div><div class="sb-section sb-section-last"><div class="sb-sec-hd">時間軸</div><a class="sb-item" href="#day-2026-08-14"><span class="sb-date">2026-08-14</span><span class="sb-badge">8</span></a><a class="sb-item" href="#day-2026-08-13"><span class="sb-date">2026-08-13</span><span class="sb-badge">18</span></a><a class="sb-item" href="#day-2026-08-12"><span class="sb-date">2026-08-12</span><span class="sb-badge">20</span></a><a class="sb-item" href="#day-2026-08-11"><span class="sb-date">2026-08-11</span><span class="sb-badge">18</span></a><a class="sb-item" href="#day-2026-08-10"><span class="sb-date">2026-08-10</span><span class="sb-badge">15</span></a><a class="sb-item" href="#day-2026-08-07"><span class="sb-date">2026-08-07</span><span class="sb-badge">20</span></a><a class="sb-item" href="#day-2026-08-06"><span class="sb-date">2026-08-06</span><span class="sb-badge">20</span></a><a class="sb-item" href="#day-2026-08-05"><span class="sb-date">2026-08-05</span><span class="sb-badge">20</span></a><a class="sb-item" href="#day-2026-08-04"><span class="sb-date">2026-08-04</span><span class="sb-badge">18</span></a><a class="sb-item" href="#day-2026-08-03"><span class="sb-date">2026-08-03</span><span class="sb-badge">19</span></a><a class="sb-item" href="#day-2026-08-02"><span class="sb-date">2026-08-02</span><span class="sb-badge">3</span></a><a class="sb-item" href="#day-2026-07-31"><span class="sb-date">2026-07-31</span><span class="sb-badge">20</span></a><a class="sb-item" href="#day-2026-07-30"><span class="sb-date">2026-07-30</span><span class="sb-badge">17</span></a><a class="sb-item" href="#day-2026-07-29"><span class="sb-date">2026-07-29</span><span class="sb-badge">11</span></a><a class="sb-item" href="#day-2026-07-28"><span class="sb-date">2026-07-28</span><span class="sb-badge">15</span></a><a class="sb-item" href="#day-2026-06-28"><span class="sb-date">2026-06-28</span><span class="sb-badge">7</span></a><a class="sb-item" href="#day-2026-06-27"><span class="sb-date">2026-06-27</span><span class="sb-badge">3</span></a></div></aside>
+    <aside class="sidebar"><div class="sb-section"><div class="sb-sec-hd">本週職缺總覽</div><div class="sb-sec-body"><div class="wk-meta">08/08 ~ 08/14 &middot; 共 <strong>84</strong> 筆</div><div class="wk-row"><span class="wk-label">PMO</span><div class="wk-bar-bg"><div class="wk-bar-fill" style="width:2%;background:#7c3aed"></div></div><span class="wk-count">1</span></div><div class="wk-row"><span class="wk-label">PM / PjM</span><div class="wk-bar-bg"><div class="wk-bar-fill" style="width:100%;background:#2563eb"></div></div><span class="wk-count">54</span></div><div class="wk-row"><span class="wk-label">BA / 數據</span><div class="wk-bar-bg"><div class="wk-bar-fill" style="width:6%;background:#16a34a"></div></div><span class="wk-count">3</span></div><div class="wk-row"><span class="wk-label">其他</span><div class="wk-bar-bg"><div class="wk-bar-fill" style="width:39%;background:#94a3b8"></div></div><span class="wk-count">21</span></div></div></div><div class="sb-section"><div class="sb-sec-hd">職缺分類</div><div class="sb-sec-body sb-cat-wrap"><button class="cat-btn active" data-cat="all" onclick="filterCat(this,'all')">全部 (257)</button><button class="cat-btn" data-cat="PMO" style="--cat-c:#7c3aed" onclick="filterCat(this,'PMO')">PMO (3)</button><button class="cat-btn" data-cat="PM / PjM" style="--cat-c:#2563eb" onclick="filterCat(this,'PM / PjM')">PM / PjM (167)</button><button class="cat-btn" data-cat="BA / 數據" style="--cat-c:#16a34a" onclick="filterCat(this,'BA / 數據')">BA / 數據 (8)</button><button class="cat-btn" data-cat="策略 / 營運" style="--cat-c:#ea580c" onclick="filterCat(this,'策略 / 營運')">策略 / 營運 (4)</button><button class="cat-btn" data-cat="其他" style="--cat-c:#94a3b8" onclick="filterCat(this,'其他')">其他 (64)</button></div></div><div class="sb-section sb-section-last"><div class="sb-sec-hd">時間軸</div><a class="sb-item" href="#day-2026-08-14"><span class="sb-date">2026-08-14</span><span class="sb-badge">13</span></a><a class="sb-item" href="#day-2026-08-13"><span class="sb-date">2026-08-13</span><span class="sb-badge">18</span></a><a class="sb-item" href="#day-2026-08-12"><span class="sb-date">2026-08-12</span><span class="sb-badge">20</span></a><a class="sb-item" href="#day-2026-08-11"><span class="sb-date">2026-08-11</span><span class="sb-badge">18</span></a><a class="sb-item" href="#day-2026-08-10"><span class="sb-date">2026-08-10</span><span class="sb-badge">15</span></a><a class="sb-item" href="#day-2026-08-07"><span class="sb-date">2026-08-07</span><span class="sb-badge">20</span></a><a class="sb-item" href="#day-2026-08-06"><span class="sb-date">2026-08-06</span><span class="sb-badge">20</span></a><a class="sb-item" href="#day-2026-08-05"><span class="sb-date">2026-08-05</span><span class="sb-badge">20</span></a><a class="sb-item" href="#day-2026-08-04"><span class="sb-date">2026-08-04</span><span class="sb-badge">18</span></a><a class="sb-item" href="#day-2026-08-03"><span class="sb-date">2026-08-03</span><span class="sb-badge">19</span></a><a class="sb-item" href="#day-2026-08-02"><span class="sb-date">2026-08-02</span><span class="sb-badge">3</span></a><a class="sb-item" href="#day-2026-07-31"><span class="sb-date">2026-07-31</span><span class="sb-badge">20</span></a><a class="sb-item" href="#day-2026-07-30"><span class="sb-date">2026-07-30</span><span class="sb-badge">17</span></a><a class="sb-item" href="#day-2026-07-29"><span class="sb-date">2026-07-29</span><span class="sb-badge">11</span></a><a class="sb-item" href="#day-2026-07-28"><span class="sb-date">2026-07-28</span><span class="sb-badge">15</span></a><a class="sb-item" href="#day-2026-06-28"><span class="sb-date">2026-06-28</span><span class="sb-badge">7</span></a><a class="sb-item" href="#day-2026-06-27"><span class="sb-date">2026-06-27</span><span class="sb-badge">3</span></a></div></aside>
     <main class="main-content">
       
 <section class="day-section" id="day-2026-08-14">
   <div class="day-heading">
     <span class="day-date">2026-08-14</span>
-    <span class="day-count">精選 6 筆 + 參考 2 筆</span>
+    <span class="day-count">精選 9 筆 + 參考 4 筆</span>
   </div>
   <div class="job-list">
-<div class="job-card" id="card-2026-08-14-h-1" data-cat="其他" style="--score-color:#dc2626;cursor:pointer"
-     onclick="showDetail('card-2026-08-14-h-1','BD Manager 市場開發經理｜企業物聯網與智慧連網','雲騰網絡科技股份有限公司','https://www.104.com.tw/job/94ryx','#dc2626','4')">
+<div class="job-card" id="card-2026-08-14-h-1" data-cat="PM / PjM" style="--score-color:#d97706;cursor:pointer"
+     onclick="showDetail('card-2026-08-14-h-1','專案經理','Johnson Controls','https://tw.linkedin.com/jobs/view/%E5%B0%88%E6%A1%88%E7%B6%93%E7%90%86-4453523237','#d97706','6')">
+  <div class="card-body">
+    <div class="card-top-row">
+      <div class="card-tags">
+        <span class="cat-tag" style="background:#e0f2fe;color:#0369a1">PM / PjM</span>
+        <span class="rank-tag">第 1 名</span>
+        
+      </div>
+      <div class="score-display">
+        <span class="score-num" style="color:#d97706">6</span>
+        <span class="score-denom">&thinsp;/ 10</span>
+      </div>
+    </div>
+    <div class="job-name">專案經理</div>
+    <div class="company-row">Johnson Controls</div>
+    <div class="meta-chips"><span class="meta-chip">面議</span><span class="meta-chip">Taipei, Taipei City, Taiwan</span><span class="meta-chip">LinkedIn</span></div>
+    <div class="ai-block"><span>🧠</span><span>職稱符合，但JD缺失無法判斷資歷與職責</span></div>
+  </div>
+  <div class="card-actions">
+    <span class="btn-expand">📋 查看詳細分析 →</span>
+    <button class="btn-mark-applied" id="mark-%e5%b0%88%e6%a1%88%e7%b6%93%e7%90%86-4453523237" onclick="markApplied(event,'%e5%b0%88%e6%a1%88%e7%b6%93%e7%90%86-4453523237','專案經理','Johnson Controls','https://tw.linkedin.com/jobs/view/%E5%B0%88%E6%A1%88%E7%B6%93%E7%90%86-4453523237','面議')">✔ 標記已投遞</button>
+    <a class="btn-104" href="https://tw.linkedin.com/jobs/view/%E5%B0%88%E6%A1%88%E7%B6%93%E7%90%86-4453523237" target="_blank"
+       onclick="event.stopPropagation()">查看 104 職缺 →</a>
+  </div>
+  <div id="panel-card-2026-08-14-h-1" style="display:none"><div class="diag-detail">
+  <div class="d-section">維度評分</div><div class="d-dim-row"><div class="d-dim-label">ATS關鍵字與職稱命中 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:72%;background:#e0972c"></div></div><div class="d-dim-pct">72%</div></div><div class="d-dim-row"><div class="d-dim-label">跨部門/跨國利害關係人溝通證明 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:82%;background:#1f9d55"></div></div><div class="d-dim-pct">82%</div></div><div class="d-dim-row"><div class="d-dim-label">專案全生命週期與風險管理證明 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:78%;background:#1f9d55"></div></div><div class="d-dim-pct">78%</div></div><div class="d-dim-row"><div class="d-dim-label">產業知識對應(樓宇自動化/工業設備) </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:20%;background:#d9534f"></div></div><div class="d-dim-pct">20%</div></div><div class="d-dim-row"><div class="d-dim-label">英文口說會議參與完整度 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:50%;background:#e0972c"></div></div><div class="d-dim-pct">50%</div></div>
+  <div class="d-section">職缺要求 vs. 妳的履歷</div>
+  <div class="d-two-col">
+    <div class="d-col"><h4>職缺要求</h4><span class="d-tag d-req">專案全生命週期管理</span><span class="d-tag d-req">跨部門/跨國溝通</span><span class="d-tag d-req">時程與風險控管</span><span class="d-tag d-req">供應商或系統整合協調</span><span class="d-tag d-req">英文溝通</span><span class="d-tag d-req">樓宇自動化/工業設備產業經驗</span></div>
+    <div class="d-col"><h4>履歷覆蓋</h4><span class="d-tag d-covered">專案0到1與架構改造專案(covered)</span><span class="d-tag d-covered">海外客戶/跨部門單一需求窗口(covered)</span><span class="d-tag d-covered">看板法追蹤關鍵路徑與風險(covered)</span><span class="d-tag d-partial">第三方系統介接經驗可類比(partial)</span><span class="d-tag d-partial">每日英文書面溝通,口說非主動(partial)</span><span class="d-tag d-missing">未提及樓宇/工業設備相關背景(missing)</span></div>
+  </div>
+  <div class="d-section">Bullet Points XYZ 法優化</div><div class="d-bullet-pair"><div class="d-before">主導 5+ 項規格產品從需求訪談、規格定義到上線驗收之 0 到 1 完整流程;撰寫 PRD 明確定義功能說明,作為跨部門溝通與開發執行依據</div><div class="d-after">主導5項以上產品從需求訪談、規格定義到上線驗收之完整流程,撰寫PRD作為跨部門溝通與開發執行依據,確保複雜規格產品如期落地。</div></div><div class="d-bullet-pair"><div class="d-before">主導為期 5 個月的系統架構改造專案,協調系統部門分批部署與逐批驗收,最後如期上線且至今零客訴、零配置錯誤</div><div class="d-after">主導為期5個月的系統架構改造專案,規劃驗收機制並協調系統部門執行,確保如期上線且交付品質維持零客訴、零錯誤紀錄。</div></div><div class="d-bullet-pair"><div class="d-before">擔任海外客戶決策層、各部門利害關係人與技術團隊的單一需求窗口,將模糊需求轉化為可執行規格</div><div class="d-after">擔任海外客戶決策層與技術團隊間的單一需求窗口,將模糊需求轉化為可執行規格,支撐大型跨國專案順利推進。</div></div><div class="d-bullet-pair"><div class="d-before">以看板方法追蹤並行專案的關鍵路徑與風險,搭配部門 OKR 對齊優先級,提前調整排程確保如期交付</div><div class="d-after">以看板方法同步追蹤多項並行專案的關鍵路徑與風險,對齊部門OKR調整排程優先級,確保所有專案如期交付。</div></div>
+  <div class="d-section">履歷 Gap 診斷</div><div class="d-gap"><span class="d-gap-title">Gap1 職缺資訊不足</span>　JD內容為空,無法確認實際職責與團隊歸屬,建議透過LinkedIn公司頁面或內部人脈先釐清再投遞。</div><div class="d-gap"><span class="d-gap-title">Gap2 產業知識落差</span>　樓宇自動化/工業設備產業背景空白,建議面談時強調3個月快速建立新品牌線知識庫的實績做類比。</div><div class="d-gap"><span class="d-gap-title">Gap3 英文口說會議參與</span>　目前口說非主動,若跨國專案需高頻視訊會議,建議提前準備口說應對策略。</div><div class="d-gap"><span class="d-gap-title">Gap4 硬體/系統整合經驗未知</span>　若職務偏設備安裝維運類專案,與候選人軟體產品端經驗不同,需面談厘清職務實質內容。</div>
+  <div class="d-section">關於這家公司</div>
+  <div class="d-company">
+    <p>Johnson Controls(江森自控/強生控制)推測為美國大型工業與樓宇科技跨國集團,主要產品線應涵蓋暖通空調(HVAC)、消防安全與樓宇自動化管理系統,以B2B業務為主。台灣職缺應屬其亞太分公司或經銷體系的一環,但因JD內容空白,實際團隊業務範圍無法確認。</p>
+    <p><strong>跟其他職缺相比：</strong>在本次5筆職缺中,此筆的專案管理流程證明與ORIX、Fusionmedium相當,但因JD資訊嚴重不足,可信度低於資訊完整的其他職缺;產業對應度也不如威禹科技(電子相關)貼近候選人目前累積的產業判斷力。</p>
+    <p class="d-advice">💡 投遞前務必透過公司頁面、獵頭或內部人脈確認實際職務內容與所屬事業處,避免因JD空白而誤判職缺性質。</p>
+  </div>
+</div></div>
+</div>
+<div class="job-card" id="card-2026-08-14-h-2" data-cat="PM / PjM" style="--score-color:#dc2626;cursor:pointer"
+     onclick="showDetail('card-2026-08-14-h-2','專案經理 Project Manager','科技報橘｜流線傳媒 Fusionmedium','https://www.yourator.co/companies/fusionmedium/jobs/46515','#dc2626','5')">
+  <div class="card-body">
+    <div class="card-top-row">
+      <div class="card-tags">
+        <span class="cat-tag" style="background:#e0f2fe;color:#0369a1">PM / PjM</span>
+        <span class="rank-tag">第 2 名</span>
+        
+      </div>
+      <div class="score-display">
+        <span class="score-num" style="color:#dc2626">5</span>
+        <span class="score-denom">&thinsp;/ 10</span>
+      </div>
+    </div>
+    <div class="job-name">專案經理 Project Manager</div>
+    <div class="company-row">科技報橘｜流線傳媒 Fusionmedium</div>
+    <div class="meta-chips"><span class="meta-chip">45,000 ~ 60,000</span><span class="meta-chip">臺北市</span><span class="meta-chip">新創(Yourator)</span></div>
+    <div class="ai-block"><span>🧠</span><span>職稱符合，但產業不優先且JD缺失</span></div>
+  </div>
+  <div class="card-actions">
+    <span class="btn-expand">📋 查看詳細分析 →</span>
+    <button class="btn-mark-applied" id="mark-46515" onclick="markApplied(event,'46515','專案經理 Project Manager','科技報橘｜流線傳媒 Fusionmedium','https://www.yourator.co/companies/fusionmedium/jobs/46515','45,000 ~ 60,000')">✔ 標記已投遞</button>
+    <a class="btn-104" href="https://www.yourator.co/companies/fusionmedium/jobs/46515" target="_blank"
+       onclick="event.stopPropagation()">查看 104 職缺 →</a>
+  </div>
+  <div id="panel-card-2026-08-14-h-2" style="display:none"><div class="diag-detail">
+  <div class="d-section">維度評分</div><div class="d-dim-row"><div class="d-dim-label">ATS關鍵字與職稱命中 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:65%;background:#e0972c"></div></div><div class="d-dim-pct">65%</div></div><div class="d-dim-row"><div class="d-dim-label">專案流程與文件管理證明 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:80%;background:#1f9d55"></div></div><div class="d-dim-pct">80%</div></div><div class="d-dim-row"><div class="d-dim-label">外部供應商/廠商協作證明 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:55%;background:#e0972c"></div></div><div class="d-dim-pct">55%</div></div><div class="d-dim-row"><div class="d-dim-label">AI工具應用證明 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:85%;background:#1f9d55"></div></div><div class="d-dim-pct">85%</div></div><div class="d-dim-row"><div class="d-dim-label">產業對齊度(科技媒體/新創) </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:45%;background:#d9534f"></div></div><div class="d-dim-pct">45%</div></div>
+  <div class="d-section">職缺要求 vs. 妳的履歷</div>
+  <div class="d-two-col">
+    <div class="d-col"><h4>職缺要求</h4><span class="d-tag d-req">活動網站/數位專案全流程管理</span><span class="d-tag d-req">外部供應商(設計/工程)協作與品質控管</span><span class="d-tag d-req">專案文件與流程標準化</span><span class="d-tag d-req">跨部門與內容團隊溝通</span><span class="d-tag d-req">AI工具應用意願</span><span class="d-tag d-req">科技媒體產業興趣</span></div>
+    <div class="d-col"><h4>履歷覆蓋</h4><span class="d-tag d-partial">0到1產品全流程管理經驗,非網站專屬(partial)</span><span class="d-tag d-partial">跨部門/技術團隊協調,非直接外部設計廠商(partial)</span><span class="d-tag d-covered">PRD撰寫與專案時程管理(covered)</span><span class="d-tag d-covered">單一需求窗口跨部門溝通(covered)</span><span class="d-tag d-covered">Python結合生成式AI自動化開發(covered)</span><span class="d-tag d-missing">履歷未提及科技媒體產業興趣(missing)</span></div>
+  </div>
+  <div class="d-section">Bullet Points XYZ 法優化</div><div class="d-bullet-pair"><div class="d-before">主導第三方系統介接專案,負責需求對接、規格定義及產品上線</div><div class="d-after">主導第三方系統介接專案,獨立完成需求對接、規格定義至上線驗收,經驗可延伸至數位專案與外部技術團隊協作。</div></div><div class="d-bullet-pair"><div class="d-before">撰寫 PRD 明確定義功能說明,作為跨部門溝通與開發執行依據</div><div class="d-after">撰寫PRD明確定義功能規格,作為跨部門與外部協作團隊溝通、開發執行的共同依據,確保專案範疇與時程一致。</div></div><div class="d-bullet-pair"><div class="d-before">以 Python 結合生成式 AI 開發資訊同步自動化排程,推廣至全品牌線後每年累計節省近 100 小時</div><div class="d-after">以Python結合生成式AI開發自動化流程,取代原本每週1-2小時的人工作業,推廣後每年累計節省近100小時,展現主動導入AI工具優化流程的能力。</div></div><div class="d-bullet-pair"><div class="d-before">規劃並主持 5 場跨部門新產品培訓(累計 200+ 名參與者),自製教材協助客戶與合作夥伴快速上手</div><div class="d-after">規劃並主持5場跨部門產品教育訓練,自製教材協助200多名客戶與合作夥伴快速上手,可對應網站上線後的教育訓練與知識轉移需求。</div></div>
+  <div class="d-section">履歷 Gap 診斷</div><div class="d-gap"><span class="d-gap-title">Gap1 產業對齊落差</span>　媒體/新創產業不在目標產業清單前段(半導體/電信/電子/軟體),建議評估此職缺是否作為過渡或作品集累積用途。</div><div class="d-gap"><span class="d-gap-title">Gap2 網站專案技術細節未展示</span>　JD強調活動網站與品牌官網,履歷未直接展現網頁專案(CMS、網站建置流程)經驗,建議面談時以第三方系統介接經驗類比。</div><div class="d-gap"><span class="d-gap-title">Gap3 外部供應商協作經驗描述不足</span>　履歷未直接提及與外部設計/工程代理商協作,建議連結「與技術團隊協調規格」經驗重新包裝。</div><div class="d-gap"><span class="d-gap-title">Gap4 薪資水準偏低</span>　45-60K區間可能低於候選人目前市場行情,建議與其他機會比較後再決定是否投遞。</div>
+  <div class="d-section">關於這家公司</div>
+  <div class="d-company">
+    <p>流線傳媒旗下科技報橘(TechOrange)推測為台灣具指標性的科技產業媒體,主要產出新創/科技職場相關內容,近年應該也跨足會展與品牌活動業務,整體規模推測屬中小型新創媒體公司。</p>
+    <p><strong>跟其他職缺相比：</strong>與ORIX相比,此筆的職能匹配度(PM流程、0到1執行)更直接對應候選人現職強項,但產業排序低於半導體/電信/電子;與威禹科技相比,此筆沒有年資門檻限制,對候選人更友善,但職涯含金量可能不如原本金融科技產品線的複雜度。</p>
+    <p class="d-advice">💡 面談時可強調第三方系統介接與PRD撰寫經驗如何轉化為網站專案管理能力,並主動表達對科技媒體/活動產業的興趣以彌補產業空白。</p>
+  </div>
+</div></div>
+</div>
+<div class="job-card" id="card-2026-08-14-h-3" data-cat="PM / PjM" style="--score-color:#dc2626;cursor:pointer"
+     onclick="showDetail('card-2026-08-14-h-3','PM產品管理師-品牌代理 (公司福利優, 歡迎有產品經理經驗+業務社交佳，優先錄取)','威禹科技有限公司','https://www.104.com.tw/job/6klea','#dc2626','4')">
+  <div class="card-body">
+    <div class="card-top-row">
+      <div class="card-tags">
+        <span class="cat-tag" style="background:#e0f2fe;color:#0369a1">PM / PjM</span>
+        <span class="rank-tag">第 3 名</span>
+        
+      </div>
+      <div class="score-display">
+        <span class="score-num" style="color:#dc2626">4</span>
+        <span class="score-denom">&thinsp;/ 10</span>
+      </div>
+    </div>
+    <div class="job-name">PM產品管理師-品牌代理 (公司福利優, 歡迎有產品經理經驗+業務社交佳，優先錄取)</div>
+    <div class="company-row">威禹科技有限公司</div>
+    <div class="meta-chips"><span class="meta-chip">58,000 起</span><span class="meta-chip">新北市三重區</span><span class="meta-chip">電子通訊／電腦週邊批發業</span></div>
+    <div class="ai-block"><span>🧠</span><span>產業與職能符合，但資歷要求3年，求職者僅1~2年</span></div>
+  </div>
+  <div class="card-actions">
+    <span class="btn-expand">📋 查看詳細分析 →</span>
+    <button class="btn-mark-applied" id="mark-6klea" onclick="markApplied(event,'6klea','PM產品管理師-品牌代理 (公司福利優, 歡迎有產品經理經驗+業務社交佳，優先錄取)','威禹科技有限公司','https://www.104.com.tw/job/6klea','58,000 起')">✔ 標記已投遞</button>
+    <a class="btn-104" href="https://www.104.com.tw/job/6klea" target="_blank"
+       onclick="event.stopPropagation()">查看 104 職缺 →</a>
+  </div>
+  <div id="panel-card-2026-08-14-h-3" style="display:none"><div class="diag-detail">
+  <div class="d-section">維度評分</div><div class="d-dim-row"><div class="d-dim-label">ATS關鍵字與職稱命中(PM/產品管理師) </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:60%;background:#e0972c"></div></div><div class="d-dim-pct">60%</div></div><div class="d-dim-row"><div class="d-dim-label">年資門檻符合度 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:30%;background:#d9534f"></div></div><div class="d-dim-pct">30%</div></div><div class="d-dim-row"><div class="d-dim-label">通路/採購/進銷存實務經驗 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:15%;background:#d9534f"></div></div><div class="d-dim-pct">15%</div></div><div class="d-dim-row"><div class="d-dim-label">成本/定價分析證明 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:70%;background:#e0972c"></div></div><div class="d-dim-pct">70%</div></div><div class="d-dim-row"><div class="d-dim-label">跨部門與英文溝通證明 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:65%;background:#e0972c"></div></div><div class="d-dim-pct">65%</div></div>
+  <div class="d-section">職缺要求 vs. 妳的履歷</div>
+  <div class="d-two-col">
+    <div class="d-col"><h4>職缺要求</h4><span class="d-tag d-req">3年以上PM經驗</span><span class="d-tag d-req">英文溝通能力</span><span class="d-tag d-req">跨部門溝通協調</span><span class="d-tag d-req">品牌行銷操作知識</span><span class="d-tag d-req">實體通路工作經驗</span><span class="d-tag d-req">採購/進銷存管理</span><span class="d-tag d-req">產品報價與毛利管理</span><span class="d-tag d-req">業務社交能力</span></div>
+    <div class="d-col"><h4>履歷覆蓋</h4><span class="d-tag d-missing">僅1-2年工作經驗(missing)</span><span class="d-tag d-partial">每日英文書面溝通,口說非主動(partial)</span><span class="d-tag d-covered">單一需求窗口跨部門協調(covered)</span><span class="d-tag d-partial">接手品牌線經驗,非行銷操作(partial)</span><span class="d-tag d-missing">履歷未提及實體通路經驗(missing)</span><span class="d-tag d-missing">履歷未提及採購/進銷存管理(missing)</span><span class="d-tag d-partial">多維度成本分析模型支援定價決策(partial)</span><span class="d-tag d-missing">履歷未提及業務開發/客戶提報實績(missing)</span></div>
+  </div>
+  <div class="d-section">Bullet Points XYZ 法優化</div><div class="d-bullet-pair"><div class="d-before">接手單一最大品牌產品線(橫跨 APAC 與 EU/UK 兩市場),在前任離職、無品牌或產業文件情況下 3 個月建立完整知識庫</div><div class="d-after">接手橫跨APAC與EU/UK市場的最大品牌產品線,在無交接文件情況下3個月內獨立建立完整品牌知識庫,展現快速掌握新品牌/新產業的學習力。</div></div><div class="d-bullet-pair"><div class="d-before">以 SQL 跨資料庫檢索底層數據,搭配 Power BI 製作視覺化報表,產出競品分析(東南亞/歐美共 4 份)與商業模式轉型評估供 CEO 決策</div><div class="d-after">以SQL跨資料庫檢索數據並以Power BI製作視覺化報表,產出4份東南亞及歐美市場競品分析,支援高層擬定品牌市場策略。</div></div><div class="d-bullet-pair"><div class="d-before">建立多維度成本分析模型,管理千項以上產品之成本試算與損益彙總報表,支援定價決策</div><div class="d-after">建立多維度成本分析模型,管理逾千項產品之成本試算與損益彙總報表,支援產品定價與毛利決策。</div></div><div class="d-bullet-pair"><div class="d-before">擔任海外客戶決策層、各部門利害關係人與技術團隊的單一需求窗口</div><div class="d-after">擔任跨國品牌客戶與內部各部門的單一需求窗口,協調需求並轉化為可執行方案,具備跨部門協調實績。</div></div>
+  <div class="d-section">履歷 Gap 診斷</div><div class="d-gap"><span class="d-gap-title">Gap1 年資門檻落差</span>　JD明確「3年以上PM經驗優先錄取」,候選人僅1-2年,建議以成果密度(5+項0到1、3個月建立品牌知識庫)彌補年資落差。</div><div class="d-gap"><span class="d-gap-title">Gap2 通路/採購/進銷存經驗缺口</span>　履歷完全沒有實體通路、採購或庫存管理經驗,這是本職缺核心職責之一,落差最大,建議誠實評估是否適合。</div><div class="d-gap"><span class="d-gap-title">Gap3 品牌代理/授權業務模式經驗缺口</span>　履歷為自有產品0到1開發,非代理引進國外品牌的商業模式,建議說明跨國品牌線管理經驗作為可遷移類比。</div><div class="d-gap"><span class="d-gap-title">Gap4 業務社交能力證明不足</span>　JD提及「業務社交佳」優先錄取,履歷缺乏業務開發/客戶提報實績,建議評估此職缺是否偏業務導向以決定是否投遞。</div>
+  <div class="d-section">關於這家公司</div>
+  <div class="d-company">
+    <p>威禹科技有限公司推測為中小型電子零組件/消費性電子批發代理商,主要業務為引進國外品牌至台灣市場銷售,在台灣市場知名度應該不高,規模推測有限。</p>
+    <p><strong>跟其他職缺相比：</strong>相較於Fusionmedium與Johnson Controls都沒有明確年資限制,此筆職缺明確寫出「3年以上PM經驗優先錄取」,候選人1-2年資歷直接構成硬性落差,加上通路/採購職能與候選人軟體產品PM背景差異最大,整體評分低於其他PM類職缺。</p>
+    <p class="d-advice">💡 若仍想投遞,建議在履歷自傳中以「快速建立品牌知識庫、成本分析支援定價」等成果彌補年資與通路經驗落差,並誠實評估是否願意承擔業務開發性質的工作內容。</p>
+  </div>
+</div></div>
+</div>
+<div class="job-card" id="card-2026-08-14-h-4" data-cat="其他" style="--score-color:#dc2626;cursor:pointer"
+     onclick="showDetail('card-2026-08-14-h-4','BD Manager 市場開發經理｜企業物聯網與智慧連網','雲騰網絡科技股份有限公司','https://www.104.com.tw/job/94ryx','#dc2626','4')">
   <div class="card-body">
     <div class="card-top-row">
       <div class="card-tags">
         <span class="cat-tag" style="background:#f1f5f9;color:#475569">其他</span>
-        <span class="rank-tag">第 1 名</span>
+        <span class="rank-tag">第 4 名</span>
         
       </div>
       <div class="score-display">
@@ -605,7 +731,7 @@ body.is-local .btn-mark-applied { display: inline-block; }
     <a class="btn-104" href="https://www.104.com.tw/job/94ryx" target="_blank"
        onclick="event.stopPropagation()">查看 104 職缺 →</a>
   </div>
-  <div id="panel-card-2026-08-14-h-1" style="display:none"><div class="diag-detail">
+  <div id="panel-card-2026-08-14-h-4" style="display:none"><div class="diag-detail">
   <div class="d-section">維度評分</div><div class="d-dim-row"><div class="d-dim-label">業務開發/陌生開發實績 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:10%;background:#d9534f"></div></div><div class="d-dim-pct">10%</div></div><div class="d-dim-row"><div class="d-dim-label">商務提案與成交推進能力 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:25%;background:#d9534f"></div></div><div class="d-dim-pct">25%</div></div><div class="d-dim-row"><div class="d-dim-label">需求轉化與客戶溝通能力 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:65%;background:#e0972c"></div></div><div class="d-dim-pct">65%</div></div><div class="d-dim-row"><div class="d-dim-label">跨部門/跨國協調佐證 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:70%;background:#e0972c"></div></div><div class="d-dim-pct">70%</div></div><div class="d-dim-row"><div class="d-dim-label">產業相關度(物聯網/電信/SaaS) </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:20%;background:#d9534f"></div></div><div class="d-dim-pct">20%</div></div>
   <div class="d-section">職缺要求 vs. 妳的履歷</div>
   <div class="d-two-col">
@@ -622,13 +748,13 @@ body.is-local .btn-mark-applied { display: inline-block; }
   </div>
 </div></div>
 </div>
-<div class="job-card" id="card-2026-08-14-h-2" data-cat="PM / PjM" style="--score-color:#dc2626;cursor:pointer"
-     onclick="showDetail('card-2026-08-14-h-2','PM 專案經理 / Project Manager《企劃部》【台北事業處】','千享國際企業股份有限公司','https://www.104.com.tw/job/8ycug','#dc2626','3')">
+<div class="job-card" id="card-2026-08-14-h-5" data-cat="PM / PjM" style="--score-color:#dc2626;cursor:pointer"
+     onclick="showDetail('card-2026-08-14-h-5','PM 專案經理 / Project Manager《企劃部》【台北事業處】','千享國際企業股份有限公司','https://www.104.com.tw/job/8ycug','#dc2626','3')">
   <div class="card-body">
     <div class="card-top-row">
       <div class="card-tags">
         <span class="cat-tag" style="background:#e0f2fe;color:#0369a1">PM / PjM</span>
-        <span class="rank-tag">第 2 名</span>
+        <span class="rank-tag">第 5 名</span>
         
       </div>
       <div class="score-display">
@@ -647,7 +773,7 @@ body.is-local .btn-mark-applied { display: inline-block; }
     <a class="btn-104" href="https://www.104.com.tw/job/8ycug" target="_blank"
        onclick="event.stopPropagation()">查看 104 職缺 →</a>
   </div>
-  <div id="panel-card-2026-08-14-h-2" style="display:none"><div class="diag-detail">
+  <div id="panel-card-2026-08-14-h-5" style="display:none"><div class="diag-detail">
   <div class="d-section">維度評分</div><div class="d-dim-row"><div class="d-dim-label">PRD/需求文件撰寫能力 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:85%;background:#1f9d55"></div></div><div class="d-dim-pct">85%</div></div><div class="d-dim-row"><div class="d-dim-label">專案全生命週期管理經驗 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:65%;background:#e0972c"></div></div><div class="d-dim-pct">65%</div></div><div class="d-dim-row"><div class="d-dim-label">跨職能團隊協調 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:80%;background:#1f9d55"></div></div><div class="d-dim-pct">80%</div></div><div class="d-dim-row"><div class="d-dim-label">客戶溝通與需求審查窗口 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:80%;background:#1f9d55"></div></div><div class="d-dim-pct">80%</div></div><div class="d-dim-row"><div class="d-dim-label">預算控制與風險管理 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:55%;background:#e0972c"></div></div><div class="d-dim-pct">55%</div></div><div class="d-dim-row"><div class="d-dim-label">年資與政府標案經驗符合度 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:30%;background:#d9534f"></div></div><div class="d-dim-pct">30%</div></div>
   <div class="d-section">職缺要求 vs. 妳的履歷</div>
   <div class="d-two-col">
@@ -664,13 +790,13 @@ body.is-local .btn-mark-applied { display: inline-block; }
   </div>
 </div></div>
 </div>
-<div class="job-card" id="card-2026-08-14-h-3" data-cat="PM / PjM" style="--score-color:#16a34a;cursor:pointer"
-     onclick="showDetail('card-2026-08-14-h-3','專案經理/專案管理師','中華系統整合股份有限公司','https://www.104.com.tw/job/8uyyv','#16a34a','9')">
+<div class="job-card" id="card-2026-08-14-h-6" data-cat="PM / PjM" style="--score-color:#16a34a;cursor:pointer"
+     onclick="showDetail('card-2026-08-14-h-6','專案經理/專案管理師','中華系統整合股份有限公司','https://www.104.com.tw/job/8uyyv','#16a34a','9')">
   <div class="card-body">
     <div class="card-top-row">
       <div class="card-tags">
         <span class="cat-tag" style="background:#e0f2fe;color:#0369a1">PM / PjM</span>
-        <span class="rank-tag">第 3 名</span>
+        <span class="rank-tag">第 6 名</span>
         
       </div>
       <div class="score-display">
@@ -689,7 +815,7 @@ body.is-local .btn-mark-applied { display: inline-block; }
     <a class="btn-104" href="https://www.104.com.tw/job/8uyyv" target="_blank"
        onclick="event.stopPropagation()">查看 104 職缺 →</a>
   </div>
-  <div id="panel-card-2026-08-14-h-3" style="display:none"><div class="diag-detail">
+  <div id="panel-card-2026-08-14-h-6" style="display:none"><div class="diag-detail">
   <div class="d-section">維度評分</div><div class="d-dim-row"><div class="d-dim-label">專案進度管控與跨部門協調能力 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:75%;background:#1f9d55"></div></div><div class="d-dim-pct">75%</div></div><div class="d-dim-row"><div class="d-dim-label">備標答標/行政文件處理經驗 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:25%;background:#d9534f"></div></div><div class="d-dim-pct">25%</div></div><div class="d-dim-row"><div class="d-dim-label">規格文件彙整與撰寫能力 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:75%;background:#1f9d55"></div></div><div class="d-dim-pct">75%</div></div><div class="d-dim-row"><div class="d-dim-label">辦公室軟體操作熟悉度 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:85%;background:#1f9d55"></div></div><div class="d-dim-pct">85%</div></div>
   <div class="d-section">職缺要求 vs. 妳的履歷</div>
   <div class="d-two-col">
@@ -706,13 +832,13 @@ body.is-local .btn-mark-applied { display: inline-block; }
   </div>
 </div></div>
 </div>
-<div class="job-card" id="card-2026-08-14-h-4" data-cat="PM / PjM" style="--score-color:#16a34a;cursor:pointer"
-     onclick="showDetail('card-2026-08-14-h-4','Product Manager 產品經理','博東科技有限公司（前跑跑腿）','https://www.yourator.co/companies/paopaotui/jobs/48056','#16a34a','8')">
+<div class="job-card" id="card-2026-08-14-h-7" data-cat="PM / PjM" style="--score-color:#16a34a;cursor:pointer"
+     onclick="showDetail('card-2026-08-14-h-7','Product Manager 產品經理','博東科技有限公司（前跑跑腿）','https://www.yourator.co/companies/paopaotui/jobs/48056','#16a34a','8')">
   <div class="card-body">
     <div class="card-top-row">
       <div class="card-tags">
         <span class="cat-tag" style="background:#e0f2fe;color:#0369a1">PM / PjM</span>
-        <span class="rank-tag">第 4 名</span>
+        <span class="rank-tag">第 7 名</span>
         
       </div>
       <div class="score-display">
@@ -731,7 +857,7 @@ body.is-local .btn-mark-applied { display: inline-block; }
     <a class="btn-104" href="https://www.yourator.co/companies/paopaotui/jobs/48056" target="_blank"
        onclick="event.stopPropagation()">查看 104 職缺 →</a>
   </div>
-  <div id="panel-card-2026-08-14-h-4" style="display:none"><div class="diag-detail">
+  <div id="panel-card-2026-08-14-h-7" style="display:none"><div class="diag-detail">
   <div class="d-section">維度評分</div><div class="d-dim-row"><div class="d-dim-label">0到1產品主導經驗 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:80%;background:#1f9d55"></div></div><div class="d-dim-pct">80%</div></div><div class="d-dim-row"><div class="d-dim-label">數據驅動決策能力 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:65%;background:#e0972c"></div></div><div class="d-dim-pct">65%</div></div><div class="d-dim-row"><div class="d-dim-label">生成式AI應用能力 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:80%;background:#1f9d55"></div></div><div class="d-dim-pct">80%</div></div><div class="d-dim-row"><div class="d-dim-label">精簡文件/快節奏迭代風格適應度 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:40%;background:#d9534f"></div></div><div class="d-dim-pct">40%</div></div>
   <div class="d-section">職缺要求 vs. 妳的履歷</div>
   <div class="d-two-col">
@@ -748,13 +874,13 @@ body.is-local .btn-mark-applied { display: inline-block; }
   </div>
 </div></div>
 </div>
-<div class="job-card" id="card-2026-08-14-h-5" data-cat="PM / PjM" style="--score-color:#d97706;cursor:pointer"
-     onclick="showDetail('card-2026-08-14-h-5','Technical Product Manager','BJAK','https://tw.linkedin.com/jobs/view/technical-product-manager-at-bjak-4452919418','#d97706','7')">
+<div class="job-card" id="card-2026-08-14-h-8" data-cat="PM / PjM" style="--score-color:#d97706;cursor:pointer"
+     onclick="showDetail('card-2026-08-14-h-8','Technical Product Manager','BJAK','https://tw.linkedin.com/jobs/view/technical-product-manager-at-bjak-4452919418','#d97706','7')">
   <div class="card-body">
     <div class="card-top-row">
       <div class="card-tags">
         <span class="cat-tag" style="background:#e0f2fe;color:#0369a1">PM / PjM</span>
-        <span class="rank-tag">第 5 名</span>
+        <span class="rank-tag">第 8 名</span>
         
       </div>
       <div class="score-display">
@@ -773,7 +899,7 @@ body.is-local .btn-mark-applied { display: inline-block; }
     <a class="btn-104" href="https://tw.linkedin.com/jobs/view/technical-product-manager-at-bjak-4452919418" target="_blank"
        onclick="event.stopPropagation()">查看 104 職缺 →</a>
   </div>
-  <div id="panel-card-2026-08-14-h-5" style="display:none"><div class="diag-detail">
+  <div id="panel-card-2026-08-14-h-8" style="display:none"><div class="diag-detail">
   <div class="d-section">維度評分</div><div class="d-dim-row"><div class="d-dim-label">技術深度(系統設計判斷) </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:25%;background:#d9534f"></div></div><div class="d-dim-pct">25%</div></div><div class="d-dim-row"><div class="d-dim-label">金融監管知識(licensing/KYC/合規) </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:20%;background:#d9534f"></div></div><div class="d-dim-pct">20%</div></div><div class="d-dim-row"><div class="d-dim-label">跨國英文溝通能力 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:55%;background:#e0972c"></div></div><div class="d-dim-pct">55%</div></div><div class="d-dim-row"><div class="d-dim-label">金融產品0到1經驗 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:70%;background:#e0972c"></div></div><div class="d-dim-pct">70%</div></div><div class="d-dim-row"><div class="d-dim-label">AI於金融場景應用判斷力 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:40%;background:#d9534f"></div></div><div class="d-dim-pct">40%</div></div>
   <div class="d-section">職缺要求 vs. 妳的履歷</div>
   <div class="d-two-col">
@@ -790,13 +916,13 @@ body.is-local .btn-mark-applied { display: inline-block; }
   </div>
 </div></div>
 </div>
-<div class="job-card" id="card-2026-08-14-h-6" data-cat="PM / PjM" style="--score-color:#dc2626;cursor:pointer"
-     onclick="showDetail('card-2026-08-14-h-6','【PowerUp!】專案管理專員(中和-ENT)-雲端基礎設施系統與平台事業群','光寶科技股份有限公司','https://www.104.com.tw/job/7c7jw','#dc2626','5')">
+<div class="job-card" id="card-2026-08-14-h-9" data-cat="PM / PjM" style="--score-color:#dc2626;cursor:pointer"
+     onclick="showDetail('card-2026-08-14-h-9','【PowerUp!】專案管理專員(中和-ENT)-雲端基礎設施系統與平台事業群','光寶科技股份有限公司','https://www.104.com.tw/job/7c7jw','#dc2626','5')">
   <div class="card-body">
     <div class="card-top-row">
       <div class="card-tags">
         <span class="cat-tag" style="background:#e0f2fe;color:#0369a1">PM / PjM</span>
-        <span class="rank-tag">第 6 名</span>
+        <span class="rank-tag">第 9 名</span>
         <span class="applied-tag" style="--app-c:#d97706">📤 已投遞</span>
       </div>
       <div class="score-display">
@@ -815,7 +941,7 @@ body.is-local .btn-mark-applied { display: inline-block; }
     <a class="btn-104" href="https://www.104.com.tw/job/7c7jw" target="_blank"
        onclick="event.stopPropagation()">查看 104 職缺 →</a>
   </div>
-  <div id="panel-card-2026-08-14-h-6" style="display:none"><div class="diag-detail">
+  <div id="panel-card-2026-08-14-h-9" style="display:none"><div class="diag-detail">
   <div class="d-section">維度評分</div><div class="d-dim-row"><div class="d-dim-label">硬體/量產產品開發流程匹配度 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:30%;background:#d9534f"></div></div><div class="d-dim-pct">30%</div></div><div class="d-dim-row"><div class="d-dim-label">跨部門溝通協調實績 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:85%;background:#1f9d55"></div></div><div class="d-dim-pct">85%</div></div><div class="d-dim-row"><div class="d-dim-label">專案管理方法與風險管控 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:80%;background:#1f9d55"></div></div><div class="d-dim-pct">80%</div></div><div class="d-dim-row"><div class="d-dim-label">英語讀寫與口語協商能力 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:55%;background:#e0972c"></div></div><div class="d-dim-pct">55%</div></div><div class="d-dim-row"><div class="d-dim-label">團隊領導/管理經驗 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:35%;background:#d9534f"></div></div><div class="d-dim-pct">35%</div></div><div class="d-dim-row"><div class="d-dim-label">專案成本/預算控管實績 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:55%;background:#e0972c"></div></div><div class="d-dim-pct">55%</div></div>
   <div class="d-section">職缺要求 vs. 妳的履歷</div>
   <div class="d-two-col">
@@ -833,7 +959,91 @@ body.is-local .btn-mark-applied { display: inline-block; }
 </div></div>
 </div><div class="ref-divider"><span>📋 值得參考</span></div>
 <div class="job-card ref-card" id="card-2026-08-14-r-1" data-cat="PM / PjM" style="--score-color:#dc2626;cursor:pointer"
-     onclick="showDetail('card-2026-08-14-r-1','數位化專案規劃管理師 (流程數位發展部)','台新新光金控_台新國際商業銀行','https://www.yourator.co/companies/taishinbank/jobs/40104','#dc2626','5')">
+     onclick="showDetail('card-2026-08-14-r-1','Manufacturing Operations Project Manager','Siemens','https://tw.linkedin.com/jobs/view/manufacturing-operations-project-manager-at-rhombus-4453514136','#dc2626','4')">
+  <div class="card-body">
+    <div class="card-top-row">
+      <div class="card-tags">
+        <span class="cat-tag" style="background:#e0f2fe;color:#0369a1">PM / PjM</span>
+        <span class="ref-tag">值得參考</span>
+        
+      </div>
+      <div class="score-display">
+        <span class="score-num" style="color:#dc2626">4</span>
+        <span class="score-denom">&thinsp;/ 10</span>
+      </div>
+    </div>
+    <div class="job-name">Manufacturing Operations Project Manager</div>
+    <div class="company-row">Siemens</div>
+    <div class="meta-chips"><span class="meta-chip">面議</span><span class="meta-chip">Taipei, Taipei City, Taiwan</span><span class="meta-chip">LinkedIn</span></div>
+    <div class="ai-block"><span>🧠</span><span>製造運營背景，不符求職者PM/BA定位，JD缺失</span></div>
+  </div>
+  <div class="card-actions">
+    <span class="btn-expand">📋 查看詳細分析 →</span>
+    <button class="btn-mark-applied" id="mark-manufacturing-operations-project-manager-at-rhombus-4453514136" onclick="markApplied(event,'manufacturing-operations-project-manager-at-rhombus-4453514136','Manufacturing Operations Project Manager','Siemens','https://tw.linkedin.com/jobs/view/manufacturing-operations-project-manager-at-rhombus-4453514136','面議')">✔ 標記已投遞</button>
+    <a class="btn-104" href="https://tw.linkedin.com/jobs/view/manufacturing-operations-project-manager-at-rhombus-4453514136" target="_blank"
+       onclick="event.stopPropagation()">查看 104 職缺 →</a>
+  </div>
+  <div id="panel-card-2026-08-14-r-1" style="display:none"><div class="diag-detail">
+  <div class="d-section">維度評分</div><div class="d-dim-row"><div class="d-dim-label">硬體製造/供應鏈產業知識 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:5%;background:#d9534f"></div></div><div class="d-dim-pct">5%</div></div><div class="d-dim-row"><div class="d-dim-label">NPI/量產專案管理經驗 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:5%;background:#d9534f"></div></div><div class="d-dim-pct">5%</div></div><div class="d-dim-row"><div class="d-dim-label">跨部門協調證明(情境可遷移但不完全對應) </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:40%;background:#d9534f"></div></div><div class="d-dim-pct">40%</div></div><div class="d-dim-row"><div class="d-dim-label">英文溝通流利度 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:50%;background:#e0972c"></div></div><div class="d-dim-pct">50%</div></div><div class="d-dim-row"><div class="d-dim-label">ATS關鍵字命中(Manufacturing/Operations/PM) </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:25%;background:#d9534f"></div></div><div class="d-dim-pct">25%</div></div>
+  <div class="d-section">職缺要求 vs. 妳的履歷</div>
+  <div class="d-two-col">
+    <div class="d-col"><h4>職缺要求</h4><span class="d-tag d-req">硬體製造/工廠執行管理經驗</span><span class="d-tag d-req">供應商與工廠端協調</span><span class="d-tag d-req">NPI(EVT/DVT/PVT)量產導入經驗</span><span class="d-tag d-req">ECO/ECN與品質問題追蹤</span><span class="d-tag d-req">預測達成與供應鏈規劃</span><span class="d-tag d-req">流利英文溝通</span><span class="d-tag d-req">跨部門(工程/品質/供應鏈)協調</span></div>
+    <div class="d-col"><h4>履歷覆蓋</h4><span class="d-tag d-missing">履歷未提及硬體製造/工廠執行經驗(missing)</span><span class="d-tag d-missing">履歷未提及供應商或工廠端協調(missing)</span><span class="d-tag d-missing">履歷未提及NPI/量產導入經驗(missing)</span><span class="d-tag d-missing">履歷未提及ECO/ECN或品質追蹤(missing)</span><span class="d-tag d-missing">履歷未提及供應鏈預測規劃(missing)</span><span class="d-tag d-partial">每日英文書面溝通,口說非主動,與流利口說要求有落差(partial)</span><span class="d-tag d-partial">跨部門/跨國需求窗口經驗,但產業情境不同(partial)</span></div>
+  </div>
+  <div class="d-section">Bullet Points XYZ 法優化</div><div class="d-bullet-pair"><div class="d-before">以看板方法追蹤並行專案的關鍵路徑與風險,搭配部門 OKR 對齊優先級,提前調整排程確保如期交付</div><div class="d-after">以看板方法追蹤多項並行專案的關鍵路徑與風險,建立進度落後時的提前預警與排程調整機制,確保如期交付。</div></div><div class="d-bullet-pair"><div class="d-before">產出專案績效報告與簡報(進度追蹤、成本檢討、策略建議),直接供高層決策依據</div><div class="d-after">產出專案績效報告與簡報,涵蓋進度追蹤、成本檢討與風險應對建議,作為高層決策依據。</div></div><div class="d-bullet-pair"><div class="d-before">主導第三方系統介接專案,負責需求對接、規格定義及產品上線</div><div class="d-after">主導跨團隊系統介接專案,獨立完成需求對接、規格定義至驗收上線,具備協調技術端與跨部門執行的實務經驗。</div></div><div class="d-bullet-pair"><div class="d-before">每日以英文書面對接跨部門或海外人員需求</div><div class="d-after">每日以英文書面與海外團隊及利害關係人溝通協調,確保跨時區資訊同步與問題即時釐清。</div></div>
+  <div class="d-section">履歷 Gap 診斷</div><div class="d-gap"><span class="d-gap-title">Gap1 硬體製造/供應鏈經驗空白</span>　JD要求NPI(EVT/DVT/PVT)、供應商生產管理、ECO/ECN追蹤等專業知識,履歷完全沒有對應經驗,是落差最大項,短期內難以彌補。</div><div class="d-gap"><span class="d-gap-title">Gap2 公司身份不明</span>　職缺欄位寫Siemens但描述內容其實是Rhombus(實體安防新創),投遞前建議先向原始職缺頁面或HR確認實際雇主與職務歸屬。</div><div class="d-gap"><span class="d-gap-title">Gap3 職能轉換幅度過大</span>　從軟體產品PM跳至硬體製造現場營運PM屬於核心技能斷層而非單純產業轉換,預期需要額外專業積累期。</div><div class="d-gap"><span class="d-gap-title">Gap4 英文口說要求較高</span>　JD要求「Fluent verbal」,候選人口說目前非主動發言型,若考慮投遞需提前加強口說準備。</div>
+  <div class="d-section">關於這家公司</div>
+  <div class="d-company">
+    <p>職缺標示公司為Siemens(西門子,德國工業電子跨國集團),但描述內容實際上是Rhombus——一家總部推測在美國、專注實體安防(智慧攝影機、感測器、AI分析)的新創公司,兩者屬性不同,推測應是職缺來源標籤有誤,建議投遞前先向原始職缺頁面確認。</p>
+    <p><strong>跟其他職缺相比：</strong>相較於其他4筆職缺至少在「產品/專案0到1」或「數據分析」職能上與候選人現職有直接重疊,此筆要求的是實體工廠端執行與供應鏈管理,屬於完全不同的專業技能樹,因此評分明顯低於其他職缺。</p>
+    <p class="d-advice">💡 除非候選人有意願跨入硬體製造營運領域並從基礎開始累積相關知識,否則此職缺與目前「軟體/金融科技產品PM」職涯路徑的延續性最低,建議優先評估其他4筆職缺。</p>
+  </div>
+</div></div>
+</div>
+<div class="job-card ref-card" id="card-2026-08-14-r-2" data-cat="BA / 數據" style="--score-color:#dc2626;cursor:pointer"
+     onclick="showDetail('card-2026-08-14-r-2','經營分析人員 Business Analyst','台灣歐力士股份有限公司','https://www.104.com.tw/job/94ub3','#dc2626','3')">
+  <div class="card-body">
+    <div class="card-top-row">
+      <div class="card-tags">
+        <span class="cat-tag" style="background:#dcfce7;color:#15803d">BA / 數據</span>
+        <span class="ref-tag">值得參考</span>
+        
+      </div>
+      <div class="score-display">
+        <span class="score-num" style="color:#dc2626">3</span>
+        <span class="score-denom">&thinsp;/ 10</span>
+      </div>
+    </div>
+    <div class="job-name">經營分析人員 Business Analyst</div>
+    <div class="company-row">台灣歐力士股份有限公司</div>
+    <div class="meta-chips"><span class="meta-chip">面議</span><span class="meta-chip">台北市大安區</span><span class="meta-chip">其他金融及輔助業</span></div>
+    <div class="ai-block"><span>🧠</span><span>職能部分吻合，但產業被明確排除</span></div>
+  </div>
+  <div class="card-actions">
+    <span class="btn-expand">📋 查看詳細分析 →</span>
+    <button class="btn-mark-applied" id="mark-94ub3" onclick="markApplied(event,'94ub3','經營分析人員 Business Analyst','台灣歐力士股份有限公司','https://www.104.com.tw/job/94ub3','面議')">✔ 標記已投遞</button>
+    <a class="btn-104" href="https://www.104.com.tw/job/94ub3" target="_blank"
+       onclick="event.stopPropagation()">查看 104 職缺 →</a>
+  </div>
+  <div id="panel-card-2026-08-14-r-2" style="display:none"><div class="diag-detail">
+  <div class="d-section">維度評分</div><div class="d-dim-row"><div class="d-dim-label">數據分析與報表能力 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:85%;background:#1f9d55"></div></div><div class="d-dim-pct">85%</div></div><div class="d-dim-row"><div class="d-dim-label">財務轉譯與決策支援證明 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:78%;background:#1f9d55"></div></div><div class="d-dim-pct">78%</div></div><div class="d-dim-row"><div class="d-dim-label">自動化/資料工程協作證明 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:60%;background:#e0972c"></div></div><div class="d-dim-pct">60%</div></div><div class="d-dim-row"><div class="d-dim-label">定價/成本分析證明 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:70%;background:#e0972c"></div></div><div class="d-dim-pct">70%</div></div><div class="d-dim-row"><div class="d-dim-label">產業對齊度(金融業,與轉產業目標衝突) </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:30%;background:#d9534f"></div></div><div class="d-dim-pct">30%</div></div>
+  <div class="d-section">職缺要求 vs. 妳的履歷</div>
+  <div class="d-two-col">
+    <div class="d-col"><h4>職缺要求</h4><span class="d-tag d-req">管理報表整理與核對</span><span class="d-tag d-req">指標定義與資料一致性維護</span><span class="d-tag d-req">財務數字轉譯為管理決策資訊</span><span class="d-tag d-req">與數據工程師協作改善資料/報表自動化</span><span class="d-tag d-req">新商業模式數據分析與效益評估</span><span class="d-tag d-req">產品定價</span><span class="d-tag d-req">專案時程與決議追蹤</span><span class="d-tag d-req">跨部門溝通(會計/業務/管理單位)</span></div>
+    <div class="d-col"><h4>履歷覆蓋</h4><span class="d-tag d-covered">SQL跨資料庫檢索、Power BI視覺化報表(covered)</span><span class="d-tag d-partial">報表製作經驗,未直接提及「指標定義」字眼(partial)</span><span class="d-tag d-covered">商業模式轉型評估供CEO決策(covered)</span><span class="d-tag d-partial">Python+生成式AI自動化,但對象非數據工程師協作(partial)</span><span class="d-tag d-covered">競品分析與商業模式評估(covered)</span><span class="d-tag d-partial">成本分析模型支援定價決策,非直接「產品定價」字眼(partial)</span><span class="d-tag d-covered">看板管理、專案績效報告(covered)</span><span class="d-tag d-covered">單一需求窗口跨部門溝通(covered)</span></div>
+  </div>
+  <div class="d-section">Bullet Points XYZ 法優化</div><div class="d-bullet-pair"><div class="d-before">以 SQL(MS SQL/PostgreSQL)跨資料庫檢索底層數據,搭配 Power BI 製作視覺化報表,產出競品分析與商業模式轉型評估供 CEO 決策</div><div class="d-after">以SQL跨資料庫檢索底層數據並以Power BI製作視覺化管理報表,產出商業模式轉型評估與市場分析,直接支援CEO決策。</div></div><div class="d-bullet-pair"><div class="d-before">以 Python 結合生成式 AI 開發資訊同步自動化排程(含信件自動擷取與轉換計算),每年累計節省近 100 小時</div><div class="d-after">以Python結合生成式AI開發資料自動擷取與轉換計算流程,取代原本人工整理作業,推廣後每年累計節省近100小時,提升報表產出效率。</div></div><div class="d-bullet-pair"><div class="d-before">建立多維度成本分析模型,管理千項以上產品之成本試算與損益彙總報表,支援定價決策</div><div class="d-after">建立多維度成本分析模型與損益彙總報表機制,管理逾千項產品成本試算,支援定價與經營決策。</div></div><div class="d-bullet-pair"><div class="d-before">以看板方法追蹤並行專案的關鍵路徑與風險,提前調整排程確保如期交付</div><div class="d-after">以看板方法追蹤專案時程與風險,並定期產出決議追蹤紀錄,確保專案進度與管理決策一致。</div></div>
+  <div class="d-section">履歷 Gap 診斷</div><div class="d-gap"><span class="d-gap-title">Gap1 產業目標衝突</span>　職缺所屬其他金融及輔助業,與候選人明確排除的「目前所在金融服務業」重疊,建議先釐清是否願意暫留金融業以換取數據分析職能深化。</div><div class="d-gap"><span class="d-gap-title">Gap2 數據工程協作經驗描述不足</span>　JD提及「與數據工程師合作改善資料來源、計算邏輯」,履歷呈現的是獨立開發自動化,建議面談時補充與IT/工程團隊協作的具體經驗。</div><div class="d-gap"><span class="d-gap-title">Gap3 產品定價經驗證明較薄弱</span>　履歷有成本分析支援定價決策經驗可對應,但「產品定價」字眼未直接出現,建議在自傳/面談中明確連結。</div><div class="d-gap"><span class="d-gap-title">Gap4 日商組織文化適應性未知</span>　台灣歐力士為日系企業,組織文化與決策流程可能與候選人熟悉的外商/新創式公司不同,建議提前了解日商工作模式。</div>
+  <div class="d-section">關於這家公司</div>
+  <div class="d-company">
+    <p>台灣歐力士股份有限公司推測為日系歐力士(ORIX)集團在台子公司,主要經營租賃、融資、保險等金融服務,屬於老牌日商金融機構,組織文化推測偏日商嚴謹風格。</p>
+    <p><strong>跟其他職缺相比：</strong>此筆的「經營分析」職能與候選人現職中「SQL/Power BI/成本分析支援CEO決策」的經驗幾乎一一對應,匹配度高於Fusionmedium的網站專案管理與Johnson Controls的資訊不足職缺,是5筆中技能命中率最高的一筆,但候選人求職方向明確排除金融業,需自行權衡「職能延續」與「產業轉換」孰輕孰重。</p>
+    <p class="d-advice">💡 若考慮投遞,建議先想清楚是否願意在金融業多留一段時間以換取數據分析職能的進一步深化,並在面談中主動說明未來仍希望轉往半導體/電信/電子產業的長期規劃,避免入職後產生落差。</p>
+  </div>
+</div></div>
+</div>
+<div class="job-card ref-card" id="card-2026-08-14-r-3" data-cat="PM / PjM" style="--score-color:#dc2626;cursor:pointer"
+     onclick="showDetail('card-2026-08-14-r-3','數位化專案規劃管理師 (流程數位發展部)','台新新光金控_台新國際商業銀行','https://www.yourator.co/companies/taishinbank/jobs/40104','#dc2626','5')">
   <div class="card-body">
     <div class="card-top-row">
       <div class="card-tags">
@@ -857,7 +1067,7 @@ body.is-local .btn-mark-applied { display: inline-block; }
     <a class="btn-104" href="https://www.yourator.co/companies/taishinbank/jobs/40104" target="_blank"
        onclick="event.stopPropagation()">查看 104 職缺 →</a>
   </div>
-  <div id="panel-card-2026-08-14-r-1" style="display:none"><div class="diag-detail">
+  <div id="panel-card-2026-08-14-r-3" style="display:none"><div class="diag-detail">
   <div class="d-section">維度評分</div><div class="d-dim-row"><div class="d-dim-label">專案管理與跨單位協調能力 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:88%;background:#1f9d55"></div></div><div class="d-dim-pct">88%</div></div><div class="d-dim-row"><div class="d-dim-label">流程優化與客戶體驗提升經驗 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:82%;background:#1f9d55"></div></div><div class="d-dim-pct">82%</div></div><div class="d-dim-row"><div class="d-dim-label">數位轉型推廣/變革管理能力 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:62%;background:#e0972c"></div></div><div class="d-dim-pct">62%</div></div><div class="d-dim-row"><div class="d-dim-label">金融業產業知識延續性 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:78%;background:#1f9d55"></div></div><div class="d-dim-pct">78%</div></div>
   <div class="d-section">職缺要求 vs. 妳的履歷</div>
   <div class="d-two-col">
@@ -874,8 +1084,8 @@ body.is-local .btn-mark-applied { display: inline-block; }
   </div>
 </div></div>
 </div>
-<div class="job-card ref-card" id="card-2026-08-14-r-2" data-cat="其他" style="--score-color:#dc2626;cursor:pointer"
-     onclick="showDetail('card-2026-08-14-r-2','《Richart》數位金融人才招募','台新新光金控_台新國際商業銀行','https://www.yourator.co/companies/taishinbank/jobs/38472','#dc2626','5')">
+<div class="job-card ref-card" id="card-2026-08-14-r-4" data-cat="其他" style="--score-color:#dc2626;cursor:pointer"
+     onclick="showDetail('card-2026-08-14-r-4','《Richart》數位金融人才招募','台新新光金控_台新國際商業銀行','https://www.yourator.co/companies/taishinbank/jobs/38472','#dc2626','5')">
   <div class="card-body">
     <div class="card-top-row">
       <div class="card-tags">
@@ -899,7 +1109,7 @@ body.is-local .btn-mark-applied { display: inline-block; }
     <a class="btn-104" href="https://www.yourator.co/companies/taishinbank/jobs/38472" target="_blank"
        onclick="event.stopPropagation()">查看 104 職缺 →</a>
   </div>
-  <div id="panel-card-2026-08-14-r-2" style="display:none"><div class="diag-detail">
+  <div id="panel-card-2026-08-14-r-4" style="display:none"><div class="diag-detail">
   <div class="d-section">維度評分</div><div class="d-dim-row"><div class="d-dim-label">金融產品0到1開發經驗 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:92%;background:#1f9d55"></div></div><div class="d-dim-pct">92%</div></div><div class="d-dim-row"><div class="d-dim-label">數據驅動產品優化能力 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:75%;background:#1f9d55"></div></div><div class="d-dim-pct">75%</div></div><div class="d-dim-row"><div class="d-dim-label">跨職能協作(UX/UI)經驗 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:40%;background:#d9534f"></div></div><div class="d-dim-pct">40%</div></div><div class="d-dim-row"><div class="d-dim-label">市場與競品分析能力 </div><div class="d-dim-bar-bg"><div class="d-dim-fill" style="width:82%;background:#1f9d55"></div></div><div class="d-dim-pct">82%</div></div>
   <div class="d-section">職缺要求 vs. 妳的履歷</div>
   <div class="d-two-col">
