@@ -5,6 +5,596 @@
     "report_url": "reports/diagnosis_2026-08-17.html",
     "jobs": [
       {
+        "jobNo": "15345708",
+        "jobName": "【數據應用部】流量事業｜數據分析師（JIRA844）",
+        "custName": "全曜財經資訊股份有限公司",
+        "salary": "面議",
+        "location": "新北市板橋區",
+        "industry": "電腦軟體服務業",
+        "url": "https://www.104.com.tw/job/94wto",
+        "ai_score": 6,
+        "ai_reason": "SQL/Python吻合;软件业符合;但BA非首选职能",
+        "is_reference": false,
+        "diagnosis": {
+          "jobNo": "15345708",
+          "overall_score": 61,
+          "overall_summary": "SQL、Power BI等硬技能與跨部門溝通經驗對得上該職缺的基本要求,但A/B Testing、用戶標籤/CDP這類數據分析師核心職責完全空白,且候選人的分析經驗是PM職務下的附加產出而非專職資歷,職稱轉換有落差。",
+          "dimensions": [
+            {
+              "label": "ATS關鍵字命中(SQL/PowerBI/數據分析)",
+              "percent": 75
+            },
+            {
+              "label": "數據量化與報表產出能力",
+              "percent": 70
+            },
+            {
+              "label": "A/B Testing與實驗設計經驗",
+              "percent": 20
+            },
+            {
+              "label": "跨部門/跨團隊協作證明",
+              "percent": 80
+            },
+            {
+              "label": "App/Web消費性產品經驗",
+              "percent": 30
+            },
+            {
+              "label": "用戶標籤/CDP/推薦系統經驗",
+              "percent": 10
+            }
+          ],
+          "requirements": [
+            "2年以上數據分析實務經驗",
+            "精通SQL",
+            "資料視覺化(Tableau/PowerBI/Python/R)",
+            "A/B Testing實驗設計與成效評估",
+            "商業思維(Business Sense)",
+            "跨團隊協作與推進力",
+            "用戶標籤/CDP/推薦系統經驗(加分)",
+            "App/Web網路產品經驗(加分)"
+          ],
+          "resume_coverage": [
+            {
+              "text": "產品分析經驗約1.5年,但職稱為PM非專職數據分析師",
+              "status": "partial"
+            },
+            {
+              "text": "SQL(MS SQL/PostgreSQL)跨資料庫查詢",
+              "status": "covered"
+            },
+            {
+              "text": "Power BI視覺化報表",
+              "status": "covered"
+            },
+            {
+              "text": "未提及A/B Testing經驗",
+              "status": "missing"
+            },
+            {
+              "text": "有商業模式轉型評估供CEO決策,但未明確敘述需求釐清方法論",
+              "status": "partial"
+            },
+            {
+              "text": "跨部門/跨國協調經驗豐富",
+              "status": "covered"
+            },
+            {
+              "text": "無CDP/推薦系統相關經驗",
+              "status": "missing"
+            },
+            {
+              "text": "金融科技產品非App/Web社群產品",
+              "status": "missing"
+            }
+          ],
+          "bullet_rewrites": [
+            {
+              "before": "以 SQL(MS SQL/PostgreSQL)跨資料庫檢索底層數據,搭配 Power BI 製作視覺化報表,產出競品分析(東南亞/歐美共 4 份)與商業模式轉型評估供 CEO 決策",
+              "after": "透過SQL(MS SQL/PostgreSQL)跨庫查詢與資料清整,建置Power BI視覺化報表,完成4份東南亞/歐美市場競品分析,為CEO商業模式轉型評估提供數據依據"
+            },
+            {
+              "before": "以 Python 結合生成式 AI 開發資訊同步自動化排程...每年累計節省近 100 小時",
+              "after": "以Python結合生成式AI開發資訊自動擷取與轉換計算排程,取代原本每週1-2小時人工作業,推廣至全品牌線後每年節省近100小時,展現資料驅動的流程優化能力"
+            },
+            {
+              "before": "擔任海外客戶決策層、各部門利害關係人與技術團隊的單一需求窗口,將模糊需求轉化為可執行規格",
+              "after": "擔任跨國客戶與內部技術團隊唯一需求窗口,將模糊商業需求轉化為可執行規格,呼應數據分析角色所需的商業思維與跨團隊推進力"
+            }
+          ],
+          "gaps": [
+            {
+              "title": "Gap1: A/B Testing實驗設計經驗",
+              "detail": "履歷完全未提;建議面談時強調具備假設驗證/數據驅動決策思維,並自學A/B testing基礎框架補強"
+            },
+            {
+              "title": "Gap2: 用戶標籤/CDP/推薦系統經驗",
+              "detail": "完全空白;建議誠實告知並以3個月建立品牌知識庫的快速上手實績佐證學習速度"
+            },
+            {
+              "title": "Gap3: 數據分析專職年資",
+              "detail": "履歷是PM身份兼做分析,非數據分析師職稱下的2年門檻;建議在自傳中換算分析產出的深度與頻率"
+            },
+            {
+              "title": "Gap4: App/Web消費性產品經驗",
+              "detail": "目前為B2B金融科技產品,非社群/App產品;可補充若有使用同類社群產品的個人興趣佐證"
+            }
+          ],
+          "company_intro": "全曜財經資訊是台灣財經數位媒體公司,旗下「股市爆料同學會」是知名的投資社群App/網站,主打即時股市討論與鄉民留言,在台灣投資社群App市場有一定知名度,推測商業模式以廣告與會員加值服務為主。",
+          "relative_comparison": "此職缺的SQL/PowerBI硬技能命中率是5筆中最高的,分數落在中段;主要拖累是A/B Testing、CDP/推薦系統這類數據分析師專屬經驗完全空白,且候選人的分析經驗是PM職務下的附加產出而非專職資歷,和Renesas的data analyst職缺相比,此職缺對社群/成長類數據分析的專業縱深要求更高,契合度略低。",
+          "key_advice": "面談前建議快速補強A/B Testing基本概念,並用金融科技的自動化與競品分析實績包裝成「數據驅動決策」的具體案例,弱化數據分析師專職資歷不足的疑慮。"
+        }
+      },
+      {
+        "jobNo": "li_4434993999",
+        "jobName": "Manufacturing - Industrial Engineer (Business Engineer) - Linkou",
+        "custName": "ASML",
+        "salary": "面議",
+        "location": "Linkou District, New Taipei City, Taiwan",
+        "industry": "LinkedIn",
+        "url": "https://tw.linkedin.com/jobs/view/manufacturing-industrial-engineer-business-engineer-linkou-at-asml-4434993999",
+        "ai_score": 6,
+        "ai_reason": "半导体首选;商业工程与PM交集;无资深信号",
+        "is_reference": false,
+        "diagnosis": {
+          "jobNo": "li_4434993999",
+          "overall_score": 32,
+          "overall_summary": "半導體產業雖是候選人首選,但此職缺的學歷科系(工業工程/統計/工程)、5年以上年資與製造業/SAP經驗等硬性門檻候選人幾乎完全不符,僅跨部門溝通與英文能力可部分對應,整體落差是5筆職缺中最大的。",
+          "dimensions": [
+            {
+              "label": "學歷背景匹配(工業工程/統計/工程)",
+              "percent": 15
+            },
+            {
+              "label": "年資門檻(5年以上)",
+              "percent": 20
+            },
+            {
+              "label": "半導體/電子製造業經驗",
+              "percent": 10
+            },
+            {
+              "label": "ERP/SAP系統熟悉度",
+              "percent": 10
+            },
+            {
+              "label": "財務/成本分析可遷移能力",
+              "percent": 55
+            },
+            {
+              "label": "跨部門協調與英文溝通",
+              "percent": 70
+            }
+          ],
+          "requirements": [
+            "工業工程/統計/工程相關學位",
+            "5年以上工業工程/戰略規劃/BI相關經驗",
+            "半導體/電子產業經驗",
+            "熟悉ERP/SAP",
+            "財務/成本分析能力",
+            "英文溝通與簡報能力",
+            "跨部門協調與無職權影響力",
+            "Excel/PowerPoint/Power BI/Spotfire"
+          ],
+          "resume_coverage": [
+            {
+              "text": "經濟系,非工業工程/統計/工程學位",
+              "status": "missing"
+            },
+            {
+              "text": "僅1-2年經驗,遠低於5年門檻",
+              "status": "missing"
+            },
+            {
+              "text": "金融科技產業,非半導體/電子製造",
+              "status": "missing"
+            },
+            {
+              "text": "未提及ERP/SAP經驗",
+              "status": "missing"
+            },
+            {
+              "text": "有成本分析模型與損益彙總報表經驗,但非製造業成本結構",
+              "status": "partial"
+            },
+            {
+              "text": "每日英文書面溝通,跨國品牌客戶對接",
+              "status": "covered"
+            },
+            {
+              "text": "單一需求窗口,跨部門/跨國協調經驗豐富",
+              "status": "covered"
+            },
+            {
+              "text": "Excel/PowerPoint/Power BI皆有,Spotfire未提及",
+              "status": "partial"
+            }
+          ],
+          "bullet_rewrites": [
+            {
+              "before": "建立多維度成本分析模型,管理千項以上產品之成本試算與損益彙總報表,支援定價決策",
+              "after": "建立多維度成本分析模型,彙整千項以上產品成本試算與損益報表,產出定價決策依據,展現財務分析與管理報表建置的可遷移能力"
+            },
+            {
+              "before": "擔任海外客戶決策層、各部門利害關係人與技術團隊的單一需求窗口",
+              "after": "以英文為主,擔任跨國決策層與技術團隊間的單一需求窗口,協調多方利害關係人達成共識,體現無正式職權下的跨部門影響力"
+            },
+            {
+              "before": "以 SQL...搭配 Power BI 製作視覺化報表",
+              "after": "運用SQL跨資料庫查詢與Power BI視覺化報表,將底層數據轉化為管理決策可用的分析報告"
+            }
+          ],
+          "gaps": [
+            {
+              "title": "Gap1: 學歷/專業背景不符",
+              "detail": "職缺明確要求工業工程/統計/工程學位,經濟系為相關但非對口;建議評估是否值得投遞或列為低優先"
+            },
+            {
+              "title": "Gap2: 年資落差達3年以上",
+              "detail": "5年門檻vs 1-2年經驗,屬硬性條件,難以用軟實力彌補"
+            },
+            {
+              "title": "Gap3: 無半導體/製造業/SAP經驗",
+              "detail": "若堅持投遞,面談中誠實說明並強調成本分析/BI報表的可遷移性,但成功率預期偏低"
+            },
+            {
+              "title": "Gap4: 無ERP/SAP系統操作經驗",
+              "detail": "可考慮先自學SAP基礎知識作為長期準備"
+            }
+          ],
+          "company_intro": "ASML是全球唯一供應極紫外光(EUV)微影設備的荷蘭半導體設備大廠,是全球半導體供應鏈中不可或缺的關鍵設備商,林口廠區推測是其台灣重要據點之一,薪資福利在半導體業界屬頂尖水準,但此職缺本身偏製造/工業工程專業向。",
+          "relative_comparison": "這是5筆職缺中契合度最低的一筆,雖然半導體是候選人的第一目標產業,但職缺對學歷科系、年資(5年以上)、製造業經驗與SAP系統都有明確硬性要求,候選人在這幾項幾乎全數落空,僅跨部門溝通與財務分析軟實力可對應部分需求;和Renesas職缺相比(同為半導體但更偏business planning/data analyst,學經歷要求彈性較大),此職缺的落差明顯更大。",
+          "key_advice": "除非有強烈意願且能接受低命中機率,否則不建議優先投遞;若投遞,務必在求職信中誠實定位為跨領域轉職,聚焦財務分析與跨部門協調的可遷移能力,而非硬套工業工程經驗。"
+        }
+      },
+      {
+        "jobNo": "15345144",
+        "jobName": "(日商)供應鏈管理儲備幹部-中和",
+        "custName": "台灣東方馬達股份有限公司",
+        "salary": "40,000 起",
+        "location": "台北市中山區",
+        "industry": "自動控制相關業",
+        "url": "https://www.104.com.tw/job/94we0",
+        "ai_score": 3,
+        "ai_reason": "电子业符合;供应链管理职能与目标不符",
+        "is_reference": false,
+        "diagnosis": {
+          "jobNo": "15345144",
+          "overall_score": 43,
+          "overall_summary": "跨部門協調與數據分析能力可部分遷移,但供應鏈/庫存管理零實務經驗,且儲備幹部起薪偏低,與候選人現有資歷及待遇期望有落差。",
+          "dimensions": [
+            {
+              "label": "供應鏈/庫存管理直接經驗",
+              "percent": 20
+            },
+            {
+              "label": "跨部門協調能力",
+              "percent": 75
+            },
+            {
+              "label": "數據分析/BI工具應用",
+              "percent": 55
+            },
+            {
+              "label": "產業對應度(自動控制/工業自動化)",
+              "percent": 40
+            },
+            {
+              "label": "儲備幹部定位契合度",
+              "percent": 45
+            },
+            {
+              "label": "薪資/職涯階段匹配",
+              "percent": 35
+            }
+          ],
+          "requirements": [
+            "供應鏈/庫存管理知識或經驗",
+            "需求預測與供需規劃",
+            "跨部門協調(營業/採購/生產/物流)",
+            "ERP/BI工具應用",
+            "KPI管理與改善提案能力",
+            "團隊管理/接班培育潛力"
+          ],
+          "resume_coverage": [
+            {
+              "text": "未提及供應鏈/庫存管理實務經驗",
+              "status": "missing"
+            },
+            {
+              "text": "未提及需求預測相關經驗",
+              "status": "missing"
+            },
+            {
+              "text": "跨部門協調(主管/利害關係人/技術團隊窗口)經驗豐富",
+              "status": "covered"
+            },
+            {
+              "text": "有SQL/Power BI/Excel VBA工具能力,但非ERP系統操作經驗",
+              "status": "partial"
+            },
+            {
+              "text": "有KPI對齊(OKR)、專案績效報告經驗,但非供應鏈KPI",
+              "status": "partial"
+            },
+            {
+              "text": "有新人培訓、教材製作經驗,可對應團隊培育面向",
+              "status": "partial"
+            }
+          ],
+          "bullet_rewrites": [
+            {
+              "before": "以看板方法追蹤並行專案的關鍵路徑與風險,搭配部門 OKR 對齊優先級,提前調整排程確保如期交付",
+              "after": "以看板方法管理多項並行專案的關鍵路徑與風險,對齊部門KPI/OKR排定優先序,提前預警並調整排程確保如期交付,展現流程管理與風險應變能力"
+            },
+            {
+              "before": "規劃並主持 5 場跨部門新產品培訓(累計 200+ 名參與者),自製教材協助客戶與合作夥伴快速上手",
+              "after": "規劃並主持5場跨部門教育訓練,自製教材服務逾200名參與者,展現團隊培育與知識轉移能力,可遷移至部門人才培育與接班梯隊建置"
+            },
+            {
+              "before": "以 SQL(MS SQL/PostgreSQL)跨資料庫檢索底層數據,搭配 Power BI 製作視覺化報表",
+              "after": "運用SQL跨資料庫查詢與Power BI視覺化報表,建立數據追蹤與管理報表機制,可延伸應用於供應鏈KPI監控與改善提案"
+            }
+          ],
+          "gaps": [
+            {
+              "title": "Gap1: 供應鏈/庫存管理實務經驗空白",
+              "detail": "建議面談中誠實說明,強調數據分析與流程優化能力可快速轉移到供應鏈KPI追蹤"
+            },
+            {
+              "title": "Gap2: 需求預測/安全庫存等專業知識未涉及",
+              "detail": "建議面談前自學基礎供應鏈管理概念(如安全庫存、需求預測邏輯)"
+            },
+            {
+              "title": "Gap3: ERP系統操作經驗缺乏",
+              "detail": "可在面談中以3個月建立品牌知識庫的實績說明學習速度快"
+            },
+            {
+              "title": "Gap4: 薪資與職涯階段落差",
+              "detail": "40000起薪與候選人1-2年PM經驗、期望待遇面議可能不匹配,儲備幹部定位偏新鮮人,建議先確認實際起薪區間與晉升時程再決定是否投遞"
+            }
+          ],
+          "company_intro": "台灣東方馬達推測為日商集團旗下馬達製造廠商,深耕工業自動化與精密馬達領域,產品應用於自動化設備等,在台灣自動控制產業有一定市場地位,企業文化偏日商體系,制度與福利相對完整穩定。",
+          "relative_comparison": "此職缺的跨部門協調與數據分析技能可部分對應,但候選人完全沒有供應鏈/庫存管理的直接經驗,且此職位定位為儲備幹部(起薪40000),與候選人已有1-2年PM資歷、期望待遇面議的職涯階段不完全匹配,分數落在中下段,略高於ASML(因無強制學歷科系門檻與5年年資限制),但明顯低於Renesas與股市爆料同學會這類職能更直接對應的職缺。",
+          "key_advice": "若優先考量半導體/電子供應鏈的產業轉職路徑可投遞,但務必先確認實際起薪與晉升時程是否符合期待,避免因儲備幹部定位而在薪資與職級上倒退。"
+        }
+      },
+      {
+        "jobNo": "li_4455273109",
+        "jobName": "Lead, Regional Management Office - Taiwan Based",
+        "custName": "Agoda",
+        "salary": "面議",
+        "location": "Taipei, Taipei City, Taiwan",
+        "industry": "LinkedIn",
+        "url": "https://tw.linkedin.com/jobs/view/lead-regional-management-office-taiwan-based-at-agoda-4455273109",
+        "ai_score": 3,
+        "ai_reason": "Lead职称资深定位超过1-2年经验",
+        "is_reference": true,
+        "diagnosis": {
+          "jobNo": "li_4455273109",
+          "overall_score": 57,
+          "overall_summary": "端到端專案管理、跨部門協調與高層簡報等核心職能高度吻合,但5年以上經驗門檻與英文口語能力是明顯落差,候選人資歷密度雖高但年資仍偏淺。",
+          "dimensions": [
+            {
+              "label": "PMO/端到端專案管理經驗",
+              "percent": 70
+            },
+            {
+              "label": "年資門檻(5年以上)",
+              "percent": 30
+            },
+            {
+              "label": "跨部門/高層溝通與簡報能力",
+              "percent": 85
+            },
+            {
+              "label": "英文工作能力",
+              "percent": 55
+            },
+            {
+              "label": "資料分析與儀表板建置",
+              "percent": 65
+            },
+            {
+              "label": "產業/公司規模對應度(跨國OTA)",
+              "percent": 45
+            }
+          ],
+          "requirements": [
+            "5年以上PMO/專案管理/營運/策略經驗",
+            "端到端專案管理(框架→規劃→治理→執行→回顧)",
+            "KPI設定與追蹤",
+            "商業案例撰寫、爭取高層支持",
+            "Excel資料分析與儀表板自動化",
+            "高階簡報製作與呈現",
+            "流利英文溝通(跨國團隊)"
+          ],
+          "resume_coverage": [
+            {
+              "text": "僅1-2年經驗,遠低於5年門檻",
+              "status": "missing"
+            },
+            {
+              "text": "有5+項產品0到1完整流程主導經驗,但非嚴格PMO職稱下的program治理",
+              "status": "partial"
+            },
+            {
+              "text": "OKR優先級對齊、關鍵路徑與風險追蹤經驗",
+              "status": "covered"
+            },
+            {
+              "text": "有專案績效報告供高層決策,但未明確提及爭取高層buy-in的商業案例撰寫",
+              "status": "partial"
+            },
+            {
+              "text": "Excel/SQL/Power BI皆具備,含自動化排程開發經驗",
+              "status": "covered"
+            },
+            {
+              "text": "產出簡報供CEO/高層決策",
+              "status": "covered"
+            },
+            {
+              "text": "每日英文書面溝通,但口說會議不主動發言",
+              "status": "partial"
+            }
+          ],
+          "bullet_rewrites": [
+            {
+              "before": "主導 5+ 項規格產品從需求訪談、規格定義到上線驗收之 0 到 1 完整流程;撰寫 PRD 明確定義功能說明,作為跨部門溝通與開發執行依據",
+              "after": "端到端主導5+項產品專案,涵蓋需求訪談、規格定義、跨部門協調至上線驗收,並撰寫PRD做為開發執行依據,體現從框架界定到落地執行的完整掌握"
+            },
+            {
+              "before": "產出專案績效報告與簡報(進度追蹤、成本檢討、策略建議),直接供高層決策依據",
+              "after": "定期產出專案績效報告與高層簡報,涵蓋進度追蹤、成本檢討與策略建議,直接支援CEO決策,展現向高階主管溝通並推動決策的能力"
+            },
+            {
+              "before": "以看板方法追蹤並行專案的關鍵路徑與風險,搭配部門 OKR 對齊優先級,提前調整排程確保如期交付",
+              "after": "以看板方法同步管理多項並行專案,追蹤關鍵路徑與風險並對齊OKR優先序,主動預警調整排程確保如期交付,呼應PMO角色所需的專案治理紀律"
+            }
+          ],
+          "gaps": [
+            {
+              "title": "Gap1: 年資落差(5年門檻vs 1-2年)",
+              "detail": "最大硬傷;建議求職信強調專案複雜度與成果密度(5+項0到1、5個月架構改造)彌補年資不足的疑慮,但成功率仍受限"
+            },
+            {
+              "title": "Gap2: 英文口語表達待加強",
+              "detail": "職缺強調excellent communication in English,履歷顯示口說會議不主動發言;建議面談前加強英文口語準備"
+            },
+            {
+              "title": "Gap3: 缺乏正式Program/Project Management方法論認證",
+              "detail": "可考慮考取相關證照(如PMP)強化說服力"
+            },
+            {
+              "title": "Gap4: 商業案例撰寫/爭取高層buy-in經驗未明確呈現",
+              "detail": "建議面談時舉例說明如何說服利害關係人採納建議方案"
+            }
+          ],
+          "company_intro": "Agoda是Booking Holdings集團旗下的線上旅遊訂房平台,總部位於新加坡,亞洲市場市占率高,以數據驅動與工程文化著稱,台北推測為其亞太營運據點之一,企業規模大、國際化程度高,對英文與跨部門協作要求嚴格。",
+          "relative_comparison": "此職缺在PM/PMO職能面向與候選人資歷高度貼合(端到端專案管理、跨部門溝通、高層簡報、資料分析),職能匹配度是5筆中最高的一筆,但5年以上經驗的硬性門檻與候選人現有1-2年資歷落差明顯,加上英文口語要求較高,拖累整體分數略低於Renesas;與台灣東方馬達相比,此職缺職能匹配遠優,但年資門檻更嚴苛。",
+          "key_advice": "建議在求職信中以專案複雜度與成果密度而非年資長短作為主打論述,並提前準備英文口語簡報,因為此職位的高層溝通與英文能力會是面談的重點考核項目。"
+        }
+      },
+      {
+        "jobNo": "li_4377127779",
+        "jobName": "Staff Business Planning data Analyst",
+        "custName": "Renesas Electronics",
+        "salary": "面議",
+        "location": "Taipei, Taipei City, Taiwan",
+        "industry": "LinkedIn",
+        "url": "https://tw.linkedin.com/jobs/view/staff-business-planning-data-analyst-at-renesas-electronics-4377127779",
+        "ai_score": 3,
+        "ai_reason": "Staff职称资深超过1-2年;行业优秀但职级悬殊",
+        "is_reference": true,
+        "diagnosis": {
+          "jobNo": "li_4377127779",
+          "overall_score": 74,
+          "overall_summary": "AI應用、dashboard建置與跨國溝通等核心職能與候選人金融科技PM經驗高度重疊,且半導體是候選人首選產業,主要落差在於3年業務規劃專職年資與CRM系統經驗的缺乏。",
+          "dimensions": [
+            {
+              "label": "半導體產業對應度",
+              "percent": 70
+            },
+            {
+              "label": "資料分析/AI應用能力",
+              "percent": 80
+            },
+            {
+              "label": "Business Planning/Sales Operations經驗",
+              "percent": 40
+            },
+            {
+              "label": "Dashboard/報表建置能力",
+              "percent": 80
+            },
+            {
+              "label": "年資門檻(3年以上)",
+              "percent": 55
+            },
+            {
+              "label": "跨部門/跨國溝通",
+              "percent": 75
+            }
+          ],
+          "requirements": [
+            "EE/Engineering Management或相關領域學位",
+            "3年以上sales/marketing/business planning經驗",
+            "CRM數據分析能力",
+            "AI concepts理解與應用",
+            "Dashboard/reporting工具建置與維護",
+            "跨部門/跨國溝通與利害關係人管理",
+            "數據驅動洞察與策略建議"
+          ],
+          "resume_coverage": [
+            {
+              "text": "經濟系非EE,但屬商業分析/管理相關領域可主張",
+              "status": "partial"
+            },
+            {
+              "text": "1-2年經驗,略低於3年門檻,但有等同的產品/業務規劃職責",
+              "status": "partial"
+            },
+            {
+              "text": "未提及CRM系統操作經驗",
+              "status": "missing"
+            },
+            {
+              "text": "生成式AI結合Python流程自動化開發實績",
+              "status": "covered"
+            },
+            {
+              "text": "Power BI視覺化報表、自動化排程開發經驗",
+              "status": "covered"
+            },
+            {
+              "text": "跨國品牌客戶(APAC/歐美)與技術團隊需求窗口",
+              "status": "covered"
+            },
+            {
+              "text": "競品分析、商業模式轉型評估供CEO決策",
+              "status": "covered"
+            }
+          ],
+          "bullet_rewrites": [
+            {
+              "before": "以 Python 結合生成式 AI 開發資訊同步自動化排程(含信件自動擷取與轉換計算),將原需每週 1-2 小時的跨部門作業轉為自動執行,推廣至全品牌線後每年累計節省近 100 小時",
+              "after": "運用Python結合生成式AI開發自動化排程,將原本每週1-2小時的人工資訊整合作業轉為自動執行,並推廣至全品牌線,每年節省近100小時,展現AI應用於業務流程優化的實務能力"
+            },
+            {
+              "before": "以 SQL...搭配 Power BI 製作視覺化報表,產出競品分析(東南亞/歐美共 4 份)與商業模式轉型評估供 CEO 決策",
+              "after": "以SQL跨資料庫檢索數據,建置Power BI視覺化dashboard,產出4份東南亞/歐美市場競品分析與商業模式轉型評估,做為CEO策略決策依據"
+            },
+            {
+              "before": "擔任海外客戶決策層、各部門利害關係人與技術團隊的單一需求窗口,將模糊需求轉化為可執行規格",
+              "after": "擔任跨國客戶決策層與內部技術團隊的單一需求窗口,將模糊業務需求轉化為可執行方案,展現跨部門利害關係人管理與需求釐清能力"
+            }
+          ],
+          "gaps": [
+            {
+              "title": "Gap1: 業務規劃/sales operations專職年資略顯不足",
+              "detail": "建議在求職信強調PM角色中涵蓋的業務決策支援(商業模式評估、競品分析)等同等質量的產出"
+            },
+            {
+              "title": "Gap2: CRM系統(如Salesforce)操作經驗空白",
+              "detail": "建議面談中說明SQL/資料庫查詢的可遷移性,並可自學CRM基礎操作"
+            },
+            {
+              "title": "Gap3: 學歷科系非EE/工程管理",
+              "detail": "經濟系背景需在履歷/求職信中主動連結量化分析與商業洞察能力,弱化科系落差疑慮"
+            },
+            {
+              "title": "Gap4: 半導體產業知識缺乏",
+              "detail": "建議面談前惡補半導體業務模式與公司產品線基礎知識,呼應3個月建立品牌知識庫的快速上手實績"
+            }
+          ],
+          "company_intro": "Renesas Electronics(瑞薩電子)是日本大型半導體公司,專注於車用、工業、基礎設施與物聯網領域的嵌入式處理器與微控制器,是全球車用半導體市場的重要供應商之一,推測在台灣設有業務與技術支援據點,企業文化推測偏日系與國際化混合。",
+          "relative_comparison": "此職缺在5筆職缺中整體契合度最高,原因是半導體是候選人第一目標產業,且職缺對AI應用理解、dashboard建置、跨國溝通等核心需求與候選人金融科技PM經驗高度重疊;3年經驗門檻雖略高於候選人現有1-2年,但落差遠小於ASML的5年與Agoda的5年,學歷科系限制也相對有彈性,整體是所有職缺中投遞ROI最高的一筆。",
+          "key_advice": "求職信與履歷開頭應主打AI+資料分析驅動業務決策的實績(自動化年省近100小時、4份競品分析報告),弱化半導體產業經驗的空白,並強調快速建立產業知識的能力來對應學歷科系與年資的落差。"
+        }
+      },
+      {
         "jobNo": "li_4383489212",
         "jobName": "Product Manager - Industrial Network Security Product",
         "custName": "Moxa",
