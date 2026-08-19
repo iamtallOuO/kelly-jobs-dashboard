@@ -5,6 +5,535 @@
     "report_url": "reports/diagnosis_2026-08-19.html",
     "jobs": [
       {
+        "jobNo": "li_4454446291",
+        "jobName": "Technical Product Manager",
+        "custName": "美好證券 Good Finance",
+        "salary": "面議",
+        "location": "Zhongshan District, Taipei City, Taiwan",
+        "industry": "LinkedIn",
+        "url": "https://tw.linkedin.com/jobs/view/technical-product-manager-at-%E7%BE%8E%E5%A5%BD%E8%AD%89%E5%88%B8-good-finance-4454446291",
+        "ai_score": 5,
+        "ai_reason": "TPM 職能符合技術背景，惟金融非目標優先產業。",
+        "is_reference": false,
+        "diagnosis": {
+          "jobNo": "li_4454446291",
+          "overall_score": 72,
+          "overall_summary": "PM核心硬實力（PRD撰寫、跨部門單一需求窗口、數據驅動決策）與JD高度吻合，是本次履歷技能對應度最高的職缺之一，但產業仍屬金融服務業，與孫慈想跳脫金融業的方向相反，且缺乏UX協作與法遵合規協調的直接經驗。",
+          "dimensions": [
+            {
+              "label": "PRD/規格文件撰寫",
+              "percent": 85
+            },
+            {
+              "label": "跨部門協調(設計/工程/數據/法遵)",
+              "percent": 75
+            },
+            {
+              "label": "數據驅動與AI應用於產品優化",
+              "percent": 60
+            },
+            {
+              "label": "金融監理/合規協調經驗",
+              "percent": 35
+            },
+            {
+              "label": "產品策略與競品分析",
+              "percent": 70
+            }
+          ],
+          "requirements": [
+            "PRD/規格文件撰寫",
+            "跨部門協調(設計/工程/數據/法遵)",
+            "產品策略與市場分析",
+            "Data-driven決策與AI/ML應用",
+            "金融監理合規意識",
+            "使用者體驗(UX)協作"
+          ],
+          "resume_coverage": [
+            {
+              "text": "PRD撰寫與規格定義(5+項產品0到1)",
+              "status": "covered"
+            },
+            {
+              "text": "跨部門單一需求窗口經驗",
+              "status": "covered"
+            },
+            {
+              "text": "競品分析與商業模式評估(4份)",
+              "status": "covered"
+            },
+            {
+              "text": "生成式AI流程自動化(非ML建模)",
+              "status": "partial"
+            },
+            {
+              "text": "金融法遵/合規部門協調",
+              "status": "missing"
+            },
+            {
+              "text": "UX/wireframe協作經驗",
+              "status": "missing"
+            }
+          ],
+          "bullet_rewrites": [
+            {
+              "before": "主導 5+ 項規格產品從需求訪談、規格定義到上線驗收之 0 到 1 完整流程；撰寫 PRD 明確定義功能說明，作為跨部門溝通與開發執行依據",
+              "after": "主導5項以上金融產品從需求訪談、規格定義至上線驗收之完整生命週期，撰寫PRD作為設計、工程與業務部門共同執行依據，確保產品願景轉化為可落地規格"
+            },
+            {
+              "before": "擔任海外客戶決策層、各部門利害關係人與技術團隊的單一需求窗口，將模糊需求轉化為可執行規格",
+              "after": "擔任業務、技術與海外客戶決策層之間的單一協調窗口，將分散且模糊的需求收斂為結構化規格，支撐跨部門一致執行"
+            },
+            {
+              "before": "以 SQL(MS SQL/PostgreSQL)跨資料庫檢索底層數據，搭配 Power BI 製作視覺化報表，產出競品分析(東南亞/歐美共 4 份)與商業模式轉型評估供 CEO 決策",
+              "after": "運用SQL跨資料庫查詢與Power BI視覺化，產出跨市場競品分析與商業模式評估報告，作為高層產品策略決策依據"
+            },
+            {
+              "before": "以 Python 結合生成式 AI 開發資訊同步自動化排程",
+              "after": "以Python結合生成式AI打造資訊處理自動化流程，展現將AI導入產品/營運場景的實作能力"
+            }
+          ],
+          "gaps": [
+            {
+              "title": "Gap1：法遵/合規部門協調經驗未直接呈現",
+              "detail": "JD強調需與compliance/risk部門協作，履歷中PwC查核經驗可作為間接佐證，建議面試時主動連結說明"
+            },
+            {
+              "title": "Gap2：缺乏UX/wireframe設計協作實績",
+              "detail": "履歷未提及與設計師共製wireframe或使用者流程，建議準備曾參與功能規劃時如何與UI/UX互動的具體說法"
+            },
+            {
+              "title": "Gap3：AI/ML應用層級偏流程自動化而非產品端模型",
+              "detail": "JD提到用AI/ML優化轉換漏斗、個人化體驗，履歷的生成式AI經驗屬於作業自動化，建議誠實說明並展現學習意願"
+            },
+            {
+              "title": "Gap4：證券業務知識待建立",
+              "detail": "美好證券屬證券商，與孫慈原本金融科技公司業務模式不同，需準備如何快速上手證券產品知識的說法"
+            }
+          ],
+          "company_intro": "美好證券(Good Finance)推測為台灣新興的金融科技券商，主打以科技驅動的證券服務與較貼近年輕族群的使用體驗，強調創新解決方案與普惠金融，應屬中小型或成長階段的新創型金融機構，確切規模與成立時間不確定。",
+          "relative_comparison": "本職缺在PM技能面（PRD、跨部門協調、數據分析）與孫慈履歷的重疊度是五筆職缺中數一數二高的，但產業方向仍落在孫慈想脫離的金融服務業，因此總分雖不低，仍略遜於產業方向更契合的Moxa職缺。",
+          "key_advice": "投遞時應誠實面對「同屬金融科技但非目前所在金融服務業」的定位微妙處，主打PM硬實力的可遷移性，並針對合規協調與UX協作提前準備具體案例。"
+        }
+      },
+      {
+        "jobNo": "15323094",
+        "jobName": "MIS Manager",
+        "custName": "鼎翰科技股份有限公司",
+        "salary": "面議",
+        "location": "新北市新店區",
+        "industry": "電腦及其週邊設備製造業",
+        "url": "https://www.104.com.tw/job/94fdi",
+        "ai_score": 3,
+        "ai_reason": "主管職需帶團隊，資歷過高。職能為 IT 管理，不是 PM。",
+        "is_reference": false,
+        "diagnosis": {
+          "jobNo": "15323094",
+          "overall_score": 38,
+          "overall_summary": "跨部門跨國溝通能力可對應，但職缺核心要求（IT系統架構規劃、ISO 27001資安稽核領導、直接管理IT人員）與孫慈現有的產品/專案管理背景落差大，是本次落差最明顯的職缺之一。",
+          "dimensions": [
+            {
+              "label": "IT系統架構規劃(ERP/SCM/MES)",
+              "percent": 15
+            },
+            {
+              "label": "ISO 27001資安稽核領導",
+              "percent": 30
+            },
+            {
+              "label": "部門人員管理與職涯發展",
+              "percent": 20
+            },
+            {
+              "label": "跨國跨部門溝通協調",
+              "percent": 75
+            },
+            {
+              "label": "供應商評選與成本審查",
+              "percent": 25
+            }
+          ],
+          "requirements": [
+            "IT系統架構規劃(ERP/SCM/MES/E-flow)",
+            "ISO 27001資安稽核領導",
+            "IT部門人員管理與職涯發展",
+            "跨國跨部門溝通",
+            "供應商評選與成本審查",
+            "新技術評估導入"
+          ],
+          "resume_coverage": [
+            {
+              "text": "IT系統/ERP/SCM/MES規劃經驗",
+              "status": "missing"
+            },
+            {
+              "text": "ISO27001稽核(僅PwC財務查核經驗可類比)",
+              "status": "partial"
+            },
+            {
+              "text": "直接管理IT人員或下屬",
+              "status": "missing"
+            },
+            {
+              "text": "跨國分公司與跨部門溝通",
+              "status": "covered"
+            },
+            {
+              "text": "長期供應商評選與議價",
+              "status": "missing"
+            },
+            {
+              "text": "新技術評估導入(生成式AI自動化)",
+              "status": "partial"
+            }
+          ],
+          "bullet_rewrites": [
+            {
+              "before": "每日以英文書面對接跨部門或海外人員需求",
+              "after": "每日以英文書面與海外分公司及跨部門人員溝通協調，確保訊息一致傳達與執行"
+            },
+            {
+              "before": "以 Python 結合生成式 AI 開發資訊同步自動化排程...推廣至全品牌線後每年累計節省近 100 小時",
+              "after": "評估並導入生成式AI結合Python之自動化解決方案，推廣至全產品線後大幅降低跨部門人工作業時數，展現對新技術導入公司營運的實作經驗"
+            },
+            {
+              "before": "跨部門溝通協調：與客戶財務/會計人員聯繫催辦補充文件，確保查核進度如期完成",
+              "after": "協助執行合規查核流程，與客戶財務會計人員協調文件蒐集與時程控管，確保稽核作業如期完成"
+            }
+          ],
+          "gaps": [
+            {
+              "title": "Gap1：缺乏IT系統架構與ERP/SCM/MES實務經驗",
+              "detail": "此為職缺最核心硬技能缺口，若非有心轉往MIS管理領域，建議列為低優先投遞對象"
+            },
+            {
+              "title": "Gap2：無直接下屬管理經驗",
+              "detail": "履歷僅有橫向協調與培訓主持經驗，非正式管理職，面試需準備leadership potential的具體說法"
+            },
+            {
+              "title": "Gap3：無IT資安/ISO 27001正式經驗或證照",
+              "detail": "PwC經驗屬財務查核非IT資安稽核，建議誠實說明可遷移的稽核邏輯與流程紀律"
+            },
+            {
+              "title": "Gap4：供應商評選與長期議價經驗缺乏",
+              "detail": "履歷未提及vendor management相關實績，屬於明顯空白"
+            }
+          ],
+          "company_intro": "鼎翰科技股份有限公司推測為電腦及周邊設備製造業之中小型企業，可能專注於特定硬體產品線的研發與製造，實際市場地位、規模與上市狀態不確定，需自行查證。",
+          "relative_comparison": "此職缺雖產業屬電子製造業，方向上符合孫慈的產業偏好，但職能本質是IT/MIS管理職而非PM/BA，且需要IT系統與部屬管理背景，落差是五筆職缺中僅次於海爾空調職缺的第二大，預期投遞勝算低於Moxa與Good Finance。",
+          "key_advice": "除非孫慈願意大幅轉職至IT管理領域，否則建議將此職缺列為低優先，若仍想嘗試，需在履歷與面試中補強IT系統與團隊管理的轉職故事。"
+        }
+      },
+      {
+        "jobNo": "li_4446101904",
+        "jobName": "Sr.Product Manager- Backbone Switch 產品 (ID: 26006K)",
+        "custName": "Moxa",
+        "salary": "面議",
+        "location": "Taipei, Taipei City, Taiwan",
+        "industry": "LinkedIn",
+        "url": "https://tw.linkedin.com/jobs/view/sr-product-manager-backbone-switch-%E7%94%A2%E5%93%81-id-26006k-at-moxa-4446101904",
+        "ai_score": 2,
+        "ai_reason": "資深職位，明確超過 1~2 年工作經驗門檻。",
+        "is_reference": false,
+        "diagnosis": {
+          "jobNo": "li_4446101904",
+          "overall_score": 78,
+          "overall_summary": "產業方向（電子/工業連網）與PM核心職能（0到1產品管理、跨部門協調、需求轉規格）雙重吻合，是本次評比中最貼近孫慈求職方向的職缺，唯一明顯缺口是工業網路產業知識需要從零建立。",
+          "dimensions": [
+            {
+              "label": "產品生命週期管理(0到1/上市/EOL)",
+              "percent": 80
+            },
+            {
+              "label": "跨部門/跨團隊協調",
+              "percent": 80
+            },
+            {
+              "label": "需求轉化為可執行規格",
+              "percent": 80
+            },
+            {
+              "label": "工業乙太網路/連接產業知識",
+              "percent": 15
+            },
+            {
+              "label": "市場分析與產品定位",
+              "percent": 65
+            },
+            {
+              "label": "英文商務溝通(外商環境)",
+              "percent": 55
+            }
+          ],
+          "requirements": [
+            "產品生命週期管理經驗",
+            "跨部門協調(R&D/業務/行銷)",
+            "需求轉化為規格/PRD能力",
+            "工業乙太網路/連接技術產業知識",
+            "市場分析與競品研究",
+            "英文商務溝通能力"
+          ],
+          "resume_coverage": [
+            {
+              "text": "5+項產品0到1完整生命週期經驗",
+              "status": "covered"
+            },
+            {
+              "text": "單一需求窗口跨部門協調",
+              "status": "covered"
+            },
+            {
+              "text": "PRD/規格撰寫能力",
+              "status": "covered"
+            },
+            {
+              "text": "工業網通/連接產業知識",
+              "status": "missing"
+            },
+            {
+              "text": "競品分析與市場評估(4份)",
+              "status": "covered"
+            },
+            {
+              "text": "英文書面強、口說待加強",
+              "status": "partial"
+            }
+          ],
+          "bullet_rewrites": [
+            {
+              "before": "主導 5+ 項規格產品從需求訪談、規格定義到上線驗收之 0 到 1 完整流程；撰寫 PRD 明確定義功能說明，作為跨部門溝通與開發執行依據",
+              "after": "主導5項以上產品從概念發想、需求訪談、規格定義至上線驗收之完整生命週期，撰寫PRD將客戶需求與市場訊號轉化為可執行的產品規劃"
+            },
+            {
+              "before": "接手單一最大品牌產品線(橫跨 APAC 與 EU/UK 兩市場)，在前任離職、無品牌或產業文件情況下 3 個月建立完整知識庫",
+              "after": "在無前手交接文件的情況下，3個月內獨立建立橫跨APAC與歐美市場的品牌產業知識庫，展現快速掌握陌生領域的學習能力"
+            },
+            {
+              "before": "以 SQL(MS SQL/PostgreSQL)跨資料庫檢索底層數據，搭配 Power BI 製作視覺化報表，產出競品分析(東南亞/歐美共 4 份)與商業模式轉型評估供 CEO 決策",
+              "after": "運用SQL與Power BI進行跨市場競品分析與商業模式研究，產出供高層決策參考的市場定位建議"
+            },
+            {
+              "before": "以看板方法追蹤並行專案的關鍵路徑與風險，搭配部門 OKR 對齊優先級，提前調整排程確保如期交付",
+              "after": "以看板方法管理多項並行產品專案，追蹤關鍵路徑與風險並對齊團隊目標優先級，確保多線專案如期交付"
+            }
+          ],
+          "gaps": [
+            {
+              "title": "Gap1：缺乏工業網路/自動化產業知識",
+              "detail": "此為全新領域，建議投遞前研讀Moxa產品線與工業乙太網路基礎知識，準備連結過去快速建立品牌知識庫的實績"
+            },
+            {
+              "title": "Gap2：英文口說主動發言待加強",
+              "detail": "外商團隊會議頻繁，履歷顯示口說會議不主動發言，建議提前加強英文口語表達練習"
+            },
+            {
+              "title": "Gap3：缺乏硬體/嵌入式產品管理經驗",
+              "detail": "過去產品偏軟體流程與金融服務類，需準備如何將流程與規格管理能力遷移至硬體產品的說法"
+            },
+            {
+              "title": "Gap4：Sr.職稱與年資落差待確認",
+              "detail": "JD描述偏向「逐步培養成為獨立產品負責人」，實際年資要求與孫慈1-2年經驗是否相符需在投遞前確認"
+            }
+          ],
+          "company_intro": "Moxa為台灣知名的工業網通設備製造商，專注工業乙太網路交換器、無線通訊與邊緣運算等產品，應用於自動化、能源、運輸等領域，推測為台灣工業連網領域中具規模與國際市場地位的中堅企業。",
+          "relative_comparison": "相較Good Finance在PM技能面同樣高分但產業屬金融業，此職缺在產業方向上更貼近孫慈設定的半導體/電信/電子優先序，且PM核心職能同樣高度吻合，是本次橫向比較中總分最高的職缺。",
+          "key_advice": "建議在履歷與求職信中強調「快速建立陌生產業知識」的實績，並具體連結到願意投入學習工業乙太網路/連接技術的動機，弭平產業知識缺口的疑慮。"
+        }
+      },
+      {
+        "jobNo": "li_4445916635",
+        "jobName": "Sr. Product Manager",
+        "custName": "Supermicro",
+        "salary": "面議",
+        "location": "New Taipei City, New Taipei City, Taiwan",
+        "industry": "LinkedIn",
+        "url": "https://tw.linkedin.com/jobs/view/sr-product-manager-at-supermicro-4445916635",
+        "ai_score": 2,
+        "ai_reason": "資深職位，明確超過 1~2 年工作經驗門檻。",
+        "is_reference": true,
+        "diagnosis": {
+          "jobNo": "li_4445916635",
+          "overall_score": 52,
+          "overall_summary": "JD職責描述幾乎空白導致比對基礎薄弱，僅能依Sr. Product Manager職稱與公司產業（伺服器/資料中心）做保守推估；孫慈的跨部門協調與數據分析能力理論上可遷移，但伺服器硬體產業知識是全新領域，且職缺說明不完整增加投遞風險。",
+          "dimensions": [
+            {
+              "label": "產品生命週期管理(推測)",
+              "percent": 55
+            },
+            {
+              "label": "跨部門協調(推測)",
+              "percent": 65
+            },
+            {
+              "label": "伺服器/資料中心硬體產業知識",
+              "percent": 10
+            },
+            {
+              "label": "數據分析與決策支持",
+              "percent": 65
+            },
+            {
+              "label": "英文商務溝通(外商環境)",
+              "percent": 55
+            }
+          ],
+          "requirements": [
+            "產品生命週期管理(推測)",
+            "跨部門協調(推測)",
+            "伺服器/資料中心硬體產業知識(推測)",
+            "市場與競品分析(推測)",
+            "英文商務溝通(推測)"
+          ],
+          "resume_coverage": [
+            {
+              "text": "產品0到1生命週期管理經驗(產業不同)",
+              "status": "partial"
+            },
+            {
+              "text": "跨部門跨國協調經驗",
+              "status": "covered"
+            },
+            {
+              "text": "伺服器/資料中心硬體知識",
+              "status": "missing"
+            },
+            {
+              "text": "競品分析與市場評估",
+              "status": "covered"
+            },
+            {
+              "text": "英文書面強、口說待加強",
+              "status": "partial"
+            }
+          ],
+          "bullet_rewrites": [
+            {
+              "before": "主導 5+ 項規格產品從需求訪談、規格定義到上線驗收之 0 到 1 完整流程",
+              "after": "主導多項產品從需求訪談、規格定義至上線驗收之完整生命週期管理，具備端到端產品管理實作經驗"
+            },
+            {
+              "before": "以 SQL(MS SQL/PostgreSQL)跨資料庫檢索底層數據，搭配 Power BI 製作視覺化報表，產出競品分析",
+              "after": "運用SQL與Power BI進行數據檢索與視覺化分析，支援市場與競品研究，展現數據驅動的決策能力"
+            },
+            {
+              "before": "擔任海外客戶決策層、各部門利害關係人與技術團隊的單一需求窗口，將模糊需求轉化為可執行規格",
+              "after": "擔任跨國客戶、內部利害關係人與技術團隊之間的溝通窗口，將複雜需求收斂為明確可執行的規劃"
+            }
+          ],
+          "gaps": [
+            {
+              "title": "Gap1：JD職責描述不完整，實際要求不明",
+              "detail": "目前列出的職責幾乎空白，建議投遞前先透過官網、LinkedIn或獵頭管道確認實際工作內容再決定投遞策略"
+            },
+            {
+              "title": "Gap2：缺乏伺服器/資料中心硬體產業知識",
+              "detail": "此為全新領域，需準備如何將過去快速建立陌生產業知識的能力連結到伺服器/AI硬體領域"
+            },
+            {
+              "title": "Gap3：無硬體產品管理經驗",
+              "detail": "過去經歷偏金融軟體/流程類產品，建議面試前研究Supermicro產品線與客群"
+            },
+            {
+              "title": "Gap4：英文口說待加強",
+              "detail": "外商環境會議頻繁，建議加強口語表達準備"
+            }
+          ],
+          "company_intro": "Supermicro(美超微)為總部位於美國的伺服器、儲存與網路解決方案廠商，聚焦資料中心、雲端運算與AI/HPC相關市場，近年在AI伺服器領域成長快速，推測在台灣設有研發或製造相關據點。",
+          "relative_comparison": "由於此職缺JD內容幾乎未提供具體職責，本次評分主要基於職稱與公司產業背景的一般推測，實際匹配度存在較大不確定性；相較Moxa與Good Finance有完整JD可比對，此職缺分數保守評為中等，建議先取得更完整資訊再排定投遞優先序。",
+          "key_advice": "投遞前建議先設法取得更完整的職缺說明（官網原始JD、獵頭或內部人脈），避免因資訊不足而準備方向錯誤。"
+        }
+      },
+      {
+        "jobNo": "14717893",
+        "jobName": "海爾空調-大台北地區銷售工程師（台北總公司）",
+        "custName": "Haier-海爾空調_宇暉科技股份有限公司",
+        "salary": "35,000 ~ 60,000",
+        "location": "新北市土城區",
+        "industry": "家用電器製造業",
+        "url": "https://www.104.com.tw/job/8rged",
+        "ai_score": 2,
+        "ai_reason": "銷售職能與 PM 目標職能完全不符。",
+        "is_reference": true,
+        "diagnosis": {
+          "jobNo": "14717893",
+          "overall_score": 12,
+          "overall_summary": "此職缺本質為家電業務銷售工程師，與孫慈的產品/專案管理定位及目標產業（半導體/電信/電子/軟體）完全不同軌，履歷中的PM/BA實績在此幾乎無法直接對應，是本次匹配度最低的職缺。",
+          "dimensions": [
+            {
+              "label": "職能相關性(業務銷售 vs PM/BA)",
+              "percent": 8
+            },
+            {
+              "label": "產業相關性(家用電器 vs 目標產業)",
+              "percent": 10
+            },
+            {
+              "label": "客戶溝通協調(可遷移軟實力)",
+              "percent": 45
+            },
+            {
+              "label": "業績目標導向經驗",
+              "percent": 5
+            }
+          ],
+          "requirements": [
+            "客戶拜訪開發(業務導向)",
+            "冷氣/空調產品銷售",
+            "業績目標達成",
+            "客戶關係維護"
+          ],
+          "resume_coverage": [
+            {
+              "text": "業務開發/客戶拜訪經驗",
+              "status": "missing"
+            },
+            {
+              "text": "產品銷售與業績實績",
+              "status": "missing"
+            },
+            {
+              "text": "業績目標壓力下的工作經驗",
+              "status": "missing"
+            },
+            {
+              "text": "對外客戶關係維護(非銷售性質)",
+              "status": "partial"
+            }
+          ],
+          "bullet_rewrites": [
+            {
+              "before": "擔任海外客戶決策層、各部門利害關係人與技術團隊的單一需求窗口，將模糊需求轉化為可執行規格",
+              "after": "長期擔任對外客戶與內部團隊之間的溝通窗口，具備理解客戶需求並轉化為具體解決方案的經驗"
+            },
+            {
+              "before": "每日以英文書面對接跨部門或海外人員需求",
+              "after": "具備每日以英文與跨國客戶及合作夥伴溝通協調的實務經驗"
+            },
+            {
+              "before": "規劃並主持 5 場跨部門新產品培訓(累計 200+ 名參與者)，自製教材協助客戶與合作夥伴快速上手",
+              "after": "規劃並主持多場產品說明與教育訓練活動，自製教材協助客戶與合作夥伴快速理解產品內容"
+            }
+          ],
+          "gaps": [
+            {
+              "title": "Gap1：完全無業務開發與業績目標實務經驗",
+              "detail": "此職缺核心是客戶開發與銷售達標，與孫慈PM/專案管理背景方向不符，建議直接排除或視為極低優先"
+            },
+            {
+              "title": "Gap2：產業(家用電器銷售通路)不符合目標產業序位",
+              "detail": "與半導體/電信/電子/軟體之目標產業偏好無關聯，也非孫慈熟悉領域"
+            },
+            {
+              "title": "Gap3：定位落差過大，投遞恐稀釋PM專業形象",
+              "detail": "若強行投遞需大幅改寫履歷為業務導向，反而會模糊孫慈的產品/專案管理專業定位"
+            }
+          ],
+          "company_intro": "海爾為中國大型家電集團，宇暉科技股份有限公司推測為其在台灣的空調產品代理或經銷體系之一，主要經營家用及商用空調銷售通路業務。",
+          "relative_comparison": "此職缺無論職能（業務銷售 vs PM/BA）或產業（家用電器 vs 半導體/電信/電子/軟體）均與孫慈的定位落差最大，是本次五筆職缺中分數最低者。",
+          "key_advice": "除非孫慈短期內考慮轉往業務銷售職能，否則不建議投遞此職缺，應優先聚焦Moxa、Good Finance等PM/產品職能機會。"
+        }
+      },
+      {
         "jobNo": "14549763",
         "jobName": "軟體專案管理師 Software Project Manager (PM)",
         "custName": "Eunodata_御諾資訊股份有限公司",
