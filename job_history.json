@@ -5,6 +5,596 @@
     "report_url": "reports/diagnosis_2026-08-20.html",
     "jobs": [
       {
+        "jobNo": "li_4455496986",
+        "jobName": "Business Analysis Program Manager",
+        "custName": "Gogoro",
+        "salary": "面議",
+        "location": "Taipei, Taipei City, Taiwan",
+        "industry": "LinkedIn",
+        "url": "https://tw.linkedin.com/jobs/view/business-analysis-program-manager-at-gogoro-4455496986",
+        "ai_score": 8,
+        "ai_reason": "Gogoro電子+PM/BA雙技能匹配,資歷級別適當",
+        "is_reference": false,
+        "diagnosis": {
+          "jobNo": "li_4455496986",
+          "jobName_note": "Gogoro Business Analysis Program Manager",
+          "overall_score": 55,
+          "overall_summary": "跨部門專案領導、BI視覺化與CEO級簡報經驗與職缺核心能力高度相關，但5年以上資歷門檻與英文口說流利度是明顯落差。",
+          "dimensions": [
+            {
+              "label": "年資與職級匹配度",
+              "percent": 30
+            },
+            {
+              "label": "財務建模與BI工具",
+              "percent": 55
+            },
+            {
+              "label": "跨部門專案領導",
+              "percent": 75
+            },
+            {
+              "label": "英文簡報與高階溝通",
+              "percent": 40
+            },
+            {
+              "label": "數據驅動策略分析",
+              "percent": 60
+            },
+            {
+              "label": "移動出行產業知識",
+              "percent": 20
+            }
+          ],
+          "requirements": [
+            "5+年業務策略/財務分析經驗",
+            "移動出行/機車產業經驗(加分)",
+            "財務建模能力",
+            "BI視覺化工具(Tableau/PowerBI)",
+            "AI/LLM應用經驗",
+            "跨部門專案管理實績",
+            "英文簡報流利度",
+            "抗壓與自我驅動"
+          ],
+          "resume_coverage": [
+            {
+              "text": "5年以上經驗(missing)",
+              "status": "missing"
+            },
+            {
+              "text": "移動出行產業(missing)",
+              "status": "missing"
+            },
+            {
+              "text": "財務建模(僅成本分析模型)",
+              "status": "partial"
+            },
+            {
+              "text": "Power BI視覺化報表(covered)",
+              "status": "covered"
+            },
+            {
+              "text": "Python+生成式AI自動化(covered)",
+              "status": "covered"
+            },
+            {
+              "text": "5+項0到1專案主導(covered)",
+              "status": "covered"
+            },
+            {
+              "text": "每日書面英文,口說較弱",
+              "status": "partial"
+            },
+            {
+              "text": "跨國品牌線接手韌性(間接佐證)",
+              "status": "partial"
+            }
+          ],
+          "bullet_rewrites": [
+            {
+              "before": "以 SQL(MS SQL/PostgreSQL)跨資料庫檢索底層數據，搭配 Power BI 製作視覺化報表，產出競品分析（東南亞/歐美共 4 份）與商業模式轉型評估供 CEO 決策",
+              "after": "運用SQL跨資料庫查詢與Power BI視覺化,產出東南亞/歐美市場共4份競品分析報告及商業模式轉型評估,做為CEO策略決策之關鍵依據"
+            },
+            {
+              "before": "接手單一最大品牌產品線(橫跨 APAC 與 EU/UK 兩市場)，在前任離職、無品牌或產業文件情況下 3 個月建立完整知識庫",
+              "after": "在無交接文件與產業知識基礎下,3個月內獨立建立橫跨APAC與歐美市場之最大品牌產品線完整知識庫,確保業務不中斷銜接"
+            },
+            {
+              "before": "以 Python 結合生成式 AI 開發資訊同步自動化排程,將原需每週 1-2 小時的跨部門作業轉為自動執行,推廣至全品牌線後每年累計節省近 100 小時",
+              "after": "以Python結合生成式AI建置跨部門資訊同步自動化流程,推廣至全品牌線後每年節省近100小時人力工時,展現以技術驅動營運效率的分析型思維"
+            },
+            {
+              "before": "產出專案績效報告與簡報(進度追蹤、成本檢討、策略建議)，直接供高層決策依據",
+              "after": "定期產出專案績效報告與策略簡報,涵蓋進度追蹤、成本檢討與策略建議,做為高層決策直接依據,累積與高階主管溝通經驗"
+            }
+          ],
+          "gaps": [
+            {
+              "title": "Gap 1:年資落差",
+              "detail": "職缺明確要求5年以上業務策略/財務分析/內部顧問經驗,候選人僅約1-2年全職經驗,建議求職信強調專案複雜度與獨立主導程度彌補年資,但仍可能被年資條件初篩排除。"
+            },
+            {
+              "title": "Gap 2:移動出行產業知識",
+              "detail": "缺乏機車/移動出行產業背景,建議投遞前研究Gogoro換電生態系與商業模式,面談時以3個月建立品牌知識庫的實績佐證學習速度。"
+            },
+            {
+              "title": "Gap 3:英文口說流利度",
+              "detail": "職缺要求professional fluency做簡報,履歷目前僅呈現書面英文;若進入面試,需加強英文口說簡報練習。"
+            },
+            {
+              "title": "Gap 4:財務建模深度",
+              "detail": "職缺著重financial modeling,履歷偏向成本分析與BI報表,較少展現情境模擬式財務模型,建議面談前準備補充案例。"
+            }
+          ],
+          "company_intro": "Gogoro是台灣電動機車與電池交換生態系統的指標新創/獨角獸,以Gogoro Network換電站聞名,產品線涵蓋智慧移動方案,並在東南亞市場有布局。這是知名度高、成長中的科技公司,推測其為新創性質,規模與制度成熟度應不如傳統半導體大廠。",
+          "relative_comparison": "這筆職缺分數低於富益昌PM職缺(技能吻合度最高),因為Gogoro明確要求5年以上經驗,候選人資歷落差最大;但高於浪LIVE與短影音職缺,因候選人的跨部門協調、BI/數據分析、CEO級簡報經驗仍與此職缺高度相關,主要缺口在於年資量級而非方向錯誤。",
+          "key_advice": "投遞時建議在求職信中直接點出雖僅1-2年全職經驗但已獨立主導5+項0到1專案並直接對CEO簡報,用複雜度說服HR年資門檻可以商榷,而非迴避年資落差。"
+        }
+      },
+      {
+        "jobNo": "15322204",
+        "jobName": "專案管理師",
+        "custName": "富益昌智能整合股份有限公司",
+        "salary": "36,000 ~ 55,000",
+        "location": "新北市新店區",
+        "industry": "電腦系統整合服務業",
+        "url": "https://www.104.com.tw/job/94eos",
+        "ai_score": 7,
+        "ai_reason": "系統整合PM技能吻合,但產業非目標清單",
+        "is_reference": false,
+        "diagnosis": {
+          "jobNo": "15322204",
+          "jobName_note": "富益昌智能整合 專案管理師",
+          "overall_score": 72,
+          "overall_summary": "PRD撰寫、需求訪談與上線驗收流程幾乎逐項對應職缺需求,是本次清單技能吻合度最高的職缺,但薪資水準與候選人已主導5+項0到1專案的資歷相比顯得保守。",
+          "dimensions": [
+            {
+              "label": "PRD/需求訪談與規格定義",
+              "percent": 85
+            },
+            {
+              "label": "跨部門/跨團隊協調",
+              "percent": 85
+            },
+            {
+              "label": "系統上線驗收管理",
+              "percent": 80
+            },
+            {
+              "label": "產業對口(智慧醫療)",
+              "percent": 30
+            },
+            {
+              "label": "專案文件與行政管理",
+              "percent": 60
+            },
+            {
+              "label": "職涯發展/薪資匹配度",
+              "percent": 45
+            }
+          ],
+          "requirements": [
+            "專案規劃執行與進度追蹤",
+            "客戶需求訪談與確認",
+            "跨部門/跨團隊協調",
+            "系統建置測試上線驗收追蹤",
+            "專案會議主持與利害關係人同步",
+            "專案文件與驗收資料管理",
+            "獨立問題解決能力"
+          ],
+          "resume_coverage": [
+            {
+              "text": "專案規劃執行進度追蹤(架構改造專案、看板管理)",
+              "status": "covered"
+            },
+            {
+              "text": "客戶需求訪談確認(需求訪談、PRD撰寫)",
+              "status": "covered"
+            },
+            {
+              "text": "跨部門跨團隊協調(單一需求窗口)",
+              "status": "covered"
+            },
+            {
+              "text": "系統建置測試上線驗收(分批部署驗收)",
+              "status": "covered"
+            },
+            {
+              "text": "專案會議主持(培訓主持經驗,例行會議未明確提及)",
+              "status": "partial"
+            },
+            {
+              "text": "專案文件驗收資料管理(PRD、績效報告)",
+              "status": "partial"
+            },
+            {
+              "text": "獨立問題解決(風險應變段落)",
+              "status": "covered"
+            }
+          ],
+          "bullet_rewrites": [
+            {
+              "before": "主導 5+ 項規格產品從需求訪談、規格定義到上線驗收之 0 到 1 完整流程;撰寫 PRD 明確定義功能說明,作為跨部門溝通與開發執行依據",
+              "after": "獨立執行5+件產品需求訪談、規格定義至上線驗收之完整專案流程,撰寫PRD做為跨部門與工程團隊溝通及開發依據,確保交付內容符合客戶需求"
+            },
+            {
+              "before": "主導為期 5 個月的系統架構改造專案,協調系統部門分批部署與逐批驗收,最後如期上線且至今零客訴、零配置錯誤",
+              "after": "主導為期5個月的系統改造專案,協調技術部門分階段部署與驗收,掌握關鍵時程節點,如期完成上線且維持零客訴、零配置錯誤紀錄"
+            },
+            {
+              "before": "以看板方法追蹤並行專案的關鍵路徑與風險,搭配部門 OKR 對齊優先級,提前調整排程確保如期交付",
+              "after": "以看板方法同步追蹤多項並行專案之進度、關鍵路徑與風險,提前識別排程衝突並調整優先順序,確保各專案如期交付"
+            },
+            {
+              "before": "擔任海外客戶決策層、各部門利害關係人與技術團隊的單一需求窗口,將模糊需求轉化為可執行規格",
+              "after": "擔任客戶、跨部門主管與技術團隊間的單一需求窗口,將模糊需求釐清並轉化為可執行規格,維繫專案推進過程中的溝通品質"
+            }
+          ],
+          "gaps": [
+            {
+              "title": "Gap 1:醫療產業知識",
+              "detail": "缺乏智慧醫療/醫院場域經驗,建議面談前了解醫療資訊系統基本概念與相關法規,並以3個月建立品牌知識庫的實績佐證快速學習能力。"
+            },
+            {
+              "title": "Gap 2:會議主持經驗未量化",
+              "detail": "履歷目前著重培訓主持(200+人次),較少提及例行專案會議主持,建議面談時補充說明日常如何主持跨部門/客戶進度會議。"
+            },
+            {
+              "title": "Gap 3:薪資與資歷落差",
+              "detail": "該職缺薪資36-55K,對於已主導5+項0到1專案及跨國協調經驗的候選人可能偏低,建議談薪時以複雜度與跨國經驗爭取上緣。"
+            },
+            {
+              "title": "Gap 4:系統整合業術語熟悉度",
+              "detail": "履歷未展現對IT系統整合(如API介接、驗收測試SOP)術語的熟悉度,建議面談前補強基本系統整合專案用語。"
+            }
+          ],
+          "company_intro": "富益昌智能整合是電腦系統整合服務業者,推測規模為中小型系統整合商,目前聚焦智慧醫療系統的專案交付,客戶應以醫院/醫療院所為主。台灣系統整合業競爭激烈,薪資水準中等。",
+          "relative_comparison": "此職缺在五筆中技能吻合度最高(需求訪談、PRD、跨部門協調、上線驗收幾乎逐項對應候選人實績),因此總分最高;但因薪資與候選人近1年主導5+項0到1專案的資歷相比明顯偏低,且產業(智慧醫療系統整合)非候選人優先目標(半導體/電信/電子/軟體),故總分未達更高區間。",
+          "key_advice": "面談時可強調PRD撰寫與零客訴上線驗收的實績直接對應這個職缺最核心的需求,但建議提前確認薪資範圍是否有向上談判空間,避免資歷貶值。"
+        }
+      },
+      {
+        "jobNo": "li_4443308537",
+        "jobName": "AI Product Manager",
+        "custName": "Angible",
+        "salary": "面議",
+        "location": "Taipei–Keelung Metropolitan area",
+        "industry": "LinkedIn",
+        "url": "https://tw.linkedin.com/jobs/view/ai-product-manager-at-angible-4443308537",
+        "ai_score": 6,
+        "ai_reason": "AI PM職務完美匹配,惟無職缺描述無法驗證資歷",
+        "is_reference": false,
+        "diagnosis": {
+          "jobNo": "li_4443308537",
+          "jobName_note": "Angible AI Product Manager",
+          "overall_score": 48,
+          "overall_summary": "跨國品牌線與生成式AI實作經驗呼應職缺對AI工具與商業判斷的要求,但缺乏與ML/RD團隊討論技術trade-off的產品背景與5年資歷,是關鍵落差。",
+          "dimensions": [
+            {
+              "label": "技術產品/ML協作經驗",
+              "percent": 25
+            },
+            {
+              "label": "0到1產品定義能力",
+              "percent": 70
+            },
+            {
+              "label": "商業判斷與跨國市場經驗",
+              "percent": 65
+            },
+            {
+              "label": "AI工具實務應用",
+              "percent": 60
+            },
+            {
+              "label": "產品/模型評估指標熟悉度",
+              "percent": 30
+            },
+            {
+              "label": "年資匹配度(5年以上)",
+              "percent": 30
+            }
+          ],
+          "requirements": [
+            "5年以上產品/技術產品經驗",
+            "與工程/ML/data團隊密切合作經驗",
+            "技術trade-off判斷與溝通",
+            "商業判斷(客戶需求/成本/規模化)",
+            "產品指標與模型評估指標熟悉度",
+            "AI工具/agent實務應用",
+            "跨國/多場域產品經驗(加分)"
+          ],
+          "resume_coverage": [
+            {
+              "text": "5年以上經驗(missing)",
+              "status": "missing"
+            },
+            {
+              "text": "與工程/ML團隊合作(僅一般技術部門)",
+              "status": "missing"
+            },
+            {
+              "text": "技術trade-off溝通(非ML/AI層級)",
+              "status": "partial"
+            },
+            {
+              "text": "商業判斷(商業模式評估供CEO決策)",
+              "status": "covered"
+            },
+            {
+              "text": "產品/模型評估指標(missing)",
+              "status": "missing"
+            },
+            {
+              "text": "AI工具應用(Python+生成式AI自動化)",
+              "status": "covered"
+            },
+            {
+              "text": "跨國多場域產品經驗(APAC/EU/UK)",
+              "status": "covered"
+            }
+          ],
+          "bullet_rewrites": [
+            {
+              "before": "以 Python 結合生成式 AI 開發資訊同步自動化排程(含信件自動擷取與轉換計算),將原需每週 1-2 小時的跨部門作業轉為自動執行,推廣至全品牌線後每年累計節省近 100 小時",
+              "after": "主動運用Python結合生成式AI開發自動化流程解決跨部門重複性作業,並將方案推廣至全品牌線,展現以AI工具驅動效率提升的實作能力"
+            },
+            {
+              "before": "接手單一最大品牌產品線(橫跨 APAC 與 EU/UK 兩市場),在前任離職、無品牌或產業文件情況下 3 個月建立完整知識庫",
+              "after": "獨立接手橫跨APAC與歐美市場之最大品牌產品線,在無既有文件基礎下3個月完成產業與產品知識建立,證明可快速掌握新場域複雜度並銜接產品決策"
+            },
+            {
+              "before": "主導第三方系統介接專案,負責需求對接、規格定義及產品上線",
+              "after": "主導第三方系統介接專案,釐清跨系統需求與技術限制、定義規格並推動上線,協調技術團隊完成整合"
+            },
+            {
+              "before": "擔任海外客戶決策層、各部門利害關係人與技術團隊的單一需求窗口,將模糊需求轉化為可執行規格",
+              "after": "擔任跨國客戶決策層與技術團隊間的單一需求窗口,將模糊的商業需求轉化為可執行的產品規格,推動跨職能團隊對齊"
+            }
+          ],
+          "gaps": [
+            {
+              "title": "Gap 1:ML/技術產品深度不足",
+              "detail": "職缺核心是要能與ML/RD團隊討論模型效能、edge computing限制等技術trade-off,履歷未展現機器學習或電腦視覺相關產品經驗,建議面談前補充edge AI/self-checkout產業基本知識,並誠實定位為商業與跨部門整合強、技術對話待培養。"
+            },
+            {
+              "title": "Gap 2:產品/模型評估指標經驗",
+              "detail": "履歷未提及model evaluation metrics或service-level指標的實際使用經驗,建議準備能對應到如何用數據判斷專案/自動化流程成效的類比說法。"
+            },
+            {
+              "title": "Gap 3:年資落差",
+              "detail": "職缺要求5年以上,候選人1-2年,建議求職信強調複雜度與獨立主導程度而非單純比年資。"
+            },
+            {
+              "title": "Gap 4:B2B規模化經驗未量化",
+              "detail": "職缺加分項為B2B從early deployment擴展到多客戶/多場域經驗,履歷雖有推廣至全品牌線的敘述,但未清楚對應到B2B多客戶擴展脈絡,可在面談時補充說明。"
+            }
+          ],
+          "company_intro": "Angible是2025年成立於台北的AI新創,聚焦電腦視覺+邊緣運算的零售防損(self-checkout loss prevention)產品,推測仍處早期成長階段,客戶已拓展至歐洲、北美、東南亞市場。新創階段通常意味著制度較不成熟,但成長速度快、影響力大。",
+          "relative_comparison": "分數略低於Gogoro,因為此職缺除年資落差外,還多了一層需能與ML/RD團隊深入討論技術trade-off的硬門檻,候選人完全沒有AI/CV相關產品背景;但主動使用生成式AI自動化與跨國客戶經驗仍有一定加分,故分數優於浪LIVE與短影音職缺。",
+          "key_advice": "若堅持投遞,建議在求職信中明確補強雖無ML背景但已主動運用生成式AI解決實際問題的具體案例,並誠實評估這個角色技術門檻是否過高,避免面試中在ML trade-off討論環節卡關。"
+        }
+      },
+      {
+        "jobNo": "yt_48092",
+        "jobName": "研發中心 - AI 解決方案架構師",
+        "custName": "浪LIVE",
+        "salary": "年薪 1,400,000 ~ 2,000,000",
+        "location": "臺北市",
+        "industry": "新創(Yourator)",
+        "url": "https://www.yourator.co/companies/langlive/jobs/48092",
+        "ai_score": 3,
+        "ai_reason": "年薪1.4M暗示資深職位,架構師通常需3+年經驗",
+        "is_reference": true,
+        "diagnosis": {
+          "jobNo": "yt_48092",
+          "jobName_note": "浪LIVE AI 解決方案架構師",
+          "overall_score": 28,
+          "overall_summary": "跨部門橋樑角色與需求收斂經驗可部分轉譯,但職缺核心要求親自撰寫程式與端到端系統架構設計,已超出候選人商管/產品背景的技能範圍。",
+          "dimensions": [
+            {
+              "label": "軟體工程/架構設計能力",
+              "percent": 15
+            },
+            {
+              "label": "AI/Agentic workflow導入實務",
+              "percent": 30
+            },
+            {
+              "label": "需求收斂與優先級管理",
+              "percent": 55
+            },
+            {
+              "label": "跨部門橋樑角色",
+              "percent": 70
+            },
+            {
+              "label": "Production系統交付與治理",
+              "percent": 10
+            }
+          ],
+          "requirements": [
+            "端到端系統架構設計能力",
+            "親手撰寫程式開發PoC",
+            "Production-grade服務交付經驗(監控/Runbook)",
+            "需求收斂與P0/P1/P2優先級管理",
+            "AI工具/Agentic workflow導入SDLC",
+            "與技術長/資安/法務跨職能協作",
+            "技術偵察與方案評估(build vs buy)"
+          ],
+          "resume_coverage": [
+            {
+              "text": "端到端架構設計(missing)",
+              "status": "missing"
+            },
+            {
+              "text": "親手寫程式做PoC(僅Python自動化腳本)",
+              "status": "partial"
+            },
+            {
+              "text": "Production服務交付與監控(missing)",
+              "status": "missing"
+            },
+            {
+              "text": "需求收斂優先級管理(OKR對齊,非正式P0/P1/P2)",
+              "status": "partial"
+            },
+            {
+              "text": "AI導入SDLC(有生成式AI自動化實作經驗,非SDLC層級)",
+              "status": "partial"
+            },
+            {
+              "text": "跨職能協作(技術長/資安/法務層級,經驗層級較低)",
+              "status": "partial"
+            },
+            {
+              "text": "Build vs buy技術評估(missing)",
+              "status": "missing"
+            }
+          ],
+          "bullet_rewrites": [
+            {
+              "before": "以 Python 結合生成式 AI 開發資訊同步自動化排程(含信件自動擷取與轉換計算),將原需每週 1-2 小時的跨部門作業轉為自動執行,推廣至全品牌線後每年累計節省近 100 小時",
+              "after": "運用Python結合生成式AI設計自動化排程流程,取代原本每週1-2小時的人工跨部門作業,並成功推廣至全品牌線,累積年省近100小時的實作經驗"
+            },
+            {
+              "before": "以看板方法追蹤並行專案的關鍵路徑與風險,搭配部門 OKR 對齊優先級,提前調整排程確保如期交付",
+              "after": "以看板方法追蹤多項並行專案的關鍵路徑與風險,依部門OKR進行優先級排序與資源分配判斷,提前調整排程確保如期交付"
+            },
+            {
+              "before": "擔任海外客戶決策層、各部門利害關係人與技術團隊的單一需求窗口,將模糊需求轉化為可執行規格",
+              "after": "擔任業務單位與技術團隊之間的單一需求窗口,收斂各方模糊需求並轉化為可執行規格,做為開發依據"
+            }
+          ],
+          "gaps": [
+            {
+              "title": "Gap 1:軟體工程/架構設計能力缺口(核心硬門檻)",
+              "detail": "此職缺要求親手撰寫程式開發原型與端到端系統架構設計,履歷中僅有Python自動化腳本經驗,無正式軟體開發或系統架構背景,這是最大落差,建議謹慎評估是否投遞。"
+            },
+            {
+              "title": "Gap 2:Production-grade服務治理經驗",
+              "detail": "職缺要求建立Eval Set、品質成本監控、Runbook、降級路徑等維運治理機制,履歷完全未涉及,屬於工程/MLOps範疇,短期難以速成。"
+            },
+            {
+              "title": "Gap 3:正式優先級分級機制經驗",
+              "detail": "履歷的OKR對齊偏向專案排程,非職缺要求的P0/P1/P2需求收斂與拒絕機制,建議若投遞需準備具體案例說明如何拒絕/篩選需求。"
+            },
+            {
+              "title": "Gap 4:與技術長/資安/法務協作經驗",
+              "detail": "履歷跨部門經驗多為業務/客戶/一般技術部門,未涉及資安、法務層級的治理協作,建議誠實評估此落差。"
+            }
+          ],
+          "company_intro": "浪LIVE是台灣直播/娛樂內容領域的新創平台,推測近年積極向AI/技術轉型投資,總部位於台北士林。年薪範圍140-200萬顯示這是資深/專家等級職缺。",
+          "relative_comparison": "此職缺分數是五筆中偏低的,因為核心要求是能親手寫程式做架構設計的技術職,候選人背景是商管/產品/專案管理而非工程,與AI PM(Angible)、BA PM(Gogoro)的商業分析導向不同,技術門檻直接卡關;僅高於完全跨領域的短影音視覺職缺。",
+          "key_advice": "除非候選人願意大幅補強軟體工程/系統架構硬技能,否則建議不要投遞此職缺,以免浪費面試機會並影響求職信心。"
+        }
+      },
+      {
+        "jobNo": "15352333",
+        "jobName": "★短影音暨品牌視覺專員★",
+        "custName": "寶聯供應鏈管理顧問有限公司",
+        "salary": "40,000 起",
+        "location": "台北市中山區",
+        "industry": "汽機車及其零配件／用品零售業",
+        "url": "https://www.104.com.tw/job/951xp",
+        "ai_score": 2,
+        "ai_reason": "創意/設計職位,與PM職涯路徑不相符",
+        "is_reference": true,
+        "diagnosis": {
+          "jobNo": "15352333",
+          "jobName_note": "寶聯供應鏈 短影音暨品牌視覺專員",
+          "overall_score": 12,
+          "overall_summary": "候選人的產品管理與數據分析背景與此短影音/視覺設計職缺幾乎沒有交集,缺乏剪輯工具、設計作品集與相關經驗,不建議投遞。",
+          "dimensions": [
+            {
+              "label": "短影音企劃與剪輯能力",
+              "percent": 0
+            },
+            {
+              "label": "視覺設計工具操作",
+              "percent": 10
+            },
+            {
+              "label": "拍攝與現場執行能力",
+              "percent": 0
+            },
+            {
+              "label": "社群數據優化能力",
+              "percent": 20
+            },
+            {
+              "label": "職能方向契合度",
+              "percent": 5
+            }
+          ],
+          "requirements": [
+            "2年以上短影音/剪輯/視覺設計經驗",
+            "Premiere Pro/CapCut/Final Cut等剪輯工具",
+            "Photoshop/Illustrator/Canva等設計工具",
+            "獨立企劃腳本與拍攝能力",
+            "作品集",
+            "社群數據優化內容"
+          ],
+          "resume_coverage": [
+            {
+              "text": "2年以上短影音/剪輯經驗(missing)",
+              "status": "missing"
+            },
+            {
+              "text": "剪輯工具(missing)",
+              "status": "missing"
+            },
+            {
+              "text": "設計工具(僅Canva用於簡報教材,非影像設計)",
+              "status": "partial"
+            },
+            {
+              "text": "企劃腳本拍攝能力(missing)",
+              "status": "missing"
+            },
+            {
+              "text": "作品集(missing)",
+              "status": "missing"
+            },
+            {
+              "text": "社群數據優化(僅一般商業數據分析,非社群內容數據)",
+              "status": "missing"
+            }
+          ],
+          "bullet_rewrites": [
+            {
+              "before": "規劃並主持 5 場跨部門新產品培訓(累計 200+ 名參與者),自製教材協助客戶與合作夥伴快速上手",
+              "after": "具備自製教材與簡報視覺呈現經驗,曾規劃5場產品培訓內容並用於200+人次的知識傳遞"
+            },
+            {
+              "before": "以 SQL(MS SQL/PostgreSQL)跨資料庫檢索底層數據,搭配 Power BI 製作視覺化報表,產出競品分析(東南亞/歐美共 4 份)與商業模式轉型評估供 CEO 決策",
+              "after": "熟悉運用資料工具(Power BI)進行視覺化呈現,具備將複雜數據轉化為易懂圖表的基礎能力"
+            },
+            {
+              "before": "擔任海外客戶決策層、各部門利害關係人與技術團隊的單一需求窗口,將模糊需求轉化為可執行規格",
+              "after": "具備跨團隊溝通協調與內容產出經驗,能將抽象需求整理為清楚的執行方向"
+            }
+          ],
+          "gaps": [
+            {
+              "title": "Gap 1:核心職能完全不符(最大落差)",
+              "detail": "此職缺需要短影音企劃/拍攝/剪輯與視覺設計的專業作品集,候選人背景為金融科技產品管理與數據分析,兩者職能無直接關聯,建議重新確認此職缺是否為誤選,若非刻意轉職內容創作領域,不建議投遞。"
+            },
+            {
+              "title": "Gap 2:缺乏作品集與工具實務經驗",
+              "detail": "履歷完全未提及剪輯(Premiere/CapCut)或設計(PS/AI)工具的操作經驗與作品案例,即使勉強投遞也難以通過第一輪篩選。"
+            },
+            {
+              "title": "Gap 3:職涯方向落差",
+              "detail": "候選人明確目標為半導體/電信/電子/軟體業的PM/PjM/BA/PMO職能,此職缺屬零售/行銷內容創作,與求職方向優先序完全不同。"
+            }
+          ],
+          "company_intro": "寶聯供應鏈管理顧問有限公司從事汽機車及其零配件/用品零售業,推測業務聚焦於豪華進口車周邊的品牌行銷與供應鏈服務,規模應為中小企業。",
+          "relative_comparison": "此職缺在五筆中分數最低,因為職能性質(短影音/視覺設計)與候選人的產品管理/數據分析背景幾乎沒有重疊,是本次清單中唯一職能錯配而非資歷不足的案例;其餘四筆職缺至少方向上都屬於PM/BA/技術產品範疇,僅在年資或技術深度上有落差。",
+          "key_advice": "建議直接跳過此職缺,除非候選人有未列於履歷中的影音/設計相關經歷或轉職意願,否則投遞成功率極低且會稀釋求職精力。"
+        }
+      },
+      {
         "jobNo": "yt_46605",
         "jobName": "2026 Turing Plan 儲備AI專案管理師 百萬年薪 開放申請中！",
         "custName": "永豐商業銀行股份有限公司",
