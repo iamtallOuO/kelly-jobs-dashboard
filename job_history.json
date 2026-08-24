@@ -5,6 +5,474 @@
     "report_url": "reports/diagnosis_2026-08-24.html",
     "jobs": [
       {
+        "jobNo": "li_4446571270",
+        "jobName": "Product Manager, Multi Asset",
+        "custName": "AllianceBernstein",
+        "salary": "面議",
+        "location": "Taipei City, Taiwan",
+        "industry": "LinkedIn",
+        "url": "https://tw.linkedin.com/jobs/view/product-manager-multi-asset-at-alliancebernstein-4446571270",
+        "ai_score": 6,
+        "ai_reason": "PM职能完全符合，金融业非目标",
+        "is_reference": false,
+        "diagnosis": {
+          "jobNo": "li_4446571270",
+          "overall_score": 25,
+          "overall_summary": "身為知名國際資產管理公司的Product Manager職缺,要求10年以上資產管理資歷與資本市場/CFA專業,與求職者1-2年PM經驗且非資產管理背景落差過大,唯一優勢是英文書面溝通與簡報工具能力可對應。",
+          "dimensions": [
+            {
+              "label": "年資與資歷匹配度",
+              "percent": 10
+            },
+            {
+              "label": "資產管理/資本市場專業知識",
+              "percent": 15
+            },
+            {
+              "label": "行銷簡報與客戶溝通能力",
+              "percent": 40
+            },
+            {
+              "label": "中英雙語溝通能力",
+              "percent": 60
+            },
+            {
+              "label": "ATS關鍵字命中度",
+              "percent": 20
+            }
+          ],
+          "requirements": [
+            "10年以上資產管理/金融業經驗",
+            "財務相關學位/CFA尤佳",
+            "資本市場與多元資產知識",
+            "中英文口筆表達支援行銷",
+            "熟悉Bloomberg/Morningstar等資料庫",
+            "業務導向客戶服務支援",
+            "進階Excel/PowerPoint",
+            "台灣證照(SITE等)"
+          ],
+          "resume_coverage": [
+            {
+              "text": "僅1-2年PM經驗,非資產管理業",
+              "status": "missing"
+            },
+            {
+              "text": "經濟系畢業,非CFA、非資產管理背景",
+              "status": "partial"
+            },
+            {
+              "text": "履歷未提及資本市場/多元資產知識",
+              "status": "missing"
+            },
+            {
+              "text": "每日英文書面對接海外客戶,但非行銷簡報導向",
+              "status": "partial"
+            },
+            {
+              "text": "未提及使用Bloomberg/Morningstar等金融資料庫",
+              "status": "missing"
+            },
+            {
+              "text": "背景為產品PM,非業務支援角色",
+              "status": "missing"
+            },
+            {
+              "text": "具備Excel VBA/樞紐與PowerPoint製作經驗",
+              "status": "covered"
+            },
+            {
+              "text": "未持有台灣SITE等相關證照",
+              "status": "missing"
+            }
+          ],
+          "bullet_rewrites": [
+            {
+              "before": "以 SQL(MS SQL/PostgreSQL)跨資料庫檢索底層數據,搭配 Power BI 製作視覺化報表,產出競品分析(東南亞/歐美共 4 份)與商業模式轉型評估供 CEO 決策",
+              "after": "運用SQL跨資料庫檢索數據並以Power BI視覺化呈現,獨立產出東南亞與歐美市場共4份競品分析報告及商業模式轉型評估,作為CEO決策參考"
+            },
+            {
+              "before": "每日以英文書面對接跨部門或海外人員需求",
+              "after": "每日以英文書面與APAC及歐美跨國品牌決策層溝通,將複雜需求轉化為可執行方案,確保多方利害關係人對齊"
+            },
+            {
+              "before": "產出專案績效報告與簡報(進度追蹤、成本檢討、策略建議),直接供高層決策依據",
+              "after": "定期產出專案績效簡報,涵蓋進度追蹤、成本分析與策略建議,直接提供高層決策參考"
+            },
+            {
+              "before": "接手單一最大品牌產品線(橫跨 APAC 與 EU/UK 兩市場),在前任離職、無品牌或產業文件情況下 3 個月建立完整知識庫",
+              "after": "在無既有交接文件情況下,3個月內獨立建立橫跨APAC與歐美市場最大品牌產品線之完整知識庫,展現快速掌握陌生市場知識的學習能力"
+            }
+          ],
+          "gaps": [
+            {
+              "title": "Gap1:資產管理年資落差過大",
+              "detail": "職缺要求10年以上資產管理經驗,求職者僅1-2年PM經驗且非資產管理業,建議謹慎評估投遞優先序"
+            },
+            {
+              "title": "Gap2:缺CFA/資本市場證照",
+              "detail": "履歷未顯示CFA或資本市場相關證照,若有考慮長期走金融資產管理路線可規劃考取,但與求職者目前轉職方向(離開金融業)矛盾"
+            },
+            {
+              "title": "Gap3:缺金融資料庫實務經驗",
+              "detail": "未提及使用Bloomberg、Lipper、Morningstar Direct等平台,建議若無相關經驗誠實說明,不建議硬套"
+            },
+            {
+              "title": "Gap4:缺台灣證照(SITE)",
+              "detail": "此類證照涉及法規要求,短期內難以速成,屬硬性門檻"
+            }
+          ],
+          "company_intro": "AllianceBernstein(AB)推測是一家歷史悠久、在美國掛牌上市的全球資產管理公司,業務涵蓋股票、固定收益與多元資產投資組合,服務對象包含機構法人與零售投資人。具體規模、總部所在地與近年組織調整細節建議另行查證官方資訊。",
+          "relative_comparison": "此職缺在本次精選清單中分數偏低,主因是產業屬於求職者明確想離開的金融服務業,且10年資深資歷要求與求職者1-2年經驗差距過大,遠不如AIFIAN、TXOne在職能上與求職者的PM/專案管理背景直接對應。",
+          "key_advice": "建議謹慎評估是否投遞此類資深資產管理PM職缺,因年資與產業雙重落差可能導致履歷難以通過ATS或第一輪篩選,除非有內部推薦管道。"
+        }
+      },
+      {
+        "jobNo": "li_4458150744",
+        "jobName": "Operations & Projects Manager",
+        "custName": "AIFIAN",
+        "salary": "面議",
+        "location": "Neihu District, Taipei City, Taiwan",
+        "industry": "LinkedIn",
+        "url": "https://tw.linkedin.com/jobs/view/operations-projects-manager-at-aifian-4458150744",
+        "ai_score": 5,
+        "ai_reason": "职位名符合需求，但description缺失",
+        "is_reference": false,
+        "diagnosis": {
+          "jobNo": "li_4458150744",
+          "overall_score": 72,
+          "overall_summary": "此職缺高度貼合求職者的核心優勢——0到1專案端到端owner、跨境跨部門溝通、面對模糊問題自主解決,年資範圍(1-5年)也剛好吻合,最大落差在於缺乏實體場地建置與供應商管理的直接經驗。",
+          "dimensions": [
+            {
+              "label": "端到端專案owner證明",
+              "percent": 85
+            },
+            {
+              "label": "跨境/跨部門協調能力",
+              "percent": 90
+            },
+            {
+              "label": "模糊問題自主解決能力",
+              "percent": 80
+            },
+            {
+              "label": "AI工具應用能力",
+              "percent": 85
+            },
+            {
+              "label": "新創步調與彈性適應力",
+              "percent": 60
+            },
+            {
+              "label": "ATS關鍵字命中度",
+              "percent": 70
+            }
+          ],
+          "requirements": [
+            "1-5年經驗,具CEO/founder right hand或新創PM經驗",
+            "跨境專案端到端owner(含compliance文件)",
+            "實體場地建置/供應商管理",
+            "同時處理多專案並自訂優先序",
+            "跨部門與外部夥伴溝通橋樑",
+            "面對未知問題自主解決",
+            "善用AI工具(Gemini/Claude等)加速工作",
+            "隨CEO優先序變動彈性調整"
+          ],
+          "resume_coverage": [
+            {
+              "text": "1年+PM經驗,主導5+項產品0到1流程",
+              "status": "covered"
+            },
+            {
+              "text": "跨境品牌線(APAC/歐美)需求窗口經驗",
+              "status": "covered"
+            },
+            {
+              "text": "履歷未提及實體場地建置或供應商採購協調",
+              "status": "missing"
+            },
+            {
+              "text": "看板方法同時管理並行專案",
+              "status": "covered"
+            },
+            {
+              "text": "擔任跨部門與海外客戶單一需求窗口",
+              "status": "covered"
+            },
+            {
+              "text": "3個月零文件獨立建立品牌知識庫",
+              "status": "covered"
+            },
+            {
+              "text": "生成式AI結合Python流程自動化",
+              "status": "covered"
+            },
+            {
+              "text": "有提前調整排程經驗,但未特別凸顯新創式高頻優先序變動情境",
+              "status": "partial"
+            }
+          ],
+          "bullet_rewrites": [
+            {
+              "before": "接手單一最大品牌產品線(橫跨 APAC 與 EU/UK 兩市場),在前任離職、無品牌或產業文件情況下 3 個月建立完整知識庫",
+              "after": "在前手離職且無任何交接文件情況下,3個月內獨立建立橫跨APAC與歐美市場最大品牌產品線之完整知識庫,展現面對模糊、無前例問題時快速釐清並自主解決的能力"
+            },
+            {
+              "before": "主導 5+ 項規格產品從需求訪談、規格定義到上線驗收之 0 到 1 完整流程",
+              "after": "端到端主導5個以上產品專案,從需求訪談、規格定義到上線驗收全程owner,確保專案從0到1如期落地"
+            },
+            {
+              "before": "以看板方法追蹤並行專案的關鍵路徑與風險,搭配部門 OKR 對齊優先級,提前調整排程確保如期交付",
+              "after": "以看板方法同時管理多項並行專案,自行判斷關鍵路徑與風險並對齊OKR優先序,在優先序變動時即時調整排程確保交付"
+            },
+            {
+              "before": "以 Python 結合生成式 AI 開發資訊同步自動化排程(含信件自動擷取與轉換計算),推廣至全品牌線後每年累計節省近 100 小時",
+              "after": "運用生成式AI結合Python開發自動化排程,取代原本人工作業,推廣全品牌線後每年節省近100小時,展現善用AI工具加速工作流程之能力"
+            }
+          ],
+          "gaps": [
+            {
+              "title": "Gap1:實體場地/供應商管理經驗缺乏",
+              "detail": "履歷未提及倉儲、場地建置或供應商採購協調,建議面談時以其他從0建立流程的經驗類比,並誠實說明可快速上手"
+            },
+            {
+              "title": "Gap2:新創高不確定性步調經驗未凸顯",
+              "detail": "建議面談時強調金融科技產業變動快、常需臨場應變的類似情境,補強對新創步調的適應力佐證"
+            },
+            {
+              "title": "Gap3:法規/compliance文件經驗未明確呈現",
+              "detail": "PwC查帳審計經驗可包裝為熟悉法規文件覆核流程,增加compliance相關可信度"
+            },
+            {
+              "title": "Gap4:公司穩定性與職稱契合度待驗證",
+              "detail": "建議面談時多了解AIFIAN實際業務範疇、資金狀況與團隊規模,確認長期發展性"
+            }
+          ],
+          "company_intro": "AIFIAN推測是一家規模較小的新創公司,可能聚焦於金融科技或AI相關服務,但具體業務內容、成立時間、資金與團隊規模等細節目前難以確認,建議求職前進一步查證公司背景與財務穩定性。",
+          "relative_comparison": "此職缺在本次精選清單中分數最高,因為核心職能(0到1專案owner、跨境跨部門溝通、模糊問題自主解決、AI工具應用)與求職者履歷幾乎逐項對應,且年資範圍剛好落在1-5年區間,相較AllianceBernstein的年資落差與玉膳坊的職能落差,此職缺的可遷移性最強。",
+          "key_advice": "投遞前建議先設法查證AIFIAN的財務穩定性與新創發展階段,並在面談時主動以3個月零文件建立品牌知識庫等經驗佐證自主解決能力,補強實體場地/供應商管理經驗的空白。"
+        }
+      },
+      {
+        "jobNo": "13921391",
+        "jobName": "Sr. Global Sales Operations Specialist (Salesforce)",
+        "custName": "睿控網安股份有限公司",
+        "salary": "面議",
+        "location": "台北市信義區",
+        "industry": "電腦軟體服務業",
+        "url": "https://www.104.com.tw/job/8adtb",
+        "ai_score": 3,
+        "ai_reason": "职位标Senior，年资明显不足",
+        "is_reference": false,
+        "diagnosis": {
+          "jobNo": "13921391",
+          "overall_score": 55,
+          "overall_summary": "此職缺產業屬性(工業資安/科技)貼近求職者鎖定的電子/軟體方向,跨部門與全球溝通、教育訓練經驗均可對應,但職缺核心工具Salesforce(SFDC)與Deal Desk報價審核經驗是明顯空白,且職能偏Sales Ops而非典型PM。",
+          "dimensions": [
+            {
+              "label": "全球跨部門溝通能力",
+              "percent": 80
+            },
+            {
+              "label": "Salesforce/CRM系統經驗",
+              "percent": 10
+            },
+            {
+              "label": "報價/Deal Desk流程經驗",
+              "percent": 35
+            },
+            {
+              "label": "資料治理與流程owner能力",
+              "percent": 65
+            },
+            {
+              "label": "教育訓練與知識轉移能力",
+              "percent": 75
+            },
+            {
+              "label": "ATS關鍵字命中度",
+              "percent": 40
+            }
+          ],
+          "requirements": [
+            "Salesforce(SFDC)產品資料/報價本維護經驗",
+            "跨部門協調(PM團隊)並主導高層核准流程",
+            "Deal desk/報價審核/訂單履行經驗",
+            "通路/經銷商訂單管理經驗",
+            "全球化跨區域溝通能力",
+            "系統資料治理與教育訓練能力"
+          ],
+          "resume_coverage": [
+            {
+              "text": "履歷未提及使用Salesforce系統",
+              "status": "missing"
+            },
+            {
+              "text": "主導系統架構改造專案,協調部門並產出績效報告供高層決策",
+              "status": "covered"
+            },
+            {
+              "text": "有成本試算與損益彙總報表經驗,但非直接deal desk/報價審核",
+              "status": "partial"
+            },
+            {
+              "text": "履歷未提及通路/經銷商訂單管理經驗",
+              "status": "missing"
+            },
+            {
+              "text": "每日英文書面對接APAC/歐美跨國需求窗口",
+              "status": "covered"
+            },
+            {
+              "text": "規劃5場跨部門培訓,自製教材,推廣新系統上手",
+              "status": "covered"
+            }
+          ],
+          "bullet_rewrites": [
+            {
+              "before": "主導為期 5 個月的系統架構改造專案,協調系統部門分批部署與逐批驗收,最後如期上線且至今零客訴、零配置錯誤",
+              "after": "主導為期5個月的系統架構改造專案,擔任系統部門與各利害關係人的溝通協調窗口,規劃導入節奏與驗收機制,確保專案如期上線並維持零客訴的優良紀錄"
+            },
+            {
+              "before": "規劃並主持 5 場跨部門新產品培訓(累計 200+ 名參與者),自製教材協助客戶與合作夥伴快速上手",
+              "after": "規劃並主持5場跨部門新產品教育訓練,自製教材協助200多名內部同仁與外部合作夥伴快速上手新系統,強化跨團隊知識轉移效率"
+            },
+            {
+              "before": "主導第三方系統介接專案,負責需求對接、規格定義及產品上線",
+              "after": "主導第三方系統介接專案,擔任需求窗口統整各方規格並跟催上線進度,確保系統資料串接正確性與時程掌控"
+            },
+            {
+              "before": "以 SQL(MS SQL/PostgreSQL)跨資料庫檢索底層數據,搭配 Power BI 製作視覺化報表,產出競品分析(東南亞/歐美共 4 份)與商業模式轉型評估供 CEO 決策",
+              "after": "以SQL跨資料庫檢索並整理底層數據,搭配Power BI建立視覺化報表,產出跨區域競品分析與商業模式評估,支援高層跨市場決策"
+            }
+          ],
+          "gaps": [
+            {
+              "title": "Gap1:缺Salesforce(SFDC)實務經驗",
+              "detail": "此為職缺核心工具,建議面試前自學基礎操作或考取相關認證,並在履歷補充是否有使用過類似CRM系統"
+            },
+            {
+              "title": "Gap2:缺Deal Desk/報價審核經驗",
+              "detail": "可將成本試算/損益彙總報表經驗包裝為具備報價與成本結構分析基礎,但需誠實說明非直接deal desk背景"
+            },
+            {
+              "title": "Gap3:缺經銷商/通路訂單管理經驗",
+              "detail": "建議面談時主動詢問此職缺實際比重,若佔比過高需評估轉職落差是否可接受"
+            },
+            {
+              "title": "Gap4:職能定位偏Sales Ops非純PM",
+              "detail": "建議確認此職缺是否符合長期PM/PMO職涯規劃,或視為累積跨部門流程治理經驗的過渡職能"
+            }
+          ],
+          "company_intro": "TXOne Networks推測是由趨勢科技(Trend Micro)與Moxa合資成立的工業控制系統(OT/ICS)資安公司,專注於保護製造業與關鍵基礎設施的資安防護,近年應持續拓展國際業務,但精確規模、年份與募資細節建議另行查證。",
+          "relative_comparison": "此職缺的產業屬性較貼近求職者半導體/電信/電子/軟體的優先序,分數因此高於AllianceBernstein(金融資產管理,產業被排除且年資落差過大)與玉膳坊(職能完全不符),但因角色偏Sales Ops且需要Salesforce系統經驗,核心職能吻合度不如AIFIAN的Operations & Projects Manager來得直接。",
+          "key_advice": "投遞前建議誠實評估Salesforce系統經驗的落差,並在履歷/自傳中強調PRD撰寫、跨部門流程owner與教育訓練經驗與此職缺流程治理角色的高度重疊,弱化職稱本身的PM/Sales Ops差異。"
+        }
+      },
+      {
+        "jobNo": "13755827",
+        "jobName": "【中山】業務行政(純內勤，底薪+獎金)",
+        "custName": "玉膳坊頂級月子餐_膳安國際股份有限公司",
+        "salary": "面議",
+        "location": "台北市中山區",
+        "industry": "其他餐飲業",
+        "url": "https://www.104.com.tw/job/86u2b",
+        "ai_score": 2,
+        "ai_reason": "职能与行业均非目标方向",
+        "is_reference": true,
+        "diagnosis": {
+          "jobNo": "13755827",
+          "overall_score": 12,
+          "overall_summary": "此為電訪內勤業務行政職缺,與求職者鎖定的PM/PjM/BA/PMO職能及半導體/電信/電子/軟體產業方向完全不符,履歷中的PM經驗與數據分析能力在此職缺幾乎無用武之地。",
+          "dimensions": [
+            {
+              "label": "客服/電訪經驗",
+              "percent": 10
+            },
+            {
+              "label": "業務銷售導向能力",
+              "percent": 15
+            },
+            {
+              "label": "職能定位吻合度",
+              "percent": 10
+            },
+            {
+              "label": "產業匹配度",
+              "percent": 5
+            }
+          ],
+          "requirements": [
+            "電話/LINE/FB客戶諮詢與訂購協助",
+            "客戶關係維護與售後服務",
+            "顧客資料建立與維護",
+            "產品/調理建議介紹",
+            "配合行銷活動推廣業績",
+            "純內勤電訪(無需外出)"
+          ],
+          "resume_coverage": [
+            {
+              "text": "履歷無電訪/客服相關經驗",
+              "status": "missing"
+            },
+            {
+              "text": "有跨國品牌客戶需求窗口經驗,但非客服性質",
+              "status": "partial"
+            },
+            {
+              "text": "有SQL/資料庫背景可對應資料管理概念,但非顧客服務系統",
+              "status": "partial"
+            },
+            {
+              "text": "履歷無產品銷售導向介紹經驗",
+              "status": "missing"
+            },
+            {
+              "text": "履歷無配合行銷活動衝業績經驗",
+              "status": "missing"
+            },
+            {
+              "text": "背景為PM/專案管理,非電訪內勤職能",
+              "status": "missing"
+            }
+          ],
+          "bullet_rewrites": [
+            {
+              "before": "擔任海外客戶決策層、各部門利害關係人與技術團隊的單一需求窗口,將模糊需求轉化為可執行規格",
+              "after": "擔任客戶與內部團隊的單一聯繫窗口,善於傾聽需求並轉化為具體可執行的服務方案,具備良好客戶溝通與問題釐清能力"
+            },
+            {
+              "before": "以 SQL 跨資料庫檢索底層數據,搭配 Power BI 製作視覺化報表",
+              "after": "具備資料庫查詢與資料整理能力,能有效建立、更新及維護客戶相關資料紀錄,確保資訊正確性"
+            },
+            {
+              "before": "主管、利害關係人與技術團隊的單一需求窗口,擅長把模糊需求轉化為清晰規格,溝通有韌性",
+              "after": "具備良好客戶服務韌性,擅長在多方溝通情境下釐清需求並提供清楚說明,維繫良好互動關係"
+            }
+          ],
+          "gaps": [
+            {
+              "title": "Gap1:完全無電訪/客服/業務銷售實務經驗",
+              "detail": "若考慮此類職缺需在履歷新增相關經歷佐證,否則轉職故事難以說服HR"
+            },
+            {
+              "title": "Gap2:職能與職涯目標明顯不符",
+              "detail": "此職缺與求職者鎖定的PM/PjM/BA/PMO方向無交集,建議依求職優先序評估是否值得投遞"
+            },
+            {
+              "title": "Gap3:產業與目標產業無交集",
+              "detail": "月子餐/健康照護產業與求職者鎖定的半導體/電信/電子/軟體無關,不利累積目標產業經驗"
+            },
+            {
+              "title": "Gap4:薪資結構可能與規律作息偏好衝突",
+              "detail": "底薪+業績獎金的業務性質常伴隨業績壓力與彈性排班,建議進一步確認實際工時與獎金制度"
+            }
+          ],
+          "company_intro": "玉膳坊(膳安國際股份有限公司)推測是台灣本土的月子餐與病後調理餐品牌,主要服務產後、術後及日常養生族群,應屬中小型內需服務業者,規模與資本額等細節建議另行查證官方資訊。",
+          "relative_comparison": "此職缺在本次精選清單中分數最低,因為職能(電訪內勤客服)、產業(餐飲健康照護)與求職者鎖定的PM/PjM/BA/PMO及半導體/電信/電子/軟體方向完全脫節,相較AIFIAN、TXOne甚至AllianceBernstein都至少保留PM/專案管理職能連結,此職缺幾乎沒有可遷移的核心賣點對應。",
+          "key_advice": "除非求職者臨時需要立即有收入的過渡工作,否則建議不優先投遞此職缺,因職能與產業方向與求職目標落差過大,難以累積朝向PM/PjM/BA/PMO職涯的相關經驗。"
+        }
+      },
+      {
         "jobNo": "li_4454250336",
         "jobName": "Product Manager /Rare Disease (Chinese must be fluent)",
         "custName": "EXCELSIOR BIOPHARMA INC.",
