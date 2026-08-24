@@ -5,6 +5,132 @@
     "report_url": "reports/diagnosis_2026-08-24.html",
     "jobs": [
       {
+        "jobNo": "li_4454250336",
+        "jobName": "Product Manager /Rare Disease (Chinese must be fluent)",
+        "custName": "EXCELSIOR BIOPHARMA INC.",
+        "salary": "面議",
+        "location": "Taipei, Taipei City, Taiwan",
+        "industry": "LinkedIn",
+        "url": "https://tw.linkedin.com/jobs/view/product-manager-rare-disease-chinese-must-be-fluent-at-excelsior-biopharma-inc-4454250336",
+        "ai_score": 6,
+        "ai_reason": "职能高度吻合但非目标产业;缺行业背景与完整JD",
+        "is_reference": false,
+        "diagnosis": {
+          "jobNo": "li_4454250336",
+          "overall_score": 28,
+          "overall_summary": "跨部門溝通、簡報培訓與市場分析能力可部分遷移,但學歷要求(Life Science/Pharmacy/Medicine)與3年以上藥廠PM/行銷經驗是完全空白的硬性門檻,產業落差是本次分析中最大的落差項。",
+          "dimensions": [
+            {
+              "label": "學歷與產業硬性門檻符合度",
+              "percent": 10
+            },
+            {
+              "label": "藥品產品生命週期管理經驗",
+              "percent": 10
+            },
+            {
+              "label": "跨部門/跨國協調能力",
+              "percent": 85
+            },
+            {
+              "label": "市場研究與競品分析能力",
+              "percent": 55
+            },
+            {
+              "label": "簡報與教育訓練能力",
+              "percent": 70
+            },
+            {
+              "label": "英文溝通能力(對接全球夥伴)",
+              "percent": 45
+            }
+          ],
+          "requirements": [
+            "Life Science/Pharmacy/Medicine學位",
+            "3年以上藥廠PM或行銷經驗",
+            "藥品產品生命週期管理",
+            "市場研究與競品分析",
+            "簡報與溝通能力",
+            "跨部門協作(Sales/Medical Affairs)",
+            "與國際夥伴協作執行在地行銷",
+            "英文溝通能力"
+          ],
+          "resume_coverage": [
+            {
+              "text": "經濟系畢業(非Life Science/Pharmacy/Medicine)",
+              "status": "missing"
+            },
+            {
+              "text": "1年+金融科技產品經驗,非藥廠產業",
+              "status": "missing"
+            },
+            {
+              "text": "軟體產品0到1上線經驗(非藥品生命週期管理)",
+              "status": "partial"
+            },
+            {
+              "text": "東南亞/歐美競品分析經驗(非藥業)",
+              "status": "partial"
+            },
+            {
+              "text": "績效報告簡報、5場培訓200+人次",
+              "status": "covered"
+            },
+            {
+              "text": "單一需求窗口,對接主管/利害關係人/技術團隊",
+              "status": "covered"
+            },
+            {
+              "text": "接手APAC/EU/UK跨國品牌線經驗",
+              "status": "covered"
+            },
+            {
+              "text": "每日書面英文對接,口說會議不主動發言",
+              "status": "partial"
+            }
+          ],
+          "bullet_rewrites": [
+            {
+              "before": "以 SQL(MS SQL/PostgreSQL)跨資料庫檢索底層數據,搭配 Power BI 製作視覺化報表,產出競品分析(東南亞/歐美共 4 份)與商業模式轉型評估供 CEO 決策",
+              "after": "跨資料庫查詢與Power BI視覺化整合,產出東南亞/歐美市場共4份競品分析報告與商業模式轉型評估,作為高層策略決策依據"
+            },
+            {
+              "before": "擔任海外客戶決策層、各部門利害關係人與技術團隊的單一需求窗口,將模糊需求轉化為可執行規格",
+              "after": "擔任海外客戶決策層與跨部門利害關係人之單一溝通窗口,將模糊需求釐清並轉化為可執行的產品規格與行動方案"
+            },
+            {
+              "before": "規劃並主持 5 場跨部門新產品培訓(累計 200+ 名參與者),自製教材協助客戶與合作夥伴快速上手",
+              "after": "自製教材並規劃主持5場新產品教育訓練,累計服務200+名客戶與合作夥伴,協助快速理解產品並上手應用"
+            },
+            {
+              "before": "接手單一最大品牌產品線(橫跨 APAC 與 EU/UK 兩市場),在前任離職、無品牌或產業文件情況下 3 個月建立完整知識庫",
+              "after": "在前手離職、無交接文件情況下,3個月內獨立建立橫跨APAC與EU/UK兩市場之品牌產品線完整知識庫並順利銜接營運"
+            }
+          ],
+          "gaps": [
+            {
+              "title": "Gap 1:學歷條件不符",
+              "detail": "職缺明確要求Life Science/Pharmacy/Medicine學位,經濟系背景屬於硬性門檻外的落差,ATS或HR初篩階段極可能直接被排除,建議投遞前評估是否有內部推薦或特殊管道,否則命中率偏低。"
+            },
+            {
+              "title": "Gap 2:產業與年資門檻不符",
+              "detail": "要求3年以上藥廠PM或行銷經驗,目前經歷全數在金融科技產業,完全無製藥/生技產業實績,建議若堅持投遞需在求職信中明確說明可遷移能力(跨部門協調、0到1產品經驗),但難以彌補產業知識落差。"
+            },
+            {
+              "title": "Gap 3:藥品生命週期管理知識缺口",
+              "detail": "軟體產品0到1經驗與藥品從研發、法規、臨床到上市的生命週期管理是不同知識體系,若投遞建議自行做功課了解基本藥品法規流程(如TFDA、罕見疾病用藥相關規範),避免面試時對產業術語生疏。"
+            },
+            {
+              "title": "Gap 4:英文口說能力待加強",
+              "detail": "職缺需與國際夥伴協作執行在地行銷,可能涉及跨國會議口說,目前履歷顯示英文優勢在書面往來,口說會議不主動發言,建議先加強英文口語表達再考慮此類需高頻跨國口說溝通的職缺。"
+            }
+          ],
+          "company_intro": "EXCELSIOR BIOPHARMA INC 從職缺名稱推測應為一家聚焦於罕見疾病(Rare Disease)領域的生技或製藥公司,可能負責在台灣或亞太地區代理、推廣特定罕見疾病用藥,並與國際原廠或合作夥伴協作執行在地行銷與病患支持計畫。公司規模、成立時間與市場地位不明確,保守推測應屬中小型或跨國藥廠在台的行銷據點,非本土大型製藥集團。",
+          "relative_comparison": "本次僅有這一筆職缺可供分析,無法做跨職缺橫向比較。但若對照求職者自訂的目標產業優先序(半導體>電信>電子>軟體業),這筆屬於生技製藥產業,不僅不在候選人偏好清單內,更帶有學歷與年資的硬性門檻,屬於本次分析中風險最高、命中率最低的類型,分數偏低主要反映「產業與資格斷層」而非能力不足。",
+          "key_advice": "除非有特殊管道或強烈興趣轉戰生技產業,否則建議將心力優先投入半導體/電信/電子/軟體業中不設學歷科系限制的PM/PjM/BA職缺,此職缺的學歷與年資門檻幾乎難以透過履歷包裝彌補。"
+        }
+      },
+      {
         "jobNo": "14839157",
         "jobName": "廣告銷售業務",
         "custName": "博英科技有限公司",
