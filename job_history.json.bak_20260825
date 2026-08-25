@@ -1,356 +1,73 @@
 [
   {
     "date": "2026-08-25",
-    "ai_matched": true,
-    "report_url": "reports/diagnosis_2026-08-25.html",
+    "ai_matched": false,
+    "report_url": "",
     "jobs": [
       {
-        "jobNo": "15358623",
-        "jobName": "新產品導入專案經理 NPI Project Manager",
-        "custName": "愛利奧科技股份有限公司",
-        "salary": "80,000 起",
-        "location": "台北市松山區",
-        "industry": "綜合商品批發代理業",
-        "url": "https://www.104.com.tw/job/956sf",
-        "ai_score": 8,
-        "ai_reason": "NPI Project Manager職稱吻合,5+產品0→1完美對應",
-        "is_reference": false,
-        "diagnosis": {
-          "jobNo": "15358623",
-          "overall_score": 40,
-          "overall_summary": "跨部門溝通與專案排程管理能力可遷移,但缺乏硬體NPI(EVT/DVT/PVT/MP)與供應鏈/採購實務經驗,且年資(1-2年)遠低於職缺要求的4-7年,是最大落差。",
-          "dimensions": [
-            {
-              "label": "硬體NPI階段關卡實務經驗",
-              "percent": 15
-            },
-            {
-              "label": "跨部門溝通協調證明",
-              "percent": 80
-            },
-            {
-              "label": "供應鏈/採購/量產協調經驗",
-              "percent": 10
-            },
-            {
-              "label": "專案排程與關鍵路徑管理",
-              "percent": 65
-            },
-            {
-              "label": "英文溝通能力(國際品牌/供應商)",
-              "percent": 55
-            },
-            {
-              "label": "年資符合度(4-7年)",
-              "percent": 20
-            }
-          ],
-          "requirements": [
-            "4-7年硬體NPI/量產專案管理經驗",
-            "熟悉EVT/DVT/PVT/MP新產品導入關卡",
-            "供應鏈/採購/代工廠協調經驗",
-            "品質與法規認證合作經驗",
-            "跨部門無職權影響力與衝突解決",
-            "逆推排程與關鍵路徑管理能力"
-          ],
-          "resume_coverage": [
-            {
-              "text": "硬體NPI經驗(未提及,年資亦不足)",
-              "status": "missing"
-            },
-            {
-              "text": "EVT/DVT/PVT/MP階段關卡(無對應經歷)",
-              "status": "missing"
-            },
-            {
-              "text": "供應鏈/採購/代工協調(未提及)",
-              "status": "missing"
-            },
-            {
-              "text": "品質/認證合規(未提及)",
-              "status": "missing"
-            },
-            {
-              "text": "單一需求窗口對接主管與技術團隊",
-              "status": "covered"
-            },
-            {
-              "text": "看板法追蹤關鍵路徑與風險",
-              "status": "covered"
-            }
-          ],
-          "bullet_rewrites": [
-            {
-              "before": "主導 5+ 項規格產品從需求訪談、規格定義到上線驗收之 0 到 1 完整流程;撰寫 PRD 明確定義功能說明,作為跨部門溝通與開發執行依據",
-              "after": "主導5項以上產品從需求訪談、規格定義到上線驗收之完整流程,建立階段性驗收標準作為跨部門執行依據,確保各關卡如期完成"
-            },
-            {
-              "before": "以看板方法追蹤並行專案的關鍵路徑與風險,搭配部門 OKR 對齊優先級,提前調整排程確保如期交付",
-              "after": "同時追蹤多項並行專案的關鍵路徑與風險,依優先級調整排程並提前預警瓶頸,確保各專案如期交付"
-            },
-            {
-              "before": "擔任海外客戶決策層、各部門利害關係人與技術團隊的單一需求窗口,將模糊需求轉化為可執行規格",
-              "after": "在無直接管轄權限下,擔任海外客戶、各部門與技術團隊之間的單一溝通窗口,將模糊需求轉化為可執行規格並推動跨部門共識"
-            },
-            {
-              "before": "主導第三方系統介接專案,負責需求對接、規格定義及產品上線",
-              "after": "主導對外部合作方之系統介接專案,統籌需求對接、規格定義與上線驗收,類似跨供應商協調角色"
-            }
-          ],
-          "gaps": [
-            {
-              "title": "Gap 1:硬體NPI專業知識",
-              "detail": "無EVT/DVT/PVT/MP等新產品導入階段關卡經驗,建議面談前查詢基礎定義並以軟體PRD驗收流程類比說明可遷移邏輯"
-            },
-            {
-              "title": "Gap 2:供應鏈與採購實務",
-              "detail": "履歷未提及零組件採購、供應商評選或代工廠協調經驗,此為職缺核心職責之一,短期內較難補強"
-            },
-            {
-              "title": "Gap 3:年資落差",
-              "detail": "職缺要求4-7年NPI經驗,candidate僅1-2年且非硬體產業,投遞前應評估是否會被系統或HR直接篩掉"
-            },
-            {
-              "title": "Gap 4:口語英文溝通準備",
-              "detail": "現職以英文書面為主,此職缺為國際品牌需高頻口語溝通,建議面談前加強口說流暢度"
-            }
-          ],
-          "company_intro": "愛利奧科技股份有限公司登記於綜合商品批發代理業,推測為引進與銷售商業級咖啡烘豆機等設備的貿易代理商,具備國際品牌合作與跨國供應鏈往來背景,規模應為中小型企業,精確成立時間與員工數不確定。",
-          "relative_comparison": "此職缺在五筆精選中分數偏低,因為職缺明確要求4-7年硬體NPI專業經驗與供應鏈實務,candidate的金融科技軟體產品PM背景與此有本質落差;僅跨部門溝通與排程管理的可遷移技能與HID的Program Manager職缺性質相近,但吻合度明顯不如該職缺。",
-          "key_advice": "若仍想投遞,建議在履歷與面談中誠實定位為「具PM方法論但硬體NPI為轉職」,並主動說明快速學習產業知識的實績(如3個月接手品牌線),同時做好可能因年資門檻被篩掉的心理準備。"
-        }
-      },
-      {
-        "jobNo": "yt_44265",
-        "jobName": "技術專案經理",
-        "custName": "familypet",
+        "jobNo": "yt_48109",
+        "jobName": "【資深/初階】專案管理專員｜永續電力處",
+        "custName": "陽光伏特家Sunnyfounder",
         "salary": "面議",
         "location": "臺北市",
         "industry": "新創(Yourator)",
-        "url": "https://www.yourator.co/companies/familypet/jobs/44265",
-        "ai_score": 7,
-        "ai_reason": "技術專案經理職稱符合,新創彈性大",
+        "url": "https://www.yourator.co/companies/Sunnyfounder/jobs/48109",
+        "ai_score": null,
+        "ai_reason": "",
         "is_reference": false,
-        "diagnosis": {
-          "jobNo": "yt_44265",
-          "overall_score": 58,
-          "overall_summary": "PRD撰寫與擔任產品/開發技術橋樑的經驗與此職缺高度吻合,但JIRA/Scrum正式敏捷流程、GA4數據埋點與Postman API測試等具體工具鏈缺乏實務經驗,是需要在面談前快速補強的落差。",
-          "dimensions": [
-            {
-              "label": "PRD/需求文件撰寫能力",
-              "percent": 85
-            },
-            {
-              "label": "敏捷開發工具鏈熟悉度(JIRA/Scrum)",
-              "percent": 25
-            },
-            {
-              "label": "數據追蹤與GA4規劃能力",
-              "percent": 15
-            },
-            {
-              "label": "API/系統介接測試經驗",
-              "percent": 45
-            },
-            {
-              "label": "跨部門技術橋樑溝通",
-              "percent": 80
-            },
-            {
-              "label": "政府補助計畫管理經驗",
-              "percent": 10
-            }
-          ],
-          "requirements": [
-            "PRD/WBS撰寫與維護",
-            "Agile/Scrum流程管理與JIRA工具",
-            "GA4數據追蹤埋點規劃",
-            "API介接測試(Postman)",
-            "系統邏輯梳理(金流/會員/訂單)",
-            "政府補助計畫進度管理"
-          ],
-          "resume_coverage": [
-            {
-              "text": "PRD撰寫經驗豐富(5+項產品)",
-              "status": "covered"
-            },
-            {
-              "text": "看板法管理專案(非正式Scrum,無JIRA)",
-              "status": "partial"
-            },
-            {
-              "text": "數據分析用SQL/Power BI(無GA4埋點經驗)",
-              "status": "missing"
-            },
-            {
-              "text": "第三方系統介接經驗(無Postman測試工具)",
-              "status": "partial"
-            },
-            {
-              "text": "第三方系統介接需求對接與規格定義",
-              "status": "covered"
-            },
-            {
-              "text": "政府補助計畫管理(未提及)",
-              "status": "missing"
-            }
-          ],
-          "bullet_rewrites": [
-            {
-              "before": "主導 5+ 項規格產品從需求訪談、規格定義到上線驗收之 0 到 1 完整流程;撰寫 PRD 明確定義功能說明,作為跨部門溝通與開發執行依據",
-              "after": "主導5項以上產品從需求訪談到上線驗收之0到1流程,撰寫PRD明確定義功能規格與驗收標準,作為開發團隊執行與跨部門溝通的共同依據"
-            },
-            {
-              "before": "主導第三方系統介接專案,負責需求對接、規格定義及產品上線",
-              "after": "主導第三方系統介接專案,梳理系統串接邏輯並定義規格,擔任產品與技術團隊之間的溝通橋樑,推動介接功能上線"
-            },
-            {
-              "before": "以看板方法追蹤並行專案的關鍵路徑與風險,搭配部門 OKR 對齊優先級,提前調整排程確保如期交付",
-              "after": "以看板方法(Kanban)追蹤並行專案進度與風險,依優先級動態調整排程,確保多項專案如期交付"
-            },
-            {
-              "before": "以 SQL(MS SQL/PostgreSQL)跨資料庫檢索底層數據,搭配 Power BI 製作視覺化報表,產出競品分析",
-              "after": "以SQL跨資料庫查詢底層數據,結合Power BI製作視覺化報表,將數據轉化為產品迭代與商業決策依據"
-            }
-          ],
-          "gaps": [
-            {
-              "title": "Gap 1:GA4數據埋點規劃",
-              "detail": "履歷未提及GA4或任何前端事件追蹤埋點規劃經驗,建議面談前自學GA4基礎事件定義邏輯"
-            },
-            {
-              "title": "Gap 2:JIRA/Scrum正式流程",
-              "detail": "現職使用看板法而非正式Scrum/JIRA,可準備說明兩者管理邏輯相通之處(任務拆解、進度追蹤)"
-            },
-            {
-              "title": "Gap 3:API測試工具Postman",
-              "detail": "雖有第三方系統介接經驗,但未明確操作過Postman等API測試工具,建議面談前安裝並練習基本操作"
-            },
-            {
-              "title": "Gap 4:政府補助計畫管理",
-              "detail": "履歷無政府補助/專案核銷相關經驗,此為職缺明確職責之一,可誠實告知並強調行政流程管理的可遷移能力(如培訓教材/簡報統籌)"
-            }
-          ],
-          "company_intro": "familypet為刊登於新創平台Yourator的寵物領域新創公司,依職缺描述提及與「集團生態系」(App內嵌、支付、物流)整合,推測為依附或關聯於較大集團的寵物電商/服務平台,團隊規模應偏小型新創,強調與技術長直接協作的扁平化組織,詳細成立時間與規模不確定。",
-          "relative_comparison": "此職缺在PRD撰寫與跨部門技術橋樑角色上與candidate經驗高度重疊,是五筆職缺中僅次於HID的第二高分;但因JIRA/GA4/Postman等具體工具經驗缺乏,加上新創職缺可能要求更強的獨立技術判斷能力,分數略低於HID的Program Manager職缺。",
-          "key_advice": "投遞前建議快速補強GA4與Postman的基本操作認知,並在履歷/面談中把SQL、Python數據分析經驗包裝成「數據驅動產品決策」能力,以銜接此職缺對數據規劃的要求。"
-        }
+        "diagnosis": null
       },
       {
-        "jobNo": "15358446",
-        "jobName": "Program Manager",
-        "custName": "數位人有限公司",
+        "jobNo": "yt_48108",
+        "jobName": "【主管職】專案營運部部長｜永續電力處",
+        "custName": "陽光伏特家Sunnyfounder",
         "salary": "面議",
-        "location": "台北市信義區",
-        "industry": "其他專業／科學及技術業",
-        "url": "https://www.104.com.tw/job/956ni",
-        "ai_score": 6,
-        "ai_reason": "職稱符合但JD極度不完整無法評估",
+        "location": "臺北市",
+        "industry": "新創(Yourator)",
+        "url": "https://www.yourator.co/companies/Sunnyfounder/jobs/48108",
+        "ai_score": null,
+        "ai_reason": "",
         "is_reference": false,
-        "diagnosis": {
-          "jobNo": "15358446",
-          "overall_score": 70,
-          "overall_summary": "擔任跨國品牌客戶與技術團隊單一需求窗口、同時並行管理多項0到1專案的經驗,幾乎是HID這個跨地域Program Manager職缺的翻版,最大落差在於缺乏生物辨識/嵌入式軟硬體產業背景。",
-          "dimensions": [
-            {
-              "label": "跨國跨部門溝通樞紐經驗",
-              "percent": 85
-            },
-            {
-              "label": "多專案並行管理能力",
-              "percent": 80
-            },
-            {
-              "label": "生物辨識/嵌入式軟硬體技術理解",
-              "percent": 30
-            },
-            {
-              "label": "風險識別與矯正措施管理",
-              "percent": 75
-            },
-            {
-              "label": "職級/年資符合度",
-              "percent": 45
-            },
-            {
-              "label": "跨國英文專業溝通",
-              "percent": 60
-            }
-          ],
-          "requirements": [
-            "管理多個並行NPI/產品維護專案",
-            "跨地域跨部門團隊管理",
-            "擔任工程團隊與全球利害關係人的溝通樞紐",
-            "產品開發流程建立與最佳化",
-            "風險識別、分析與矯正措施管理",
-            "生物辨識/嵌入式軟硬體技術背景"
-          ],
-          "resume_coverage": [
-            {
-              "text": "同時主導5+項產品0到1並行推進",
-              "status": "covered"
-            },
-            {
-              "text": "接手橫跨APAC與EU/UK的最大品牌產品線",
-              "status": "covered"
-            },
-            {
-              "text": "擔任海外決策層、部門與技術團隊單一需求窗口",
-              "status": "covered"
-            },
-            {
-              "text": "3個月從零建立品牌知識庫(流程建立能力)",
-              "status": "partial"
-            },
-            {
-              "text": "專案突發狀況拆解問題、評估影響範圍",
-              "status": "covered"
-            },
-            {
-              "text": "生物辨識/嵌入式軟硬體背景(金融科技產業)",
-              "status": "missing"
-            }
-          ],
-          "bullet_rewrites": [
-            {
-              "before": "擔任海外客戶決策層、各部門利害關係人與技術團隊的單一需求窗口,將模糊需求轉化為可執行規格",
-              "after": "擔任跨國利害關係人與技術團隊之間的單一溝通樞紐,將分散於不同地區、角色的模糊需求整合轉化為可執行規格"
-            },
-            {
-              "before": "接手單一最大品牌產品線(橫跨 APAC 與 EU/UK 兩市場),在前任離職、無品牌或產業文件情況下 3 個月建立完整知識庫",
-              "after": "接手橫跨APAC與EU/UK兩地區的最大品牌產品線,在無前手交接文件情況下,3個月內獨立建立跨地區產品知識庫並銜接日常營運"
-            },
-            {
-              "before": "以看板方法追蹤並行專案的關鍵路徑與風險,搭配部門 OKR 對齊優先級,提前調整排程確保如期交付",
-              "after": "同時管理多項並行專案,以看板方法追蹤關鍵路徑與風險並對齊優先順序,提前識別瓶頸並調整排程確保交付"
-            },
-            {
-              "before": "專案突發狀況能及時拆解問題、評估影響範圍,提出多個可行解法供決策",
-              "after": "面對專案突發狀況,能快速拆解問題根因、評估對時程與範圍的影響,並提出多個可行方案供跨部門決策"
-            }
-          ],
-          "gaps": [
-            {
-              "title": "Gap 1:生物辨識/嵌入式技術背景",
-              "detail": "履歷完全無硬體或嵌入式軟體產業經驗,建議面談前了解HID產品線基礎概念,並強調過去3個月快速掌握陌生品牌知識的實績作為佐證"
-            },
-            {
-              "title": "Gap 2:資深年資疑慮",
-              "detail": "職缺未明列年資但外商Program Manager通常偏好資深人選,建議在履歷摘要中強化「管理專案數量與複雜度」而非僅強調年資"
-            },
-            {
-              "title": "Gap 3:正式產品開發流程建立經驗",
-              "detail": "現職偏向知識庫與規格建立,較少涉及跨組織SOP/最佳實務制度化,建議準備具體案例說明流程優化貢獻"
-            },
-            {
-              "title": "Gap 4:口語英文會議主動發言",
-              "detail": "現職英文溝通以書面為主,此職缺需高頻跨國視訊會議互動,建議加強口語簡報與即席問答能力"
-            }
-          ],
-          "company_intro": "此職缺由数位人有限公司刊登,實際雇主應為HID Global(依JD內容,總部位於美國德州奧斯汀,全球員工約4,500人),為身分識別與安全科技領域的知名廠商,產品涵蓋門禁卡、生物辨識等技術;推測其母公司為ASSA ABLOY集團,台北為其工程據點之一,精確組織架構與在台規模不確定。",
-          "relative_comparison": "此職缺在五筆精選中分數最高,因為JD明確要求的「跨地域溝通樞紐」「多專案並行管理」「風險識別與矯正措施」幾乎逐條對應candidate現職經驗,尤其單一需求窗口角色與HID描述的角色定位高度重疊;主要落差僅在於缺乏生物辨識/嵌入式硬體產業知識與可能的資深年資要求。",
-          "key_advice": "履歷與面談中應將金融科技0到1產品經驗重新框架為「可遷移的跨國專案管理方法論」,並主動以3個月從零建立品牌知識庫的實績,呼應HID要求的快速掌握新技術領域能力。"
-        }
+        "diagnosis": null
+      },
+      {
+        "jobNo": "yt_48067",
+        "jobName": "品牌社群與口碑行銷主管（AI SEO）（台北辦公室）",
+        "custName": "awoo",
+        "salary": "面議",
+        "location": "臺北市",
+        "industry": "新創(Yourator)",
+        "url": "https://www.yourator.co/companies/awoo/jobs/48067",
+        "ai_score": null,
+        "ai_reason": "",
+        "is_reference": false,
+        "diagnosis": null
+      },
+      {
+        "jobNo": "11828571",
+        "jobName": "資訊工程師",
+        "custName": "山海樓/農人餐桌/GREEN&SAFE真食物專賣店_永豐餘生技股份有限公司",
+        "salary": "面議",
+        "location": "台北市中正區",
+        "industry": "餐館業",
+        "url": "https://www.104.com.tw/job/71izf",
+        "ai_score": null,
+        "ai_reason": "",
+        "is_reference": false,
+        "diagnosis": null
+      },
+      {
+        "jobNo": "15198903",
+        "jobName": "財務會計專員",
+        "custName": "卓美企業股份有限公司",
+        "salary": "面議",
+        "location": "新北市新店區",
+        "industry": "其他商品批發業",
+        "url": "https://www.104.com.tw/job/91rjr",
+        "ai_score": null,
+        "ai_reason": "",
+        "is_reference": false,
+        "diagnosis": null
       },
       {
         "jobNo": "15358270",
@@ -360,216 +77,179 @@
         "location": "台北市信義區",
         "industry": "其他相關製造業",
         "url": "https://www.104.com.tw/job/956im",
-        "ai_score": 5,
-        "ai_reason": "職能部分吻合但不是主目標PM,產業不在優先序",
-        "is_reference": true,
-        "diagnosis": {
-          "jobNo": "15358270",
-          "overall_score": 47,
-          "overall_summary": "SQL跨資料庫查詢、Power BI報表與成本分析模型等硬技能與職缺需求直接對應,但職務本質偏向系統維運/Help Desk支援,與candidate鎖定的PM/0到1產品開發方向有職能落差。",
-          "dimensions": [
-            {
-              "label": "SQL/資料庫操作能力",
-              "percent": 80
-            },
-            {
-              "label": "跨部門系統整合疑難排解經驗",
-              "percent": 50
-            },
-            {
-              "label": "財務/營運報表產出能力",
-              "percent": 75
-            },
-            {
-              "label": "使用者文件與教育訓練",
-              "percent": 70
-            },
-            {
-              "label": "系統環境規劃與擴充經驗",
-              "percent": 15
-            },
-            {
-              "label": "職能定位吻合度(BA/維運 vs PM)",
-              "percent": 35
-            }
-          ],
-          "requirements": [
-            "資料庫匯入匯出與系統維運協作",
-            "蒐集分析資訊產出技術報告",
-            "跨系統整合疑難排解與測試",
-            "財務/營運報表產出",
-            "使用者文件撰寫與Help Desk支援",
-            "系統環境規劃與擴充建議"
-          ],
-          "resume_coverage": [
-            {
-              "text": "SQL跨資料庫查詢(MS SQL/PostgreSQL)",
-              "status": "covered"
-            },
-            {
-              "text": "競品分析報告與商業模式評估產出",
-              "status": "covered"
-            },
-            {
-              "text": "跨部門溝通協調(非典型IT系統疑難排解)",
-              "status": "partial"
-            },
-            {
-              "text": "Power BI視覺化報表、成本試算損益彙總",
-              "status": "covered"
-            },
-            {
-              "text": "培訓教材/200+人次新產品教育訓練",
-              "status": "partial"
-            },
-            {
-              "text": "系統環境規劃與擴充(未提及)",
-              "status": "missing"
-            }
-          ],
-          "bullet_rewrites": [
-            {
-              "before": "以 SQL(MS SQL/PostgreSQL)跨資料庫檢索底層數據,搭配 Power BI 製作視覺化報表,產出競品分析(東南亞/歐美共 4 份)與商業模式轉型評估供 CEO 決策",
-              "after": "以SQL跨資料庫查詢底層數據,搭配Power BI製作視覺化報表,產出多份市場競品分析與商業模式評估,供管理層決策參考"
-            },
-            {
-              "before": "建立多維度成本分析模型,管理千項以上產品之成本試算與損益彙總報表,支援定價決策",
-              "after": "建立多維度成本分析模型,彙整大量產品之成本試算與損益數據,產出報表支援定價與營運決策"
-            },
-            {
-              "before": "規劃並主持 5 場跨部門新產品培訓(累計 200+ 名參與者),自製教材協助客戶與合作夥伴快速上手",
-              "after": "自製教材並主持多場跨部門教育訓練,累計超過200名參與者,協助使用者快速上手新系統與流程"
-            },
-            {
-              "before": "以 Python 結合生成式 AI 開發資訊同步自動化排程,將原需每週 1-2 小時的跨部門作業轉為自動執行",
-              "after": "以Python結合生成式AI開發資料自動化流程,將原本需人工執行的跨部門作業轉為自動化排程,提升整體作業效率"
-            }
-          ],
-          "gaps": [
-            {
-              "title": "Gap 1:Help Desk第一線支援經驗",
-              "detail": "履歷無使用者支援/故障排除的第一線經驗,建議面談前釐清此職缺Help Desk比重高低"
-            },
-            {
-              "title": "Gap 2:系統環境規劃能力",
-              "detail": "無IT基礎架構或系統擴充規劃相關經驗,此為技術性較強的職責,短期較難補強"
-            },
-            {
-              "title": "Gap 3:職能方向偏離疑慮",
-              "detail": "此職缺偏向系統維運/BA支援性質,與candidate鎖定的PM/0到1產品開發方向不完全一致,投遞前應評估長期職涯路徑"
-            },
-            {
-              "title": "Gap 4:跨系統疑難排解實務",
-              "detail": "履歷較少著墨具體的IT系統除錯/測試案例,建議補充過去在系統介接專案中處理過的技術問題實例"
-            }
-          ],
-          "company_intro": "凱悅國際貿易有限公司登記於其他相關製造業,推測為中小型貿易或製造相關企業,此職缺偏向內部IT/商業分析支援性質,公司規模與知名度較不明確,精確產業定位與經營細節不確定。",
-          "relative_comparison": "此職缺分數落在中段,因為SQL、Power BI、報表產出與成本分析等硬技能與candidate現有能力高度吻合,但職務本質偏向系統維運與Help Desk支援而非candidate鎖定的PM/0到1產品開發方向,且非目標產業(半導體/電子/電信);整體分數低於HID與familypet,但因技能直接對應而高於愛利奧與陽光伏特家。",
-          "key_advice": "若考慮投遞,建議面談時主動確認此職務未來是否有機會轉向BA/流程優化或PM方向發展,避免長期停留在純系統維運支援角色。"
-        }
+        "ai_score": null,
+        "ai_reason": "",
+        "is_reference": false,
+        "diagnosis": null
       },
       {
-        "jobNo": "yt_48109",
-        "jobName": "【資深/初階】專案管理專員｜永續電力處",
-        "custName": "陽光伏特家Sunnyfounder",
+        "jobNo": "15358446",
+        "jobName": "Program Manager",
+        "custName": "數位人有限公司",
+        "salary": "面議",
+        "location": "台北市信義區",
+        "industry": "其他專業／科學及技術業",
+        "url": "https://www.104.com.tw/job/956ni",
+        "ai_score": null,
+        "ai_reason": "",
+        "is_reference": false,
+        "diagnosis": null
+      },
+      {
+        "jobNo": "15358698",
+        "jobName": "Technical Program Manager II, NPI Product Quality, Pixel",
+        "custName": "Google_美商科高國際有限公司",
+        "salary": "面議",
+        "location": "新北市板橋區",
+        "industry": "網際網路相關業",
+        "url": "https://www.104.com.tw/job/956ui",
+        "ai_score": null,
+        "ai_reason": "",
+        "is_reference": false,
+        "diagnosis": null
+      },
+      {
+        "jobNo": "15358623",
+        "jobName": "新產品導入專案經理 NPI Project Manager",
+        "custName": "愛利奧科技股份有限公司",
+        "salary": "80,000 起",
+        "location": "台北市松山區",
+        "industry": "綜合商品批發代理業",
+        "url": "https://www.104.com.tw/job/956sf",
+        "ai_score": null,
+        "ai_reason": "",
+        "is_reference": false,
+        "diagnosis": null
+      },
+      {
+        "jobNo": "15358297",
+        "jobName": "光纖連接-模具專案工程師 (NPI)",
+        "custName": "鴻海精密工業股份有限公司",
+        "salary": "面議",
+        "location": "新北市土城區",
+        "industry": "消費性電子產品製造業",
+        "url": "https://www.104.com.tw/job/956jd",
+        "ai_score": null,
+        "ai_reason": "",
+        "is_reference": false,
+        "diagnosis": null
+      },
+      {
+        "jobNo": "14700301",
+        "jobName": "總務管理人員(台北)",
+        "custName": "泰山企業股份有限公司",
+        "salary": "面議",
+        "location": "台北市中正區",
+        "industry": "飲料製造業",
+        "url": "https://www.104.com.tw/job/8r2tp",
+        "ai_score": null,
+        "ai_reason": "",
+        "is_reference": false,
+        "diagnosis": null
+      },
+      {
+        "jobNo": "li_4448146456",
+        "jobName": "Project specialist 專案管理 (Device Connectivity)",
+        "custName": "Moxa",
+        "salary": "面議",
+        "location": "Taipei, Taipei City, Taiwan",
+        "industry": "LinkedIn",
+        "url": "https://tw.linkedin.com/jobs/view/project-specialist-%E5%B0%88%E6%A1%88%E7%AE%A1%E7%90%86-device-connectivity-at-moxa-4448146456",
+        "ai_score": null,
+        "ai_reason": "",
+        "is_reference": false,
+        "diagnosis": null
+      },
+      {
+        "jobNo": "li_4455891029",
+        "jobName": "Construction Project Manager",
+        "custName": "Hilti Asia Pacific",
+        "salary": "面議",
+        "location": "Taipei, Taipei City, Taiwan",
+        "industry": "LinkedIn",
+        "url": "https://tw.linkedin.com/jobs/view/construction-project-manager-at-hilti-asia-pacific-4455891029",
+        "ai_score": null,
+        "ai_reason": "",
+        "is_reference": false,
+        "diagnosis": null
+      },
+      {
+        "jobNo": "15351990",
+        "jobName": "【膠帶領導品牌】日本市場產品專員",
+        "custName": "四維創新材料股份有限公司",
+        "salary": "面議",
+        "location": "新北市三重區",
+        "industry": "合成樹脂／塑膠及橡膠製造業",
+        "url": "https://www.104.com.tw/job/951o6",
+        "ai_score": null,
+        "ai_reason": "",
+        "is_reference": false,
+        "diagnosis": null
+      },
+      {
+        "jobNo": "14947436",
+        "jobName": "POD-採購主管",
+        "custName": "巨輪興業股份有限公司",
+        "salary": "面議",
+        "location": "新北市土城區",
+        "industry": "汽車及其零件製造業",
+        "url": "https://www.104.com.tw/job/8wdik",
+        "ai_score": null,
+        "ai_reason": "",
+        "is_reference": false,
+        "diagnosis": null
+      },
+      {
+        "jobNo": "yt_44265",
+        "jobName": "技術專案經理",
+        "custName": "familypet",
         "salary": "面議",
         "location": "臺北市",
         "industry": "新創(Yourator)",
-        "url": "https://www.yourator.co/companies/Sunnyfounder/jobs/48109",
-        "ai_score": 5,
-        "ai_reason": "專案管理職稱符合,但職稱標資深可能過高",
-        "is_reference": true,
-        "diagnosis": {
-          "jobNo": "yt_48109",
-          "overall_score": 22,
-          "overall_summary": "此職缺核心必備條件為電機/機械/土木/建築學歷與2年以上EPC技術實務經驗,candidate的經濟系背景與金融科技PM經歷幾乎無法對應,僅專案文件整理等軟性技能可勉強遷移。",
-          "dimensions": [
-            {
-              "label": "工程科系/電力技術背景",
-              "percent": 5
-            },
-            {
-              "label": "EPC圖面判讀能力",
-              "percent": 5
-            },
-            {
-              "label": "太陽光電系統設計知識",
-              "percent": 5
-            },
-            {
-              "label": "專案協調與跨職能溝通(可遷移)",
-              "percent": 55
-            },
-            {
-              "label": "技術文件整理與覆核(可遷移)",
-              "percent": 45
-            }
-          ],
-          "requirements": [
-            "電機/機械/土木/建築相關學歷",
-            "2年以上太陽光電系統設計或EPC實務經驗",
-            "熟悉SketchUp太陽能系統設計軟體",
-            "判讀電氣單線圖/配置圖能力",
-            "容量計算/模組逆變器選用/饋線容量評估"
-          ],
-          "resume_coverage": [
-            {
-              "text": "工程相關學歷(經濟系,不符合)",
-              "status": "missing"
-            },
-            {
-              "text": "太陽光電系統設計/EPC實務經驗(無)",
-              "status": "missing"
-            },
-            {
-              "text": "SketchUp軟體操作經驗(無)",
-              "status": "missing"
-            },
-            {
-              "text": "電氣單線圖/配置圖判讀能力(無)",
-              "status": "missing"
-            },
-            {
-              "text": "容量計算/模組逆變器選用等技術評估(無)",
-              "status": "missing"
-            }
-          ],
-          "bullet_rewrites": [
-            {
-              "before": "以看板方法追蹤並行專案的關鍵路徑與風險,搭配部門 OKR 對齊優先級,提前調整排程確保如期交付",
-              "after": "以系統化方法追蹤多項並行案件的進度與風險,提前識別瓶頸並回報主管,確保專案如期推進(可遷移之案件進度追蹤能力,非技術判讀)"
-            },
-            {
-              "before": "產出專案績效報告與簡報(進度追蹤、成本檢討、策略建議),直接供高層決策依據",
-              "after": "整理專案進度、成本與技術評估相關資訊,產出結構化報告供主管決策參考"
-            },
-            {
-              "before": "擔任海外客戶決策層、各部門利害關係人與技術團隊的單一需求窗口,將模糊需求轉化為可執行規格",
-              "after": "擔任跨部門與外部合作方之間的溝通對口,協助釐清需求並整理為可執行的書面說明"
-            }
-          ],
-          "gaps": [
-            {
-              "title": "Gap 1:工程科系學歷門檻",
-              "detail": "職缺明確要求電機/機械/土木/建築相關學歷,candidate為經濟系畢業,屬於硬性條件不符,建議優先確認公司是否接受非本科但有相關證照或自學基礎者"
-            },
-            {
-              "title": "Gap 2:EPC圖面判讀與SketchUp實務",
-              "detail": "完全無工程圖說判讀或系統設計軟體操作經驗,屬於需要數月到數年培養的專業技術,短期難以速成"
-            },
-            {
-              "title": "Gap 3:太陽光電技術知識",
-              "detail": "容量計算、模組/逆變器選用、饋線容量評估等為職缺核心技術要求,candidate目前無相關知識基礎"
-            },
-            {
-              "title": "Gap 4:可遷移技能有限",
-              "detail": "僅專案追蹤、文件整理、跨部門溝通等軟性PM技能可勉強對應,但這些非此職缺的篩選重點,整體適配度偏低"
-            }
-          ],
-          "company_intro": "陽光伏特家(Sunnyfounder)為台灣深耕屋頂型太陽能領域逾十年的能源新創公司,依職缺描述累積開發案場數量在國內小型屋頂太陽能開發規模中居前列,近年因市場需求擴大持續擴編;推測屬中大型新創規模,精確財務與員工數不確定。",
-          "relative_comparison": "此職缺在五筆精選中分數最低,因為JD明確要求電機/機械/土木/建築相關學歷與2年以上EPC技術實務經驗,candidate完全無太陽光電/電力工程背景,核心必備條件幾乎全數缺口,遠低於其他四筆職缺中至少有PM方法論或數據分析技能可對應的情況。",
-          "key_advice": "除非candidate有意願轉往工程技術路線並額外投入時間考取相關證照或自學太陽光電系統設計,否則建議暫緩投遞此職缺,優先聚焦與PM/BA職能更匹配的其他機會。"
-        }
+        "url": "https://www.yourator.co/companies/familypet/jobs/44265",
+        "ai_score": null,
+        "ai_reason": "",
+        "is_reference": false,
+        "diagnosis": null
+      },
+      {
+        "jobNo": "yt_43761",
+        "jobName": "資深電商營運",
+        "custName": "familypet",
+        "salary": "面議",
+        "location": "臺北市",
+        "industry": "新創(Yourator)",
+        "url": "https://www.yourator.co/companies/familypet/jobs/43761",
+        "ai_score": null,
+        "ai_reason": "",
+        "is_reference": false,
+        "diagnosis": null
+      },
+      {
+        "jobNo": "yt_43758",
+        "jobName": "後端工程師",
+        "custName": "familypet",
+        "salary": "面議",
+        "location": "臺北市",
+        "industry": "新創(Yourator)",
+        "url": "https://www.yourator.co/companies/familypet/jobs/43758",
+        "ai_score": null,
+        "ai_reason": "",
+        "is_reference": false,
+        "diagnosis": null
+      },
+      {
+        "jobNo": "yt_43759",
+        "jobName": "資深後端工程師",
+        "custName": "familypet",
+        "salary": "面議",
+        "location": "臺北市",
+        "industry": "新創(Yourator)",
+        "url": "https://www.yourator.co/companies/familypet/jobs/43759",
+        "ai_score": null,
+        "ai_reason": "",
+        "is_reference": false,
+        "diagnosis": null
       }
     ]
   },
