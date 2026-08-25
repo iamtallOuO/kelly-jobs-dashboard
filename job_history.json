@@ -1,5 +1,77 @@
 [
   {
+    "date": "2026-08-25",
+    "ai_matched": false,
+    "report_url": "",
+    "jobs": [
+      {
+        "jobNo": "14947436",
+        "jobName": "POD-採購主管",
+        "custName": "巨輪興業股份有限公司",
+        "salary": "面議",
+        "location": "新北市土城區",
+        "industry": "汽車及其零件製造業",
+        "url": "https://www.104.com.tw/job/8wdik",
+        "ai_score": null,
+        "ai_reason": "",
+        "is_reference": false,
+        "diagnosis": null
+      },
+      {
+        "jobNo": "yt_44265",
+        "jobName": "技術專案經理",
+        "custName": "familypet",
+        "salary": "面議",
+        "location": "臺北市",
+        "industry": "新創(Yourator)",
+        "url": "https://www.yourator.co/companies/familypet/jobs/44265",
+        "ai_score": null,
+        "ai_reason": "",
+        "is_reference": false,
+        "diagnosis": null
+      },
+      {
+        "jobNo": "yt_43761",
+        "jobName": "資深電商營運",
+        "custName": "familypet",
+        "salary": "面議",
+        "location": "臺北市",
+        "industry": "新創(Yourator)",
+        "url": "https://www.yourator.co/companies/familypet/jobs/43761",
+        "ai_score": null,
+        "ai_reason": "",
+        "is_reference": false,
+        "diagnosis": null
+      },
+      {
+        "jobNo": "yt_43758",
+        "jobName": "後端工程師",
+        "custName": "familypet",
+        "salary": "面議",
+        "location": "臺北市",
+        "industry": "新創(Yourator)",
+        "url": "https://www.yourator.co/companies/familypet/jobs/43758",
+        "ai_score": null,
+        "ai_reason": "",
+        "is_reference": false,
+        "diagnosis": null
+      },
+      {
+        "jobNo": "yt_43759",
+        "jobName": "資深後端工程師",
+        "custName": "familypet",
+        "salary": "面議",
+        "location": "臺北市",
+        "industry": "新創(Yourator)",
+        "url": "https://www.yourator.co/companies/familypet/jobs/43759",
+        "ai_score": null,
+        "ai_reason": "",
+        "is_reference": false,
+        "diagnosis": null
+      }
+    ]
+  },
+  {
     "date": "2026-08-24",
     "ai_matched": true,
     "report_url": "reports/diagnosis_2026-08-24.html",
