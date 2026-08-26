@@ -5,6 +5,416 @@
     "report_url": "reports/diagnosis_2026-08-26.html",
     "jobs": [
       {
+        "jobNo": "li_4457907066",
+        "jobName": "Business Analyst",
+        "custName": "Lenovo",
+        "salary": "面議",
+        "location": "Zhongshan District, Taipei City, Taiwan",
+        "industry": "LinkedIn",
+        "url": "https://tw.linkedin.com/jobs/view/business-analyst-at-lenovo-4457907066",
+        "ai_score": 6,
+        "ai_reason": "職稱符合BA目標，具相關技能，缺JD描述無法全面評估",
+        "is_reference": false,
+        "diagnosis": {
+          "jobNo": "li_4457907066",
+          "overall_score": 64,
+          "overall_summary": "SQL/Python/PowerBI數據分析與跨國需求轉譯經驗跟這個BA職缺的技能需求高度重疊，但JD要求5年以上business analytics/finance資歷，候選人僅1年多PM經驗，年資落差是最大扣分點。",
+          "dimensions": [
+            {
+              "label": "ATS關鍵字命中(BA/dashboard/forecasting)",
+              "percent": 70
+            },
+            {
+              "label": "數據分析與BI工具能力",
+              "percent": 80
+            },
+            {
+              "label": "跨部門跨國溝通證明",
+              "percent": 85
+            },
+            {
+              "label": "年資門檻符合度(5+年 vs 1-2年)",
+              "percent": 25
+            },
+            {
+              "label": "需求轉譯與報告產出能力",
+              "percent": 75
+            }
+          ],
+          "requirements": [
+            "5+年業務分析/財務/規劃經驗",
+            "Excel/BI工具熟練",
+            "儀表板與報表維護優化",
+            "協助整合預測模型至報告",
+            "簡報與視覺化溝通",
+            "跨部門需求收集與轉譯",
+            "資料準確性與一致性把關"
+          ],
+          "resume_coverage": [
+            {
+              "text": "僅約1年PM+3個月查帳經驗，未達5年門檻",
+              "status": "missing"
+            },
+            {
+              "text": "SQL/Python/PowerBI跨資料庫分析、成本分析模型",
+              "status": "covered"
+            },
+            {
+              "text": "競品分析與商業模式評估報表，非BMS/dashboard維運",
+              "status": "partial"
+            },
+            {
+              "text": "未明確提及forecasting/predictive model整合經驗",
+              "status": "missing"
+            },
+            {
+              "text": "專案績效報告與簡報供高層決策",
+              "status": "covered"
+            },
+            {
+              "text": "跨部門需求窗口、模糊需求轉可執行規格",
+              "status": "covered"
+            },
+            {
+              "text": "未明確提及資料一致性稽核流程",
+              "status": "partial"
+            }
+          ],
+          "bullet_rewrites": [
+            {
+              "before": "以 SQL(MS SQL/PostgreSQL)跨資料庫檢索底層數據，搭配 Power BI 製作視覺化報表，產出競品分析（東南亞/歐美共 4 份）與商業模式轉型評估供 CEO 決策",
+              "after": "運用 SQL 跨資料庫查詢底層數據，結合 Power BI 建立視覺化儀表板，產出 4 份跨區域競品分析報告，作為高層商業模式轉型決策依據"
+            },
+            {
+              "before": "以 Python 結合生成式 AI 開發資訊同步自動化排程...推廣至全品牌線後每年累計節省近 100 小時",
+              "after": "以 Python 結合生成式 AI 建置跨部門資訊同步自動化流程，推廣至全品牌線後每年節省近 100 小時人力工時，提升報表產製與資料整合效率"
+            },
+            {
+              "before": "主導 5+ 項規格產品從需求訪談、規格定義到上線驗收之 0 到 1 完整流程；撰寫 PRD 明確定義功能說明，作為跨部門溝通與開發執行依據",
+              "after": "主導 5+ 項產品需求訪談與規格定義，撰寫 PRD 轉譯業務需求為可執行規格，作為業務、技術、財務等跨部門溝通與決策依據"
+            },
+            {
+              "before": "產出專案績效報告與簡報（進度追蹤、成本檢討、策略建議），直接供高層決策依據",
+              "after": "定期產出專案績效報告與視覺化簡報，涵蓋進度追蹤、成本檢討與策略建議，作為高層業務規劃與績效管理之決策依據"
+            }
+          ],
+          "gaps": [
+            {
+              "title": "Gap1：年資門檻落差",
+              "detail": "JD要求5+年business analytics/finance/planning經驗，候選人僅1年多實戰經驗，建議履歷開頭強調高密度實戰內容（5+項0到1產品、5個月架構改造）彌補年資，並在面試主動說明。"
+            },
+            {
+              "title": "Gap2：財務規劃/BMS報告經驗未直接對應",
+              "detail": "目前經驗集中在產品0到1與PRD撰寫，較少財務forecasting/預測模型整合經驗，建議補充PwC查帳期間涉及數字分析的具體案例。"
+            },
+            {
+              "title": "Gap3：Dashboard維運經驗描述不足",
+              "detail": "履歷提到Power BI報表產出但未提及dashboard日常維運或指標優化，建議補充是否曾負責報表自動更新或指標維護。"
+            },
+            {
+              "title": "Gap4：英文口說能力偏弱",
+              "detail": "JD可能需與海外stakeholder開會，履歷自陳口說會議不主動發言，建議加強口語準備並在面試前演練。"
+            }
+          ],
+          "company_intro": "Lenovo是全球前段PC與智慧裝置大廠，總部位於香港，產品線涵蓋PC、伺服器、雲端基礎設施與AI裝置等，為《財星》全球500大企業之一。此職缺所屬IDG事業群Global Business Control team，推測偏向財務規劃與績效分析支援單位，制度與流程應相對成熟。",
+          "relative_comparison": "這是這批職缺中分數最高的一筆，因為BA職能、數據分析工具（SQL/Python/PowerBI）與跨部門溝通經驗都直接對應候選人的核心優勢，且Lenovo屬於電子硬體大廠，比其他三筆職缺更貼近候選人半導體/電子的目標產業排序。相對於國貿業務、前端工程師、船務人員這三筆職能完全偏離PM/BA方向的職缺，這筆是唯一值得優先投遞的選項，主要扣分點只在年資門檻。",
+          "key_advice": "投遞時務必在自傳或求職信中主動說明「1年+高密度PM/BA實戰」如何等同於多年份的產出量，正面回應5年資歷門檻的疑慮。"
+        }
+      },
+      {
+        "jobNo": "14293320",
+        "jobName": "國貿業務",
+        "custName": "菁盛企業有限公司",
+        "salary": "40,000 ~ 50,000",
+        "location": "新北市中和區",
+        "industry": "其他電信及通訊相關業",
+        "url": "https://www.104.com.tw/job/8icso",
+        "ai_score": 4,
+        "ai_reason": "電信業地點符合優先序，但職能是銷售業務非PM/BA",
+        "is_reference": false,
+        "diagnosis": {
+          "jobNo": "14293320",
+          "overall_score": 33,
+          "overall_summary": "英文跨國溝通與成本分析能力可部分遷移，但這是業務開發性質的國貿職缺，與候選人鎖定的PM/BA/PjM/PMO職能方向明顯不符，且缺乏主動開發客戶與報價成交的實績。",
+          "dimensions": [
+            {
+              "label": "職能相符度(PM vs業務開發)",
+              "percent": 25
+            },
+            {
+              "label": "跨國客戶溝通可遷移性",
+              "percent": 65
+            },
+            {
+              "label": "成本/報價分析可遷移性",
+              "percent": 55
+            },
+            {
+              "label": "業務開發實績",
+              "percent": 10
+            },
+            {
+              "label": "ATS關鍵字命中",
+              "percent": 30
+            }
+          ],
+          "requirements": [
+            "海外客戶開發與關係維護",
+            "Email/詢價/RFQ回覆處理",
+            "報價單製作與成本利潤分析",
+            "跨部門協調(成本/交期/MOQ)",
+            "業務銷售流程執行"
+          ],
+          "resume_coverage": [
+            {
+              "text": "僅有既有客戶對接經驗，無主動開發新客戶經驗",
+              "status": "missing"
+            },
+            {
+              "text": "每日英文書面對接海外人員，方向不同於業務詢價",
+              "status": "partial"
+            },
+            {
+              "text": "具備多維度成本分析模型與損益彙總經驗",
+              "status": "partial"
+            },
+            {
+              "text": "曾協調系統部門確認交期與部署排程，非採購交期協調",
+              "status": "partial"
+            },
+            {
+              "text": "無業務銷售流程執行經驗",
+              "status": "missing"
+            }
+          ],
+          "bullet_rewrites": [
+            {
+              "before": "擔任海外客戶決策層、各部門利害關係人與技術團隊的單一需求窗口，將模糊需求轉化為可執行規格",
+              "after": "擔任 APAC 與歐美海外客戶決策層的單一對接窗口，每日以英文書面回覆需求並轉化為明確可執行規格，具備穩定的跨國客戶溝通經驗"
+            },
+            {
+              "before": "建立多維度成本分析模型，管理千項以上產品之成本試算與損益彙總報表，支援定價決策",
+              "after": "建立多維度成本分析模型，管理千項以上產品之成本試算與損益彙總報表，具備支援報價與定價決策之分析能力"
+            },
+            {
+              "before": "每日以英文書面對接跨部門或海外人員需求",
+              "after": "每日以英文書面處理海外客戶與跨部門需求往來，累積穩定的跨國文件溝通與進度追蹤經驗"
+            }
+          ],
+          "gaps": [
+            {
+              "title": "Gap1：缺乏業務開發實績",
+              "detail": "履歷沒有主動開發新客戶或報價成交紀錄，僅有既有品牌客戶對接經驗，若要投遞需在面試中誠實說明並強調可遷移的成本分析與溝通能力。"
+            },
+            {
+              "title": "Gap2：職能方向與求職目標不符",
+              "detail": "此為業務性質而非PM/BA，與候選人鎖定的PM/PjM/BA/PMO方向差異大，建議先評估是否僅作為備案而非優先投遞。"
+            },
+            {
+              "title": "Gap3：產業定位模糊",
+              "detail": "菁盛企業產業分類為電信通訊，但工作內容偏一般貿易業務，與履歷強調的半導體/電信「產品」職能方向不完全一致，建議先確認實際業務項目再決定是否投遞。"
+            }
+          ],
+          "company_intro": "菁盛企業有限公司，推測為中小型貿易商，產業分類標示為其他電信及通訊相關業，主要業務應為電信相關產品之進出口貿易，公司規模與市場地位不確定，具體背景資訊有限。",
+          "relative_comparison": "分數低於Lenovo BA，因為職能本質是業務開發而非PM/BA，只有英文溝通與成本分析可部分遷移；但仍高於前端工程師與船務人員兩筆，因為候選人至少有海外客戶對接與成本分析的直接經驗可以類比。",
+          "key_advice": "若考慮投遞，建議在面試中誠實定位自己為「具備跨國溝通與成本分析基礎、但無業務開發實績」的轉職者，並確認薪資與職能方向是否真的符合中長期規劃。"
+        }
+      },
+      {
+        "jobNo": "yt_38897",
+        "jobName": "Frontend Engineer 前端工程師（React Native）",
+        "custName": "OakMega 大橡科技",
+        "salary": "50,000 ~ 100,000",
+        "location": "臺北市",
+        "industry": "新創(Yourator)",
+        "url": "https://www.yourator.co/companies/OakMega/jobs/38897",
+        "ai_score": 2,
+        "ai_reason": "職能不符，前端工程師不符求職者PM/BA目標",
+        "is_reference": false,
+        "diagnosis": {
+          "jobNo": "yt_38897",
+          "overall_score": 8,
+          "overall_summary": "履歷完全沒有前端開發或coding實作經驗，SQL/Python屬於資料分析用途而非React Native框架開發，這是硬性技能缺口，職能方向也與候選人鎖定的PM/BA/PjM完全不同。",
+          "dimensions": [
+            {
+              "label": "前端技術能力(React Native/coding)",
+              "percent": 5
+            },
+            {
+              "label": "敏捷開發協作可遷移性",
+              "percent": 40
+            },
+            {
+              "label": "產品/工程協作經驗",
+              "percent": 45
+            },
+            {
+              "label": "ATS關鍵字命中",
+              "percent": 10
+            }
+          ],
+          "requirements": [
+            "React Native App開發經驗",
+            "Sprint內Task執行(版面/邏輯/架構)",
+            "API串接能力",
+            "前端架構設計能力",
+            "與工程師/設計師/PM協作完成Roadmap"
+          ],
+          "resume_coverage": [
+            {
+              "text": "完全無前端框架或App開發經驗",
+              "status": "missing"
+            },
+            {
+              "text": "以看板方法管理專案排程，非開發者角色執行Sprint Task",
+              "status": "partial"
+            },
+            {
+              "text": "無API串接開發經驗(僅有系統介接需求對接)",
+              "status": "missing"
+            },
+            {
+              "text": "無前端架構設計經驗",
+              "status": "missing"
+            },
+            {
+              "text": "曾作為需求窗口與技術團隊協作，但非工程師身分",
+              "status": "partial"
+            }
+          ],
+          "bullet_rewrites": [
+            {
+              "before": "以看板方法追蹤並行專案的關鍵路徑與風險，搭配部門 OKR 對齊優先級，提前調整排程確保如期交付",
+              "after": "以看板方法(Kanban)管理並行專案排程，追蹤關鍵路徑與風險並對齊團隊優先級，具備敏捷式排程協作經驗"
+            },
+            {
+              "before": "主導第三方系統介接專案，負責需求對接、規格定義及產品上線",
+              "after": "主導第三方系統介接專案，負責需求訪談、規格定義與跨技術團隊協作，確保介接功能順利上線"
+            },
+            {
+              "before": "擔任海外客戶決策層、各部門利害關係人與技術團隊的單一需求窗口，將模糊需求轉化為可執行規格",
+              "after": "擔任需求方與技術團隊間的單一窗口，將模糊業務需求轉化為工程團隊可執行的規格文件，具備跨職能協作經驗"
+            }
+          ],
+          "gaps": [
+            {
+              "title": "Gap1：完全缺乏前端開發/coding實作經驗",
+              "detail": "履歷中SQL/Python屬於資料分析與自動化，非React Native或前端框架開發，這是硬性技能缺口，難以透過履歷包裝彌補，建議不投遞此職缺或僅作為了解業界生態的機會。"
+            },
+            {
+              "title": "Gap2：職稱與職能方向完全不符",
+              "detail": "候選人鎖定PM/BA/PjM/PMO，此職缺為IC工程師職位，職能轉換成本極高，非合理的求職方向。"
+            },
+            {
+              "title": "Gap3：產業與角色可遷移性有限",
+              "detail": "OakMega為新創公司開發團隊，產品開發模式與金融科技產品管理經驗的可遷移性有限。"
+            }
+          ],
+          "company_intro": "OakMega大橡科技，推測為台灣新創公司，產品應與App或軟體開發相關，團隊規模應偏小，公開資訊有限，建議求職者自行查證公司財務狀況與產品成熟度。",
+          "relative_comparison": "這是四筆職缺中分數最低的一筆，因為職能本質是工程師IC角色，需要候選人完全不具備的coding實作能力，遠低於Lenovo BA、國貿業務甚至船務人員這幾筆至少有部分技能或溝通經驗可遷移的職缺。",
+          "key_advice": "不建議投遞此職缺，職能與技能落差過大，時間應優先投入在Lenovo BA等與PM/BA方向相符的機會上。"
+        }
+      },
+      {
+        "jobNo": "15273582",
+        "jobName": "食品部 - 船務人員",
+        "custName": "裕元興業股份有限公司",
+        "salary": "面議",
+        "location": "台北市中山區",
+        "industry": "化學原料及其製品批發業",
+        "url": "https://www.104.com.tw/job/93d66",
+        "ai_score": 1,
+        "ai_reason": "產業職能都不符，報關船務與PM/BA目標相反",
+        "is_reference": true,
+        "diagnosis": {
+          "jobNo": "15273582",
+          "overall_score": 22,
+          "overall_summary": "PwC查帳期間累積的法規遵循與憑證審查經驗可部分類比食品進口法規審查，但完全缺乏報關實務與食品法規專業知識，且職能方向（船務/報關）與候選人鎖定的PM/BA完全不同。",
+          "dimensions": [
+            {
+              "label": "職能相符度(PM vs報關船務)",
+              "percent": 15
+            },
+            {
+              "label": "產業匹配度(食品貿易 vs 目標半導體電信)",
+              "percent": 5
+            },
+            {
+              "label": "法規文件審查可遷移性",
+              "percent": 45
+            },
+            {
+              "label": "跨部門催辦協調可遷移性",
+              "percent": 55
+            },
+            {
+              "label": "ATS關鍵字命中",
+              "percent": 15
+            }
+          ],
+          "requirements": [
+            "食品進口法規與稅則(CCC Code)判讀",
+            "報關報驗實務經驗",
+            "食品標示與添加物法規審查",
+            "通關文件與帳務管理",
+            "供應商/船期溝通協調"
+          ],
+          "resume_coverage": [
+            {
+              "text": "無食品進口稅則或CCC Code判讀經驗",
+              "status": "missing"
+            },
+            {
+              "text": "無報關報驗實務經驗，僅有稅務查核經驗可類比",
+              "status": "missing"
+            },
+            {
+              "text": "稅法法規遵循檢核經驗可部分類比食品標示法規審查",
+              "status": "partial"
+            },
+            {
+              "text": "無進出口通關帳務管理經驗，僅有一般財務報表經驗",
+              "status": "partial"
+            },
+            {
+              "text": "跨部門催辦補充文件與確保進度如期完成",
+              "status": "covered"
+            }
+          ],
+          "bullet_rewrites": [
+            {
+              "before": "跨部門溝通協調：與客戶財務/會計人員聯繫催辦補充文件，確保查核進度如期完成",
+              "after": "定期與客戶財務/會計人員聯繫催辦補充文件與憑證，確保查核進度如期完成，具備文件催辦與進度控管經驗"
+            },
+            {
+              "before": "稅務憑證與帳目覆核：檢視客戶各類進銷項憑證、費用單據，確認合法性與完整性，並協助整理查核工作底稿",
+              "after": "覆核客戶進銷項憑證與費用單據之合法性與完整性，並依規定整理查核工作底稿，具備憑證審查與文件覆核基礎"
+            },
+            {
+              "before": "稅法法規遵循檢查：依據所得稅法、營業稅法等規定，協助檢核客戶申報數字正確性，並標註異常或待釐清事項",
+              "after": "依據所得稅法、營業稅法等法規檢核客戶申報數字正確性，標註異常項目待後續釐清，具備法規對照與合規審查經驗"
+            }
+          ],
+          "gaps": [
+            {
+              "title": "Gap1：缺乏食品進口法規與報關實務經驗",
+              "detail": "稅務查核經驗雖與法規遵循相關，但食品標示、關務稅則等屬專業領域知識，需要額外學習曲線，建議投遞前具體研究食品輸入相關法規。"
+            },
+            {
+              "title": "Gap2：職能方向與求職目標不符",
+              "detail": "此為船務/報關實務職缺，非PM/BA/PjM方向，與履歷定位的核心優勢（0到1產品開發、跨部門溝通）關聯性低。"
+            },
+            {
+              "title": "Gap3：產業排序不在目標清單內",
+              "detail": "化學原料及食品貿易批發業不在候選人半導體>電信>電子>軟體的目標產業排序內，建議此職缺優先度應排在後面。"
+            }
+          ],
+          "company_intro": "裕元興業股份有限公司，登記產業為化學原料及其製品批發業，目前積極擴編進口食品業務，推測公司主力仍以化學原料貿易為主，食品部門應屬相對新的業務擴展方向，公司規模與制度成熟度不明。",
+          "relative_comparison": "分數略高於前端工程師職缺，因為稅務查核經驗與法規審查、文件催辦有一定可遷移性，但仍遠低於Lenovo BA與國貿業務，因為職能（報關船務）與產業（食品貿易）都與候選人PM/BA方向及半導體/電信產業目標差距很大。",
+          "key_advice": "若非特別想累積進出口/法規相關經歷，建議不優先投遞此職缺，因為職能與產業排序都與候選人的中長期方向不符。"
+        }
+      },
+      {
         "jobNo": "15360784",
         "jobName": "PM",
         "custName": "協宜塑膠股份有限公司",
