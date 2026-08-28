@@ -1,5 +1,77 @@
 [
   {
+    "date": "2026-08-28",
+    "ai_matched": true,
+    "report_url": "",
+    "jobs": [
+      {
+        "jobNo": "yt_38892",
+        "jobName": "數位創新執行經理 (All Professions Welcome)",
+        "custName": "WebComm 偉康科技",
+        "salary": "面議",
+        "location": "臺北市",
+        "industry": "新創(Yourator)",
+        "url": "https://www.yourator.co/companies/WebComm/jobs/38892",
+        "ai_score": 6,
+        "ai_reason": "All Professions Welcome+執行經理+數位創新，有潛在專案/協調空間，惟JD缺詳細資訊",
+        "is_reference": false,
+        "diagnosis": null
+      },
+      {
+        "jobNo": "6915097",
+        "jobName": "Sales PM",
+        "custName": "嶄富科技企業有限公司",
+        "salary": "50,000 起",
+        "location": "台北市中正區",
+        "industry": "其他電子零組件相關業",
+        "url": "https://www.104.com.tw/job/447q1",
+        "ai_score": 4,
+        "ai_reason": "Sales PM重點為銷售市場開發，非產品/專案0→1開發，職能方向錯誤",
+        "is_reference": false,
+        "diagnosis": null
+      },
+      {
+        "jobNo": "yt_21459",
+        "jobName": "數據工程師 Data Engineer",
+        "custName": "WebComm 偉康科技",
+        "salary": "面議",
+        "location": "臺北市",
+        "industry": "新創(Yourator)",
+        "url": "https://www.yourator.co/companies/WebComm/jobs/21459",
+        "ai_score": 3,
+        "ai_reason": "具Python/SQL技能，但Data Engineer(系統架構)vs分析師職能路線錯位",
+        "is_reference": false,
+        "diagnosis": null
+      },
+      {
+        "jobNo": "yt_47269",
+        "jobName": "產品導入架構師 Implementation Architect_智能決策產品",
+        "custName": "WebComm 偉康科技",
+        "salary": "面議",
+        "location": "臺北市",
+        "industry": "新創(Yourator)",
+        "url": "https://www.yourator.co/companies/WebComm/jobs/47269",
+        "ai_score": 3,
+        "ai_reason": "導入架構師需深度技術背景及資深資歷，PM背景與需求不符",
+        "is_reference": true,
+        "diagnosis": null
+      },
+      {
+        "jobNo": "yt_37867",
+        "jobName": "Elasticsearch 數據架構師 Data Architect",
+        "custName": "WebComm 偉康科技",
+        "salary": "面議",
+        "location": "臺北市",
+        "industry": "新創(Yourator)",
+        "url": "https://www.yourator.co/companies/WebComm/jobs/37867",
+        "ai_score": 2,
+        "ai_reason": "架構師職等需資深背景，分析師→架構師職能路線不同",
+        "is_reference": true,
+        "diagnosis": null
+      }
+    ]
+  },
+  {
     "date": "2026-08-27",
     "ai_matched": true,
     "report_url": "reports/diagnosis_2026-08-27.html",
