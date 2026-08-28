@@ -5,6 +5,58 @@
     "report_url": "reports/diagnosis_2026-08-28.html",
     "jobs": [
       {
+        "jobNo": "14663239",
+        "jobName": "商控專員｜營運數據分析・商品管理(備宿舍)",
+        "custName": "岱妮蠶絲股份有限公司",
+        "salary": "40,000 起",
+        "location": "新北市三重區",
+        "industry": "鞋類／布類／服飾品零售業",
+        "url": "https://www.104.com.tw/job/8qa87",
+        "ai_score": 5,
+        "ai_reason": "新品上市、數據分析、專案追蹤匹配度高，產業優先序低",
+        "is_reference": false,
+        "diagnosis": null
+      },
+      {
+        "jobNo": "yt_46359",
+        "jobName": "AI 顧問（AI Consultant）",
+        "custName": "FUNRAISE",
+        "salary": "面議",
+        "location": "臺北市",
+        "industry": "新創(Yourator)",
+        "url": "https://www.yourator.co/companies/funraise/jobs/46359",
+        "ai_score": 2,
+        "ai_reason": "職能差異大，業務開發與PM方向不符，行業優先度低",
+        "is_reference": false,
+        "diagnosis": null
+      },
+      {
+        "jobNo": "li_4458927692",
+        "jobName": "Construction Project Manager, TW logistics",
+        "custName": "Coupang",
+        "salary": "面議",
+        "location": "Taipei, Taipei City, Taiwan",
+        "industry": "LinkedIn",
+        "url": "https://tw.linkedin.com/jobs/view/construction-project-manager-tw-logistics-at-coupang-4458927692",
+        "ai_score": 2,
+        "ai_reason": "建築物流經驗需求，與金融科技背景無關",
+        "is_reference": false,
+        "diagnosis": null
+      },
+      {
+        "jobNo": "15360865",
+        "jobName": "【營運管理部】採購管理師",
+        "custName": "霖園關係企業_神坊資訊股份有限公司",
+        "salary": "面議",
+        "location": "台北市大安區",
+        "industry": "網際網路相關業",
+        "url": "https://www.104.com.tw/job/958ip",
+        "ai_score": 2,
+        "ai_reason": "採購職能需求，履歷無相關工作經驗",
+        "is_reference": true,
+        "diagnosis": null
+      },
+      {
         "jobNo": "li_4458384330",
         "jobName": "Program Manager, Networking Supply and Material Planning",
         "custName": "Google",
