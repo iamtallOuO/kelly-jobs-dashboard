@@ -1,5 +1,77 @@
 [
   {
+    "date": "2026-08-31",
+    "ai_matched": true,
+    "report_url": "",
+    "jobs": [
+      {
+        "jobNo": "li_4459771057",
+        "jobName": "Product Manager 產品經理",
+        "custName": "Yahoo Taiwan E-Commerce",
+        "salary": "面議",
+        "location": "Neihu District, Taipei City, Taiwan",
+        "industry": "LinkedIn",
+        "url": "https://tw.linkedin.com/jobs/view/product-manager-%E7%94%A2%E5%93%81%E7%B6%93%E7%90%86-at-yahoo-taiwan-e-commerce-4459771057",
+        "ai_score": 8,
+        "ai_reason": "職稱完全符合，電商軟體業符合目標",
+        "is_reference": false,
+        "diagnosis": null
+      },
+      {
+        "jobNo": "12730826",
+        "jobName": "Software Project Manager, AI software solution 專案管理師",
+        "custName": "優必達台灣有限公司",
+        "salary": "面議",
+        "location": "台北市信義區",
+        "industry": "電腦軟體服務業",
+        "url": "https://www.104.com.tw/job/7kv62",
+        "ai_score": 7,
+        "ai_reason": "跨部門協調職能高度吻合，軟體業符合，資歷應勝任",
+        "is_reference": false,
+        "diagnosis": null
+      },
+      {
+        "jobNo": "15367772",
+        "jobName": "專案管理師",
+        "custName": "誠邦網絡股份有限公司",
+        "salary": "37,000 ~ 42,000",
+        "location": "台北市中山區",
+        "industry": "電腦系統整合服務業",
+        "url": "https://www.104.com.tw/job/95duk",
+        "ai_score": 6,
+        "ai_reason": "專案管理符合、產業相關，但JD過簡難判深度需求",
+        "is_reference": false,
+        "diagnosis": null
+      },
+      {
+        "jobNo": "yt_46242",
+        "jobName": "【TPMO0301】Product Operation Manager",
+        "custName": "SHOPLINE 商線科技股份有限公司",
+        "salary": "面議",
+        "location": "臺北市",
+        "industry": "新創(Yourator)",
+        "url": "https://www.yourator.co/companies/shopline/jobs/46242",
+        "ai_score": 5,
+        "ai_reason": "產品運營非主要目標職能，JD資訊不足",
+        "is_reference": true,
+        "diagnosis": null
+      },
+      {
+        "jobNo": "li_4459748101",
+        "jobName": "Product Manager - AI Finance App",
+        "custName": "Kira",
+        "salary": "面議",
+        "location": "Taipei City, Taipei City, Taiwan",
+        "industry": "LinkedIn",
+        "url": "https://tw.linkedin.com/jobs/view/product-manager-ai-finance-app-at-kira-4459748101",
+        "ai_score": 5,
+        "ai_reason": "職稱符合但行業偏金融，與轉職方向有隙",
+        "is_reference": true,
+        "diagnosis": null
+      }
+    ]
+  },
+  {
     "date": "2026-08-28",
     "ai_matched": true,
     "report_url": "reports/diagnosis_2026-08-28.html",
