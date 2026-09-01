@@ -1,5 +1,77 @@
 [
   {
+    "date": "2026-09-01",
+    "ai_matched": true,
+    "report_url": "",
+    "jobs": [
+      {
+        "jobNo": "15171198",
+        "jobName": "【FTL】專案經理（Project Manager）｜Retail 零售流通",
+        "custName": "台灣富士通股份有限公司",
+        "salary": "面議",
+        "location": "台北市中正區",
+        "industry": "電腦系統整合服務業",
+        "url": "https://www.104.com.tw/job/91666",
+        "ai_score": 9,
+        "ai_reason": "職能和產業完全符合，經驗和資歷都符合要求",
+        "is_reference": false,
+        "diagnosis": null
+      },
+      {
+        "jobNo": "15370966",
+        "jobName": "Data Analyst, Catalog Onboarding 商品目錄分析師",
+        "custName": "酷澎股份有限公司",
+        "salary": "面議",
+        "location": "台北市松山區",
+        "industry": "網際網路相關業",
+        "url": "https://www.104.com.tw/job/95gba",
+        "ai_score": 8,
+        "ai_reason": "職能和產業完全符合，有相關經驗和技能基礎",
+        "is_reference": false,
+        "diagnosis": null
+      },
+      {
+        "jobNo": "15370978",
+        "jobName": "Data Analyst, TW Logistics 物流資料分析師",
+        "custName": "酷澎股份有限公司",
+        "salary": "面議",
+        "location": "台北市中山區",
+        "industry": "網際網路相關業",
+        "url": "https://www.104.com.tw/job/95gbm",
+        "ai_score": 8,
+        "ai_reason": "職能和產業完全符合，有相關經驗和技能基礎",
+        "is_reference": false,
+        "diagnosis": null
+      },
+      {
+        "jobNo": "yt_48182",
+        "jobName": "(Associate) Product Manager",
+        "custName": "GoFreight",
+        "salary": "面議",
+        "location": "臺北市",
+        "industry": "新創(Yourator)",
+        "url": "https://www.yourator.co/companies/HardCoreTechnology/jobs/48182",
+        "ai_score": 7,
+        "ai_reason": "職能和資歷符合，但職缺描述過簡無法詳評",
+        "is_reference": true,
+        "diagnosis": null
+      },
+      {
+        "jobNo": "yt_46356",
+        "jobName": "Product Operations Contractor 產品營運專員",
+        "custName": "AIFIAN",
+        "salary": "40,000 ~ 40,000",
+        "location": "臺北市",
+        "industry": "新創(Yourator)",
+        "url": "https://www.yourator.co/companies/aifian/jobs/46356",
+        "ai_score": 6,
+        "ai_reason": "職能次要符合(PMO)，資歷和產業符合",
+        "is_reference": true,
+        "diagnosis": null
+      }
+    ]
+  },
+  {
     "date": "2026-08-31",
     "ai_matched": true,
     "report_url": "reports/diagnosis_2026-08-31.html",
